@@ -1,0 +1,290 @@
+import Box from "@mui/material/Box";
+import Image from "next-image-export-optimizer";
+
+import { TBD } from "@/components/TBD";
+import { UnderDevelopment } from "@/components/UnderDevelopment";
+import { CourseStoreLink } from "@/components/links/CourseStoreLink";
+import { SiteLink } from "@/components/links/SiteLink";
+import { default as AssignmentsOverview } from "@/contentcomponents/AssignmentsOverview.mdx";
+import { SiteLinks} from "@/data/SiteLinks";
+import { Paths } from "@/paths";
+
+import imgPhotoJames from "public/images/photo_james.jpg";
+import imgPhotoJesse from "public/images/photo_jesse.jpg";
+import imgPhotoLisa from "public/images/photo_lisa.jpg";
+import imgPhotoSimona from "public/images/photo_simona.png";
+import imgPhotoYasaman from "public/images/photo_yasaman.jpg";
+import imgPhotoPlaceholder from "public/images/photo_placeholder.png";
+
+# Course Overview
+
+<UnderDevelopment display={false} />
+
+## Course Description
+
+This course provides an introduction to human-computer interaction and the design process.
+Students will learn methods and skills for designing and prototyping interactive systems.
+The course covers a design process from the initial formulation of a design problem to creation of digital prototypes.
+Importantly, the course does not emphasize development but instead fully focuses on design.
+
+The course structure is a mix of lectures, hands-on activities, and design critiques by peers and course staff.
+The course is overwhelmingly organized around a group project, in which students:
+
+- Ideate and Propose Design Problems
+- Study Existing Practices and Challenges
+- Explore Potential Design Opportunities and Tradeoffs
+- Evaluate and Iterate Upon a Design
+- Communicate a Problem and Resulting Design
+
+## Learning Objectives
+
+- Process-Focused Perspective on Interaction Design
+- Design Research Methods and Skills
+- Task-Focused Scenario Development, Sketching, and Storyboarding
+- Rapid Prototyping and Iteration
+- Critical Perspective on Design Solutions
+
+## Course Staff
+
+<Box display="flex" flexDirection="row" alignItems="flex-start">
+  <Box marginTop={-2} marginBottom={-2} marginRight={2}>
+    <p>James Fogarty</p>
+    <p>he/him</p>
+    <p>
+       {/* alt="", Treat as decorative, because name is read above */}
+      <Image src={imgPhotoJames}
+             basePath={Paths.basePath}
+             height="150"
+             alt=""
+      />
+    </p>
+  </Box>
+  {/* 20 hour TAs */}
+  <Box marginTop={-2} marginBottom={-2} marginRight={2}>
+    <p>Simona Liao</p>
+    <p>she/they</p>
+    <p>
+       {/* alt="", Treat as decorative, because name is read above */}
+      <Image src={imgPhotoSimona}
+             basePath={Paths.basePath}
+             height="150"
+             alt=""
+      />
+    </p>
+  </Box>
+  <Box marginTop={-2} marginBottom={-2} marginRight={2}>
+    <p>Jesse Martinez</p>
+    <p>he/they</p>
+    <p>
+       {/* alt="", Treat as decorative, because name is read above */}
+      <Image src={imgPhotoJesse}
+             basePath={Paths.basePath}
+             height="150"
+             alt=""
+      />
+    </p>
+  </Box>
+    {/* 10 hour TAs */}
+  <Box marginTop={-2} marginBottom={-2} marginRight={2}>
+    <p>Lisa Orii</p>
+    <p>she/her</p>
+    <p>
+       {/* alt="", Treat as decorative, because name is read above */}
+      <Image src={imgPhotoLisa}
+             basePath={Paths.basePath}
+             height="150"
+             alt=""
+      />
+    </p>
+  </Box>
+  <Box marginTop={-2} marginBottom={-2} marginRight={2}>
+    <p>Yasaman Sefidgar</p>
+    <p>she/her</p>
+    <p>
+       {/* alt="", Treat as decorative, because name is read above */}
+      <Image src={imgPhotoYasaman}
+             basePath={Paths.basePath}
+             height="150"
+             alt=""
+      />
+    </p>
+  </Box>
+</Box>
+
+## Course Coordination
+
+- Contact
+
+  Email course staff at &lt;cse440-staff [at] cs.washington.edu&gt;.
+
+  Please do not email individual course staff.
+  Using the course staff email list promotes both staff coordination and a more prompt response.
+
+- Course Time & Location
+
+  Tuesdays & Thursdays, 10:00-11:20.
+
+  [CSE2](https://www.washington.edu/maps/#!/cse2)
+  Room [G10](https://www.washington.edu/classroom/CSE2+G10)
+
+  The <SiteLink linkKey={SiteLinks.calendarTop} /> will provide any non-standard times, locations, or staffing.
+
+- Section Times & Location
+
+  Section A: Fridays, 10:30-11:20 [MGH](https://uw.edu/maps/?mgh)
+  Room [295](https://www.washington.edu/classroom/MGH+295),
+  with Simona and Lisa.
+
+  Section B: Fridays, 11:30-12:20 [MGH](https://uw.edu/maps/?mgh)
+  Room [295](https://www.washington.edu/classroom/MGH+295),
+  with Simona and Lisa.
+
+  Section C: Fridays, 12:30-1:20 [MGH](https://uw.edu/maps/?mgh)
+  Room [058](https://www.washington.edu/classroom/MGH+058),
+  with Jesse and Yasaman.
+
+  Section D: Fridays, 1:30-2:20 [MGH](https://uw.edu/maps/?mgh)
+  Room [058](https://www.washington.edu/classroom/MGH+058),
+  with Jesse and Yasaman.
+
+  The <SiteLink linkKey={SiteLinks.calendarTop} /> will provide any non-standard times, locations, or staffing.
+
+- Office Hours
+
+  - James, by appointment.
+  - Jesse, Wednesdays 11:00 to 12:00, [CSE2](https://uw.edu/maps/?cse2) 151.
+  - Simona, Thursdays 12:00 to 1:00, [CSE2](https://uw.edu/maps/?cse2) 150.
+
+  Scheduled office hours require that you email beforehand (i.e., at least one hour beforehand).
+  If nobody has emailed regarding an office hour, course staff may not be available.
+  Hours are scheduled most weeks, but check the <SiteLink linkKey={SiteLinks.calendarTop} />.
+  Other meetings are by appointment.
+
+- Canvas
+
+  <CourseStoreLink outerComponent="p" linkKey="linkCanvas" />
+
+Course information and material will primarily be provided on this website.
+
+Canvas will be used for submissions and for necessary limitation of access to course materials.
+
+## Assignments
+
+<AssignmentsOverview />
+
+## Grading
+
+Strive to do good work because you care about your own opportunities to learn,
+including the opportunities this course provides working with a group in an intensive project.
+
+The overall course grade will be computed as follows:
+
+- __65%__: Group Project
+  - __5%__: <SiteLink linkKey={SiteLinks.assignmentsAssignment1Top} outerComponent="span" />: Project Proposal
+    - 1a: Individual Brainstorm (1%)
+    - 1b: Group Proposals (2%)
+    - 1c: Finalized Proposal (2%)
+  - __25%__: <SiteLink linkKey={SiteLinks.assignmentsAssignment2Top} outerComponent="span" />: Getting the Right Design
+    - 2b: Design Research Plan (3%)
+    - 2c: Design Research Check-In (2%)
+    - 2d: Design Research Review (3%)
+    - 2e: Task Review (3%)
+    - 2f: Design Check-In (4%)
+    - 2g: Design Review (2%)
+    - 2p: Getting the Right Design Presentation (8%)
+  - __20%__: <SiteLink linkKey={SiteLinks.assignmentsAssignment3Top} outerComponent="span" />: Getting the Design Right
+    - 3a: Paper Prototype (3%)
+    - 3c: Usability Testing Check-In (3%)
+    - 3d: Usability Testing Review (3%)
+    - 3e: Digital Mockup (3%)
+    - 3p: Getting the Design Right Presentation (8%)
+  - __15%__: <SiteLink linkKey={SiteLinks.assignmentsAssignment4Top} outerComponent="span" />: Communicating the Design
+    - 4web: Web Post (8%)
+    - 4poster: Poster and Pitch (5%)
+    - Individual Presentation Delivery (2%)
+- __10%__: Participation
+- __25%__: Exam
+
+Each assignment will also provide a point breakdown intended to convey how it will be graded.
+Design is an inherently subjective practice, and so grading in this course is necessarily subjective.
+The stated project requirements are the minimum,
+intended to leave room for groups to earn strong grades through strong work.
+
+Because the course is designed around feedback on project milestones, grades given to those milestones indicate
+that you have invested sufficient effort and insight at the time of the milestone.
+You will get feedback and are expected to continue acting upon that feedback in your design process.
+The bulk of project grades is therefore attached to the final deliverables, which are evaluated on their quality.
+
+### Late Policy
+We generally expect all assignments will be submitted according to the deadline in Canvas and the assignment description.
+This is a fast-paced course, with many elements of the project depending on prior elements.
+The course staff's ability to give feedback also relies on timely submissions
+(e.g., course staff will often review submissions soon after they are submitted to be ready for course activities).
+
+If your group feels that you would really benefit from an extension,
+or if there is an emergency impacting your ability to submit an assignment,
+contact the course staff before the submission deadline.
+
+We will do our best to be flexible and work with you so that your group stays on track.
+Extensions of a few hours can often be facilitated.
+Except in extreme circumstances, we will typically not be able to give an extension of more than 1 day.
+
+### Regrade Policy
+Any request for grade clarification or a re-grade must be submitted via the course staff email list.
+Requests will only be considered within 7 days of the release of a grade.
+
+Upon calculation of final grades, we will explicitly check for any particularly unfortunate effects of rounding
+(e.g., adjusting a pre-rounding final grade of 3.649 to instead give a 3.7).
+This is intended to provide peace of mind that final grades were not defined by any minor point deduction.
+
+## Participation and COVID-19 Safety
+
+Our goal is for this course to provide an opportunity for learning without undermining wellness or safety.
+Active participation in activities is central to this course,
+and we all share responsibility for preserving safety of this learning environment.
+Please review and adhere to related policies, including the
+[UW COVID-19 FAQ for students](https://www.washington.edu/coronavirus/student-faq/).
+
+### Expectation of In-Person Participation
+
+The course heavily emphasizes a group project and participation in associated in-class activities.
+In-person participation is expected for both lecture and section,
+is part of participation grading,
+and can also impact grading of your contribution to the group project.
+
+### Remote Participation and Recordings
+
+There may be reasons you cannot or should not attend in-person
+(e.g., COVID exposure, COVID symptoms).
+In these circumstances, contact the course staff for permission to attend remotely.
+If you are unsure whether you should attend,
+please reach out and know that we will do our best to be accommodating.
+Our goal is to encourage and support you in decisions that preserve everybody's safety.
+
+Students with permission may attend via the Zoom link provided in <CourseStoreLink linkKey="linkCanvas">Canvas</CourseStoreLink>.
+A member of the course staff will also aim to monitor the Zoom chat for questions.
+If class splits into project group activities,
+the Zoom meeting will end and remote students should join their group
+via a video call with a member of their group.
+
+We will also use the in-room Panopto system to record lecture components of the course.
+This can support review of material, but is not a substitute for in-person activities.
+
+## Accommodations and University Policies
+
+Additional university policies apply
+(e.g., regarding Academic Integrity, Conduct, Disability Resources, Face Coverings, Religious Accommodations):
+
+<CourseStoreLink outerComponent="p" linkKey='linkUniversitySyllabusGuidelines' />
+
+Please do not hesitate to contact the course staff regarding these or any other accommodations.
+We are happy that you are here and want to support your engagement in this learning environment.
+
+## Course Website
+
+This course website lives on GitHub:
+
+<CourseStoreLink outerComponent="p" linkKey='linkGitHub' />
+
+You can submit pull requests to update the website,
+and you will publish elements of your project to the website via pull request.

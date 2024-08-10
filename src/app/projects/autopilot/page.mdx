@@ -1,0 +1,390 @@
+{/* CSE 440 Project Post Template
+  *
+  * This template aims to guide you in how to use the supported syntax.
+  *
+  * You should refer to the assignment description for details on what content is expected.
+  *
+  * If you delete or modify template content that you later find you need,
+  * the original template can also be found in `/src/app/projects/template/page.mdx`.
+  *
+  * Note this template's use of comment syntax.
+  * Curly brackets delineate a code block, within which you can then initiate a comment.
+  * The column of `*` characters has no effect and is included only for readability.
+  */}
+
+{/* Tool Documentation
+  *
+  * This post is primarily formatted in Markdown.
+  * For one example of how to use Markdown, see <https://www.markdownguide.org/>.
+  *
+  * The post then uses [MDX](https://mdxjs.com/) to embedded JSX components.
+  * You are not expected to fully understand these components,
+  * but can just embed them in your Markdown like you would any HTML tag.
+  */}
+
+{/* Project Imports
+  *
+  * These import components for use in your post.
+  * You could inspect those components, but this template is intended to be sufficient.
+  *
+  * The full [MUI](https://mui.com/material-ui/getting-started/overview/) component library is also available,
+  * but we do not expect or recommend you will need or want additional components.
+  * If you find the provided components insufficient, we encourage you to check in with the course staff.
+  */}
+
+import { ProjectImageBlock } from "@/components/project/ProjectImageBlock";
+import { ProjectImagesBlock } from "@/components/project/ProjectImagesBlock";
+import { ProjectSubtitle } from "@/components/project/ProjectSubtitle";
+import { ProjectTeamGallery } from "@/components/project/ProjectTeamGallery";
+
+{/* Image Imports
+  *
+  * Every image should be imported via its path in your `images` directory.
+  * - Note that directory is within `public/images/projects`.
+  * - These imports all reference the `template` project, you will reference your own project directory.
+  * - Only `.jpg` and `.png` file extensions are supported.
+  * - If an import is not working, double-check that you have the correct file extension.
+  */}
+
+{/* Team Gallery Images
+  *
+  * - Give your images meaningful names (e.g., "james.png").
+  * - Images will be rendered 125px wide.
+  *   - Be sure all images are already cropped and scaled to be 125px wide and 150px tall.
+  */}
+
+import imageTeamPerson1 from "public/images/projects/autopilot/team/Tyler.png";
+import imageTeamPerson2 from "public/images/projects/autopilot/team/jayda.jpg";
+import imageTeamPerson3 from "public/images/projects/autopilot/team/jordan.png";
+import imageTeamPerson4 from "public/images/projects/autopilot/team/richard.jpg";
+
+import imagePlaceholder300x600 from "public/images/projects/template/post/300x600.png";
+import imagePlaceholder400x400 from "public/images/projects/template/post/400x400.png";
+import imagePlaceholder600x300 from "public/images/projects/template/post/600x300.png";
+import imagePlaceholder1200x800 from "public/images/projects/template/post/1200x800.png";
+import cel from "public/images/projects/autopilot/post/check-engine-light.png";
+import info from "public/images/projects/autopilot/post/info_pic.png";
+import receipt from "public/images/projects/autopilot/post/receipt.jpg";
+
+import after1 from "public/images/projects/autopilot/post/after1.png";
+import after2 from "public/images/projects/autopilot/post/after2.png";
+import after3 from "public/images/projects/autopilot/post/after3.png";
+import before1 from "public/images/projects/autopilot/post/before1.png";
+import before2 from "public/images/projects/autopilot/post/before2.png";
+import before3 from "public/images/projects/autopilot/post/before3.png";
+import task1 from "public/images/projects/autopilot/post/task1.png";
+import task21 from "public/images/projects/autopilot/post/task21.png";
+import task22 from "public/images/projects/autopilot/post/task22.png";
+
+# AutoPilot
+
+<ProjectSubtitle>The Intelligent Maintenance & Service Assistant</ProjectSubtitle>
+
+## Meet the Team
+
+{/* The ProjectTeamGallery displays names and images of your project team.
+  * - As above, crop and scale your images to be the size of the placeholder.
+  *   This consistent image size provides a cleaner gallery.
+  */}
+<ProjectTeamGallery members={[
+    {
+        name: ["Tyler Richardson"],
+        photo: imageTeamPerson1,
+    },
+    {
+        name: ["Jayda So"],
+        photo: imageTeamPerson2,
+    },
+    {
+        name: ["Jordan Ngo"],
+        photo: imageTeamPerson3,
+    },
+    {
+        name: ["Richard Luu"],
+        photo: imageTeamPerson4,
+    },
+]} />
+
+## Problem and Design Overview
+
+{/* A ProjectImageBlock displays text with an associated image.
+  * - The image is configured through properties on the opening `ProjectImageBlock` tag.
+  * - Text is placed within the opening and closing `ProjectImageBlock` tags.
+  * - In a small browser window, the image will be rendered below the text.
+  * - In a large browser window, the image will be rendered on the right.
+  *
+  * - The width property controls how much of the grid is assigned to the image column.
+  *   Values can be 4 (the smallest image), 6 (half the width of the page), or 8 (the largest image).
+  *
+  * - The maxHeight property controls the rendered height of an image.
+  *   Although the image here is 1200x800, maxHeight limits its rendered height to 400px.
+  *   If not specified, the default maxHeight is 400px.
+  *
+  * Later in the template you will also find examples of the plural `ProjectImagesBlock` tag.
+*/}
+
+<ProjectImageBlock
+    image={{
+        src: cel,
+        alt: "A picture of a check engine light on a car dashboard."
+    }}
+    caption={
+        "An illuminated check engine light, a universal signal urging drivers to address potential car maintenance issues, highlights the critical need for accessible and understandable vehicle care guidance."
+    }
+    width={6}
+    maxHeight={"500px"}
+>
+
+Cars are a part of many people's everyday lives and should be well-maintained to 
+keep us safe. However, many car owners know little to none about how they should 
+upkeep their cars. Because of this, they must rely on repair shops to tell them what 
+services they need to get done, often leading them to be upsold on unnecessary services. 
+Experiences such as those can lead to financial strain and eventually contribute to the negligence of vehicle maintenance as trust between the car owner and mechanic wanes. 
+
+Our design aims to rebuild that trust and give car owners more control over their car 
+maintenance by giving them an easy way to track needed services and service history 
+while filling in education gaps about such services.
+
+
+</ProjectImageBlock>
+
+## Design Research Process and Key Insights
+
+To gain a better understanding of consumers's wants in a maintenance-tracking app 
+our team interviewed an assortment of both potential users and stakeholders. The main 
+goal of these interviews is to determine what the main wants from car owners in terms 
+of being able to track their services. An interview style allows us to learn basic 
+information such as how much experience one has with car maintenance and find correlations 
+with how that impacts their experiences with car mechanics. 
+
+We conducted three interviews with:
+<ol>
+  <li>
+  A college student who regularly drives his car a few times a week. 
+  He finds himself at the mechanic often due to his car being old. He does not have any
+  knowledge about car maintenance.
+  </li>
+  <li>
+  Another college student who drives his car daily. He considers himself knowledgeable 
+  about cars and does a lot of maintenance at home as he does not want to rely on 
+  trusting repair shops.
+  </li>
+  <li>
+  A person who drives a couple of hundred miles a week and follows the maintenance schedule 
+  from his vehicle's manual. He has a strong distrust of maintenance shops.
+  </li>
+</ol>
+
+This selection of people gave us various points of view on car repairs as each person had a 
+differing amounts of knowledge on the topic and had different ways they go about car maintenance 
+which provided us with information in order to find general trends to reach a broad audience with 
+our design. 
+
+### Need for Transparency
+
+All three of our interviewees expressed distrust in repair shops, two of which mentioned 
+that though they distrust them, they have little choice but to use them. This is because 
+the only other option is learning how to maintain their car themself. Through our interviews 
+it was expressed that the lack of trust stemmed from the fact that the repair shops have 
+all the power in the situation to play up the severity of a service needed or to simply add 
+a service that is unnecessary or repetitive unbeknownst to the car owner. Because of this, 
+we noticed a trend that car owners want more transparency in regard to their car service 
+history when dealing with repair shops.
+
+
+### A Want to Understand
+
+<ProjectImagesBlock
+    images={[
+        {
+            src: info,
+            alt: "The AutoPilot apps function to reveal information about a service.",
+            caption: "The AutoPilot app lets users see information regarding services.",
+        },
+    ]}
+    direction={"row"}
+    width={8}
+    maxHeight={"500px"}
+>
+
+Our research revealed a want from car owners to be able to understand what services they need for 
+their cars and why. It is easy to see that a light is flashing on the dashboard, thus indicating 
+a need for a service, but without research on their own, they do not know what it means. This goes 
+for services listed at the repair shop as well. A mechanic tells the owner what services they need, 
+they sometimes explain what exactly that means in terms of what physically needs to be done, but 
+rarely without prompting explain why this service must take place. Understanding why a service needs 
+to take place would greatly ease the worries of car owners and build trust between them and mechanics 
+according to our interviewees.
+
+</ProjectImagesBlock>
+
+### Need for Financial Preparation 
+
+Another key insight focused on the users' need for financial preparation. Participants expressed anxiety over 
+unexpected costs associated with vehicle maintenance. Being able to see how much their future services 
+will cost to plan financially would be very helpful. 
+Additionally, when comparing which services are urgent and which can wait, a novice in car maintenance would not 
+know how they stack up against each other. Through our research, the recurring theme of wanting to 
+know how to prioritize services kept reappearing. The interviewees shared that a lot of time, they need 
+to decline services because of finances and would love to know which to prioritize without sacrificing 
+car safety.
+
+## Iterative Design Process and Key Insights
+
+In our iterative design process for Assignment 3, we focused on enhancing the user experience for vehicle 
+maintenance tasks through a series of steps: beginning with paper prototyping, followed by user testing, 
+heuristic evaluation, and culminating in the creation of a digital mockup. Our design focus was on improving 
+the interface for selecting vehicle mileage for future service, reorganizing the menu bar for consistency with 
+platform norms, and ensuring users had a clear path for task execution through better navigation and documentation. 
+This process was aimed at refining our app's usability and interface to better meet user needs and expectations.
+
+With this, the concept of our paper prototype was to create an easy experience for users to check for future and 
+current car services. Through our iterative process we found the following to be our biggest insights on our design.
+
+### Simplifying the Selection Process
+
+<ProjectImagesBlock
+    images={[
+        {
+            src: before1,
+            alt: "Before image of the scrolling mileage bar.",
+        },
+        {
+            src: after1,
+            alt: "After image of the newly improved mileage bar with the three dots.",
+        },
+    ]}
+    direction={"row"}
+    caption={
+        "Before and after paper prototype mileage bar."
+    }
+    width={6}
+    maxHeight={"400px"}
+>
+
+Our initial design included a top scroll bar for selecting vehicle mileage, which was confusing 
+for users. Feedback from user testing indicated that participants struggled with this feature, 
+finding it unintuitive. Based on this, we iterated to a more modern and familiar approach, using a 
+"..." button to reveal more options for mileage intervals. This change was directly informed by the 
+confusion observed during user testing, leading to a simpler, more accessible way for users to navigate 
+through their service options.
+
+
+</ProjectImagesBlock>
+
+### Enhancing Interface Consistency
+
+<ProjectImagesBlock
+    images={[
+        {
+            src: before3,
+            alt: "Before image of the menu bar without the home icon.",
+        },
+        {
+            src: after2,
+            alt: "After image of the menu bar with a home icon.",
+        },
+    ]}
+    direction={"column"}
+    caption={
+        "Before and after paper prototype menu bar."
+    }
+    width={6}
+    maxHeight={"400px"}
+>
+
+From our first evaluation, it was noted that there was no way to return back to the home page due 
+to an absence of a home button. In further iterations of the design, a home button was added however, 
+the positioning of menu icons and buttons in to new paper prototype showed inconsistencies 
+with common app layouts, as identified during our initial user testing phase. 
+
+Participants noted that the placement of the menu button and icons did not align with their expectations, based on 
+their experience with other apps (which commonly place the home button in the center or front of the row). In response, 
+we reorganized the menu bar, placing the home button 
+on the far left and the alert button on the far right, aligning our design more closely with platform 
+norms and improving user navigation intuitiveness.
+
+</ProjectImagesBlock>
+
+### Improving Navigation and Documentation
+
+<ProjectImagesBlock
+    images={[
+        {
+            src: before2,
+            alt: "Before image of the alert with no tooltip.",
+        },
+        {
+            src: after3,
+            alt: "After image of the alert with a tooltip.",
+        },
+    ]}
+    direction={"row"}
+    caption={
+        "Before and after paper prototype."
+    }
+    width={6}
+    maxHeight={"350px"}
+>
+
+Feedback from heuristic evaluation highlighted the absence of a back button and sufficient documentation, 
+which could hinder users from understanding how to complete tasks within the app. To address this, 
+we introduced pop-up instructions on various screens to guide users through the app's functionality 
+and added a back button to improve navigation. This iteration was crucial for ensuring users felt supported 
+and could easily navigate the app, significantly enhancing the user experience.
+
+</ProjectImagesBlock>
+
+## Resulting Design
+
+AutoPilot finalized its design as a mobile application, creating a seamless user experience in 
+self-tracking user car services. Using this platform allows for dynamic tracking in users' log 
+services, maintaining detailed records, and planning future maintenance conveniently right from 
+the palm of their hand. This ensures vehicles remain in optimal condition, promoting longevity 
+and safety effectively while also strengthening the customer-mechanic relationship with essential 
+insights into the vehicle services preventing any unnecessary upselling, misguidance, and inconsistencies. 
+
+### Task 1: Searching and Planning for Future Services
+
+<ProjectImageBlock
+    image={{
+        src: task1,
+        alt: "Images of the future services page showing how to change the estimated costs.",
+    }}
+    caption={
+        "From the home page of the mobile application, the user can access the future services page on the navigation bar. The page grants them the ability to see all of the services that are needed at each mileage milestone. By navigating to their desired mileage milestone, by selecting their desired services. The estimated cost will be updated, which allows for financial planning to be prepared when the milestone is reached. "
+    }
+    width={6}
+    maxHeight={"400px"}
+>
+This task was designed to tackle our research findings about the need to plan out finances. In being able to 
+look up their future services and costs, one can prepare better for future finances.
+
+
+</ProjectImageBlock>
+
+### Task 2: Looking Up Current Services and Service History
+
+<ProjectImagesBlock
+    images={[
+        {
+            src: task21,
+            alt: "Progression from the home page to the alert page",
+            caption: "Within a specified range from the next service mileage milestone. Upon opening the application, the home page will prompt an alert for upcoming vehicle maintenance. Navigating to the alerts page prompts exactly what needs to be done."
+        },
+        {
+            src: task22,
+            alt: "Progression of the application from alert page with one service checked, to confirmation page, to history page",
+            caption: "When the service is completed, navigate back to the alerts page marking and confirming the task will fulfill the services due. To ensure the task has been tracked, navigate to the service history page and confirm the completed update."
+        },
+    ]}
+    direction={"column"}
+    width={6}
+    maxHeight={"500"}
+>
+
+This task goal is to allow users the agency to track what services they need to complete and services they've completed into their own hands. 
+By allowing them to manually check off completed services, the application broadens it's users to not only people 
+who use repair shops, but also people who do home repairs.
+
+</ProjectImagesBlock>

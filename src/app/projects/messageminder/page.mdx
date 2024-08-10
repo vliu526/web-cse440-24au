@@ -1,0 +1,389 @@
+{/* CSE 440 Project Post Template
+  *
+  * This template aims to guide you in how to use the supported syntax.
+  *
+  * You should refer to the assignment description for details on what content is expected.
+  *
+  * If you delete or modify template content that you later find you need,
+  * the original template can also be found in `/src/app/projects/template/page.mdx`.
+  *
+  * Note this template's use of comment syntax.
+  * Curly brackets delineate a code block, within which you can then initiate a comment.
+  * The column of `*` characters has no effect and is included only for readability.
+  */}
+
+{/* Tool Documentation
+  *
+  * This post is primarily formatted in Markdown.
+  * For one example of how to use Markdown, see <https://www.markdownguide.org/>.
+  *
+  * The post then uses [MDX](https://mdxjs.com/) to embedded JSX components.
+  * You are not expected to fully understand these components,
+  * but can just embed them in your Markdown like you would any HTML tag.
+  */}
+
+{/* Project Imports
+  *
+  * These import components for use in your post.
+  * You could inspect those components, but this template is intended to be sufficient.
+  *
+  * The full [MUI](https://mui.com/material-ui/getting-started/overview/) component library is also available,
+  * but we do not expect or recommend you will need or want additional components.
+  * If you find the provided components insufficient, we encourage you to check in with the course staff.
+  */}
+
+import { ProjectImageBlock } from "@/components/project/ProjectImageBlock";
+import { ProjectImagesBlock } from "@/components/project/ProjectImagesBlock";
+import { ProjectSubtitle } from "@/components/project/ProjectSubtitle";
+import { ProjectTeamGallery } from "@/components/project/ProjectTeamGallery";
+
+{/* Image Imports
+  *
+  * Every image should be imported via its path in your `images` directory.
+  * - Note that directory is within `public/images/projects`.
+  * - These imports all reference the `template` project, you will reference your own project directory.
+  * - Only `.jpg` and `.png` file extensions are supported.
+  * - If an import is not working, double-check that you have the correct file extension.
+  */}
+
+{/* Team Gallery Images
+  *
+  * - Give your images meaningful names (e.g., "james.png").
+  * - Images will be rendered 125px wide.
+  *   - Be sure all images are already cropped and scaled to be 125px wide and 150px tall.
+  */}
+
+import faraz from "public/images/projects/messageminder/team/faraz.png";
+import lillian from "public/images/projects/messageminder/team/lillian.png";
+import hugh from "public/images/projects/messageminder/team/hugh.png";
+import tim from "public/images/projects/messageminder/team/tim.png";
+import overview from "public/images/projects/messageminder/post/homepage.png";
+import analytics from "public/images/projects/messageminder/post/contactAnalytics.png"
+import reminder from "public/images/projects/messageminder/post/reminderSetting.png"
+import contact from "public/images/projects/messageminder/post/contact.png"
+import tim_vo_reminder from "public/images/projects/messageminder/post/tim_vo_reminder.png";
+import set_reminder from "public/images/projects/messageminder/post/set_reminder.png";
+import response_generated from "public/images/projects/messageminder/post/response_generated.png";
+import reply_screen from "public/images/projects/messageminder/post/reply_screeen.png";
+import add_new from "public/images/projects/messageminder/post/add_new.png";
+import generate_reply from "public/images/projects/messageminder/post/generate_reply.png";
+import logo from "public/images/projects/messageminder/post/messageminder-logo.png";
+import infographic from "public/images/projects/messageminder/post/infographic.png";
+import bulkadd  from "public/images/projects/messageminder/post/bulkadd.png";
+import task1 from "public/images/projects/messageminder/post/task1-walkthrough.png";
+import task2 from "public/images/projects/messageminder/post/task2-walkthrough.png";
+
+import imagePlaceholder300x600 from "public/images/projects/template/post/300x600.png";
+import imagePlaceholder400x400 from "public/images/projects/template/post/400x400.png";
+import imagePlaceholder600x300 from "public/images/projects/template/post/600x300.png";
+import imagePlaceholder1200x800 from "public/images/projects/template/post/1200x800.png";
+
+# MessageMinder
+
+<ProjectSubtitle>Stay mindful with MessageMinder</ProjectSubtitle>
+
+## Team
+
+{/* The ProjectTeamGallery displays names and images of your project team.
+  * - As above, crop and scale your images to be the size of the placeholder.
+  *   This consistent image size provides a cleaner gallery.
+  */}
+<ProjectTeamGallery members={[
+    {
+        name: ["Faraz", "Qureshi"],
+        photo: faraz,
+    },
+    {
+        name: ["Lillian", "Zhu"],
+        photo: lillian,
+    },
+    {
+        name: ["Tim", "Vo"],
+        photo: tim,
+    },
+    {
+        name: ["Hugh", "March"],
+        photo: hugh,
+    },
+]} />
+
+## Problem and Design Overview
+
+{/* A ProjectImageBlock displays text with an associated image.
+  * - The image is configured through properties on the opening `ProjectImageBlock` tag.
+  * - Text is placed within the opening and closing `ProjectImageBlock` tags.
+  * - In a small browser window, the image will be rendered below the text.
+  * - In a large browser window, the image will be rendered on the right.
+  *
+  * - The width property controls how much of the grid is assigned to the image column.
+  *   Values can be 4 (the smallest image), 6 (half the width of the page), or 8 (the largest image).
+  *
+  * - The maxHeight property controls the rendered height of an image.
+  *   Although the image here is 1200x800, maxHeight limits its rendered height to 400px.
+  *   If not specified, the default maxHeight is 400px.
+  *
+  * Later in the template you will also find examples of the plural `ProjectImagesBlock` tag.
+*/}
+
+### Keeping Up in a Fast-Paced Digital Conversation
+
+<ProjectImageBlock
+    image={{
+        src: logo,
+        alt: "MessageMinder logo: brain/chat bubble"
+    }}
+
+    width={6}
+    maxHeight={"400px"}
+>
+
+In an era where rapid online communication is vital, it's surprisingly easy to overlook replying to messages.
+Studies reveal that while 50% of electronic replies occur within an hour, the remainder can extend to days,
+leading to unintentional neglect. In the case of loved ones and close friends this can then start to
+strain relationships. Our project, Mindful Messenger, aims to address this issue by helping users
+become more aware of their response times, thereby improving their communication habits and reducing the stress
+of digital interactions.
+
+</ProjectImageBlock>
+
+## Design Research Process
+
+### Unraveling Texting Habits: A Study at the University of Washington
+
+We embarked on a comprehensive study involving interviews and surveys with computer science students, aiming to delve
+into the underlying reasons behind poor texting habits. This approach provided both qualitative insights from interviews
+and quantitative data from surveys, helping to validate initial observations and uncover patterns in texting behavior.
+
+Our four participants for the interviews were all Computer Science majors at the University of Washington. All of our participants 
+are taking a higher workload, consisting of about 16-18 credits, and are involved in a variety of extracurricular activities and jobs
+ such as on-campus organizations, teaching assistant roles, and research. Our participants varied in their perception of their text 
+ response speeds and also differed in opinion regarding the correlation between their busy workloads and text response levels. 
+ Overall, they demonstrated interest in the project concept as a whole and agreed that this is a relevant problem sphere to explore.
+The survey participants came from the same demographic background as the four previously described interview participants. We posted
+ the survey on Instagram and also asked specifically via word of mouth and text to known Computer Science students. The survey aimed 
+ to achieve a wider pool of data at a more quantitative level, enabling us to draw patterns that help validate initial insights 
+ gathered from our interviews.
+
+### Key Insights
+
+#### Understanding Response Times
+
+Through our participant interviews, we found that there are several factors that influence someone's response time:
+
+1. *Urgency* - We found that the urgency of the message was the biggest factor in determining response time. Two of our participants mentioned prioritizing responses if the texts were about making plans.
+2. *Location* - We found that our participants would catch up on texting people back in certain locations, from work bathrooms and public transport to home.
+3. *Who's Texting* - Our participants had diverse answers for who they prioritize. One of our participants prioritized responding to close friends and family, while another prioritized responding quickly to new acquaintances. Regardless, all of our participants prioritized responding quickly to a select few people.
+4. *Messaging Platform* - All participants we interviewed primarily used one messaging platform such as iMessage or WhatsApp, where they prioritized responding to the most, while not so much prioritizing other platforms such as Discord, Instagram, or Snapchat.
+
+<ProjectImageBlock
+    image={{
+      src: infographic,
+      alt: "Hours worked per week vs. response time. Hours worked has no significant effect on response time."
+    }}
+
+    width={6}
+>
+Surprisingly, through our survey results, how busy someone was had little effect on their texting habits or response
+time. The majority of participants had a response time of less than 5 hours, and those who had a much longer response
+time weren't working more hours or taking more credits than average.
+</ProjectImageBlock>
+
+#### Diverse Reactions to Response Times
+
+When participants were asked in a survey "How does being on the receiving end of slower response
+times make you feel?" responses varied greatly:
+
+* "If it's something urgent, I feel frustrated. If it's something not so urgent but I sent it to a close friend, I might feel a little irritated. If it's just an acquaintance and the content of the message isn't important, I don't really care."
+* "If it's someone i'm super close to i don't care, but if not then not the best."
+* "I don't mind that much usually, but from certain people it does make me feel bad."
+
+We found that participants feel anxiety over slow response times if the message content is important, or if they are messaging
+someone important. This expressed a need for our app to distinguish urgent messages and also allow people to track response times
+with certain people individually.
+
+#### Technology as an Aid
+
+Some participants utilized message tracking features in their apps, highlighting a need for more sophisticated
+solutions. For instance, one of our participants used the Google Pixel's native message app's functionality to keep
+track of people they needed to respond to, as people they need to follow-up on float to the top of their messages list.
+
+## Iterative Design Process
+
+### Design Focus
+
+We wanted to design an app that allows students to be mindful about response times and maintain meaningful connections
+with friends and family through text. We found the best way to execute this was through mobile integration, since it
+supports both of our tasks well and our app will be in close proximity to where students communicate via text. The
+primary tasks our app supports are:
+
+1. Tracking message response times in a conversation with a new acquaintance.
+
+<ProjectImageBlock
+    image={{
+      src: task1,
+      alt: "Navigate to contacts page and click the plus sign to add a contact. Fill in name and phone number, press continue, and set reminders to add a contact. Now on the contacts page, view text conversation analytics by clicking their contact card."
+    }}
+
+    width={12}
+/>
+
+2. Getting advice for specific responses to a difficult conversation topic.
+
+<ProjectImageBlock
+    image={{
+      src: task2,
+      alt: "Navigate to replies page and click on the reply we want to generate a response for. Click generate, then click refresh until the desired response is generated. Then click send."
+    }}
+
+    width={12}
+/>
+
+### Process
+
+We drafted our initial design on a paper prototype. We performed multiple iterations of heuristic analysis and usability testing.
+Our design was tested by three Allen School students or graduates, where we identified key issues with design heuristics,
+iterating on our paper prototype until we arrived at our final digital mockup.
+
+### Key Insights
+
+#### Streamlined Bulk Usability
+
+<ProjectImageBlock
+    image={{
+      src: bulkadd,
+      alt: "Contact multi-select feature. Users can select multiple contacts."
+    }}
+
+    width={3}
+>
+During the initial rounds of the paper prototype testing process, our participants posed the question:
+How can I add multiple contacts? This lack of functionality in our feature space was hugely overlooked during
+our rapid design process, and this realization drove the development of a significant amount of new pages and
+components that leaned into the flexibility and efficiency of use heuristics. Additionally, during the second
+round of paper prototype usability testing, a similar idea was mentioned that individually customizing the
+reminder setting thresholds for each new contact would be inefficient. From this, we added our bulk select,
+group reminder setting editing, and editing features that are pieces of functionality that are now core to our design.
+</ProjectImageBlock>
+
+{/* <img src="/images/projects/messageminder/post/bulkadd.png" alt="Contacts edit" style={{ width: "25%" }} /> */}
+
+
+#### Clarity of the Reply Space
+
+<ProjectImageBlock
+    image={{
+      src: reply_screen,
+      alt: "List of replies to respond to. Urgent text messages are at the top."
+    }}
+
+    width={3}
+>
+Another uncovered aspect when conducting the second round of paper prototype testing was a lack of clarity
+in how one can access and view existing messages that are in need of responses. One of our participants voiced
+confusion about where the actual response generation button was, and also how to even navigate to the specific
+message in the first place. Initially, we only had four main app page tabs, yet after careful ideation when
+iterating our design into the digital mockup form, we realized that adding another page that housed solely the
+replies created a stronger clarity towards the reply generation feature for users.
+</ProjectImageBlock>
+
+{/* <img src="/images/projects/messageminder/post/reply_screeen.png" alt="Key Findings Infographic" style={{ width: "25%" }} /> */}
+
+
+#### Technology Context Integration
+
+<ProjectImageBlock
+    image={{
+      src: response_generated,
+      alt: "Response generation feature. Generates a suggested response based on user input."
+    }}
+
+    width={3}
+>
+We were solely focused on developing the reply generation process during our initial iterations that we overlooked
+the notion that our users may simply need an opportunity to navigate from a reply message into the native messaging
+application. This "Go To Message" functionality in conjunction with the core generation feature was a suggestion
+that one of our paper prototype usability testing participants suggested, and it felt like such a clear and meaningful
+addition to our design. This idea leans into the notion of MessageMinder functioning more as a tool that empowers
+users to navigate to responding to messages at a consistent level, and it was interesting to discover how we
+overlooked this core idea in our initial design.
+</ProjectImageBlock>
+
+{/* <img src="/images/projects/messageminder/post/response_generated.png" alt="Key Findings Infographic" style={{ width: "25%" }} /> */}
+
+## Resulting Design
+
+
+
+### MessageMinder: A Tool for Effective Digital Communication
+
+Our final design includes two key tasks:
+
+- **Feature 1 (Mobile)**: Tracking message response times in a conversation with a new acquaintance.
+
+<ProjectImagesBlock
+    images={[
+        {
+            src: overview,
+            alt: "Overview page. Summary of analytics and messages to respond to.",
+        },
+        {
+            src: contact,
+            alt: "List of contacts page. Favorite contacts are starred.",
+        },
+        {
+            src: add_new,
+            alt: "Add new contact page. Enter name and phone number.",
+        },
+        {
+            src: set_reminder,
+            alt: "Set reminders for new contact. Enter reminder time and vibrate and sound patterns.",
+        },
+        {
+            src: tim_vo_reminder,
+            alt: "Contact-specific analytics and overview page.",
+        }
+    ]}
+    direction={"row"}
+    caption={
+        "These images show the workflow of task 1. A User can go from the homepage to the contact list, add a new contact, set reminders for that contact, and view contact-specific analytics."
+    }
+    width={12}
+    maxHeight={"275px"}
+>
+
+Users are able to view a dashboard of their analytics and set goals for their response times. The app will then track their progress and provide reminders to respond to messages.
+As we see in the images, the user can first view their dashboard, click on the analytics widget to track their stats. They can then choose to add a contact.
+After adding a contact they can then configure a reminder for that contact and then view their analytics with that person. 
+</ProjectImagesBlock>
+
+- **Feature 2 (Mobile)**: Automated advice for crafting appropriate responses in complex conversations.
+
+<ProjectImagesBlock
+    images={[
+        {
+            src: reply_screen,
+            alt: "List of replies to respond to. Urgent text messages are at the top.",
+        },
+        {
+            src: generate_reply,
+            alt: "Response generation feature. Select a reply to generate a response.",
+        },
+        {
+            src: response_generated,
+            alt: "Response generation feature. Generates a suggested response based on user input.",
+        }
+    ]}
+    direction={"row"}
+    caption={
+        "These images depict task 2. A user can view the conversation they want to respond to, click on the reply button, see what type of response they want to use, and then generate a response to that conversation. If they don't like it they can refresh until they are satisfied."
+    }
+    width={12}
+    maxHeight={"500px"}
+>
+
+Oftentimes users do not want to respond since the conversation requires too much thinking activation power to overcome. This
+task is designed to enable users to generate a response to a difficult conversation topic. As we see in the images to the right,
+users can view the conversation they want to respond to, click on the reply button, see what type of response they want to use, and then
+generate a response to that conversation. If they don't like it they can refresh until they are satisfied.
+
+</ProjectImagesBlock>

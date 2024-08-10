@@ -1,0 +1,517 @@
+{/* CSE 440 Project Post Template
+  *
+  * This template aims to guide you in how to use the supported syntax.
+  *
+  * You should refer to the assignment description for details on what content is expected.
+  *
+  * If you delete or modify template content that you later find you need,
+  * the original template can also be found in `/src/app/projects/template/page.mdx`.
+  *
+  * Note this template's use of comment syntax.
+  * Curly brackets delineate a code block, within which you can then initiate a comment.
+  * The column of `*` characters has no effect and is included only for readability.
+  */}
+
+{/* Tool Documentation
+  *
+  * This post is primarily formatted in Markdown.
+  * For one example of how to use Markdown, see <https://www.markdownguide.org/>.
+  *
+  * The post then uses [MDX](https://mdxjs.com/) to embedded JSX components.
+  * You are not expected to fully understand these components,
+  * but can just embed them in your Markdown like you would any HTML tag.
+  */}
+
+{/* Project Imports
+  *
+  * These import components for use in your post.
+  * You could inspect those components, but this template is intended to be sufficient.
+  *
+  * The full [MUI](https://mui.com/material-ui/getting-started/overview/) component library is also available,
+  * but we do not expect or recommend you will need or want additional components.
+  * If you find the provided components insufficient, we encourage you to check in with the course staff.
+  */}
+
+import { ProjectImageBlock } from "@/components/project/ProjectImageBlock";
+import { ProjectImagesBlock } from "@/components/project/ProjectImagesBlock";
+import { ProjectSubtitle } from "@/components/project/ProjectSubtitle";
+import { ProjectTeamGallery } from "@/components/project/ProjectTeamGallery";
+
+{/* Image Imports
+  *
+  * Every image should be imported via its path in your `images` directory.
+  * - Note that directory is within `public/images/projects`.
+  * - These imports all reference the `template` project, you will reference your own project directory.
+  * - Only `.jpg` and `.png` file extensions are supported.
+  * - If an import is not working, double-check that you have the correct file extension.
+  */}
+
+{/* Team Gallery Images
+  *
+  * - Give your images meaningful names (e.g., "james.png").
+  * - Images will be rendered 125px wide.
+  *   - Be sure all images are already cropped and scaled to be 125px wide and 150px tall.
+  */}
+
+import jasper from "public/images/projects/reeltalk/team/jasper-resized.jpg";
+import ashley from "public/images/projects/reeltalk/team/ashley.jpg";
+import ethan from "public/images/projects/reeltalk/team/ethan_125x150.jpg";
+import zaid from "public/images/projects/reeltalk/team/zaid_new.jpg";
+
+import textimage1 from "public/images/projects/reeltalk/post/logo.png";
+import textimage2 from "public/images/projects/reeltalk/post/reeltalk startup.png";
+import textimage3 from "public/images/projects/reeltalk/post/your notes.png";
+import textimage4_0 from "public/images/projects/reeltalk/post/overview notes.png";
+import textimage4_1 from "public/images/projects/reeltalk/post/summarizing.png";
+import textimage4_2 from "public/images/projects/reeltalk/post/release to stop recording.png";
+import textimage5 from "public/images/projects/reeltalk/post/drp-awkward.png";
+import textimage6 from "public/images/projects/reeltalk/post/overview.jpg";
+
+import initial_help from "public/images/projects/reeltalk/post/initial tap.jpg";
+import updated_help_0 from "public/images/projects/reeltalk/post/record 3.png";
+import updated_help_1 from "public/images/projects/reeltalk/post/record 1.png";
+
+import initial_notes from "public/images/projects/reeltalk/post/initial notes.jpg";
+import updated_notes from "public/images/projects/reeltalk/post/summarize 1.png";
+
+import initial_flow_0 from "public/images/projects/reeltalk/post/initial flow watch.jpg";
+import initial_flow_1 from "public/images/projects/reeltalk/post/initial flow phone.jpg";
+import updated_flow_0 from "public/images/projects/reeltalk/post/summarize 4.png";
+import updated_flow_1 from "public/images/projects/reeltalk/post/summarize 5.png";
+
+
+import textimage7 from "public/images/projects/reeltalk/post/keyInsights-lackingDetails.png";
+import textimage8 from "public/images/projects/reeltalk/post/keyInsights-fluidEngagement.png";
+import textimage9 from "public/images/projects/reeltalk/post/keyInsights-userFlow.png";
+
+import record_0 from "public/images/projects/reeltalk/post/record 0.png";
+import record_1 from "public/images/projects/reeltalk/post/record 1.png";
+import record_2 from "public/images/projects/reeltalk/post/record 2.png";
+import record_3 from "public/images/projects/reeltalk/post/record 3.png";
+import record_4 from "public/images/projects/reeltalk/post/release to stop recording.png";
+import record_5 from "public/images/projects/reeltalk/post/record 5.png";
+
+import summarize_0 from "public/images/projects/reeltalk/post/record 2.png";
+import summarize_1 from "public/images/projects/reeltalk/post/summarize 1.png";
+import summarize_2 from "public/images/projects/reeltalk/post/summarize 2.png";
+import summarize_3 from "public/images/projects/reeltalk/post/summarizing.png";
+import summarize_4 from "public/images/projects/reeltalk/post/summarize 4.png";
+import summarize_5 from "public/images/projects/reeltalk/post/summarize 5.png";
+import summarize_6 from "public/images/projects/reeltalk/post/summarize 6.png";
+import summarize_7 from "public/images/projects/reeltalk/post/summarize 7.png";
+import summarize_8 from "public/images/projects/reeltalk/post/summarize 8.png";
+
+
+
+
+import imagePlaceholder600x300 from "public/images/projects/template/post/600x300.png";
+import imagePlaceholder1200x800 from "public/images/projects/template/post/1200x800.png";
+
+{/*
+caption={
+    "ReelTalk's logo"
+}
+*/}
+<ProjectImageBlock
+    image={{
+        src: textimage1, //
+        alt: "ReelTalk logo"
+    }}
+    width={4}
+    maxHeight={"150px"}
+>
+# ReelTalk
+
+<ProjectSubtitle>
+Share the feels! Capture your movie musings in real-time and spark deep discussions with your friends.
+</ProjectSubtitle>
+</ProjectImageBlock>
+
+## Team
+
+{/* The ProjectTeamGallery displays names and images of your project team.
+  * - As above, crop and scale your images to be the size of the placeholder.
+  *   This consistent image size provides a cleaner gallery.
+  */}
+<ProjectTeamGallery members={[
+    {
+        name: ["Jasper", "Rei Balinas"],
+        photo: jasper,
+    },
+    {
+        name: ["Ashley", "Mochizuki"],
+        photo: ashley,
+    },
+    {
+        name: ["Ethan", "Price"],
+        photo: ethan,
+    },
+    {
+        name: ["Zaid", "Siddiqui"],
+        photo: zaid,
+    },
+]} />
+
+## Problem and Design Overview
+
+{/* A ProjectImageBlock displays text with an associated image.
+  * - The image is configured through properties on the opening `ProjectImageBlock` tag.
+  * - Text is placed within the opening and closing `ProjectImageBlock` tags.
+  * - In a small browser window, the image will be rendered below the text.
+  * - In a large browser window, the image will be rendered on the right.
+  *
+  * - The width property controls how much of the grid is assigned to the image column.
+  *   Values can be 4 (the smallest image), 6 (half the width of the page), or 8 (the largest image).
+  *
+  * - The maxHeight property controls the rendered height of an image.
+  *   Although the image here is 1200x800, maxHeight limits its rendered height to 400px.
+  *   If not specified, the default maxHeight is 400px.
+  *
+  * Later in the template you will also find examples of the plural `ProjectImagesBlock` tag.
+*/}
+
+{/* maxHeight={"400px"} */}
+<ProjectImageBlock
+    image={{
+        src: textimage2, //
+        alt: "Inital screens from watch and phone prototypes"
+    }}
+    caption={
+        "Inital screens from watch and phone prototypes."
+    }
+    width={6}
+>
+
+
+    Navigating diverse work schedules and lifestyles among friends/family, including students,
+    full-time workers, parents, and those balancing multiple roles, poses a challenge in finding
+    time to connect over movies. Despite the desire to share this experience, the limited time
+    available often results in gaps in movie recall, prompting the need to spend valuable
+    conversation time looking up details or feigning familiarity. To enhance the
+    movie-discussion experience, there's a shared aspiration to streamline this process and
+    create a space that accommodates diverse schedules, fostering meaningful connections without
+    sacrificing the enjoyment of shared cinematic experiences.
+
+    Our innovative design seamlessly integrates smartphones and smartwatches, accommodating both
+    home and theater environments. Users can record notes vocally, initiated by holding the
+    screen on the watch, which are then transcribed and editable via a connected app,
+    facilitating concise conversation references.
+
+</ProjectImageBlock>
+
+## Design Research Process and Key Insights
+
+Our goal was to discover how individuals keep track of their thoughts during/after watching
+a film, as well as the resulting gaps that appear when two people try to connect
+asynchronously over movies afterwards. It was important to find which aspects of this
+process are actually difficult, and how users might realistically want to record their
+thoughts during a movie.
+
+We performed our research by interviewing both avid and casual movie fans, as well as
+interviewing and conducting fly-on-the-wall observations with a couple in a long distance
+relationship that discussed a movie virtually after watching it asynchronously. We chose
+these participants to gain an understanding of common problems faced between avid and casual
+fans, and the couple to observe two people that regularly and asynchronously connect over
+media. The purpose of conducting a fly-on-the-wall observation for the couple was to allow
+us to directly observe behaviors they might not otherwise report in a Q&A interview giving
+us deeper insight into how they accomplished tasks.
+
+
+
+### Movie-Watchers Value Recall!
+
+{/* maxHeight={"400px"} */}
+<ProjectImageBlock
+    image={{
+        src: textimage3,
+        alt: "Screen from ReelTalk showing placeholders for notes transcribed"
+    }}
+    caption={
+        "Screen from ReelTalk showing placeholders for notes transcribed."
+    }
+    width={4}
+>
+    All participants ended up trying to remember how they felt during memorable moments in
+    post-movie discussions. Specifically, this took the form of the participants in the couple
+    creating statements like “When Barbie cried, I cried. Did you feel that?” Then the other
+    participant would then respond with how they remembered that moment, or in this case more
+    interestingly, “When was that again?” Or similarly, moments like “What was that song I
+    liked again?” This often led to Googling, debate, or skipping over these moments in
+    discussion entirely. This type of interaction gave us insight into the problem of needing
+    a way to record your experiences and thoughts while you watch instead of afterwards, and
+    inspired our design for directly transcribing your notes into the app for later use.
+
+</ProjectImageBlock>
+
+### There is a Movie Discussion Flow
+
+{/* maxHeight={"400px"} */}
+    One important insight we gained in our design research was the distinction in phases between
+    how participants create their notes (either mentally or physically) , how they conceptualize
+    and summarize the notes, and finally how they discuss them with others. This was a consistent
+    pattern between all participants that emerged, and inspired our app flow of Record -> Summarize
+    -> Review.
+
+<ProjectImagesBlock
+    images={[
+        {
+            src: textimage4_0,
+            alt: "Record a note by tapping and holding the smartwatch.",
+            caption: "Record a note by tapping and holding the smartwatch.",
+            width: 4
+        },
+        {
+            src: textimage4_1,
+            alt: "Summarize the notes to send to your phone from your watch.",
+            caption: "Summarize the notes to send to your phone from your watch.",
+            width: 4
+        },
+        {
+            src: textimage4_0,
+            alt: "Receive the sent notes on your phone app.",
+            caption: "Receive the sent notes on your phone app.",
+        }
+    ]}
+    maxHeight={"375px"}
+/>
+
+### Taking Notes is Awkward
+{/* maxHeight={"400px"} */}
+<ProjectImageBlock
+    image={{
+        src: textimage5, //
+        alt: "A photo of people talking in a movie theater and the ReelTalk recording screen"
+    }}
+    caption={
+        "Don't be disruptive! Use ReelTalk!"
+    }
+    width={6}
+>
+
+    From our interview results it quickly became clear that taking notes in a theater or at home
+    with your phone, or writing down paper notes with friends around is uncommon and awkward
+    especially if others are around. Additionally, the avid and casual movie viewers stated that
+    looking down to take notes interrupts the experience of watching a movie, and can lead to missing
+    what is currently happening. This insight helped us to decide on a smartwatch interface to deliver
+    our note recording/summarizing functionality as seamlessly as possible. Specifically, this design
+    is intended to be as if you are whispering your thoughts to a friend!
+
+</ProjectImageBlock>
+
+## Iterative Design Process and Key Insights
+
+Our design focused on two tasks: highlighting key points of a movie during viewing and
+    summarizing notes into an easily accessible guide for leading conversations about memorable
+    movie moments. We created paper prototypes for a smartwatch application and a phone application,
+    designed to work together. These prototypes underwent multiple rounds of inspection, heuristic
+    evaluation, and usability testing with students in CSE 440, who were instructed to imagine
+    themselves in a movie theater. We chose these participants because our initial research
+    participants were unavailable, and students in CSE 440 were more accessible. We realize that
+    this environment isn't completely accurate compared to that of an actual movie theater. However,
+    they were not willing to commit time to go to a movie theater and watch an entire movie during
+    testing, hence being asked to “imagine.” Also, our paper prototype compared to a digital
+    smartwatch screen wouldn't be visible in a dark movie theater. Overall, our choice of participants
+    and their environment was based on convenience within a limited time frame, but our process still
+    provided valuable insights into user preferences and needs while addressing the challenge of
+    participant availability.
+
+<ProjectImageBlock
+    image={{
+        src: textimage6, //
+        alt: "Overview image of paper prototype"
+    }}
+    caption={
+        "ReelTalk's paper prototype."
+    }
+    maxHeight={600}
+/>
+
+
+### Adding Key Details for App Utilization
+
+{/* maxHeight={"400px"} */}
+{/*<ProjectImageBlock
+    image={{
+            src: initial_help,
+            alt: "Paper prototype with no help for a new user",
+            
+        }}
+        caption={
+            "Initial: No prompts for help or instructions for new users."
+        } 
+        width={4}
+        maxHeight={300}
+> */}
+
+ During user testing, it became evident that participants faced challenges in utilizing the app
+    due to incomplete information, impeding their navigation and task completion. Users voiced
+    confusion regarding certain features and their functionalities, prompting a need for clearer
+    guidance. For example, one participant asked about what the purpose of saving notes was after
+    recording an audio note. In response, we refined the design by integrating comprehensive
+    context-based explanations and instructions across the interface, along with optional help
+    buttons, aiming to equip users with the essential information needed for effective interaction.
+    This iterative process, driven by user feedback, sought to bridge the information gap and
+    enhance overall user experience by facilitating informed navigation and utilization of the app's
+    features.
+
+<ProjectImagesBlock
+    images={[
+        {
+            src: initial_help,
+            alt: "Paper prototype with no help for a new user",
+            caption: "Initial: No prompts for help or instructions for new users."
+        },
+        {
+            src: updated_help_0,
+            alt: "Updated digital prototype with help prompts",
+            caption: "Updated: Added a question mark (help) button in the top right corner of most screens so a user could quickly access context-based instructions if they were confused."
+        },
+        {
+            src: updated_help_1,
+            alt: "Updated digital prototype with help prompts",
+            caption: "Updated: Added a popup to view instructions upon launching the app for first-time users, or anyone needing a refresher on how to use the app."
+        }
+    ]}
+    direction={"row"}
+    maxHeight={"325px"}
+/>
+
+### Enhancing Clarity and Learning
+
+{/* maxHeight={"400px"} */}
+<ProjectImagesBlock
+    images={[
+        {
+            src: initial_notes,
+            alt: "Initial notes",
+            caption: "Initial: No back buttons."
+        },
+        {
+            src: updated_notes,
+            alt: "Updated notes",
+            caption: "Updated: Added back buttons so a user could choose to go back to their initial screen after navigating to a screen."
+        }
+    ]}
+    direction={"row"}
+    width={6}
+    maxHeight={"225px"}
+>
+
+    User testing unveiled significant navigation hurdles and unpredictable user behavior, revealing
+    a mismatch between expected interaction flows and actual user experiences. Participants grappled
+    with the absence of intuitive cues, such back buttons or help buttons, and expressed frustration
+    with the linear design structure. 
+    
+    Consequently, we introduced these features to enhance clarity
+    and alleviate the steep learning curve. Furthermore, we pivoted from a rigid, linear layout to a
+    more adaptable framework to accommodate non-linear interactions, informed by specific participant
+    feedback. These iterative adjustments aimed to align the design with user expectations, ensuring
+    a smoother and more engaging user experience.
+
+</ProjectImagesBlock>
+
+### Fixing a Confusing User Flow Between SmartWatch and Phone
+
+{/* maxHeight={"400px"} */}
+    One unique challenge of our design was that it consists of two parts: the smartwatch app and
+    the phone app. This meant that there needed to be clear indications on when to use each part of
+    the design, and when to switch over between the two devices. 
+    
+    For our first usability test, we
+    were so clear-set on a singular flow for our design that we gave only the smartwatch to the
+    participant at first, then gave them the smartphone part of the prototype later. Even with this
+    mistake, with no indications on when information got sent over from the smartwatch to the phone
+    app, the participant told us that it was unclear when to use each part of the design, and
+    expressed surprise that there was a phone app that goes with the smartwatch. 
+    
+    With that comment,
+    we improved our usability testing structure and for future tests, we gave the participant both
+    the smartwatch and the phone at the start. We were then able to improve upon which parts of the
+    task in particular was difficult to understand from a user's perspective. 
+    
+    To improve our design,
+    we made it clear that the phone wasn't supposed to be used at the start by including a screen for
+    the base state. We also added system dialogue to clarify when information gets sent from the
+    smartwatch to the phone app, and added popups on the phone app to indicate when it was time to
+    switch to the phone app.
+
+<ProjectImagesBlock
+    images={[
+        {
+            src: initial_flow_1,
+            alt: "Initial flow 1",
+            caption: "Initial: No prompts on when notes got sent over from the smartwatch to the phone app."
+        },
+        {
+            src: updated_flow_1,
+            alt: "Updated flow 1",
+            caption: "Updated: Added a popup so users know exactly when information got moved from the smartwatch to the phone."
+        },
+        {
+            src: initial_flow_0,
+            alt: "Initial flow 0",
+            caption: "Initial: No prompts on what to do after summarizing notes."
+        },
+        {
+            src: updated_flow_0,
+            alt: "Updated flow 0",
+            caption: "Updated: Added prompts so a user knows to go to the phone app after summarizing notes."
+        },
+    ]}
+    direction={"row"}
+    maxHeight={"225px"}
+/>
+
+## Resulting Design
+
+The critical aspects of our design facilitate user ease in achieving our two primary tasks:
+highlighting key points of a movie during viewing and summarizing notes into an easily accessible
+guide for leading conversations about memorable movie moments.
+
+{/* maxHeight={"400px"} */}
+
+    ### To record an audio note:
+
+<ProjectImagesBlock
+    images={[
+        { src: record_0, alt: "Record step 0", caption: "1. Tap the screen to start." },
+        { src: record_1, alt: "Record step 1", caption: "2. Tap \"no\" to close the instructions prompt." },
+        { src: record_2, alt: "Record step 2", caption: "3. Tap \"record audio notes.\"" },
+    ]}
+    maxHeight={"200px"}
+/>
+
+<ProjectImagesBlock
+    images={[
+        { src: record_3, alt: "Record step 3", caption: "4. Tap and hold the screen, then say your note." },
+        { src: record_4, alt: "Record step 4", caption: "5. Release to end the recording." },
+        { src: record_5, alt: "Record step 5", caption: "6. Your recording has been saved!" },
+    ]}
+    maxHeight={"200px"}
+/>
+
+    ### To summarize your audio notes to use in a conversation later:
+    Part 1: The smartwatch app.
+
+<ProjectImagesBlock
+    images={[
+        { src: summarize_0, alt: "Summarize 0", caption: "1. Tap \"summarize notes.\"" },
+        { src: summarize_1, alt: "Summarize 1", caption: "2. Check the notes you want to summarize." },
+        { src: summarize_2, alt: "Summarize 2", caption: "3. Tap \"submit.\"" },
+        { src: summarize_3, alt: "Summarize 3", caption: "4. Wait for the watch to summarize the notes." },
+        { src: summarize_4, alt: "Summarize 4", caption: "5. Your notes will get sent to your phone!" },
+    ]}
+    maxHeight={"200px"}
+/>
+
+    Part 2: The phone app.
+    
+<ProjectImagesBlock
+    images={[
+        { src: summarize_5, alt: "Summarize 5", caption: "1. Open your phone app and type in the movie name." },
+        { src: summarize_6, alt: "Summarize 6", caption: "2. Tap the name of the movie." },
+        { src: summarize_7, alt: "Summarize 7", caption: "3. Tap a blue hyperlink." },
+        { src: summarize_8, alt: "Summarize 8", caption: "4. You can view your original note here." },
+    ]}
+    maxHeight={"325px"}
+/>

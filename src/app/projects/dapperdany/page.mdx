@@ -1,0 +1,398 @@
+{/* CSE 440 Project Post Template
+  *
+  * This template aims to guide you in how to use the supported syntax.
+  *
+  * You should refer to the assignment description for details on what content is expected.
+  *
+  * If you delete or modify template content that you later find you need,
+  * the original template can also be found in `/src/app/projects/template/page.mdx`.
+  *
+  * Note this template's use of comment syntax.
+  * Curly brackets delineate a code block, within which you can then initiate a comment.
+  * The column of `*` characters has no effect and is included only for readability.
+  */}
+
+{/* Tool Documentation
+  *
+  * This post is primarily formatted in Markdown.
+  * For one example of how to use Markdown, see <https://www.markdownguide.org/>.
+  *
+  * The post then uses [MDX](https://mdxjs.com/) to embedded JSX components.
+  * You are not expected to fully understand these components,
+  * but can just embed them in your Markdown like you would any HTML tag.
+  */}
+
+{/* Project Imports
+  *
+  * These import components for use in your post.
+  * You could inspect those components, but this template is intended to be sufficient.
+  *
+  * The full [MUI](https://mui.com/material-ui/getting-started/overview/) component library is also available,
+  * but we do not expect or recommend you will need or want additional components.
+  * If you find the provided components insufficient, we encourage you to check in with the course staff.
+  */}
+
+import { ProjectImageBlock } from "@/components/project/ProjectImageBlock";
+import { ProjectImagesBlock } from "@/components/project/ProjectImagesBlock";
+import { ProjectSubtitle } from "@/components/project/ProjectSubtitle";
+import { ProjectTeamGallery } from "@/components/project/ProjectTeamGallery";
+
+{/* Image Imports
+  *
+  * Every image should be imported via its path in your `images` directory.
+  * - Note that directory is within `public/images/projects`.
+  * - These imports all reference the `template` project, you will reference your own project directory.
+  * - Only `.jpg` and `.png` file extensions are supported.
+  * - If an import is not working, double-check that you have the correct file extension.
+  */}
+
+{/* Team Gallery Images
+  *
+  * - Give your images meaningful names (e.g., "james.png").
+  * - Images will be rendered 125px wide.
+  *   - Be sure all images are already cropped and scaled to be 125px wide and 150px tall.
+  */}
+
+import imageTeamPerson1 from "public/images/projects/template/team/firstname1.png";
+import imageTeamPerson2 from "public/images/projects/template/team/firstname2.png";
+import imageTeamPerson3 from "public/images/projects/template/team/firstname3.png";
+import imageTeamPerson4 from "public/images/projects/template/team/firstname4.png";
+
+import imagePlaceholder300x600 from "public/images/projects/template/post/300x600.png";
+import imagePlaceholder400x400 from "public/images/projects/template/post/400x400.png";
+import imagePlaceholder600x300 from "public/images/projects/template/post/600x300.png";
+import imagePlaceholder1200x800 from "public/images/projects/template/post/1200x800.png";
+
+import evaliuimage from "public/images/projects/dapperdany/team/evaliuimage.jpg";
+import timdillonimage from "public/images/projects/dapperdany/team/timdillonimage.jpeg";
+import michellevuimage from "public/images/projects/dapperdany/team/michellevuimage.jpg";
+import richardleimage from "public/images/projects/dapperdany/team/richardleimage.jpeg";
+import overview from "public/images/projects/dapperdany/post/overview.png";
+import howmuchwaste from "public/images/projects/dapperdany/post/howmuchwaste.png";
+import toomuchwork from "public/images/projects/dapperdany/post/toomuchwork.png";
+import mirrortransition from "public/images/projects/dapperdany/post/mirrortransition.png";
+import donate_clothes_screen from "public/images/projects/dapperdany/post/donate_clothes_screen.png";
+import functionality_explanations from "public/images/projects/dapperdany/post/functionality_explanations.png";
+import outfit_select from "public/images/projects/dapperdany/post/outfit_select.png";
+import outfit_sustainability from "public/images/projects/dapperdany/post/outfit_sustainability.png";
+import donate_pre from "public/images/projects/dapperdany/post/donate_pre.png";
+import donate_post from "public/images/projects/dapperdany/post/donate_post.png";
+
+
+# Dapper Dany
+
+<ProjectSubtitle>Your sustainability-focused closet clean-up companion.</ProjectSubtitle>
+
+## Team
+
+{/* The ProjectTeamGallery displays names and images of your project team.
+  * - As above, crop and scale your images to be the size of the placeholder.
+  *   This consistent image size provides a cleaner gallery.
+  */}
+<ProjectTeamGallery members={[
+    {
+        name: ["Eva Liu"],
+        photo: evaliuimage,
+    },
+    {
+        name: ["Tim Dillon"],
+        photo: timdillonimage,
+    },
+    {
+        name: ["Michelle Vu"],
+        photo: michellevuimage,
+    },
+    {
+        name: ["Richard Le"],
+        photo: richardleimage,
+    },
+]} />
+
+## Problem and Design Overview
+
+{/* A ProjectImageBlock displays text with an associated image.
+  * - The image is configured through properties on the opening `ProjectImageBlock` tag.
+  * - Text is placed within the opening and closing `ProjectImageBlock` tags.
+  * - In a small browser window, the image will be rendered below the text.
+  * - In a large browser window, the image will be rendered on the right.
+  *
+  * - The width property controls how much of the grid is assigned to the image column.
+  *   Values can be 4 (the smallest image), 6 (half the width of the page), or 8 (the largest image).
+  *
+  * - The maxHeight property controls the rendered height of an image.
+  *   Although the image here is 1200x800, maxHeight limits its rendered height to 400px.
+  *   If not specified, the default maxHeight is 400px.
+  *
+  * Later in the template you will also find examples of the plural `ProjectImagesBlock` tag.
+*/}
+
+<ProjectImageBlock
+    image={{
+        src: overview,
+        alt: "Every image requires alt text. This should describe the content of that image."
+    }}
+    caption={
+        "An overview image of three highlighted features on the mirror and app of our design: " +
+        "points and sticker prizes for donating, brand sustainability information and " +
+        "an intuitive step by step process for donating unused clothing."
+    }
+    width={6}
+    maxHeight={"400px"}
+>
+
+[E]very year, people in the United States throw out more than
+34 billion pounds of used textiles.(Lundberg and Devoy)
+The recycling of clothing is rare as well. [O]nly 15% of used textiles are theoretically ‘recycled’, 
+and of those, up to half are simply shipped abroad to other countries, largely in the Global South 
+where they land in landfills.(Lundberg and Devoy)
+If people gained the capability to track which clothes they wore the least and were incentivized
+in some way to donate them, we could significantly reduce the number of clothes wasted every year. <br/> <br/>
+This leads us to our design, Dapper Dany, the smart mirror paired with a phone app used to assist people
+in keeping track of clothes worn regularly, promoting donating unused clothes and learning about
+brand sustainability practices. Our design has many features which streamlines the process of reducing
+waste for the average person. Some including: line charts displaying monthly statistics of the percentage
+of clothes worn in a wardrobe and clothes donated, clothing brand sustainability information on the 
+mirror when clothes are worn in front of the mirror, incentivizing donating clothes by giving points
+to people to use for decorating their mirror when unused clothes are donated and many more.
+
+</ProjectImageBlock>
+
+## Design Research Process and Key Insights
+
+We wanted to understand why there is so many textile waste every year. The first approach we 
+considered to understand the cause of this problem is people's personal habits when it comes to
+how often they use most of their clothes in their closet and what they do when they have clothes
+they don't want any more. By understanding the cause of the issue, we can then proceed with solutions. <br/> <br/>
+We restricted our research to target people around the ages of 18-25 since people around
+these ages are more interested in fashion and are more influenced by social media and
+trends regarding fashion. There has been more consumption and waste of clothes in the past decade 
+due to social media promoting fast fashion. There are many videos online about clothing 
+hauls from fast fashion brands like Shein where people promote and unbox large amounts 
+of cheap clothing they buy from these brands. Due to how prevalent fast fashion is becoming in
+social media and how much waste fast fashion promotes, the 18-25 age demographic is best
+to target in our goal of creating a design focused on reducing textile waste. <br/> <br/>
+We designed two surveys which asked questions about demographic information 
+(age, college status, and gender), clothing usage (only included in the second survey) 
+and purchasing habits, brand knowledge, personal sustainability habits and interest 
+regarding clothing usage tracking (only included in the second survey). The surveys
+were distributed to friends, Ed Stem, UW discord servers, a r/SampleSize reddit thread and
+the UW Fashion RSO Mesh. We received 28 responses for the first survey and 52 responses for 
+the second survey. We created surveys to obtain the most information we can in a short amount of
+time to obtain different perspectives and backgrounds in our demographic as well as allowing us 
+to see patterns in people's behaviors leading to textile waste.
+
+### An Underinformed Population
+
+Of the 80 people who responded to the survey, none of them were accurate in their estimation regarding the 
+amount of textile waste every year in the United States. The closest person was several billion above the 
+actual answer, but almost all of the other particpants guessed billions of pounds less. The varied, inaccurate
+responses showed our team that information about textile waste is not widely known and isn't really a piece of
+information seek out on their own. This insight helped us understand that it was important to spread this fact
+and more about sustainability issues to the people involved with our design.
+
+### Efficiency Is Key
+
+<ProjectImagesBlock
+    images={[
+        {
+            src: howmuchwaste,
+            alt: "A mound of textile waste with a red question mark",
+            caption: "None of the participants from our survey gave an accurate estimate of textile waste in the US.",
+        },
+        {
+            src: toomuchwork,
+            alt: "A person falling into their overfull wardrobe",
+            caption: "Listing a person's entire wardrobe can be a tiresome, frustrating chore.",
+        },
+    ]}
+    direction={"row"}
+    width={6}
+    maxHeight={"125px"}
+>
+
+People already have busy lives, so asking them to add something new to their routine can sometimes
+be daunting. We found that the busyness of people's lives became exceedingly relevant when we asked
+our participants about their major concerns regarding our designs. The overwhelming response was that
+people were hesitant to manually log all their clothing into an app, and that this process would likely
+deter them from using our design if it was required. After learning this information, our team realized
+we needed to find a way to make it easy and automatic for a person to track everything in their wardrobe.
+Not only that, but if we could automate other tasks, like documenting current outfit choices, this might
+make our design even more appealing to our intended audience.
+
+</ProjectImagesBlock>
+
+### People Don't Wear Everything They Own
+
+Our team agreed that we had more clothes than we actually wore, but we wondered how applicable this was to
+the rest of the population. To handle this curiosity, we asked the participants in our survey what percentage of 
+clothing they own do they wear regularly. As we expected, only 7.4% of the participants said they wore 90% or more
+of the clothing items they owned. Additionally, more than half said they wore two thirds of their clothing our less
+with 17% saying they wore less than 33%. The numbers revealed from our survey showed us that people owned way more
+clothing than was necessary. We decided that we should help provide a way in our design to help people dispose of
+these unused clothes without adding to the textile waste problem.
+
+## Iterative Design Process and Key Insights
+
+We focused on all six of our tasks when creating our design.
+<ol>
+  <li>Keeping track of all a person's clothes in their closet after a new purchase.</li>
+  <li>Learning of sustainability issues in Shein.</li>
+  <li>Donating clothes that are no longer worn, or rarely worn.</li>
+  <li>Maintaining how often a clothing item is worn.</li>
+  <li>Walking to the nearest Goodwill and donating clothes.</li>
+  <li>Sharing how many clothes someone donated in the past month with friends.</li>
+</ol>
+All six tasks were chosen because task 2-6 were connected to our idea of promoting sustainability in textile waste, while task 1 was necessary for the functionality of keeping track of clothes for sustainability awareness. We believe all tasks were necessary for the individual’s benefit when interacting with our design. Some of our tasks closely relate to each other, so we were able to merge them based on patterns we observed from our previous research.  <br/> <br/>
+For our first design process, we came up with three designs: a clothes usage/donating tracking
+app, a mirror with an attached camera to scan and determine clothing usage, and a magnetic
+clip tracker which clips to the clothing pieces and pairs using bluetooth with an app.
+We ended up combining the strengths of all three designs into our final design--a mirror with a camera paired with an app. The mirror created a quick way to input outfits worn daily, the first app design had extensive information about clothes usage and donation tracking while the app in the magnet design had helpful location features which assists people in finding
+the most convenient donation center to donate clothes to. Combining all three designs creates a
+convenient, efficient and informative way to assist users in tracking and bettering their clothing
+usage habits.
+
+### Ensuring Consistency And Clear Transitions Between App And Mirror
+
+<ProjectImageBlock
+    image={{
+        src: mirrortransition,
+        alt: "The mirror pop-up directing to the phone, and the notification on the phone.",
+    }}
+    caption={
+        "Making clear and easy to follow prompts on the mirror and phone streamlines the design's functionality."
+    }
+    width={6}
+    maxHeight={"400px"}
+>
+
+Initially, after clicking the donating button on the mirror, new functions would be available within the app without notifiying 
+the user of the change. After performing our usability tests, our participants noted that this was a bit of a clunky interaction
+and likely wouldn't have understood it had we not placed the new phone prototype in front of them. Additionally, for a person
+inexperienced with our design it could be confusing to click the donation button on the mirror with little feedback to
+confirm to them that the process has begun. To resolve this issue, we made sure to clearly label where the next step would take
+place and help coach the user along the way through pop-ups and alerts in both the app and the mirror interface. In the end, the
+transition makes a lot more sense and will be more friendly to people new and expert with the design.
+
+</ProjectImageBlock>
+
+### Streamlining Selection Confirmation in Process Flows
+
+<ProjectImageBlock
+    image={{
+        src: donate_clothes_screen,
+        alt: "Original and updated phone app screens depicting clothing donation confirmation.",
+    }}
+    caption={ 
+        "Before and after refactoring to streamline donation process."
+    }
+    width={6}
+    maxHeight={"400px"}
+>
+
+In our original design of the donation process, we showed participants a list of recommended items to donate on the app, 
+but didn't allow interaction with clothing during this step. We only had them select the clothing they donated after the fact. This was a poor design 
+choice, as it forced participants to recall specific clothes that they already parted with. Usability testers recommended 
+the ability to select clothes to donate before beginning to navigate to a donation center. They said that this
+would feel more intuitive and "flow better". We took this feedback into account and implemented the change in our
+following designs. Now, individuals will choose the items they plan to donate while they're at home and gathering the
+clothes. Then, after donating, their previous selection will be pre-populated on the confirmation screen. The 
+individual need only recognize that their selection was accurate and confirm to earn points. This is a much more intuitive implementation
+of confirmation selection.
+
+</ProjectImageBlock>
+
+### Laying Out Key Functionality For Newcomers
+
+<ProjectImageBlock
+    image={{
+        src: functionality_explanations,
+        alt: "Image of the original points earning screen to the left of an arrow pointing right towards the updated points screen and sticker store pop-up, both of which have explanation messages.",
+    }}
+    caption={
+        "Before and after updating points screen to include points explanation message. Stickers explanation is newly added as well."
+    }
+    width={6}
+    maxHeight={"400px"}
+>
+
+In our initial prototype, there was a points screen when earning points after donating that only
+displayed the amount of points you just earned. There was no indication of what these points were
+used for, or where they were meant to be used. One usability tester made a comment on the points screen that they had
+no idea what the points they just earned were for, which led to our realization that we had a large
+hole in functionality clarity. We, as the designers, had inadvertently assumed that the purpose of the points 
+was clear. This prompted us to update the points screen with an explanation of the points' purpose. We also added the
+ability to hide the message, for experienced users who already understand the feature. This same principle was applied to the sticker 
+store on the mirror as well.
+
+</ProjectImageBlock>
+
+## Resulting Design
+
+Our final design of Dapper Dany is a mirror and phone app combination. The mirror allows for effortless tracking of 
+clothes usage and outfit history. By simply standing in front of it, you will have your clothing choices scanned and analyzed
+by a camera on the mirror. Information about the sustainability paractices of the brands you wear are easily accessible through
+the mirror, to encourage informed consumption of clothing. The app will display key metrics like percentage of total clothes worn,
+as well as highlight your most and least worn items. Both components work together to facilitate the donation of rarely-used 
+clothing items that are taking up space in your closet.
+
+<ProjectImagesBlock
+    images={[
+        {
+            src: outfit_select,
+            alt: "An individual wearing a UNIQLO shirt and SHEIN pants standing in front of a mirror.",
+        },
+        {
+            src: outfit_sustainability,
+            alt: "A mirror with a pop-up about SHEIN's sustainability practices.",
+        },
+    ]}
+    direction={"row"}
+    caption={
+        "You can put on clothes in front of the mirror and learn about that brand's sustainability practices."
+    }
+    width={6}
+    maxHeight={"400px"}
+>
+
+### Task 1: Bring awareness to the sustainability of clothing brands in your closet.
+When you stand in front of the mirror, it will scan the clothes you're wearing and identify their brands.
+Buttons with the identified brands will pop up and display a window with information about the brand's
+sustainability practices. There is also an outfit sustainability scale in the top-left corner that scores
+the overall sustainability of your outfit. 
+
+</ProjectImagesBlock>
+
+<ProjectImagesBlock
+    images={[
+        {
+            src: donate_pre,
+            alt: "Four phone screens. The first one is an iphone lock screen with a notification from Dapper Dany. The second is a screen suggesting clothing to donate. The third depicts user-selected boxes of clothing to donate. The fourth is a screen directing the user to a nearby donation center.",
+            caption: "The donation process from receiving the notification up to navigating to a donation center and donating."
+        },
+        {
+            src: donate_post,
+            alt: "Three images. On the left is a confirmation screen on the phone app of clothing donated. In the middle is an app screen depicting points earned and explaining their usage. On the right is a mirror with a store interface pop-up of purchaseable stickers.",
+            caption: "After donating and confirming your donations, you earn points that can be traded for digital stickers on your mirror."
+        },
+    ]}
+    direction={"column"}
+    width={6}
+    maxHeight={"200px"}
+>
+
+### Task 2: Facilitate the donation of rarely-used and unwanted clothes.
+When the mirror detects that you have clothes you haven't worn in a while, it will alert you and 
+direct you to the phone app. Here, you are shown a list of recommended clothing items to donate and 
+prompted to select the ones you plan on donating. Then, the app will assist you in navigating to a
+nearby donation center of your choice. 
+
+After you've donated your items, you will be prompted to confirm the items you've donated. Your 
+previous selection is pre-populated, so you simply have to confirm that everything looks right.
+Then, you earn points for completing the donation process, which you use to purchase digital stickers
+on your mirror's store. These stickers are purely aesthetic and can used to spruce up selfies. These
+serve as rewards and recognition for your sustainability efforts!
+
+</ProjectImagesBlock>
+
+## Cited Sources
+Lundberg, Dielle, and Julia Devoy. “The Aftermath of Fast Fashion: How Discarded Clothes Impact Public Health and the Environment.” SPH The Aftermath of Fast Fashion How Discarded Clothes Impact Public Health and the Environment Comments, 22 Sept. 2022, www.bu.edu/sph/news/articles/2022/the-aftermath-of-fast-fashion-how-discarded-clothes-impact-public-health-and-the-environment/. 
