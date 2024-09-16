@@ -180,30 +180,27 @@ export const calendarData: {
   assignments: { [key: string]: AssignmentCalendarItem };
 } = {
   datesOfInstruction: {
-    start: verifyCalendarDate("2024-01-01", "Mon"),
-    end: verifyCalendarDate("2024-03-15", "Fri"),
+    // Should be a Monday
+    start: verifyCalendarDate("2024-09-23", "Mon"),
+    // Should be a Friday
+    end: verifyCalendarDate("2024-12-13", "Fri"),
   },
 
   holidays: [
     {
       type: "holiday",
-      title: "New Year's Day",
-      date: verifyCalendarDate("2024-01-01", "Mon"),
+      title: "Veterans Day",
+      date: verifyCalendarDate("2024-11-11", "Mon"),
     },
     {
       type: "holiday",
-      title: "College Football Playoff National Championship",
-      date: verifyCalendarDate("2024-01-08", "Mon"),
+      title: "Thanksgiving",
+      date: verifyCalendarDate("2024-11-28", "Thu"),
     },
     {
       type: "holiday",
-      title: "Martin Luther King Jr. Day",
-      date: verifyCalendarDate("2024-01-15", "Mon"),
-    },
-    {
-      type: "holiday",
-      title: "Presidents Day",
-      date: verifyCalendarDate("2024-02-19", "Mon"),
+      title: "Native American Heritage Day",
+      date: verifyCalendarDate("2024-11-29", "Fri"),
     },
   ],
 
