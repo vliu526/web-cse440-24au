@@ -61,9 +61,7 @@ export const ProjectTeamGallery: FunctionComponent<ProjectTeamGalleryProps> = (
                     src={teamMemberProps.photo}
                     width="125"
                     alt={
-                      teamMemberProps.alt
-                        ? teamMemberProps.alt
-                        : "" // Treat as decorative, because name is read above
+                      teamMemberProps.alt ? teamMemberProps.alt : "" // Treat as decorative, because name is read above
                     }
                   />
                 </Stack>
