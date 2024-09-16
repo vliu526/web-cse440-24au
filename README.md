@@ -1,54 +1,56 @@
 # web-cse440-24au
 
-Course website for Autumn 2024 offering of CSE 440.
+Course website for the Autumn 2024 offering of CSE 440.
 
 ## Installation of System Dependencies
 
-Requires Node.js and the Yarn package manager.
+Building requires Node.js and the Yarn package manager.
 
 - [Node.js](https://nodejs.org/)
 
   Installers: <https://nodejs.org/en/download/>
 
-  Development has used version 20.x.  
-  This could be enforced through addition of `engines` to `package.json`.
+  Development has used version 20.x.
+  This version is not currently enforced, but could be through addition of `engines` to `package.json`.
 
 - [Yarn](https://yarnpkg.com/)
 
-  ```shell
+  ```
   npm install --global yarn
   ```
 
 ## Installation of Javascript Dependencies
 
-```shell
+Use Yarn to install the exact Javascript dependencies in `yarn.lock`. 
+
+```
 yarn install
 ```
 
-Install dependencies from `yarn.lock`.
-
 ## Yarn Commands
 
-```shell
+With all dependencies installed, use Yarn to list project commands:
+
+```
 yarn run
 ```
 
-List available commands.
+The most common project commands will be:
 
-```shell
-yarn dev
-```
+- Serve a debug build on `http://localhost:3000`, with hot reloading:
 
-Serve a debug build on `http://localhost:3000`, with hot reloading.
+  ```
+  yarn dev
+  ```
 
-```shell
-yarn export
-```
+- Build a production bundle and create static deployment files in `dist`:
 
-Build a production bundle and create static deployment files in `dist`.
+  ```
+  yarn export
+  ```
 
-```shell
-yarn format
-```
+- Apply code formatting:
 
-Apply code formatting.
+  ```
+  yarn format
+  ```
