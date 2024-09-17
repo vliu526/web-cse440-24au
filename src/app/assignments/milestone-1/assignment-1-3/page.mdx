@@ -1,6 +1,7 @@
 import { TBD } from "@/components/TBD";
 import { UnderDevelopment } from "@/components/UnderDevelopment";
 import { AssignmentSubmitCanvasLink } from "@/components/links/AssignmentSubmitCanvasLink";
+import { default as CanvasGroupsNotCreated } from '@/contentcomponents/CanvasGroupsNotCreated.mdx';
 import { default as ClarityAndPresentationReference } from "@/contentcomponents/ClarityAndPresentationReference.mdx";
 import { default as ContributionStatementReference } from "@/contentcomponents/ContributionStatementReference.mdx";
 import { default as ExcludedTopics } from "@/contentcomponents/ExcludedTopics.mdx";
@@ -9,44 +10,46 @@ import { SiteLink } from "@/components/links/SiteLink";
 import { calendarData } from "@/data/CalendarData";
 import { SiteLinks } from "@/data/SiteLinks";
 
-<TBD outerComponent="div">
-# Assignment 1.3: it needs a name
-</TBD>
+# Assignment 1.3: Finalized Proposal
 
 <UnderDevelopment display={true} />
 
-A component of <SiteLink linkKey={SiteLinks.milestone_1_top}/>.
+This assignment is a component of <SiteLink linkKey={SiteLinks.milestone_1_top}/>.
+Be sure you have reviewed that larger context for this assignment.
 
-<TBD outerComponent="div">
-# Old Text of Assignment 1c
-</TBD>
+{/*
+TODO: Incorporate due date, which this tag previously did.
+<CollapseProjectMilestone assignment={calendarData.assignments.assignment1c}>
+*/}
 
-{/* <CollapseProjectMilestone assignment={calendarData.assignments.assignment1c}> */}
-
-The goal of this milestone is to propose and analyze a problem that will form the basis of a design project for this class.
+The goal of this assignment is to propose and analyze a problem that will form the basis of a design project for this class.
 You should build upon the feedback you have received from peers and course staff.
 Although your project will iterate and evolve from this point, your group should have coalesced around an idea.
 
 In one paragraph, describe the design problem and motivation.
-State what the problem is and why it is a problem, or describe a new idea and why it will enhance an existing application or practice.
-Provide enough detail to convince the reader that this is a difficult and interesting problem, worth spending a quarter considering.
+State what the problem is and why it is a problem, or describe an opportunity to enhance an existing practice or approach.
+Provide enough detail to convince a reader this is a difficult and interesting problem, worth spending a quarter considering.
 
-In another paragraph, analyze the problem or idea to give more background and context to convey how your project might evolve to be compelling.
-Do not just focus on the negative aspects of the current situation, but also identify some positive aspects that may be beneficial to retain.
+In another paragraph, analyze the idea to give more background and context to convey how your project might evolve to be compelling.
+Do not just focus on negative aspects of the current situation, but also identify some positive aspects that may be beneficial to retain.
 A few salient examples from existing systems or practices could be used to support those claims.
 If appropriate, you may conduct this analysis by describing a scenario that illustrates how someone might encounter and resolve the problem.
 
-If there are already well-known and widely-available solutions to your proposed problem,
+If there are already well-known and widely-available solutions to your idea,
 explain how these existing solutions fall short or suggest how you may explore a different approach.
 
 <ExcludedTopics />
+
+#### Group Submission Required
+
+Submitting a finalized project proposal as part of a group is a requirement for proceeding in the class.
 
 #### Submission
 
 No more than one page of text in PDF format.
 
 - <GroupAssignment />
-{/* - <CanvasGroupsNotCreated /> */}
+- <CanvasGroupsNotCreated />
 - <ClarityAndPresentationReference />
 - <ContributionStatementReference />
 
@@ -54,28 +57,27 @@ Submit via Canvas here:
 
 <AssignmentSubmitCanvasLink assignmentKey={calendarData.assignments.assignment_1_3} />
 
-#### Grading
+#### Completion Grading
 
-Submitting a finalized project proposal as part of a group is a requirement for proceeding in the class.
+This milestone will be graded on a scale of __8 points__:
 
-This milestone will be graded on a scale of __10 points__:
-
-1. __Problem and Motivation__: (3 points)
+1. __Problem and Motivation__: (2 points)
 
    Provide enough detail to convince the reader that this is a difficult and interesting problem, worth spending a quarter considering.
 
-2. __Analysis of Problem__: (3 points)
+2. __Analysis of Problem__: (2 points)
 
    Give enough background and context to convey how your project might evolve to be compelling.
 
 3. __Novelty and Creativity__: (2 points)
 
-   If there are already well-known and widely-available solutions to your proposed problem,
+   If there are already well-known and widely-available solutions to your proposed idea,
    explain how these existing solutions fall short or suggest how you may explore a different approach.
 
 4. __Clarity and Presentation__: (2 points)
 
 {/*
+TODO: Integrate samples.
 #### Samples of Prior Submissions
 
 <ProjectMilestoneSamples milestone='assignment1c' />
