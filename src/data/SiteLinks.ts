@@ -18,25 +18,58 @@ export const SiteLinks = {
     href: "/assignments/#contribution-statements",
     anchor: "Contribution Statements",
   },
-  assignmentsAssignment0Top: {
-    href: "/assignments/assignment0/#assignment-0-introduction-slide",
+
+  //
+  // Assignment 0
+  //
+  assignment_0_top: {
+    href: "/assignments/assignment-0/#assignment-0-introduction-slide",
     anchor: "Assignment 0",
   },
-  assignmentsAssignment1Top: {
-    href: "/assignments/assignment1/#assignment-1-project-proposal",
-    anchor: "Assignment 1",
+
+  //
+  // Milestone 1
+  //
+  milestone_1_top: {
+    href: "/assignments/milestone-1/#milestone-1-overview",
+    anchor: "Milestone 1",
   },
-  assignmentsAssignment2Top: {
+  assignment_1_1_top: {
+    href: "/assignments/milestone-1/assignment-1-1/#assignment-1-1",
+    anchor: "Assignment 1.1",
+  },
+  assignment_1_2_top: {
+    href: "/assignments/milestone-1/assignment-1-2/#assignment-1-2",
+    anchor: "Assignment 1.2",
+  },
+  assignment_1_3_top: {
+    href: "/assignments/milestone-1/assignment-1-3/#assignment-1-3",
+    anchor: "Assignment 1.3",
+  },
+  assignment_1_4_top: {
+    href: "/assignments/milestone-1/assignment-1-4/#assignment-1-4",
+    anchor: "Assignment 1.4",
+  },
+  milestone_1_report_top: {
+    href: "/assignments/milestone-1/report/#milestone-1-report",
+    anchor: "Milestone 1 Report",
+  },
+
+  milestone2Top: {
     href: "/assignments/assignment2/#assignment-2-getting-the-right-design",
-    anchor: "Assignment 2",
+    anchor: "Milestone 2",
   },
-  assignmentsAssignment3Top: {
+  milestone3Top: {
     href: "/assignments/assignment3/#assignment-3",
-    anchor: "Assignment 3",
+    anchor: "Milestone 3",
   },
-  assignmentsAssignment4Top: {
+  milestone4Top: {
     href: "/assignments/assignment4/#assignment-4",
-    anchor: "Assignment 4",
+    anchor: "Milestone 4",
+  },
+  milestone5Top: {
+    href: "/assignments/assignment5/#assignment-5",
+    anchor: "Milestone 5",
   },
 
   calendarTop: {

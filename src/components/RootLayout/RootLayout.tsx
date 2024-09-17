@@ -62,7 +62,7 @@ function InnerLayout({
             <SiteLink linkKey={SiteLinks.homeTop}>
               <Typography id="rootLayout-title" component="div" noWrap>
                 {/* TODO: Pull course title from a configuration */}
-                CSE 440 - Introduction to HCI - Winter 2024
+                CSE 440 - Introduction to HCI - Autumn 2024
               </Typography>
             </SiteLink>
           </Toolbar>

@@ -11,9 +11,6 @@ import { Paths } from "@/paths";
 
 import imgPhotoJames from "public/images/photo_james.jpg";
 import imgPhotoJesse from "public/images/photo_jesse.jpg";
-import imgPhotoLisa from "public/images/photo_lisa.jpg";
-import imgPhotoSimona from "public/images/photo_simona.png";
-import imgPhotoYasaman from "public/images/photo_yasaman.jpg";
 import imgPhotoPlaceholder from "public/images/photo_placeholder.png";
 
 # Course Overview
@@ -51,21 +48,8 @@ The course is overwhelmingly organized around a group project, in which students
     <p>James Fogarty</p>
     <p>he/him</p>
     <p>
-       {/* alt="", Treat as decorative, because name is read above */}
+      {/* alt="", Treat as decorative, because name is read above */}
       <Image src={imgPhotoJames}
-             basePath={Paths.basePath}
-             height="150"
-             alt=""
-      />
-    </p>
-  </Box>
-  {/* 20 hour TAs */}
-  <Box marginTop={-2} marginBottom={-2} marginRight={2}>
-    <p>Simona Liao</p>
-    <p>she/they</p>
-    <p>
-       {/* alt="", Treat as decorative, because name is read above */}
-      <Image src={imgPhotoSimona}
              basePath={Paths.basePath}
              height="150"
              alt=""
@@ -76,7 +60,7 @@ The course is overwhelmingly organized around a group project, in which students
     <p>Jesse Martinez</p>
     <p>he/they</p>
     <p>
-       {/* alt="", Treat as decorative, because name is read above */}
+      {/* alt="", Treat as decorative, because name is read above */}
       <Image src={imgPhotoJesse}
              basePath={Paths.basePath}
              height="150"
@@ -84,25 +68,13 @@ The course is overwhelmingly organized around a group project, in which students
       />
     </p>
   </Box>
-    {/* 10 hour TAs */}
   <Box marginTop={-2} marginBottom={-2} marginRight={2}>
-    <p>Lisa Orii</p>
-    <p>she/her</p>
+    <p>Katelyn Mei</p>
+    <p>&nbsp;</p>
+    {/*<p>she/her</p>*/}
     <p>
-       {/* alt="", Treat as decorative, because name is read above */}
-      <Image src={imgPhotoLisa}
-             basePath={Paths.basePath}
-             height="150"
-             alt=""
-      />
-    </p>
-  </Box>
-  <Box marginTop={-2} marginBottom={-2} marginRight={2}>
-    <p>Yasaman Sefidgar</p>
-    <p>she/her</p>
-    <p>
-       {/* alt="", Treat as decorative, because name is read above */}
-      <Image src={imgPhotoYasaman}
+      {/* alt="", Treat as decorative, because name is read above */}
+      <Image src={imgPhotoPlaceholder}
              basePath={Paths.basePath}
              height="150"
              alt=""
@@ -131,29 +103,21 @@ The course is overwhelmingly organized around a group project, in which students
 
 - Section Times & Location
 
-  Section A: Fridays, 10:30-11:20 [MGH](https://uw.edu/maps/?mgh)
-  Room [295](https://www.washington.edu/classroom/MGH+295),
-  with Simona and Lisa.
-
   Section B: Fridays, 11:30-12:20 [MGH](https://uw.edu/maps/?mgh)
-  Room [295](https://www.washington.edu/classroom/MGH+295),
-  with Simona and Lisa.
-
-  Section C: Fridays, 12:30-1:20 [MGH](https://uw.edu/maps/?mgh)
-  Room [058](https://www.washington.edu/classroom/MGH+058),
-  with Jesse and Yasaman.
+  Room [058](https://www.washington.edu/classroom/MGH+058).
 
   Section D: Fridays, 1:30-2:20 [MGH](https://uw.edu/maps/?mgh)
-  Room [058](https://www.washington.edu/classroom/MGH+058),
-  with Jesse and Yasaman.
+  Room [058](https://www.washington.edu/classroom/MGH+058).
 
   The <SiteLink linkKey={SiteLinks.calendarTop} /> will provide any non-standard times, locations, or staffing.
 
 - Office Hours
 
+  <TBD outerComponent="div">
   - James, by appointment.
   - Jesse, Wednesdays 11:00 to 12:00, [CSE2](https://uw.edu/maps/?cse2) 151.
   - Simona, Thursdays 12:00 to 1:00, [CSE2](https://uw.edu/maps/?cse2) 150.
+  </TBD>
 
   Scheduled office hours require that you email beforehand (i.e., at least one hour beforehand).
   If nobody has emailed regarding an office hour, course staff may not be available.
@@ -177,14 +141,15 @@ Canvas will be used for submissions and for necessary limitation of access to co
 Strive to do good work because you care about your own opportunities to learn,
 including the opportunities this course provides working with a group in an intensive project.
 
+<TBD outerComponent="div">
 The overall course grade will be computed as follows:
 
 - __65%__: Group Project
-  - __5%__: <SiteLink linkKey={SiteLinks.assignmentsAssignment1Top} outerComponent="span" />: Project Proposal
+  - __5%__: <SiteLink linkKey={SiteLinks.milestone_1_top} outerComponent="span" />: Project Proposal
     - 1a: Individual Brainstorm (1%)
     - 1b: Group Proposals (2%)
     - 1c: Finalized Proposal (2%)
-  - __25%__: <SiteLink linkKey={SiteLinks.assignmentsAssignment2Top} outerComponent="span" />: Getting the Right Design
+  - __25%__: <SiteLink linkKey={SiteLinks.milestone2Top} outerComponent="span" />: Getting the Right Design
     - 2b: Design Research Plan (3%)
     - 2c: Design Research Check-In (2%)
     - 2d: Design Research Review (3%)
@@ -192,18 +157,19 @@ The overall course grade will be computed as follows:
     - 2f: Design Check-In (4%)
     - 2g: Design Review (2%)
     - 2p: Getting the Right Design Presentation (8%)
-  - __20%__: <SiteLink linkKey={SiteLinks.assignmentsAssignment3Top} outerComponent="span" />: Getting the Design Right
+  - __20%__: <SiteLink linkKey={SiteLinks.milestone3Top} outerComponent="span" />: Getting the Design Right
     - 3a: Paper Prototype (3%)
     - 3c: Usability Testing Check-In (3%)
     - 3d: Usability Testing Review (3%)
     - 3e: Digital Mockup (3%)
     - 3p: Getting the Design Right Presentation (8%)
-  - __15%__: <SiteLink linkKey={SiteLinks.assignmentsAssignment4Top} outerComponent="span" />: Communicating the Design
+  - __15%__: <SiteLink linkKey={SiteLinks.milestone4Top} outerComponent="span" />: Communicating the Design
     - 4web: Web Post (8%)
     - 4poster: Poster and Pitch (5%)
     - Individual Presentation Delivery (2%)
 - __10%__: Participation
 - __25%__: Exam
+</TBD>
 
 Each assignment will also provide a point breakdown intended to convey how it will be graded.
 Design is an inherently subjective practice, and so grading in this course is necessarily subjective.
@@ -242,8 +208,8 @@ This is intended to provide peace of mind that final grades were not defined by 
 Our goal is for this course to provide an opportunity for learning without undermining wellness or safety.
 Active participation in activities is central to this course,
 and we all share responsibility for preserving safety of this learning environment.
-Please review and adhere to related policies, including the
-[UW COVID-19 FAQ for students](https://www.washington.edu/coronavirus/student-faq/).
+Please review and adhere to related policies, including
+[UW COVID-19 Illness and Exposure Guidance](https://www.ehs.washington.edu/covid-19-prevention-and-response/covid-19-illness-and-exposure-guidance).
 
 ### Expectation of In-Person Participation
 

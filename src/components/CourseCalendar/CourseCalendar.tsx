@@ -16,15 +16,7 @@ export const CourseCalendar: React.FunctionComponent = () => {
           <React.Fragment key={calendarWeekIndex}>
             <CalendarGridWeek
               labelWeek={(() => {
-                if (calendarWeekIndex < 10) {
-                  return `Week ${calendarWeekIndex + 1}`;
-                } else if (calendarWeekIndex === 10) {
-                  return "Poster Session";
-                } else {
-                  throw new Error(
-                    `Unexpected calendarWeekIndex ${calendarWeekIndex}`,
-                  );
-                }
+                return `Week ${calendarWeekIndex + 1}`;
               })()}
               calendarWeek={calendarWeekCurrent}
             />

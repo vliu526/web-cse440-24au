@@ -9,8 +9,8 @@ import { appStoreInitialData } from "@/stores/AppStoreInitialData";
 
 // TODO: Pull course title from a configuration
 export const metadata = {
-  title: "CSE 440 - Introduction to HCI - Winter 2024",
-  description: "CSE 440 - Introduction to HCI - Winter 2024",
+  title: "CSE 440 - Introduction to HCI - Autumn 2024",
+  description: "CSE 440 - Introduction to HCI - Autumn 2024",
 };
 
 interface LayoutProps extends React.PropsWithChildren<{}> {
