@@ -547,6 +547,19 @@ export const calendarData: {
 
   assignments: {
     //
+    // Assignment 0
+    //
+    assignment0: {
+      type: "assignment",
+      title: "Assignment 0: Introduction Slide",
+      link: SiteLinks.assignment0Top.href,
+      date: verifyCalendarDate("2024-10-02", "Wed"),
+      submission: "canvas",
+      submitCanvasTime: "8:00pm",
+      submitCanvasLink:
+        "https://canvas.uw.edu/courses/1746586/assignments/9634757",
+    },
+    //
     // Milestone 1
     //
     assignment1_1: {
@@ -591,25 +604,12 @@ export const calendarData: {
     },
 
     //
-    // Assignment 0
-    //
-    assignment0: {
-      type: "assignment",
-      title: "Assignment 0 - Introduction Slide",
-      link: SiteLinks.assignmentsAssignment0Top.href,
-      date: verifyCalendarDate("2024-01-04", "Thu"),
-      submission: "canvas",
-      submitCanvasTime: "8:00pm",
-      submitCanvasLink:
-        "https://canvas.uw.edu/courses/1695984/assignments/8938946",
-    },
-    //
     // Assignment 1
     //
     assignment1a: {
       type: "assignment",
       title: "Assignment 1c - Finalized Proposal",
-      link: SiteLinks.assignmentsAssignment1Top.href,
+      link: SiteLinks.milestone1Top.href,
       date: verifyCalendarDate("2024-01-15", "Mon"),
       submission: "canvas",
       submitCanvasTime: "3:00pm",
@@ -619,7 +619,7 @@ export const calendarData: {
     assignment1b: {
       type: "assignment",
       title: "Assignment 1c - Finalized Proposal",
-      link: SiteLinks.assignmentsAssignment1Top.href,
+      link: SiteLinks.milestone1Top.href,
       date: verifyCalendarDate("2024-01-15", "Mon"),
       submission: "canvas",
       submitCanvasTime: "3:00pm",
@@ -629,7 +629,7 @@ export const calendarData: {
     assignment1b_rev: {
       type: "assignment",
       title: "Assignment 1c - Finalized Proposal",
-      link: SiteLinks.assignmentsAssignment1Top.href,
+      link: SiteLinks.milestone1Top.href,
       date: verifyCalendarDate("2024-01-15", "Mon"),
       submission: "canvas",
       submitCanvasTime: "3:00pm",
@@ -639,7 +639,7 @@ export const calendarData: {
     assignment1c: {
       type: "assignment",
       title: "Assignment 1c - Finalized Proposal",
-      link: SiteLinks.assignmentsAssignment1Top.href,
+      link: SiteLinks.milestone1Top.href,
       date: verifyCalendarDate("2024-01-15", "Mon"),
       submission: "canvas",
       submitCanvasTime: "3:00pm",
@@ -652,7 +652,7 @@ export const calendarData: {
     assignment2a: {
       type: "assignment",
       title: "Assignment 2a - Project Ideation",
-      link: SiteLinks.assignmentsAssignment2Top.href,
+      link: SiteLinks.milestone2Top.href,
       date: verifyCalendarDate("2024-01-16", "Tue"),
       // submission: 'other',
       // submitText: 'Completed in class.',
@@ -660,7 +660,7 @@ export const calendarData: {
     assignment2b: {
       type: "assignment",
       title: "Assignment 2b - Design Research Plan",
-      link: SiteLinks.assignmentsAssignment2Top.href,
+      link: SiteLinks.milestone2Top.href,
       date: verifyCalendarDate("2024-01-18", "Thu"),
       submission: "canvas",
       submitCanvasTime: "3:00pm",
@@ -670,7 +670,7 @@ export const calendarData: {
     assignment2c: {
       type: "assignment",
       title: "Assignment 2c - Design Research Check-In",
-      link: SiteLinks.assignmentsAssignment2Top.href,
+      link: SiteLinks.milestone2Top.href,
       date: verifyCalendarDate("2024-01-22", "Mon"),
       submission: "canvas",
       submitCanvasTime: "3:00pm",
@@ -680,7 +680,7 @@ export const calendarData: {
     assignment2d: {
       type: "assignment",
       title: "Assignment 2d - Design Research Review",
-      link: SiteLinks.assignmentsAssignment2Top.href,
+      link: SiteLinks.milestone2Top.href,
       date: verifyCalendarDate("2024-01-25", "Thu"),
       submission: "canvas",
       submitCanvasTime: "3:00pm",
@@ -690,7 +690,7 @@ export const calendarData: {
     assignment2e: {
       type: "assignment",
       title: "Assignment 2e - Task Review",
-      link: SiteLinks.assignmentsAssignment2Top.href,
+      link: SiteLinks.milestone2Top.href,
       date: verifyCalendarDate("2024-01-29", "Mon"),
       submission: "canvas",
       submitCanvasTime: "3:00pm",
@@ -700,7 +700,7 @@ export const calendarData: {
     assignment2f: {
       type: "assignment",
       title: "Assignment 2f - Design Check-In",
-      link: SiteLinks.assignmentsAssignment2Top.href,
+      link: SiteLinks.milestone2Top.href,
       date: verifyCalendarDate("2024-01-31", "Wed"),
       submission: "canvas",
       submitCanvasTime: "3:00pm",
@@ -710,7 +710,7 @@ export const calendarData: {
     assignment2f_rev: {
       type: "assignment",
       title: "Assignment 2f_rev - Design Check-In",
-      link: SiteLinks.assignmentsAssignment2Top.href,
+      link: SiteLinks.milestone2Top.href,
       date: verifyCalendarDate("2024-02-01", "Thu"),
       submission: "canvas",
       submitCanvasTime: "8:00pm",
@@ -720,7 +720,7 @@ export const calendarData: {
     assignment2g: {
       type: "assignment",
       title: "Assignment 2g - Design Review",
-      link: SiteLinks.assignmentsAssignment2Top.href,
+      link: SiteLinks.milestone2Top.href,
       date: verifyCalendarDate("2024-02-05", "Mon"),
       submission: "canvas",
       submitCanvasTime: "3:00pm",
@@ -730,7 +730,7 @@ export const calendarData: {
     assignment2p: {
       type: "assignment",
       title: "Assignment 2p - Presentation",
-      link: SiteLinks.assignmentsAssignment2Top.href,
+      link: SiteLinks.milestone2Top.href,
       date: verifyCalendarDate("2024-02-07", "Wed"),
       submission: "canvas",
       submitCanvasTime: "8:00pm",
@@ -743,7 +743,7 @@ export const calendarData: {
     assignment3a: {
       type: "assignment",
       title: "Assignment 3a - Paper Prototype",
-      link: SiteLinks.assignmentsAssignment3Top.href,
+      link: SiteLinks.milestone3Top.href,
       date: verifyCalendarDate("2024-02-12", "Mon"),
       submission: "canvas",
       submitCanvasTime: "3:00pm",
@@ -753,7 +753,7 @@ export const calendarData: {
     assignment3b: {
       type: "assignment",
       title: "Assignment 3b - Heuristic Evaluation",
-      link: SiteLinks.assignmentsAssignment3Top.href,
+      link: SiteLinks.milestone3Top.href,
       date: verifyCalendarDate("2024-02-13", "Tue"),
       // submission: 'other',
       // submitText: 'Submitted with Assignment 3c.',
@@ -761,7 +761,7 @@ export const calendarData: {
     assignment3c: {
       type: "assignment",
       title: "Assignment 3c - Usability Testing Check-In",
-      link: SiteLinks.assignmentsAssignment3Top.href,
+      link: SiteLinks.milestone3Top.href,
       date: verifyCalendarDate("2024-02-15", "Thu"),
       submission: "canvas",
       submitCanvasTime: "8:00pm",
@@ -771,7 +771,7 @@ export const calendarData: {
     assignment3d: {
       type: "assignment",
       title: "Assignment 3d - Usability Testing Review",
-      link: SiteLinks.assignmentsAssignment3Top.href,
+      link: SiteLinks.milestone3Top.href,
       date: verifyCalendarDate("2024-02-22", "Thu"),
       submission: "canvas",
       submitCanvasTime: "3:00pm",
@@ -781,7 +781,7 @@ export const calendarData: {
     assignment3e: {
       type: "assignment",
       title: "Assignment 3e - Digital Mockup",
-      link: SiteLinks.assignmentsAssignment3Top.href,
+      link: SiteLinks.milestone3Top.href,
       date: verifyCalendarDate("2024-02-26", "Mon"),
       submission: "canvas",
       submitCanvasTime: "3:00pm",
@@ -791,7 +791,7 @@ export const calendarData: {
     assignment3p: {
       type: "assignment",
       title: "Assignment 3p - Presentation",
-      link: SiteLinks.assignmentsAssignment3Top.href,
+      link: SiteLinks.milestone3Top.href,
       date: verifyCalendarDate("2024-02-28", "Wed"),
       submission: "canvas",
       submitCanvasTime: "8:00pm",
@@ -804,7 +804,7 @@ export const calendarData: {
     assignment4poster: {
       type: "assignment",
       title: "Assignment 4poster - Poster and Pitch",
-      link: SiteLinks.assignmentsAssignment4Top.href,
+      link: SiteLinks.milestone4Top.href,
       date: verifyCalendarDate("2024-03-04", "Mon"),
       submission: "canvas",
       submitCanvasTime: "3:00pm",
@@ -814,7 +814,7 @@ export const calendarData: {
     assignment4web: {
       type: "assignment",
       title: "Assignment 4web - Web Post",
-      link: SiteLinks.assignmentsAssignment4Top.href,
+      link: SiteLinks.milestone4Top.href,
       date: verifyCalendarDate("2024-03-05", "Tue"),
       submission: "canvas",
       submitCanvasTime: "3:00pm",
@@ -824,7 +824,7 @@ export const calendarData: {
     assignment4poster_final: {
       type: "assignment",
       title: "Assignment 4poster_final - Poster and Pitch",
-      link: SiteLinks.assignmentsAssignment4Top.href,
+      link: SiteLinks.milestone4Top.href,
       date: verifyCalendarDate("2024-03-06", "Wed"),
       submission: "canvas",
       submitCanvasTime: "3:00pm",
@@ -834,7 +834,7 @@ export const calendarData: {
     assignment4web_final: {
       type: "assignment",
       title: "Assignment 4web_final - Web Post",
-      link: SiteLinks.assignmentsAssignment4Top.href,
+      link: SiteLinks.milestone4Top.href,
       date: verifyCalendarDate("2024-03-07", "Thu"),
       submission: "canvas",
       submitCanvasTime: "8:00pm",
@@ -844,7 +844,7 @@ export const calendarData: {
     assignment4poster_session: {
       type: "assignment",
       title: "Assignment 4poster_session - Poster Session",
-      link: SiteLinks.assignmentsAssignment4Top.href,
+      link: SiteLinks.milestone4Top.href,
       date: verifyCalendarDate("2024-03-11", "Mon"),
       // submission: 'other',
       // submitText: 'Attend and participate.',

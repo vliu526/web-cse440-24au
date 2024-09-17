@@ -18,25 +18,31 @@ export const SiteLinks = {
     href: "/assignments/#contribution-statements",
     anchor: "Contribution Statements",
   },
-  assignmentsAssignment0Top: {
+
+  assignment0Top: {
     href: "/assignments/assignment0/#assignment-0-introduction-slide",
     anchor: "Assignment 0",
   },
-  assignmentsAssignment1Top: {
+
+  milestone1Top: {
     href: "/assignments/assignment1/#assignment-1-project-proposal",
-    anchor: "Assignment 1",
+    anchor: "Milestone 1",
   },
-  assignmentsAssignment2Top: {
+  milestone2Top: {
     href: "/assignments/assignment2/#assignment-2-getting-the-right-design",
-    anchor: "Assignment 2",
+    anchor: "Milestone 2",
   },
-  assignmentsAssignment3Top: {
+  milestone3Top: {
     href: "/assignments/assignment3/#assignment-3",
-    anchor: "Assignment 3",
+    anchor: "Milestone 3",
   },
-  assignmentsAssignment4Top: {
+  milestone4Top: {
     href: "/assignments/assignment4/#assignment-4",
-    anchor: "Assignment 4",
+    anchor: "Milestone 4",
+  },
+  milestone5Top: {
+    href: "/assignments/assignment5/#assignment-5",
+    anchor: "Milestone 5",
   },
 
   calendarTop: {
