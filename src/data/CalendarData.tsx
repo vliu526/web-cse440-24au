@@ -43,15 +43,7 @@ const TIME_AND_LOCATION_LECTURE = {
 
 const TIME_AND_LOCATIONS_SECTION = [
   {
-    time: "10:30 - 11:20",
-    location: "MGH 295",
-  },
-  {
     time: "11:30 - 12:20",
-    location: "MGH 295",
-  },
-  {
-    time: "12:30 - 1:20",
     location: "MGH 058",
   },
   {
