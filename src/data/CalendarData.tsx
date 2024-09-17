@@ -549,10 +549,10 @@ export const calendarData: {
     //
     // Assignment 0
     //
-    assignment0: {
+    assignment_0: {
       type: "assignment",
       title: "Assignment 0: Introduction Slide",
-      link: SiteLinks.assignment0Top.href,
+      link: SiteLinks.assignment_0_top.href,
       date: verifyCalendarDate("2024-10-02", "Wed"),
       submission: "canvas",
       submitCanvasTime: "8:00pm",
@@ -562,41 +562,51 @@ export const calendarData: {
     //
     // Milestone 1
     //
-    assignment1_1: {
+    assignment_1_1: {
       type: "assignment",
-      title: "Assignment 1.1 - Individual Brainstorm",
-      // link: SiteLinks.assignmentsAssignment1Top.href,
+      title: "Assignment 1.1: Individual Brainstorm",
+      link: SiteLinks.assignment_1_1_top.href,
       date: verifyCalendarDate("2024-09-26", "Thu"),
       submission: "canvas",
       submitCanvasTime: "8:00pm",
       // submitCanvasLink:
       //   "https://canvas.uw.edu/courses/1695984/assignments/8938947",
     },
-    assignment1_2: {
+    assignment_1_2: {
       type: "assignment",
-      title: "Assignment 1.2 - Group Proposals",
-      // link: SiteLinks.assignmentsAssignment1Top.href,
+      title: "Assignment 1.2: Group Proposals",
+      link: SiteLinks.assignment_1_2_top.href,
       date: verifyCalendarDate("2024-09-30", "Mon"),
       submission: "canvas",
-      submitCanvasTime: "8:00pm",
+      submitCanvasTime: "3:00pm",
       // submitCanvasLink:
       //   "https://canvas.uw.edu/courses/1695984/assignments/8938948",
     },
-    assignment1_3: {
+    assignment_1_3: {
       type: "assignment",
-      title: "Assignment 1.3 - Finalized Proposal",
-      // link: SiteLinks.assignmentsAssignment1Top.href,
+      title: "Assignment 1.3: Finalized Proposal",
+      link: SiteLinks.assignment_1_3_top.href,
       date: verifyCalendarDate("2024-10-03", "Thu"),
+      submission: "canvas",
+      submitCanvasTime: "3:00pm",
+      // submitCanvasLink:
+      //   "https://canvas.uw.edu/courses/1695984/assignments/8938950",
+    },
+    assignment_1_4: {
+      type: "assignment",
+      title: "Assignment 1.4: Project Ideation",
+      link: SiteLinks.assignment_1_4_top.href,
+      date: verifyCalendarDate("2024-10-04", "Fri"),
       submission: "canvas",
       submitCanvasTime: "8:00pm",
       // submitCanvasLink:
       //   "https://canvas.uw.edu/courses/1695984/assignments/8938950",
     },
-    assignment1_4: {
+    milestone_1_report: {
       type: "assignment",
-      title: "Assignment 1.4 - Project Ideation",
-      // link: SiteLinks.assignmentsAssignment1Top.href,
-      date: verifyCalendarDate("2024-10-04", "Fri"),
+      title: "Milestone 1: Report",
+      link: SiteLinks.milestone_1_report_top.href,
+      date: verifyCalendarDate("2024-10-07", "Mon"),
       submission: "canvas",
       submitCanvasTime: "8:00pm",
       // submitCanvasLink:
@@ -609,7 +619,7 @@ export const calendarData: {
     assignment1a: {
       type: "assignment",
       title: "Assignment 1c - Finalized Proposal",
-      link: SiteLinks.milestone1Top.href,
+      link: SiteLinks.milestone_1_top.href,
       date: verifyCalendarDate("2024-01-15", "Mon"),
       submission: "canvas",
       submitCanvasTime: "3:00pm",
@@ -619,7 +629,7 @@ export const calendarData: {
     assignment1b: {
       type: "assignment",
       title: "Assignment 1c - Finalized Proposal",
-      link: SiteLinks.milestone1Top.href,
+      link: SiteLinks.milestone_1_top.href,
       date: verifyCalendarDate("2024-01-15", "Mon"),
       submission: "canvas",
       submitCanvasTime: "3:00pm",
@@ -629,7 +639,7 @@ export const calendarData: {
     assignment1b_rev: {
       type: "assignment",
       title: "Assignment 1c - Finalized Proposal",
-      link: SiteLinks.milestone1Top.href,
+      link: SiteLinks.milestone_1_top.href,
       date: verifyCalendarDate("2024-01-15", "Mon"),
       submission: "canvas",
       submitCanvasTime: "3:00pm",
@@ -639,7 +649,7 @@ export const calendarData: {
     assignment1c: {
       type: "assignment",
       title: "Assignment 1c - Finalized Proposal",
-      link: SiteLinks.milestone1Top.href,
+      link: SiteLinks.milestone_1_top.href,
       date: verifyCalendarDate("2024-01-15", "Mon"),
       submission: "canvas",
       submitCanvasTime: "3:00pm",
