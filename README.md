@@ -8,10 +8,10 @@ Building requires Node.js and the Yarn package manager.
 
 - [Node.js](https://nodejs.org/)
 
-  Installers: <https://nodejs.org/en/download/>
+  Node installation and installers: <https://nodejs.org/en/download/>
 
   Development has used version 20.x.
-  This version is not currently enforced, but could be through addition of `engines` to `package.json`.
+  This version is not currently enforced, but could be enforced through addition of `engines` to `package.json`.
 
 - [Yarn](https://yarnpkg.com/)
 
