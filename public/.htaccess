@@ -9,11 +9,19 @@
 RewriteEngine On
 
 RewriteRule ^assignments[/]?$ assignments.html
-RewriteRule ^assignments/assignment0[/]?$ assignments/assignment0.html
-RewriteRule ^assignments/assignment1[/]?$ assignments/assignment1.html
-RewriteRule ^assignments/assignment2[/]?$ assignments/assignment2.html
-RewriteRule ^assignments/assignment3[/]?$ assignments/assignment3.html
-RewriteRule ^assignments/assignment4[/]?$ assignments/assignment4.html
+
+RewriteRule ^assignments/assignment-0[/]?$ assignments/assignment-0.html
+
+RewriteRule ^assignments/milestone-1[/]?$ assignments/milestone-1.html
+RewriteRule ^assignments/milestone-1/assignment-1-1[/]?$ assignments/milestone-1/assignment-1-1.html
+RewriteRule ^assignments/milestone-1/assignment-1-2[/]?$ assignments/milestone-1/assignment-1-2.html
+RewriteRule ^assignments/milestone-1/assignment-1-3[/]?$ assignments/milestone-1/assignment-1-3.html
+RewriteRule ^assignments/milestone-1/assignment-1-4[/]?$ assignments/milestone-1/assignment-1-4.html
+RewriteRule ^assignments/milestone-1/report[/]?$ assignments/milestone-1/report.html
+
+RewriteRule ^assignments/assignment-2[/]?$ assignments/assignment2.html
+RewriteRule ^assignments/assignment-3[/]?$ assignments/assignment3.html
+RewriteRule ^assignments/assignment-4[/]?$ assignments/assignment4.html
 RewriteRule ^assignments/exam[/]?$ assignments/exam.html
 RewriteRule ^calendar[/]?$ calendar.html
 RewriteRule ^projects[/]?$ projects.html
