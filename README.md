@@ -21,7 +21,7 @@ Building requires Node.js and the Yarn package manager.
 
 ## Installation of Javascript Dependencies
 
-Use Yarn to install the exact Javascript dependencies in `yarn.lock`. 
+Use Yarn to install the exact Javascript dependencies in `yarn.lock`.
 
 ```
 yarn install
