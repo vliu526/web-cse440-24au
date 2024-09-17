@@ -1,9 +1,117 @@
+import { TBD } from "@/components/TBD";
 import { UnderDevelopment } from "@/components/UnderDevelopment";
+import { AssignmentSubmitCanvasLink } from "@/components/links/AssignmentSubmitCanvasLink";
+import { default as CanvasGroupsNotCreated } from '@/contentcomponents/CanvasGroupsNotCreated.mdx';
+import { default as ClarityAndPresentationReference } from "@/contentcomponents/ClarityAndPresentationReference.mdx";
+import { default as ContributionStatementReference } from "@/contentcomponents/ContributionStatementReference.mdx";
+import { default as ExcludedTopics } from "@/contentcomponents/ExcludedTopics.mdx";
+import { default as GroupAssignment } from "@/contentcomponents/GroupAssignment.mdx";
 import { SiteLink } from "@/components/links/SiteLink";
+import { calendarData } from "@/data/CalendarData";
 import { SiteLinks } from "@/data/SiteLinks";
 
-# Assignment 1.2
+<TBD outerComponent="div">
+# Assignment 1.2: it needs a name
+</TBD>
 
 <UnderDevelopment display={true} />
 
 A component of <SiteLink linkKey={SiteLinks.milestone_1_top}/>.
+
+<TBD outerComponent="div">
+# Old Text of Assignment 1b
+</TBD>
+
+{/* <CollapseProjectMilestone
+    assignment={calendarData.assignments.assignment1b}
+    revisionAssignment={calendarData.assignments.assignment1b_rev}
+> */}
+
+The goal of this milestone is to propose multiple specific problems that could form the basis of a design project for this class.
+Tuesday and Friday will then include presenting these for feedback from peers and course staff.
+
+Propose three specific problems that are potentially related to the course theme and could form the basis of a design project for this class.
+
+For each problem, in one paragraph, describe the design problem and motivation.
+This description should convince the reader that this is a difficult and interesting problem, worth spending a quarter considering.
+State what the problem is and why it is a problem, or describe a new idea and why it will enhance an existing application or practice.
+
+Ensure each problem or idea is significantly different, not small variations on the same problem or idea.
+
+Ensure it is clear why each problem or idea is potentially related to the course theme.
+
+If there are already well-known and widely-available solutions to your proposed problem,
+explain how these existing solutions fall short or suggest how you may explore a different approach.
+
+After receiving critique on Tuesday, update your proposals ahead of additional critique on Friday.
+
+As part of prompting you to deeply engage with and consider critique,
+your submitted revision must completely modify at least one of your original ideas
+(e.g., replacing at least one idea with a completely different idea,
+completely re-writing an idea to emphasize a different perspective).
+
+<ExcludedTopics />
+
+#### Submission
+
+No more than one page of text in PDF format.
+
+- <GroupAssignment />
+{/* - <CanvasGroupsNotCreated /> */}
+- <ClarityAndPresentationReference />
+- <ContributionStatementReference />
+{/*
+- After receiving critique on Tuesday, submit an updated version.
+  In the same additional separate PDF as your Contribution Statement,
+  also provide a brief explanation of revisions (e.g., one paragraph on what you revised, why you revised it).
+*/}
+
+Submit via Canvas here:
+
+<AssignmentSubmitCanvasLink assignmentKey={calendarData.assignments.assignment_1_2} />
+
+{/*
+After receiving critique on Tuesday, submit an updated version via Canvas here:
+
+<AssignmentSubmitCanvasLink assignmentKey={calendarData.assignments.assignment1b_rev} />
+*/}
+
+#### In Class
+
+Be prepared to discuss your three proposed problems.
+
+Bring several printed copies of your submission,
+so you can easily share them with peers for critique.
+
+#### Grading
+
+This milestone will be graded on a scale of __10 points__:
+
+1. __Problem and Motivation for Each Unique Proposed Idea__: (3 x 2 points)
+
+   Do not submit small variations on the same idea.
+
+   Do not submit ideas within an excluded topic.
+
+   Be clear why each idea is potentially related to the course theme.
+
+   Completely modify at least one idea as part of revision after initial critique.
+
+2. __Novelty and Creativity__: (2 points)
+
+   If there are already well-known and widely-available solutions to your proposed problem,
+   explain how these existing solutions fall short or suggest how you may explore a different approach.
+
+3. __Clarity and Presentation__: (2 points)
+
+   In the same additional separate PDF as your Contribution Statement,
+   also provide a brief explanation of revisions (e.g., one paragraph on what you revised, why you revised it).
+
+We will primarily grade the revised version of your submission,
+but may also apply a penalty if the original submission was severely underdeveloped or otherwise problematic.
+
+{/*
+#### Samples of Prior Submissions
+
+<ProjectMilestoneSamples milestone='assignment1b' />
+*/}
