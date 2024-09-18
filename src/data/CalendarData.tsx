@@ -251,18 +251,6 @@ export const calendarData: {
     },
     {
       type: "lecture",
-      date: verifyCalendarDate("2024-10-29", "Tue"),
-      timeAndLocation: TIME_AND_LOCATION_LECTURE,
-      title: "Lecture",
-    },
-    {
-      type: "lecture",
-      date: verifyCalendarDate("2024-10-31", "Thu"),
-      timeAndLocation: TIME_AND_LOCATION_LECTURE,
-      title: "Lecture",
-    },
-    {
-      type: "lecture",
       date: verifyCalendarDate("2024-11-05", "Tue"),
       timeAndLocation: TIME_AND_LOCATION_LECTURE,
       title: "Lecture",
@@ -282,12 +270,6 @@ export const calendarData: {
     {
       type: "lecture",
       date: verifyCalendarDate("2024-11-14", "Thu"),
-      timeAndLocation: TIME_AND_LOCATION_LECTURE,
-      title: "Lecture",
-    },
-    {
-      type: "lecture",
-      date: verifyCalendarDate("2024-11-19", "Tue"),
       timeAndLocation: TIME_AND_LOCATION_LECTURE,
       title: "Lecture",
     },
@@ -397,7 +379,6 @@ export const calendarData: {
         verifyCalendarDate("2024-10-11", "Fri"),
         verifyCalendarDate("2024-10-18", "Fri"),
         verifyCalendarDate("2024-10-25", "Fri"),
-        verifyCalendarDate("2024-11-01", "Fri"),
         verifyCalendarDate("2024-11-08", "Fri"),
         verifyCalendarDate("2024-11-15", "Fri"),
         verifyCalendarDate("2024-11-22", "Fri"),
@@ -465,18 +446,21 @@ export const calendarData: {
   ],
 
   events: [
-    // {
-    //   type: "event",
-    //   title: "Presentations",
-    //   date: verifyCalendarDate("2024-02-08", "Thu"),
-    //   timeAndLocation: TIME_AND_LOCATION_LECTURE,
-    // },
-    // {
-    //   type: "event",
-    //   title: "Presentations",
-    //   date: verifyCalendarDate("2024-02-09", "Fri"),
-    //   timeAndLocations: TIME_AND_LOCATIONS_SECTION,
-    // },
+    {
+      type: "event",
+      title: "Design Research Presentations",
+      dates: [
+        verifyCalendarDate("2024-10-29", "Tue"),
+        verifyCalendarDate("2024-10-31", "Thu"),
+      ],
+      timeAndLocation: TIME_AND_LOCATION_LECTURE,
+    },
+    {
+      type: "event",
+      title: "Design Research Presentations",
+      date: verifyCalendarDate("2024-11-01", "Fri"),
+      timeAndLocations: TIME_AND_LOCATIONS_SECTION,
+    },
     // {
     //   type: "event",
     //   title: "Exam Q&A",
@@ -484,24 +468,12 @@ export const calendarData: {
     //   timeAndLocation: TIME_AND_LOCATION_EXAM_QA,
     //   slides: "https://canvas.uw.edu/files/116100598/",
     // },
-    // {
-    //   type: "event",
-    //   title: "Exam",
-    //   date: verifyCalendarDate("2024-02-20", "Tue"),
-    //   timeAndLocation: TIME_AND_LOCATION_LECTURE,
-    // },
-    // {
-    //   type: "event",
-    //   title: "Presentations",
-    //   date: verifyCalendarDate("2024-02-29", "Thu"),
-    //   timeAndLocation: TIME_AND_LOCATION_LECTURE,
-    // },
-    // {
-    //   type: "event",
-    //   title: "Presentations",
-    //   date: verifyCalendarDate("2024-03-01", "Fri"),
-    //   timeAndLocations: TIME_AND_LOCATIONS_SECTION,
-    // },
+    {
+      type: "event",
+      title: "Exam",
+      date: verifyCalendarDate("2024-11-19", "Tue"),
+      timeAndLocation: TIME_AND_LOCATION_LECTURE,
+    },
     {
       type: "event",
       title: "Poster Session",
