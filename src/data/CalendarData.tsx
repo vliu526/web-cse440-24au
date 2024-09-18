@@ -568,7 +568,7 @@ export const calendarData: {
       link: SiteLinks.assignment_1_1_top.href,
       date: verifyCalendarDate("2024-09-26", "Thu"),
       submission: "canvas",
-      submitCanvasTime: "8:00pm",
+      submitCanvasTime: "10:00pm",
       // submitCanvasLink:
       //   "https://canvas.uw.edu/courses/1695984/assignments/8938947",
     },
@@ -598,7 +598,7 @@ export const calendarData: {
       link: SiteLinks.assignment_1_4_top.href,
       date: verifyCalendarDate("2024-10-04", "Fri"),
       submission: "canvas",
-      submitCanvasTime: "8:00pm",
+      submitCanvasTime: "10:00pm",
       // submitCanvasLink:
       //   "https://canvas.uw.edu/courses/1695984/assignments/8938950",
     },
@@ -608,7 +608,7 @@ export const calendarData: {
       link: SiteLinks.milestone_1_report_top.href,
       date: verifyCalendarDate("2024-10-07", "Mon"),
       submission: "canvas",
-      submitCanvasTime: "8:00pm",
+      submitCanvasTime: "3:00pm",
       // submitCanvasLink:
       //   "https://canvas.uw.edu/courses/1695984/assignments/8938950",
     },
