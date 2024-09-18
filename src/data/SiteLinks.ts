@@ -75,10 +75,35 @@ export const SiteLinks = {
     anchor: "Milestone 2 Report",
   },
 
-  milestone3Top: {
-    href: "/assignments/assignment3/#assignment-3",
+  //
+  // Milestone 3
+  //
+  milestone_3_top: {
+    href: "/assignments/milestone-3/#milestone-3-getting-the-right-design",
     anchor: "Milestone 3",
   },
+  assignment_3_1_top: {
+    href: "/assignments/milestone-3/assignment-3-1/#assignment-31-task-review",
+    anchor: "Assignment 3.1",
+  },
+  assignment_3_2_top: {
+    href: "/assignments/milestone-3/assignment-3-2/#assignment-32-design-review",
+    anchor: "Assignment 3.2",
+  },
+  assignment_3_3_top: {
+    href: "/assignments/milestone-3/assignment-3-3/#assignment-33-design-presentations",
+    anchor: "Assignment 3.3",
+  },
+  assignment_3_4_top: {
+    href: "/assignments/milestone-3/assignment-3-4/#assignment-34-scenarios-and-storyboards",
+    anchor: "Assignment 3.4",
+  },
+  milestone_3_report_top: {
+    href: "/assignments/milestone-3/report/#milestone-3-report",
+    anchor: "Milestone 3 Report",
+  },
+
+
   milestone4Top: {
     href: "/assignments/assignment4/#assignment-4",
     anchor: "Milestone 4",

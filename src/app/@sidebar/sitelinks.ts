@@ -6,7 +6,7 @@ export const SITE_LINKS = [
   [
     SiteLinks.milestone_1_top,
     SiteLinks.milestone_2_top,
-    SiteLinks.milestone3Top,
+    SiteLinks.milestone_3_top,
     SiteLinks.milestone4Top,
     SiteLinks.milestone5Top,
   ],

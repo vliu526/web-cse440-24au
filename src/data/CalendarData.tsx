@@ -448,7 +448,7 @@ export const calendarData: {
   events: [
     {
       type: "event",
-      title: "Design Research Presentations",
+      title: "Design Presentations",
       dates: [
         verifyCalendarDate("2024-10-29", "Tue"),
         verifyCalendarDate("2024-10-31", "Thu"),
@@ -457,7 +457,7 @@ export const calendarData: {
     },
     {
       type: "event",
-      title: "Design Research Presentations",
+      title: "Design Presentations",
       date: verifyCalendarDate("2024-11-01", "Fri"),
       timeAndLocations: TIME_AND_LOCATIONS_SECTION,
     },
@@ -620,46 +620,59 @@ export const calendarData: {
     },
 
     //
+    // Milestone 3
+    //
+    assignment_3_1: {
+      type: "assignment",
+      title: "Assignment 3.1: Task Review",
+      link: SiteLinks.assignment_3_1_top.href,
+      date: verifyCalendarDate("2024-10-23", "Wed"),
+      submission: "canvas",
+      submitCanvasTime: "3:00pm",
+      // submitCanvasLink:
+      //   "https://canvas.uw.edu/courses/1695984/assignments/8938950",
+    },
+    assignment_3_2: {
+      type: "assignment",
+      title: "Assignment 3.2: Design Review",
+      link: SiteLinks.assignment_3_2_top.href,
+      date: verifyCalendarDate("2024-10-28", "Mon"),
+      submission: "canvas",
+      submitCanvasTime: "3:00pm",
+      // submitCanvasLink:
+      //   "https://canvas.uw.edu/courses/1695984/assignments/8938950",
+    },
+    // assignment_3_3: {
+    //   type: "assignment",
+    //   title: "Assignment 3.3: Design Presentations",
+    //   link: SiteLinks.assignment_3_3_top.href,
+    //   // date: verifyCalendarDate("2024-10-28", "Mon"),
+    // },
+    assignment_3_4: {
+      type: "assignment",
+      title: "Assignment 3.4: Scenarios and Storyboards",
+      link: SiteLinks.assignment_3_4_top.href,
+      date: verifyCalendarDate("2024-11-05", "Tue"),
+      submission: "canvas",
+      submitCanvasTime: "3:00pm",
+      // submitCanvasLink:
+      //   "https://canvas.uw.edu/courses/1695984/assignments/8938950",
+    },
+    milestone_3_report: {
+      type: "assignment",
+      title: "Milestone 3: Report",
+      link: SiteLinks.milestone_3_report_top.href,
+      date: verifyCalendarDate("2024-11-07", "Thu"),
+      submission: "canvas",
+      submitCanvasTime: "3:00pm",
+      // submitCanvasLink:
+      //   "https://canvas.uw.edu/courses/1695984/assignments/8938950",
+    },
+
+    //
     // Assignment 2
     //
-    assignment2a: {
-      type: "assignment",
-      title: "Assignment 2a - Project Ideation",
-      link: SiteLinks.milestone_2_top.href,
-      date: verifyCalendarDate("2024-01-16", "Tue"),
-      // submission: 'other',
-      // submitText: 'Completed in class.',
-    },
-    assignment2b: {
-      type: "assignment",
-      title: "Assignment 2b - Design Research Plan",
-      link: SiteLinks.milestone_2_top.href,
-      date: verifyCalendarDate("2024-01-18", "Thu"),
-      submission: "canvas",
-      submitCanvasTime: "3:00pm",
-      submitCanvasLink:
-        "https://canvas.uw.edu/courses/1695984/assignments/8938951",
-    },
-    assignment2c: {
-      type: "assignment",
-      title: "Assignment 2c - Design Research Check-In",
-      link: SiteLinks.milestone_2_top.href,
-      date: verifyCalendarDate("2024-01-22", "Mon"),
-      submission: "canvas",
-      submitCanvasTime: "3:00pm",
-      submitCanvasLink:
-        "https://canvas.uw.edu/courses/1695984/assignments/8938952",
-    },
-    assignment2d: {
-      type: "assignment",
-      title: "Assignment 2d - Design Research Review",
-      link: SiteLinks.milestone_2_top.href,
-      date: verifyCalendarDate("2024-01-25", "Thu"),
-      submission: "canvas",
-      submitCanvasTime: "3:00pm",
-      submitCanvasLink:
-        "https://canvas.uw.edu/courses/1695984/assignments/8938953",
-    },
+
     assignment2e: {
       type: "assignment",
       title: "Assignment 2e - Task Review",
@@ -716,7 +729,7 @@ export const calendarData: {
     assignment3a: {
       type: "assignment",
       title: "Assignment 3a - Paper Prototype",
-      link: SiteLinks.milestone3Top.href,
+      link: SiteLinks.milestone_3_top.href,
       date: verifyCalendarDate("2024-02-12", "Mon"),
       submission: "canvas",
       submitCanvasTime: "3:00pm",
@@ -726,7 +739,7 @@ export const calendarData: {
     assignment3b: {
       type: "assignment",
       title: "Assignment 3b - Heuristic Evaluation",
-      link: SiteLinks.milestone3Top.href,
+      link: SiteLinks.milestone_3_top.href,
       date: verifyCalendarDate("2024-02-13", "Tue"),
       // submission: 'other',
       // submitText: 'Submitted with Assignment 3c.',
@@ -734,7 +747,7 @@ export const calendarData: {
     assignment3c: {
       type: "assignment",
       title: "Assignment 3c - Usability Testing Check-In",
-      link: SiteLinks.milestone3Top.href,
+      link: SiteLinks.milestone_3_top.href,
       date: verifyCalendarDate("2024-02-15", "Thu"),
       submission: "canvas",
       submitCanvasTime: "8:00pm",
@@ -744,7 +757,7 @@ export const calendarData: {
     assignment3d: {
       type: "assignment",
       title: "Assignment 3d - Usability Testing Review",
-      link: SiteLinks.milestone3Top.href,
+      link: SiteLinks.milestone_3_top.href,
       date: verifyCalendarDate("2024-02-22", "Thu"),
       submission: "canvas",
       submitCanvasTime: "3:00pm",
@@ -754,7 +767,7 @@ export const calendarData: {
     assignment3e: {
       type: "assignment",
       title: "Assignment 3e - Digital Mockup",
-      link: SiteLinks.milestone3Top.href,
+      link: SiteLinks.milestone_3_top.href,
       date: verifyCalendarDate("2024-02-26", "Mon"),
       submission: "canvas",
       submitCanvasTime: "3:00pm",
@@ -764,7 +777,7 @@ export const calendarData: {
     assignment3p: {
       type: "assignment",
       title: "Assignment 3p - Presentation",
-      link: SiteLinks.milestone3Top.href,
+      link: SiteLinks.milestone_3_top.href,
       date: verifyCalendarDate("2024-02-28", "Wed"),
       submission: "canvas",
       submitCanvasTime: "8:00pm",
