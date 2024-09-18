@@ -63,13 +63,13 @@ const TIME_AND_LOCATION_POSTER_SESSION = {
 };
 
 const TIME_AND_LOCATION_OFFICE_HOUR_JESSE = {
-  time: "11:00 to 12:00",
-  location: "CSE2 151",
+  time: "12:00 to 1:00",
+  location: "CSE2 152",
 };
 
-const TIME_AND_LOCATION_OFFICE_HOUR_SIMONA = {
-  time: "12:00 to 1:00",
-  location: "CSE2 150",
+const TIME_AND_LOCATION_OFFICE_HOUR_KATELYN = {
+  time: "3:00 to 4:00",
+  location: "CSE2 152",
 };
 
 export function parseCalendarDate(calendarDate: CalendarDate): Date {
@@ -511,38 +511,38 @@ export const calendarData: {
   ],
 
   officeHours: [
-    // {
-    //   type: "officeHour",
-    //   title: "Office Hour: Jesse",
-    //   timeAndLocation: TIME_AND_LOCATION_OFFICE_HOUR_JESSE,
-    //   dates: [
-    //     verifyCalendarDate("2024-01-10", "Wed"),
-    //     verifyCalendarDate("2024-01-17", "Wed"),
-    //     verifyCalendarDate("2024-01-24", "Wed"),
-    //     verifyCalendarDate("2024-01-31", "Wed"),
-    //     verifyCalendarDate("2024-02-07", "Wed"),
-    //     verifyCalendarDate("2024-02-14", "Wed"),
-    //     verifyCalendarDate("2024-02-21", "Wed"),
-    //     verifyCalendarDate("2024-02-28", "Wed"),
-    //     verifyCalendarDate("2024-03-06", "Wed"),
-    //   ],
-    // },
-    // {
-    //   type: "officeHour",
-    //   title: "Office Hour: Simona",
-    //   timeAndLocation: TIME_AND_LOCATION_OFFICE_HOUR_SIMONA,
-    //   dates: [
-    //     verifyCalendarDate("2024-01-11", "Thu"),
-    //     verifyCalendarDate("2024-01-18", "Thu"),
-    //     verifyCalendarDate("2024-01-25", "Thu"),
-    //     verifyCalendarDate("2024-02-01", "Thu"),
-    //     verifyCalendarDate("2024-02-08", "Thu"),
-    //     verifyCalendarDate("2024-02-15", "Thu"),
-    //     verifyCalendarDate("2024-02-22", "Thu"),
-    //     verifyCalendarDate("2024-02-29", "Thu"),
-    //     verifyCalendarDate("2024-03-07", "Thu"),
-    //   ],
-    // },
+    {
+      type: "officeHour",
+      title: "Office Hour: Katelyn",
+      timeAndLocation: TIME_AND_LOCATION_OFFICE_HOUR_KATELYN,
+      dates: [
+        verifyCalendarDate("2024-10-02", "Wed"),
+        verifyCalendarDate("2024-10-09", "Wed"),
+        verifyCalendarDate("2024-10-16", "Wed"),
+        verifyCalendarDate("2024-10-23", "Wed"),
+        verifyCalendarDate("2024-10-30", "Wed"),
+        verifyCalendarDate("2024-11-06", "Wed"),
+        verifyCalendarDate("2024-11-13", "Wed"),
+        verifyCalendarDate("2024-11-20", "Wed"),
+        verifyCalendarDate("2024-12-04", "Wed"),
+      ],
+    },
+    {
+      type: "officeHour",
+      title: "Office Hour: Jesse",
+      timeAndLocation: TIME_AND_LOCATION_OFFICE_HOUR_JESSE,
+      dates: [
+        verifyCalendarDate("2024-10-03", "Thu"),
+        verifyCalendarDate("2024-10-10", "Thu"),
+        verifyCalendarDate("2024-10-17", "Thu"),
+        verifyCalendarDate("2024-10-24", "Thu"),
+        verifyCalendarDate("2024-10-31", "Thu"),
+        verifyCalendarDate("2024-11-07", "Thu"),
+        verifyCalendarDate("2024-11-14", "Thu"),
+        verifyCalendarDate("2024-11-21", "Thu"),
+        verifyCalendarDate("2024-12-05", "Thu"),
+      ],
+    },
   ],
 
   assignments: {

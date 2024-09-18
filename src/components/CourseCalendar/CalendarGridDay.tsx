@@ -72,9 +72,10 @@ export const CalendarGridDay: React.FunctionComponent<{
           <CalendarDayEvent calendarItems={calendarItems} />
           <CalendarDayLecture calendarItems={calendarItems} />
           <CalendarDayStudio calendarItems={calendarItems} />
-          <CalendarDayOfficeHour calendarItems={calendarItems} />
 
           <CalendarDayAssignments calendarItems={calendarItems} />
+
+          <CalendarDayOfficeHour calendarItems={calendarItems} />
         </Grid>
       </Grid>
     </Grid>
