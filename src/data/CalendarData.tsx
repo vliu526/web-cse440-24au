@@ -614,49 +614,6 @@ export const calendarData: {
     },
 
     //
-    // Assignment 1
-    //
-    assignment1a: {
-      type: "assignment",
-      title: "Assignment 1c - Finalized Proposal",
-      link: SiteLinks.milestone_1_top.href,
-      date: verifyCalendarDate("2024-01-15", "Mon"),
-      submission: "canvas",
-      submitCanvasTime: "3:00pm",
-      submitCanvasLink:
-        "https://canvas.uw.edu/courses/1695984/assignments/8938950",
-    },
-    assignment1b: {
-      type: "assignment",
-      title: "Assignment 1c - Finalized Proposal",
-      link: SiteLinks.milestone_1_top.href,
-      date: verifyCalendarDate("2024-01-15", "Mon"),
-      submission: "canvas",
-      submitCanvasTime: "3:00pm",
-      submitCanvasLink:
-        "https://canvas.uw.edu/courses/1695984/assignments/8938950",
-    },
-    assignment1b_rev: {
-      type: "assignment",
-      title: "Assignment 1c - Finalized Proposal",
-      link: SiteLinks.milestone_1_top.href,
-      date: verifyCalendarDate("2024-01-15", "Mon"),
-      submission: "canvas",
-      submitCanvasTime: "3:00pm",
-      submitCanvasLink:
-        "https://canvas.uw.edu/courses/1695984/assignments/8938950",
-    },
-    assignment1c: {
-      type: "assignment",
-      title: "Assignment 1c - Finalized Proposal",
-      link: SiteLinks.milestone_1_top.href,
-      date: verifyCalendarDate("2024-01-15", "Mon"),
-      submission: "canvas",
-      submitCanvasTime: "3:00pm",
-      submitCanvasLink:
-        "https://canvas.uw.edu/courses/1695984/assignments/8938950",
-    },
-    //
     // Assignment 2
     //
     assignment2a: {
