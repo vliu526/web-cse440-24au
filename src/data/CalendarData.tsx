@@ -586,12 +586,46 @@ export const calendarData: {
     },
 
     //
+    // Milestone 2
+    //
+    assignment_2_1: {
+      type: "assignment",
+      title: "Assignment 2.1: Design Research Plan",
+      link: SiteLinks.assignment_2_1_top.href,
+      date: verifyCalendarDate("2024-10-10", "Thu"),
+      submission: "canvas",
+      submitCanvasTime: "3:00pm",
+      // submitCanvasLink:
+      //   "https://canvas.uw.edu/courses/1695984/assignments/8938950",
+    },
+    assignment_2_2: {
+      type: "assignment",
+      title: "Assignment 2.2: Design Research Check-In",
+      link: SiteLinks.assignment_2_2_top.href,
+      date: verifyCalendarDate("2024-10-17", "Thu"),
+      submission: "canvas",
+      submitCanvasTime: "3:00pm",
+      // submitCanvasLink:
+      //   "https://canvas.uw.edu/courses/1695984/assignments/8938950",
+    },
+    milestone_2_report: {
+      type: "assignment",
+      title: "Milestone 2: Report",
+      link: SiteLinks.milestone_2_report_top.href,
+      date: verifyCalendarDate("2024-10-21", "Mon"),
+      submission: "canvas",
+      submitCanvasTime: "3:00pm",
+      // submitCanvasLink:
+      //   "https://canvas.uw.edu/courses/1695984/assignments/8938950",
+    },
+
+    //
     // Assignment 2
     //
     assignment2a: {
       type: "assignment",
       title: "Assignment 2a - Project Ideation",
-      link: SiteLinks.milestone2Top.href,
+      link: SiteLinks.milestone_2_top.href,
       date: verifyCalendarDate("2024-01-16", "Tue"),
       // submission: 'other',
       // submitText: 'Completed in class.',
@@ -599,7 +633,7 @@ export const calendarData: {
     assignment2b: {
       type: "assignment",
       title: "Assignment 2b - Design Research Plan",
-      link: SiteLinks.milestone2Top.href,
+      link: SiteLinks.milestone_2_top.href,
       date: verifyCalendarDate("2024-01-18", "Thu"),
       submission: "canvas",
       submitCanvasTime: "3:00pm",
@@ -609,7 +643,7 @@ export const calendarData: {
     assignment2c: {
       type: "assignment",
       title: "Assignment 2c - Design Research Check-In",
-      link: SiteLinks.milestone2Top.href,
+      link: SiteLinks.milestone_2_top.href,
       date: verifyCalendarDate("2024-01-22", "Mon"),
       submission: "canvas",
       submitCanvasTime: "3:00pm",
@@ -619,7 +653,7 @@ export const calendarData: {
     assignment2d: {
       type: "assignment",
       title: "Assignment 2d - Design Research Review",
-      link: SiteLinks.milestone2Top.href,
+      link: SiteLinks.milestone_2_top.href,
       date: verifyCalendarDate("2024-01-25", "Thu"),
       submission: "canvas",
       submitCanvasTime: "3:00pm",
@@ -629,7 +663,7 @@ export const calendarData: {
     assignment2e: {
       type: "assignment",
       title: "Assignment 2e - Task Review",
-      link: SiteLinks.milestone2Top.href,
+      link: SiteLinks.milestone_2_top.href,
       date: verifyCalendarDate("2024-01-29", "Mon"),
       submission: "canvas",
       submitCanvasTime: "3:00pm",
@@ -639,7 +673,7 @@ export const calendarData: {
     assignment2f: {
       type: "assignment",
       title: "Assignment 2f - Design Check-In",
-      link: SiteLinks.milestone2Top.href,
+      link: SiteLinks.milestone_2_top.href,
       date: verifyCalendarDate("2024-01-31", "Wed"),
       submission: "canvas",
       submitCanvasTime: "3:00pm",
@@ -649,7 +683,7 @@ export const calendarData: {
     assignment2f_rev: {
       type: "assignment",
       title: "Assignment 2f_rev - Design Check-In",
-      link: SiteLinks.milestone2Top.href,
+      link: SiteLinks.milestone_2_top.href,
       date: verifyCalendarDate("2024-02-01", "Thu"),
       submission: "canvas",
       submitCanvasTime: "8:00pm",
@@ -659,7 +693,7 @@ export const calendarData: {
     assignment2g: {
       type: "assignment",
       title: "Assignment 2g - Design Review",
-      link: SiteLinks.milestone2Top.href,
+      link: SiteLinks.milestone_2_top.href,
       date: verifyCalendarDate("2024-02-05", "Mon"),
       submission: "canvas",
       submitCanvasTime: "3:00pm",
@@ -669,7 +703,7 @@ export const calendarData: {
     assignment2p: {
       type: "assignment",
       title: "Assignment 2p - Presentation",
-      link: SiteLinks.milestone2Top.href,
+      link: SiteLinks.milestone_2_top.href,
       date: verifyCalendarDate("2024-02-07", "Wed"),
       submission: "canvas",
       submitCanvasTime: "8:00pm",

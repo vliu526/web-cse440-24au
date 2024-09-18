@@ -55,10 +55,26 @@ export const SiteLinks = {
     anchor: "Milestone 1 Report",
   },
 
-  milestone2Top: {
-    href: "/assignments/assignment2/#assignment-2-getting-the-right-design",
+  //
+  // Milestone 2
+  //
+  milestone_2_top: {
+    href: "/assignments/milestone-2/#milestone-2-design-research",
     anchor: "Milestone 2",
   },
+  assignment_2_1_top: {
+    href: "/assignments/milestone-2/assignment-2-1/#assignment-21-design-research-plan",
+    anchor: "Assignment 2.1",
+  },
+  assignment_2_2_top: {
+    href: "/assignments/milestone-2/assignment-2-2/#assignment-22-design-research-check-in",
+    anchor: "Assignment 2.2",
+  },
+  milestone_2_report_top: {
+    href: "/assignments/milestone-2/report/#milestone-2-report",
+    anchor: "Milestone 2 Report",
+  },
+
   milestone3Top: {
     href: "/assignments/assignment3/#assignment-3",
     anchor: "Milestone 3",
