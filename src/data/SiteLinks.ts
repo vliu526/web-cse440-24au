@@ -31,23 +31,23 @@ export const SiteLinks = {
   // Milestone 1
   //
   milestone_1_top: {
-    href: "/assignments/milestone-1/#milestone-1-overview",
+    href: "/assignments/milestone-1/#milestone-1-proposal-and-ideation",
     anchor: "Milestone 1",
   },
   assignment_1_1_top: {
-    href: "/assignments/milestone-1/assignment-1-1/#assignment-1-1",
+    href: "/assignments/milestone-1/assignment-1-1/#assignment-11-individual-brainstorm",
     anchor: "Assignment 1.1",
   },
   assignment_1_2_top: {
-    href: "/assignments/milestone-1/assignment-1-2/#assignment-1-2",
+    href: "/assignments/milestone-1/assignment-1-2/#assignment-12-group-proposals",
     anchor: "Assignment 1.2",
   },
   assignment_1_3_top: {
-    href: "/assignments/milestone-1/assignment-1-3/#assignment-1-3",
+    href: "/assignments/milestone-1/assignment-1-3/#assignment-13-finalized-proposal",
     anchor: "Assignment 1.3",
   },
   assignment_1_4_top: {
-    href: "/assignments/milestone-1/assignment-1-4/#assignment-1-4",
+    href: "/assignments/milestone-1/assignment-1-4/#assignment-14-design-ideation",
     anchor: "Assignment 1.4",
   },
   milestone_1_report_top: {
