@@ -594,7 +594,7 @@ export const calendarData: {
     },
     assignment_1_4: {
       type: "assignment",
-      title: "Assignment 1.4: Project Ideation",
+      title: "Assignment 1.4: Design Ideation",
       link: SiteLinks.assignment_1_4_top.href,
       date: verifyCalendarDate("2024-10-04", "Fri"),
       submission: "canvas",

@@ -1,25 +1,31 @@
 import { TBD } from "@/components/TBD";
 import { UnderDevelopment } from "@/components/UnderDevelopment";
+import { AssignmentSubmitCanvasLink } from "@/components/links/AssignmentSubmitCanvasLink";
+import { default as ClarityAndPresentationReference } from "@/contentcomponents/ClarityAndPresentationReference.mdx";
+import { default as ContributionStatementReference } from "@/contentcomponents/ContributionStatementReference.mdx";
+import { default as GroupAssignment } from "@/contentcomponents/GroupAssignment.mdx";
 import { SiteLink } from "@/components/links/SiteLink";
 import { SiteLinks } from "@/data/SiteLinks";
+import { Paths } from "@/paths";
+import { calendarData } from "@/data/CalendarData";
 
-<TBD outerComponent="div">
-# Assignment 1.4: it needs a name
-</TBD>
+export const pathDesignIdeationForm = '/assignments/design-ideation-form.pdf';
+
+# Assignment 1.4: Design Ideation
 
 <UnderDevelopment display={true} />
 
-A component of <SiteLink linkKey={SiteLinks.milestone_1_top}/>.
+This assignment is a component of <SiteLink linkKey={SiteLinks.milestone_1_top}/>.
+Be sure you have reviewed that larger context for this assignment.
 
-<TBD outerComponent="div">
-# Old Text of Assignment 2a
-</TBD>
+{/*
+TODO: Incorporate due date, which this tag previously did.
+<CollapseProjectMilestone assignment={calendarData.assignments.assignment2a}>
+*/}
 
-{/* <CollapseProjectMilestone assignment={calendarData.assignments.assignment2a}> */}
+The goal of this assignment is to begin thinking about how to plan design research to inform your design process.
 
-The goal of this milestone is to begin thinking about how to plan effective design research to inform your design process.
-
-Generate 10 different ideas related to each of the following aspects of your project proposal:
+Generate 10 different ideas related to each of the following design dimensions of your project proposal:
 
 - Forms: types of technology on which a design might be developed (e.g., wearable sensors, watch/phone/tablet, desktop, appliances or other artifacts in the environment).
 - Data: types of data a design might track or help a person track.
@@ -27,25 +33,46 @@ Generate 10 different ideas related to each of the following aspects of your pro
 - Features: a specific capability a design might have.
 - Social Interactions: types of social interactions and situations a design might engage or support.
 
-We will provide sheets of paper to help structure this brainstorm.
-Sketch your ideas, one in each square. Each idea should be either a quick doodle with a caption or a one-sentence idea.
-A person familiar with your project but not in your group should be able to understand the idea each sketch conveys.
+We will provide this form to help structure this brainstorm:
 
+<p><a href={Paths.basePath + pathDesignIdeationForm}>design-ideation-form.pdf</a></p>
+
+Write or sketch your ideas, one in each square.
+Each idea should be either a single sentence or a quick drawing with a caption.
+A person familiar with your project but not in your group should be able to understand each idea.
+
+All ideas should be different.
 The goal is to begin exploring the space of possibilities, not attempting to polish some individual possibility.
-Focus on the quantity of ideas, not the quality of any one idea.
-You may include ideas from existing products, but no two ideas should be alike.
+Focus on the quantity of ideas, and avoid become stuck on the quality of any one idea.
+Ideate as a team to develop a greater range of ideas.
 When you get stuck, find a context to inspire new ideas.
 
 After this brainstorming, you will have a broad space of possible directions.
-Your project will soon need to gather information on how to generate and consider ideas in such directions.
-Following up on the above, additionally brainstorm:
+Your project will soon need to gather information on how to further generate and consider ideas in such directions.
+
+Following up on the above, you should additionally brainstorm:
 
 - People: types of people you might work with to learn more about problems and opportunities.
 - Focus: what parts of the problems and opportunities you might focus on learning more about.
 - Method: how you might engage those people to learn more about problems and opportunities.
 
-#### Submission and Grading
+#### Submission
 
-<TBD outerComponent="div">
-There is no submission for this milestone.
-</TBD>
+Submit an image or scan of each page of your design ideation form.
+
+- <GroupAssignment />
+- <ContributionStatementReference />
+
+Submit via Canvas here:
+
+<AssignmentSubmitCanvasLink assignmentKey={calendarData.assignments.assignment_1_4} />
+
+#### Completion Grading
+
+This milestone will be graded on a scale of __10 points__:
+
+1. __Ideation in Each Design Dimension__ (5 x 2 points):
+
+   Generate 10 ideas related to each design dimension.
+
+   All ideas should be different.
