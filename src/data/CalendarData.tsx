@@ -531,6 +531,7 @@ export const calendarData: {
       submitCanvasLink:
         "https://canvas.uw.edu/courses/1746586/assignments/9634757",
     },
+
     //
     // Milestone 1
     //
@@ -556,7 +557,7 @@ export const calendarData: {
     },
     assignment_1_3: {
       type: "assignment",
-      title: "Assignment 1.3: Finalized Proposal",
+      title: "Assignment 1.3: Final Proposal",
       link: SiteLinks.assignment_1_3_top.href,
       date: verifyCalendarDate("2024-10-03", "Thu"),
       submission: "canvas",
@@ -570,7 +571,7 @@ export const calendarData: {
       link: SiteLinks.assignment_1_4_top.href,
       date: verifyCalendarDate("2024-10-04", "Fri"),
       submission: "canvas",
-      submitCanvasTime: "10:00pm",
+      submitCanvasTime: "8:00pm",
       // submitCanvasLink:
       //   "https://canvas.uw.edu/courses/1695984/assignments/8938950",
     },
@@ -670,59 +671,49 @@ export const calendarData: {
     },
 
     //
-    // Assignment 2
+    // Milestone 4
     //
+    assignment_4_1: {
+      type: "assignment",
+      title: "Assignment 4.1: Paper Prototype",
+      link: SiteLinks.assignment_4_1_top.href,
+      date: verifyCalendarDate("2024-11-12", "Tue"),
+      submission: "canvas",
+      submitCanvasTime: "3:00pm",
+      // submitCanvasLink:
+      //   "https://canvas.uw.edu/courses/1695984/assignments/8938950",
+    },
+    assignment_4_2: {
+      type: "assignment",
+      title: "Assignment 4.2: Heuristic Evaluation",
+      link: SiteLinks.assignment_4_2_top.href,
+      date: verifyCalendarDate("2024-11-14", "Thu"),
+      submission: "canvas",
+      submitCanvasTime: "3:00pm",
+      // submitCanvasLink:
+      //   "https://canvas.uw.edu/courses/1695984/assignments/8938950",
+    },
+    assignment_4_3: {
+      type: "assignment",
+      title: "Assignment 4.3: Usability Testing",
+      link: SiteLinks.assignment_4_3_top.href,
+      date: verifyCalendarDate("2024-11-21", "Thu"),
+      submission: "canvas",
+      submitCanvasTime: "8:00pm",
+      // submitCanvasLink:
+      //   "https://canvas.uw.edu/courses/1695984/assignments/8938950",
+    },
+    milestone_4_report: {
+      type: "assignment",
+      title: "Milestone 4: Report",
+      link: SiteLinks.milestone_4_report_top.href,
+      date: verifyCalendarDate("2024-11-25", "Mon"),
+      submission: "canvas",
+      submitCanvasTime: "3:00pm",
+      // submitCanvasLink:
+      //   "https://canvas.uw.edu/courses/1695984/assignments/8938950",
+    },
 
-    assignment2e: {
-      type: "assignment",
-      title: "Assignment 2e - Task Review",
-      link: SiteLinks.milestone_2_top.href,
-      date: verifyCalendarDate("2024-01-29", "Mon"),
-      submission: "canvas",
-      submitCanvasTime: "3:00pm",
-      submitCanvasLink:
-        "https://canvas.uw.edu/courses/1695984/assignments/8938954",
-    },
-    assignment2f: {
-      type: "assignment",
-      title: "Assignment 2f - Design Check-In",
-      link: SiteLinks.milestone_2_top.href,
-      date: verifyCalendarDate("2024-01-31", "Wed"),
-      submission: "canvas",
-      submitCanvasTime: "3:00pm",
-      submitCanvasLink:
-        "https://canvas.uw.edu/courses/1695984/assignments/8938956",
-    },
-    assignment2f_rev: {
-      type: "assignment",
-      title: "Assignment 2f_rev - Design Check-In",
-      link: SiteLinks.milestone_2_top.href,
-      date: verifyCalendarDate("2024-02-01", "Thu"),
-      submission: "canvas",
-      submitCanvasTime: "8:00pm",
-      submitCanvasLink:
-        "https://canvas.uw.edu/courses/1695984/assignments/8938955",
-    },
-    assignment2g: {
-      type: "assignment",
-      title: "Assignment 2g - Design Review",
-      link: SiteLinks.milestone_2_top.href,
-      date: verifyCalendarDate("2024-02-05", "Mon"),
-      submission: "canvas",
-      submitCanvasTime: "3:00pm",
-      submitCanvasLink:
-        "https://canvas.uw.edu/courses/1695984/assignments/8938957",
-    },
-    assignment2p: {
-      type: "assignment",
-      title: "Assignment 2p - Presentation",
-      link: SiteLinks.milestone_2_top.href,
-      date: verifyCalendarDate("2024-02-07", "Wed"),
-      submission: "canvas",
-      submitCanvasTime: "8:00pm",
-      submitCanvasLink:
-        "https://canvas.uw.edu/courses/1695984/assignments/8938958",
-    },
     //
     // Assignment 3
     //
@@ -790,7 +781,7 @@ export const calendarData: {
     assignment4poster: {
       type: "assignment",
       title: "Assignment 4poster - Poster and Pitch",
-      link: SiteLinks.milestone4Top.href,
+      link: SiteLinks.milestone_4_top.href,
       date: verifyCalendarDate("2024-03-04", "Mon"),
       submission: "canvas",
       submitCanvasTime: "3:00pm",
@@ -800,7 +791,7 @@ export const calendarData: {
     assignment4web: {
       type: "assignment",
       title: "Assignment 4web - Web Post",
-      link: SiteLinks.milestone4Top.href,
+      link: SiteLinks.milestone_4_top.href,
       date: verifyCalendarDate("2024-03-05", "Tue"),
       submission: "canvas",
       submitCanvasTime: "3:00pm",
@@ -810,7 +801,7 @@ export const calendarData: {
     assignment4poster_final: {
       type: "assignment",
       title: "Assignment 4poster_final - Poster and Pitch",
-      link: SiteLinks.milestone4Top.href,
+      link: SiteLinks.milestone_4_top.href,
       date: verifyCalendarDate("2024-03-06", "Wed"),
       submission: "canvas",
       submitCanvasTime: "3:00pm",
@@ -820,7 +811,7 @@ export const calendarData: {
     assignment4web_final: {
       type: "assignment",
       title: "Assignment 4web_final - Web Post",
-      link: SiteLinks.milestone4Top.href,
+      link: SiteLinks.milestone_4_top.href,
       date: verifyCalendarDate("2024-03-07", "Thu"),
       submission: "canvas",
       submitCanvasTime: "8:00pm",
@@ -830,7 +821,7 @@ export const calendarData: {
     assignment4poster_session: {
       type: "assignment",
       title: "Assignment 4poster_session - Poster Session",
-      link: SiteLinks.milestone4Top.href,
+      link: SiteLinks.milestone_4_top.href,
       date: verifyCalendarDate("2024-03-11", "Mon"),
       // submission: 'other',
       // submitText: 'Attend and participate.',
