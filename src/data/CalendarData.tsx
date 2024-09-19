@@ -285,18 +285,6 @@ export const calendarData: {
       timeAndLocation: TIME_AND_LOCATION_LECTURE,
       title: "Lecture",
     },
-    {
-      type: "lecture",
-      date: verifyCalendarDate("2024-12-03", "Tue"),
-      timeAndLocation: TIME_AND_LOCATION_LECTURE,
-      title: "Lecture",
-    },
-    {
-      type: "lecture",
-      date: verifyCalendarDate("2024-12-05", "Thu"),
-      timeAndLocation: TIME_AND_LOCATION_LECTURE,
-      title: "Lecture",
-    },
 
     // {
     //   type: "lecture",
@@ -385,6 +373,15 @@ export const calendarData: {
         verifyCalendarDate("2024-12-06", "Fri"),
       ],
       timeAndLocations: TIME_AND_LOCATIONS_SECTION,
+      title: "Studio",
+    },
+    {
+      type: "studio",
+      dates: [
+        verifyCalendarDate("2024-12-03", "Tue"),
+        verifyCalendarDate("2024-12-05", "Thu"),
+      ],
+      timeAndLocation: TIME_AND_LOCATION_LECTURE,
       title: "Studio",
     },
     // {
@@ -715,116 +712,47 @@ export const calendarData: {
     },
 
     //
-    // Assignment 3
+    // Milestone 5
     //
-    assignment3a: {
+    assignment_5_digital_mockup: {
       type: "assignment",
-      title: "Assignment 3a - Paper Prototype",
-      link: SiteLinks.milestone_3_top.href,
-      date: verifyCalendarDate("2024-02-12", "Mon"),
-      submission: "canvas",
-      submitCanvasTime: "3:00pm",
-      submitCanvasLink:
-        "https://canvas.uw.edu/courses/1695984/assignments/8938959",
-    },
-    assignment3b: {
-      type: "assignment",
-      title: "Assignment 3b - Heuristic Evaluation",
-      link: SiteLinks.milestone_3_top.href,
-      date: verifyCalendarDate("2024-02-13", "Tue"),
-      // submission: 'other',
-      // submitText: 'Submitted with Assignment 3c.',
-    },
-    assignment3c: {
-      type: "assignment",
-      title: "Assignment 3c - Usability Testing Check-In",
-      link: SiteLinks.milestone_3_top.href,
-      date: verifyCalendarDate("2024-02-15", "Thu"),
+      title: "Assignment 5: Digital Mockup",
+      link: SiteLinks.assignment_5_digital_mockup_top.href,
+      date: verifyCalendarDate("2024-11-27", "Wed"),
       submission: "canvas",
       submitCanvasTime: "8:00pm",
-      submitCanvasLink:
-        "https://canvas.uw.edu/courses/1695984/assignments/8938960",
     },
-    assignment3d: {
+    assignment_5_poster_initial: {
       type: "assignment",
-      title: "Assignment 3d - Usability Testing Review",
-      link: SiteLinks.milestone_3_top.href,
-      date: verifyCalendarDate("2024-02-22", "Thu"),
-      submission: "canvas",
-      submitCanvasTime: "3:00pm",
-      submitCanvasLink:
-        "https://canvas.uw.edu/courses/1695984/assignments/8938961",
-    },
-    assignment3e: {
-      type: "assignment",
-      title: "Assignment 3e - Digital Mockup",
-      link: SiteLinks.milestone_3_top.href,
-      date: verifyCalendarDate("2024-02-26", "Mon"),
-      submission: "canvas",
-      submitCanvasTime: "3:00pm",
-      submitCanvasLink:
-        "https://canvas.uw.edu/courses/1695984/assignments/8938962",
-    },
-    assignment3p: {
-      type: "assignment",
-      title: "Assignment 3p - Presentation",
-      link: SiteLinks.milestone_3_top.href,
-      date: verifyCalendarDate("2024-02-28", "Wed"),
+      title: "Assignment 5: Initial Poster",
+      link: SiteLinks.assignment_5_poster_top.href,
+      date: verifyCalendarDate("2024-12-02", "Mon"),
       submission: "canvas",
       submitCanvasTime: "8:00pm",
-      submitCanvasLink:
-        "https://canvas.uw.edu/courses/1695984/assignments/8938963",
     },
-    //
-    // Assignment 4
-    //
-    assignment4poster: {
+    assignment_5_web_post_initial: {
       type: "assignment",
-      title: "Assignment 4poster - Poster and Pitch",
-      link: SiteLinks.milestone_4_top.href,
-      date: verifyCalendarDate("2024-03-04", "Mon"),
-      submission: "canvas",
-      submitCanvasTime: "3:00pm",
-      submitCanvasLink:
-        "https://canvas.uw.edu/courses/1695984/assignments/8938964",
-    },
-    assignment4web: {
-      type: "assignment",
-      title: "Assignment 4web - Web Post",
-      link: SiteLinks.milestone_4_top.href,
-      date: verifyCalendarDate("2024-03-05", "Tue"),
-      submission: "canvas",
-      submitCanvasTime: "3:00pm",
-      submitCanvasLink:
-        "https://canvas.uw.edu/courses/1695984/assignments/8938966",
-    },
-    assignment4poster_final: {
-      type: "assignment",
-      title: "Assignment 4poster_final - Poster and Pitch",
-      link: SiteLinks.milestone_4_top.href,
-      date: verifyCalendarDate("2024-03-06", "Wed"),
-      submission: "canvas",
-      submitCanvasTime: "3:00pm",
-      submitCanvasLink:
-        "https://canvas.uw.edu/courses/1695984/assignments/8938965",
-    },
-    assignment4web_final: {
-      type: "assignment",
-      title: "Assignment 4web_final - Web Post",
-      link: SiteLinks.milestone_4_top.href,
-      date: verifyCalendarDate("2024-03-07", "Thu"),
+      title: "Assignment 5: Initial Web Post",
+      link: SiteLinks.assignment_5_web_post_top.href,
+      date: verifyCalendarDate("2024-12-03", "Tue"),
       submission: "canvas",
       submitCanvasTime: "8:00pm",
-      submitCanvasLink:
-        "https://canvas.uw.edu/courses/1695984/assignments/8938967",
     },
-    assignment4poster_session: {
+    assignment_5_poster_final: {
       type: "assignment",
-      title: "Assignment 4poster_session - Poster Session",
-      link: SiteLinks.milestone_4_top.href,
-      date: verifyCalendarDate("2024-03-11", "Mon"),
-      // submission: 'other',
-      // submitText: 'Attend and participate.',
+      title: "Assignment 5: Final Poster",
+      link: SiteLinks.assignment_5_poster_top.href,
+      date: verifyCalendarDate("2024-12-04", "Wed"),
+      submission: "canvas",
+      submitCanvasTime: "3:00pm",
+    },
+    assignment_5_web_post_final: {
+      type: "assignment",
+      title: "Assignment 5: Final Web Post",
+      link: SiteLinks.assignment_5_web_post_top.href,
+      date: verifyCalendarDate("2024-12-05", "Thu"),
+      submission: "canvas",
+      submitCanvasTime: "8:00pm",
     },
   },
 };

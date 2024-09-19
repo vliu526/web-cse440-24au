@@ -127,9 +127,24 @@ export const SiteLinks = {
     anchor: "Milestone 4 Report",
   },
 
-  milestone5Top: {
-    href: "/assignments/assignment5/#assignment-5",
+  //
+  // Milestone 5
+  //
+  milestone_5_top: {
+    href: "/assignments/milestone-5/#assignment-5-communicating-your-design",
     anchor: "Milestone 5",
+  },
+  assignment_5_digital_mockup_top: {
+    href: "/assignments/milestone-5/digital-mockup/#assignment-5-digital-mockup",
+    anchor: "Assignment 5",
+  },
+  assignment_5_poster_top: {
+    href: "/assignments/milestone-5/poster/#assignment-5-poster",
+    anchor: "Assignment 5",
+  },
+  assignment_5_web_post_top: {
+    href: "/assignments/milestone-5/web-post/#assignment-5-web-post",
+    anchor: "Assignment 5",
   },
 
   calendarTop: {

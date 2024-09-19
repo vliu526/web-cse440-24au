@@ -31,7 +31,16 @@ RewriteRule ^assignments/milestone-3/assignment-3-3[/]?$ assignments/milestone-3
 RewriteRule ^assignments/milestone-3/assignment-3-4[/]?$ assignments/milestone-3/assignment-3-4.html
 RewriteRule ^assignments/milestone-3/report[/]?$ assignments/milestone-3/report.html
 
-RewriteRule ^assignments/assignment-4[/]?$ assignments/assignment4.html
+RewriteRule ^assignments/milestone-4[/]?$ assignments/milestone-4.html
+RewriteRule ^assignments/milestone-4/assignment-4-1[/]?$ assignments/milestone-4/assignment-4-1.html
+RewriteRule ^assignments/milestone-4/assignment-4-2[/]?$ assignments/milestone-4/assignment-4-2.html
+RewriteRule ^assignments/milestone-4/assignment-4-3[/]?$ assignments/milestone-4/assignment-4-3.html
+RewriteRule ^assignments/milestone-4/report[/]?$ assignments/milestone-4/report.html
+
+RewriteRule ^assignments/milestone-5[/]?$ assignments/milestone-5.html
+RewriteRule ^assignments/milestone-5/digital-mockup[/]?$ assignments/milestone-5/digital-mockup.html
+RewriteRule ^assignments/milestone-5/poster[/]?$ assignments/milestone-5/poster.html
+RewriteRule ^assignments/milestone-5/web-post[/]?$ assignments/milestone-5/web-post.html
 
 RewriteRule ^assignments/exam[/]?$ assignments/exam.html
 
