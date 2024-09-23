@@ -539,8 +539,8 @@ export const calendarData: {
       date: verifyCalendarDate("2024-09-26", "Thu"),
       submission: "canvas",
       submitCanvasTime: "10:00pm",
-      // submitCanvasLink:
-      //   "https://canvas.uw.edu/courses/1695984/assignments/8938947",
+      submitCanvasLink:
+        "https://canvas.uw.edu/courses/1746586/assignments/9635629",
     },
     assignment_1_2: {
       type: "assignment",
