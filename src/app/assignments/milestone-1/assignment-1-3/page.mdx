@@ -1,5 +1,6 @@
 import { AssignmentDueDateTime } from "@/components/AssignmentDueDateTime";
 import { TBD } from "@/components/TBD";
+import { ProjectMilestoneSamples } from "@/components/ProjectMilestoneSamples";
 import { UnderDevelopment } from "@/components/UnderDevelopment";
 import { AssignmentSubmitCanvasLink } from "@/components/links/AssignmentSubmitCanvasLink";
 import { default as CanvasGroupsNotCreated } from '@/contentcomponents/CanvasGroupsNotCreated.mdx';
@@ -7,6 +8,7 @@ import { default as ClarityAndPresentationReference } from "@/contentcomponents/
 import { default as ContributionStatementReference } from "@/contentcomponents/ContributionStatementReference.mdx";
 import { default as ExcludedTopics } from "@/contentcomponents/ExcludedTopics.mdx";
 import { default as GroupAssignment } from "@/contentcomponents/GroupAssignment.mdx";
+import { default as PriorSamplesWarning } from "@/contentcomponents/PriorSamplesWarning.mdx";
 import { SiteLink } from "@/components/links/SiteLink";
 import { calendarData } from "@/data/CalendarData";
 import { SiteLinks } from "@/data/SiteLinks";
@@ -105,9 +107,8 @@ This assignment will be graded on completion of __4 components__:
 
 4. __Clarity and Presentation__
 
-{/*
-TODO: Integrate samples.
-#### Samples of Prior Submissions
+## Prior Samples
 
-<ProjectMilestoneSamples milestone='assignment1c' />
-*/}
+<PriorSamplesWarning />
+
+<ProjectMilestoneSamples milestone='assignment1b' />
