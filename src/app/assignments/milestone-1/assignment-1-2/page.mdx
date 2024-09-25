@@ -1,4 +1,6 @@
+import { AssignmentDueDateTime } from "@/components/AssignmentDueDateTime";
 import { TBD } from "@/components/TBD";
+import { ProjectMilestoneSamples } from "@/components/ProjectMilestoneSamples";
 import { UnderDevelopment } from "@/components/UnderDevelopment";
 import { AssignmentSubmitCanvasLink } from "@/components/links/AssignmentSubmitCanvasLink";
 import { default as CanvasGroupsNotCreated } from '@/contentcomponents/CanvasGroupsNotCreated.mdx';
@@ -6,21 +8,19 @@ import { default as ClarityAndPresentationReference } from "@/contentcomponents/
 import { default as ContributionStatementReference } from "@/contentcomponents/ContributionStatementReference.mdx";
 import { default as ExcludedTopics } from "@/contentcomponents/ExcludedTopics.mdx";
 import { default as GroupAssignment } from "@/contentcomponents/GroupAssignment.mdx";
+import { default as PriorSamplesWarning } from "@/contentcomponents/PriorSamplesWarning.mdx";
 import { SiteLink } from "@/components/links/SiteLink";
 import { calendarData } from "@/data/CalendarData";
 import { SiteLinks } from "@/data/SiteLinks";
 
 # Assignment 1.2: Group Proposals
 
-<UnderDevelopment display={true} />
+<UnderDevelopment display={false} />
+
+Due: <AssignmentDueDateTime assignmentKey={calendarData.assignments.assignment_1_2} />
 
 This assignment is a component of <SiteLink linkKey={SiteLinks.milestone_1_top}/>.
 Be sure you have reviewed that larger context for this assignment.
-
-{/*
-TODO: Incorporate due date, which this tag previously did.
-<CollapseProjectMilestone assignment={calendarData.assignments.assignment1b}>
-*/}
 
 The goal of this assignment is to propose multiple specific problems that could form the basis of a design project for this class.
 Tuesday will then include presenting these for feedback from peers and course staff.
@@ -42,25 +42,29 @@ explain how these existing solutions fall short or suggest how you may explore a
 
 ## Submission
 
+Due: <AssignmentDueDateTime assignmentKey={calendarData.assignments.assignment_1_2} />
+
 Within the Drive folder for course project files:
 
 - Identify the Slides deck corresponding to this assignment for your group.
   The deck provides a template for this assignment.
-  Edit the deck in-place, so that you can easily share it for critique.
+  Edit the deck in-place, so that you can easily share it in critique.
 
 - Prepare a Slide deck with the following structure:
 
-  - For each proposal (3 total):
+  For each proposal (3 total):
     - 1/2 slide: Description of the proposal.
 
 Reminders and requirements:
 
 - Submission via Canvas is also required, in support of grading.
+  - Remove instruction slides and template markings from your deck before submission.
 
-- Export a PDF of your deck, via the menu: File -> Download -> PDF Document (.pdf).
+  - Export a PDF of your deck, via the menu: File -> Download -> PDF Document (.pdf).
+
+  - <CanvasGroupsNotCreated />
 
 - <GroupAssignment />
-- <CanvasGroupsNotCreated />
 - <ClarityAndPresentationReference />
 
 The Drive folder for course project files is here:
@@ -96,9 +100,8 @@ This assignment will be graded on completion of __5 components__:
 
 3. __Clarity and Presentation__
 
-{/*
-TODO: Integrate samples.
-#### Samples of Prior Submissions
+## Prior Samples
+
+<PriorSamplesWarning />
 
 <ProjectMilestoneSamples milestone='assignment1b' />
-*/}

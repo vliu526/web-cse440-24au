@@ -1,11 +1,13 @@
+import { AssignmentDueDateTime } from "@/components/AssignmentDueDateTime";
 import { TBD } from "@/components/TBD";
 import { UnderDevelopment } from "@/components/UnderDevelopment";
 import { SiteLink } from "@/components/links/SiteLink";
+import { calendarData } from "@/data/CalendarData";
 import { SiteLinks } from "@/data/SiteLinks";
 
 # Milestone 1: Proposal and Ideation
 
-<UnderDevelopment display={true} />
+<UnderDevelopment display={false} />
 
 ## Overview
 
@@ -13,7 +15,22 @@ You are to propose a problem and an approach that will form the basis of a proje
 Successful projects will observe the need for good human-centered design in an interactive computing system,
 analyze the needs and opportunities in the problem, explore potential designs, and propose a compelling solution.
 
-### Project Theme
+## Milestone Assignments
+
+The assignments contributing to this milestone are:
+
+- <SiteLink linkKey={SiteLinks.assignment_1_1_top}/>: Individual Brainstorm
+  - Due: <AssignmentDueDateTime assignmentKey={calendarData.assignments.assignment_1_1} />
+- <SiteLink linkKey={SiteLinks.assignment_1_2_top}/>: Group Proposals
+  - Due: <AssignmentDueDateTime assignmentKey={calendarData.assignments.assignment_1_2} />
+- <SiteLink linkKey={SiteLinks.assignment_1_3_top}/>: Finalized Proposal
+  - Due: <AssignmentDueDateTime assignmentKey={calendarData.assignments.assignment_1_3} />
+- <SiteLink linkKey={SiteLinks.assignment_1_4_top}/>: Design Ideation
+  - Due: <AssignmentDueDateTime assignmentKey={calendarData.assignments.assignment_1_4} />
+- <SiteLink linkKey={SiteLinks.milestone_1_report_top}/>
+  - Due: <AssignmentDueDateTime assignmentKey={calendarData.assignments.milestone_1_report} />
+
+## Project Theme
 
 The theme for projects in this course is __self-tracking and everyday interaction with personal data__.
 
@@ -119,13 +136,3 @@ __self-tracking and everyday interaction with personal data__.
 But you will ultimately follow your design process where it leads you, which may or may not emphasize self-tracking or personal data.
 Focusing on problems and opportunities, rather than specific design features,
 will leave room for your design to emerge and be refined in the course of this project.
-
-## Milestone Assignments
-
-The assignments contributing to this milestone are:
-
-- <SiteLink linkKey={SiteLinks.assignment_1_1_top}/>: Individual Brainstorm
-- <SiteLink linkKey={SiteLinks.assignment_1_2_top}/>: Group Proposals
-- <SiteLink linkKey={SiteLinks.assignment_1_3_top}/>: Finalized Proposal
-- <SiteLink linkKey={SiteLinks.assignment_1_4_top}/>: Design Ideation
-- <SiteLink linkKey={SiteLinks.milestone_1_report_top}/>
