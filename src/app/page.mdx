@@ -1,4 +1,4 @@
-import Box from "@mui/material/Box";
+import { Alert, Box } from '@mui/material';
 import Image from "next-image-export-optimizer";
 
 import { TBD } from "@/components/TBD";
@@ -137,8 +137,66 @@ Canvas will be used for submissions and for necessary limitation of access to co
 Strive to do good work because you care about your own opportunities to learn,
 including the opportunities this course provides working with a group in an intensive project.
 
-<TBD outerComponent="div">
-The overall course grade will be computed as follows:
+Design is an inherently subjective practice, and so grading in this course is necessarily subjective.
+The stated project requirements are often the minimum,
+intended to leave room for groups to earn strong grades through strong work.
+
+### Project Milestones, Assignments, and Reports
+
+The project is composed of five milestones.
+Each milestone includes contributing assignments and culminates in a milestone report or other final deliverables.
+
+#### Assignments
+Contributing assignments will be graded for completion of key components listed in the assignment.
+Because the course is designed around feedback and improvement,
+assignment grades indicate you have invested sufficient effort and insight at the time of the submission.
+
+Completion grading will generally be on a 2 point scale, and can roughly be interpreted as:
+
+- 2: Meets completion expectations.
+- 1: Somewhat problematic or incomplete relative to expectations.
+- 0: Missing or severely problematic or incomplete relative to expectations.
+
+Quality ratings will then generally provide lightweight feedback on each assignment's key components.
+Quality ratings do not directly impact grading of assignments or milestone reports,
+but suggest where staff feel you should invest effort to revise your materials
+as you continue in your design and assemble your materials for the milestone report.
+
+Assignment quality ratings are on a scale from ⭐ to ⭐⭐⭐⭐ and can roughly be interepreted as follows:
+
+- ⭐⭐⭐⭐: High Quality
+
+  Such work is very strong. This is above what is inherently expected and will not be a common rating,
+  but allows course staff to indicate appreciation of very strong work.
+
+- ⭐⭐⭐: Meets Expectations
+
+  Such work is good, but may still leave room for improvement.
+
+- ⭐⭐: Could Improve
+
+  Such work is on the right track, but could benefit from substantial development and revision.
+
+- ⭐: Insufficient
+
+  Such work does not accomplish the intended goal and will need much more work.
+  If you do not already know why an assignment receives this rating, we encourage you to reach out to the course staff.
+
+#### Milestone Reports and Final Deliverables
+The bulk of project grading is then associated with milestone reports and final deliverables,
+which are evaluated more directly on their quality.
+Each milestone report will be predominantly composed of material you prepared in that milestone's assignments,
+with additional expectation of revision and refinement of previously-submitted content
+together with reflection on your design process.
+
+Each milestone report will provide a point breakdown conveying how it will be graded.
+
+### Overall Course Grade
+
+<Alert severity="warning">
+<h4 style={{marginTop: 0}}>A Grading Scale is Still Under Development</h4>
+
+An overall course grade will be computed as follows:
 
 - __65%__: Group Project
   - __X%__: <SiteLink linkKey={SiteLinks.milestone_1_top} outerComponent="span" />: Project Proposal & Ideation
@@ -175,35 +233,10 @@ The overall course grade will be computed as follows:
     - Milestone 5 Report (X%)
 - __10%__: Participation
 - __25%__: Exam
-</TBD>
-
-Each Project Milestone will consist of several Assignments and culminate in a Milestone Report.
-Assignments will be graded for completion of key components listed in the Assignment spec.
-
-Each Milestone Report will be predominantly composed of material you produced for that Milestone's Assignments,
-with some additional work of editing and revising the previously submitted content
-and providing reflection on your design process.
-Each Milestone Report will also provide a point breakdown intended to convey how it will be graded.
-Design is an inherently subjective practice, and so grading in this course is necessarily subjective.
-The stated project requirements are the minimum,
-intended to leave room for groups to earn strong grades through strong work.
-
-Because the course is designed around feedback on each Assignment, grades given to those Assignments indicate
-that you have invested sufficient effort and insight at the time of the submission.
-You will also receive lightweight feedback on each Assignment's key components in the form of a quality rating.
-These ratings will not affect your grade, but indicate where you should invest effort to revise your materials
-as you progress in your design and assemble your materials for the Milestone Report.
-The bulk of project grades is therefore attached to the Milestone Reports and final deliverables, 
-which are evaluated on their quality.
-
-Assignment quality ratings are on a scale from one to four stars and can roughly be interepreted as follows:
-- ⭐⭐⭐⭐: High quality work; does not need additional attention.
-- ⭐⭐⭐: Decent quality work; good, but there is still room for improvement.
-- ⭐⭐: Ok quality work; on the right track, but could benefit from substantial development and revision.
-- ⭐: Poor quality work; does not accomplish the intended goal and needs a lot more work. 
-  If you don't know why you're getting this score, we encourage you to reach out to the course staff.
+</Alert>
 
 ### Late Policy
+
 We generally expect all assignments will be submitted according to the deadline in Canvas and the assignment description.
 This is a fast-paced course, with many elements of the project depending on prior elements.
 The course staff's ability to give feedback also relies on timely submissions
@@ -218,6 +251,7 @@ Extensions of a few hours can often be facilitated.
 Except in extreme circumstances, we will typically not be able to give an extension of more than 1 day.
 
 ### Regrade Policy
+
 Any request for grade clarification or a re-grade must be submitted via the course staff email list.
 Requests will only be considered within 7 days of the release of a grade.
 
