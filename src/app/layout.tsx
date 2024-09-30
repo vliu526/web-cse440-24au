@@ -5,10 +5,9 @@
 import * as React from "react";
 
 import RootLayout from "@/components/RootLayout";
-import { Sidebar } from "@/components/Sidebar";
 import { appStoreInitialData } from "@/stores/AppStoreInitialData";
 
-import { SITE_LINKS } from "./sitelinks";
+import { LayoutSidebar } from "./layoutSidebar";
 
 // TODO: Pull course title from a configuration
 export const metadata = {
@@ -21,10 +20,10 @@ interface LayoutProps extends React.PropsWithChildren<{}> {}
 export default function Layout({ children }: LayoutProps) {
   const initialData = appStoreInitialData();
 
-  const sidebar = <Sidebar siteLinks={SITE_LINKS} pageLinks={[]}></Sidebar>;
+  const layoutSidebar = <LayoutSidebar />;
 
   return (
-    <RootLayout sidebar={sidebar} initialData={initialData}>
+    <RootLayout sidebar={layoutSidebar} initialData={initialData}>
       {children}
     </RootLayout>
   );
