@@ -1,8 +1,13 @@
+import { Alert } from "@mui/material";
+
+import { ProjectMilestoneSamples } from "@/components/ProjectMilestoneSamples";
 import { TBD } from "@/components/TBD";
 import { UnderDevelopment } from "@/components/UnderDevelopment";
 import { AssignmentSubmitCanvasLink } from "@/components/links/AssignmentSubmitCanvasLink";
 import { SiteLink } from "@/components/links/SiteLink";
 import { default as ClarityAndPresentationReference } from "@/contentcomponents/ClarityAndPresentationReference.mdx";
+import { default as GroupAssignment } from "@/contentcomponents/GroupAssignment.mdx";
+import { default as ParticipantAnonymity } from '@/contentcomponents/ParticipantAnonymity.mdx';
 import { calendarData } from "@/data/CalendarData";
 import { SiteLinks } from "@/data/SiteLinks";
 
@@ -10,10 +15,115 @@ import { SiteLinks } from "@/data/SiteLinks";
 
 <UnderDevelopment display={true} />
 
-{/*
-TODO: Incorporate due date, which this tag previously did.
-<CollapseProjectMilestone assignment={calendarData.assignments.assignment1a}>
-*/}
-
 This assignment is a component of <SiteLink linkKey={SiteLinks.milestone_2_top}/>.
 Be sure you have reviewed that larger context for this assignment.
+
+<Alert severity="warning">
+<h4 style={{marginTop: 0}}>This Assignment is Still Under Development</h4>
+<h5 style={{marginTop: 0}}>Text below is from a prior assignment that we expect will inform the details of this assignment.</h5>
+
+The goal of this milestone is to begin your design research,
+reflect on what you observe and learn,
+then update your plans for additional design research.
+
+Complete design research with at least one participant prior to this check-in.
+You hopefully learned something about the needs of people who might use your design,
+but also about effectively conducting your design research.
+
+Describe your first design research participant and your findings:
+
+- What did you do?
+  - Who you observed or interviewed, their relevant background or context.
+- What did you learn?
+  - List **six** specific findings based on what you observed or learned.
+  - For example, what specific tasks, problems, or opportunities did you uncover?
+
+We expect findings will be short but concrete.
+For example, findings might be organized as a bulleted list,
+where each bullet starts with a bolded summary of the finding
+and then shares a participant quote or researcher observation that informed that finding.
+
+Then discuss what remains to be pursued in your additional design research.
+We fully expect changes will be necessary, as design research
+can be difficult to get right and often important topics are left unresolved.
+
+- Did you encounter any difficulties establishing rapport or getting the information you need?
+- What are your plans for the remaining participants?
+- How do you plan to change your design research plan based on what you learned with your first participant?
+
+#### Submission
+
+No more than one page of text in PDF format.
+
+- <GroupAssignment />
+- <ClarityAndPresentationReference />
+- <ParticipantAnonymity />
+
+Submit via Canvas here:
+
+<AssignmentSubmitCanvasLink assignmentKey={calendarData.assignments.assignment_2_2} />
+
+#### In Class
+
+Be prepared to discuss your design research.
+
+Bring several printed copies of your submission (e.g., four),
+so that you can easily present them to peers for critique.
+
+#### Grading
+
+This milestone will be graded on a scale of __8 points__:
+
+1. __Description of Participant__: (1 point)
+2. __Specific Findings__: (6 x .5 points)
+3. __Plan for Remaining Participants__: (2 points)
+
+   Discuss what remains to be pursued, any challenges encountered, and your updated design research plan.
+
+4. __Clarity and Presentation__: (2 points)
+
+#### Samples of Prior Submissions
+
+<ProjectMilestoneSamples milestone='assignment2c' />
+
+</Alert>
+
+{/* More text from ASSIGNMENT 2D
+
+The goal of this milestone is to reflect on what you observed and learned in your design research,
+organizing observations around themes and developing insights into tasks that can help inform your design.
+
+#### Identifying Themes
+
+Complete design research with a total of at least three participants. Discuss your process and what you learned:
+
+- What did you do?
+  - Who you observed or interviewed, their relevant background or context.
+- What did you learn?
+  - List **at least eight** specific findings based on what you observed or learned.
+  - For example, what specific tasks, problems, or opportunities did you uncover?
+
+We expect findings will be short but concrete.
+For example, findings might be organized as a bulleted list,
+where each bullet starts with a bolded summary of the finding
+and then shares a participant quote or researcher observation that informed that finding.
+
+Although you now have more participants, this milestone asks for relatively few additional findings.
+We expect you will curate your findings
+(e.g., to focus on those which are most interesting,
+to convey the range of things you learned,
+to emphasize key themes you have identified).
+Some of your specific findings therefore might also have been reported in Assignment 2c,
+but others will be new and the overall set will be curated with a focus on advancing your project.
+
+Across your participants, we expect some emergence of common themes, problems, and practices.
+
+- Identify at least two themes or high-level insights that are suggested by your findings across multiple participants.
+- Do your findings, themes, and problems suggest tasks that are important to design for?
+
+If you are having trouble identifying high-level themes, problems, and design opportunities,
+it may indicate a need to develop additional understanding through more design research.
+Because your findings at this point are critical to setting a foundation for your project,
+ensure your design research has provided you the insights and perspective you need to proceed.
+
+*/}

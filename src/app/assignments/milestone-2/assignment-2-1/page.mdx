@@ -1,8 +1,14 @@
+import { Alert } from "@mui/material";
+
+import { AssignmentDueDateTime } from "@/components/AssignmentDueDateTime";
+import { ProjectMilestoneSamples } from "@/components/ProjectMilestoneSamples";
 import { TBD } from "@/components/TBD";
 import { UnderDevelopment } from "@/components/UnderDevelopment";
 import { AssignmentSubmitCanvasLink } from "@/components/links/AssignmentSubmitCanvasLink";
 import { SiteLink } from "@/components/links/SiteLink";
 import { default as ClarityAndPresentationReference } from "@/contentcomponents/ClarityAndPresentationReference.mdx";
+import { default as GroupAssignment } from "@/contentcomponents/GroupAssignment.mdx";
+import { default as ParticipantAnonymity } from '@/contentcomponents/ParticipantAnonymity.mdx';
 import { calendarData } from "@/data/CalendarData";
 import { SiteLinks } from "@/data/SiteLinks";
 
@@ -10,10 +16,102 @@ import { SiteLinks } from "@/data/SiteLinks";
 
 <UnderDevelopment display={true} />
 
-{/*
-TODO: Incorporate due date, which this tag previously did.
-<CollapseProjectMilestone assignment={calendarData.assignments.assignment1a}>
-*/}
+Due: <AssignmentDueDateTime assignmentKey={calendarData.assignments.assignment_2_1} />
 
 This assignment is a component of <SiteLink linkKey={SiteLinks.milestone_2_top}/>.
 Be sure you have reviewed that larger context for this assignment.
+
+<Alert severity="warning">
+<h4 style={{marginTop: 0}}>This Assignment is Still Under Development</h4>
+<h5 style={{marginTop: 0}}>Text below is from a prior assignment that we expect will inform the details of this assignment.</h5>
+
+The goal of this milestone is to develop an initial plan for your design research,
+encouraging you to work through details of how you would conduct that research
+and improving those details through critique and peer feedback.
+
+As part of Assignment 2, you are required to conduct design research
+(e.g., contextual inquiry, interviews, observations)
+to learn from at least __three__ people who might use your design.
+
+In one paragraph, describe the people who might use your design.
+If other people are also likely impacted by a design, also describe these other stakeholders to consider.
+Among potential stakeholders, describe the __participants__ you plan to pursue,
+including such details as their background and the environment where you will examine their current practices.
+
+- For example, your target participants should not be "doctors" but instead a specific group of doctors
+  (e.g., Family Practitioners in the UW Roosevelt Clinic).
+  Other stakeholders might include patients of the clinic, nurses in the clinic, or non-medical staff in the clinic.
+
+Describe your __recruitment plan__ in enough detail to convince us that you can find and engage with your target participants in the next week.
+Whether you intend to target participants that are relatively difficult to access (e.g., as with busy doctors)
+or more readily available (e.g., undergraduate students at the University of Washington),
+describe your planned recruitment activities,
+and when you will be conducting your design research, being as specific as possible.
+Additionally describe any steps you have already taken to recruit,
+and your plans to recover if recruitment is not initially successful in the necessary timeline.
+
+In another paragraph, describe the __specific design research method(s)__
+you will use to engage with and learn from these people and your rationale for choosing these method(s).
+A typical expected method would be contextual inquiry with three participants.
+However, we encourage you to propose alternative or additional design research methods according to your needs
+(e.g., you are welcome but not required to propose to combine multiple methods).
+Please be as specific as possible, providing relevant details for you proposed methods. For example:
+
+- If you propose contextual inquiries, discuss current behaviors you want to observe and your planned focus.
+- If you propose interviews, discuss the types of questions you plan to explore.
+- If you propose a diary study, discuss what type of data you plan to ask participants to bring or collect.
+
+On a second page, provide more detail regarding your primary proposed method. For example:
+
+- If you propose contextual inquiries, enumerate what activities you intend to observe,
+  what focus you intend to bring to observation of each activity,
+  and any strategies you intend to pursue for gaining insight through your observations.
+- If you propose interviews, give an example set of planned talking points.
+- If you propose a diary study, give details of what and how you will ask participants to diary.
+
+#### Submission
+
+No more than two pages of text in PDF format.
+
+- <GroupAssignment />
+- <ClarityAndPresentationReference />
+- <ParticipantAnonymity />
+
+Submit via Canvas here:
+
+<AssignmentSubmitCanvasLink assignmentKey={calendarData.assignments.assignment_2_1} />
+
+#### In Class
+
+Be prepared to discuss your design research plan.
+
+Bring several printed copies of your submission (e.g., four),
+so that you can easily present them to peers for critique.
+
+#### Grading
+
+This milestone will be graded on a scale of __9 points__:
+
+1. __Overall Feasibility and Specificity of People and Recruitment Plan__: (3 points)
+
+   Describe stakeholders and participants.
+
+   Describe recruitment plan.
+
+   Describe any steps already taken and plans to recover if recruitment is not initially successful.
+
+2. __Overall Feasibility and Specificity of Design Research Methods__: (2 points)
+
+   Describe your specific design research method(s) and your rationale for choosing these method(s).
+
+3. __Primary Method Details__: (2 points)
+
+   Provide sufficient details of your primary method to support critique of those details.
+
+4. __Clarity and Presentation__: (2 points)
+
+#### Samples of Prior Submissions
+
+<ProjectMilestoneSamples milestone='assignment2b' />
+
+</Alert>
