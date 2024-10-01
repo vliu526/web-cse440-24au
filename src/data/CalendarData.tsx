@@ -207,6 +207,7 @@ export const calendarData: {
       date: verifyCalendarDate("2024-10-01", "Tue"),
       timeAndLocation: TIME_AND_LOCATION_LECTURE,
       title: "Introduction to Critique",
+      slides: "https://canvas.uw.edu/files/124470186/",
     },
     {
       type: "lecture",
