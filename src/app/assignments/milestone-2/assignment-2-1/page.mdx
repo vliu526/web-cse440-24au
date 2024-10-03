@@ -9,6 +9,7 @@ import { SiteLink } from "@/components/links/SiteLink";
 import { default as ClarityAndPresentationReference } from "@/contentcomponents/ClarityAndPresentationReference.mdx";
 import { default as GroupAssignment } from "@/contentcomponents/GroupAssignment.mdx";
 import { default as ParticipantAnonymity } from '@/contentcomponents/ParticipantAnonymity.mdx';
+import { default as PriorSamplesWarning } from "@/contentcomponents/PriorSamplesWarning.mdx";
 import { calendarData } from "@/data/CalendarData";
 import { SiteLinks } from "@/data/SiteLinks";
 
@@ -69,13 +70,48 @@ On a second page, provide more detail regarding your primary proposed method. Fo
 - If you propose interviews, give an example set of planned talking points.
 - If you propose a diary study, give details of what and how you will ask participants to diary.
 
+</Alert>
+
 #### Submission
 
-No more than two pages of text in PDF format.
+Due: <AssignmentDueDateTime assignmentKey={calendarData.assignments.assignment_2_1} />
+
+Within the Drive folder for course project files:
+
+- Identify the Slides deck corresponding to this assignment for your group.
+  The deck provides a template for this assignment.
+  Edit the deck in-place, so that you can easily share it in critique.
+
+- Prepare a Slide deck with the following structure:
+
+<Alert severity="warning">
+<h4 style={{marginTop: 0}}>This Assignment is Still Under Development</h4>
+<h5 style={{marginTop: 0}}>Text below is from a prior assignment that we expect will inform the details of this assignment.</h5>
+  Proposal Critique
+    - For each proposal from Assignment 1.2 (3 total):
+      - 1/2 slide: Description of the proposal.
+      - 1/2 slide: Overview of critique you received.
+
+  Final Proposal
+    - 1 slide: A revised or new description of the proposal.
+    - 1 slide: Analysis, background, or context for this proposal.
+</Alert>
+
+Reminders and requirements:
+
+- Submission via Canvas is also required, in support of grading.
+  - Remove instruction slides and template markings from your deck before submission.
+
+  - Export a PDF of your deck, via the menu: File -> Download -> PDF Document (.pdf).
 
 - <GroupAssignment />
 - <ClarityAndPresentationReference />
 - <ParticipantAnonymity />
+
+The Drive folder for course project files is here:
+
+{/* TODO: use a component for this */}
+[https://drive.google.com/drive/folders/1Sm12CpuMNsKBqk6E_Ri875hfFs0A-IRS?usp=drive_link](https://drive.google.com/drive/folders/1Sm12CpuMNsKBqk6E_Ri875hfFs0A-IRS?usp=drive_link)
 
 Submit via Canvas here:
 
@@ -85,12 +121,13 @@ Submit via Canvas here:
 
 Be prepared to discuss your design research plan.
 
-Bring several printed copies of your submission (e.g., four),
-so that you can easily present them to peers for critique.
+#### Completion Grading
 
-#### Grading
+<Alert severity="warning">
+<h4 style={{marginTop: 0}}>This Assignment is Still Under Development</h4>
+<h5 style={{marginTop: 0}}>Text below is from a prior assignment that we expect will inform the details of this assignment.</h5>
 
-This milestone will be graded on a scale of __9 points__:
+This assignment will be graded on completion of __X components__:
 
 1. __Overall Feasibility and Specificity of People and Recruitment Plan__: (3 points)
 
@@ -110,8 +147,10 @@ This milestone will be graded on a scale of __9 points__:
 
 4. __Clarity and Presentation__: (2 points)
 
+</Alert>
+
 #### Samples of Prior Submissions
 
-<ProjectMilestoneSamples milestone='assignment2b' />
+<PriorSamplesWarning />
 
-</Alert>
+<ProjectMilestoneSamples milestone='assignment2b' />

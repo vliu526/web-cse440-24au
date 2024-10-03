@@ -596,8 +596,8 @@ export const calendarData: {
       date: verifyCalendarDate("2024-10-10", "Thu"),
       submission: "canvas",
       submitCanvasTime: "3:00pm",
-      // submitCanvasLink:
-      //   "https://canvas.uw.edu/courses/1695984/assignments/8938950",
+      submitCanvasLink:
+        "https://canvas.uw.edu/courses/1746586/assignments/9730292",
     },
     assignment_2_2: {
       type: "assignment",
@@ -606,8 +606,8 @@ export const calendarData: {
       date: verifyCalendarDate("2024-10-17", "Thu"),
       submission: "canvas",
       submitCanvasTime: "3:00pm",
-      // submitCanvasLink:
-      //   "https://canvas.uw.edu/courses/1695984/assignments/8938950",
+      submitCanvasLink:
+        "https://canvas.uw.edu/courses/1746586/assignments/9730293",
     },
     milestone_2_report: {
       type: "assignment",
