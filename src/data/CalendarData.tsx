@@ -227,7 +227,8 @@ export const calendarData: {
       type: "lecture",
       date: verifyCalendarDate("2024-10-10", "Thu"),
       timeAndLocation: TIME_AND_LOCATION_LECTURE,
-      title: "Lecture",
+      title: "Design of Everyday Things",
+      slides: "https://canvas.uw.edu/files/124964883/",
     },
     {
       type: "lecture",
