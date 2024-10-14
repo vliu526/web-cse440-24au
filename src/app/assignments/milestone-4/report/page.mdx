@@ -1,6 +1,14 @@
+import { Alert } from "@mui/material";
+import { AssignmentDueDateTime } from "@/components/AssignmentDueDateTime";
 import { UnderDevelopment } from "@/components/UnderDevelopment";
+import { AssignmentSubmitCanvasLink } from "@/components/links/AssignmentSubmitCanvasLink";
+import { CourseDataLink } from "@/components/links/CourseDataLink";
 import { SiteLink } from "@/components/links/SiteLink";
+import { default as ContributionStatementReference } from "@/contentcomponents/ContributionStatementReference.mdx";
+import { default as GroupAssignment } from "@/contentcomponents/GroupAssignment.mdx";
 import { SiteLinks } from "@/data/SiteLinks";
+import { calendarData } from "@/data/CalendarData";
+import { courseData } from "@/data/CourseData";
 
 # Milestone 4 Report
 
@@ -8,3 +16,141 @@ import { SiteLinks } from "@/data/SiteLinks";
 
 This assignment is a component of <SiteLink linkKey={SiteLinks.milestone_4_top}/>.
 Be sure you have reviewed that larger context for this assignment.
+
+<Alert severity="warning">
+<h4 style={{marginTop: 0}}>Assignment Text is Under Development</h4>
+
+{/*
+TODO goal text that mirrors Milestone 1 but fits the scope of this milestone.
+
+> From Milestone 1
+The goal of this report is to summarize and communicate your development of a project proposal in Milestone 1.
+
+> From Assignment 2d
+The goal of this milestone is to reflect on what you observed and learned in your design research,
+organizing observations around themes and developing insights into tasks that can help inform your design.
+*/}
+
+You are free to directly reuse content produced for earlier assignments in this milestone.
+However, you should revise content as needed to ensure your milestone report reflects your current work.
+Similarly, we expect that feedback received throughout this milestone will have been addressed or implemented in this report.
+
+{/*
+TODO goal text that mirrors Milestone 1 but fits the scope of this milestone.
+
+> From Milestone 1
+Milestone 1 has focused on finding your design direction through a process of
+developing multiple proposals,
+receiving critique on each of them,
+integrating that critique to prepare a final proposal,
+and doing initial ideation to inform your upcoming design research.
+In this milestone report, aim to communicate how you came to your design direction and why it is compelling to pursue.
+*/}
+
+{/*
+This report should have HOW MANY sections:
+
+1. __Section__
+
+2. __Section__
+
+3. __Section__
+
+*/}
+
+</Alert>
+
+## Submission
+
+Due: <AssignmentDueDateTime assignmentKey={calendarData.assignments.milestone_4_report} />
+
+Within the Drive folder for course project files:
+
+- Identify the Slides deck corresponding to this assignment for your group.
+  The deck provides a template for this assignment.
+  Edit the deck in-place, so that you can easily share it in critique.
+
+- Prepare a Slide deck with the following structure:
+
+<Alert severity="warning">
+<h4 style={{marginTop: 0}}>Assignment Text is Under Development</h4>
+
+{/*
+  Initial Proposals
+    - For each proposal from Assignment 1.2 (3 total):
+      - 1/2 slide: Description of the proposal.
+      - 1/2 slide: Synthesis of critique and reflection on this proposal.
+    - 1 slide: Reflection on how these proposals informed your final proposal.
+
+  Final Proposal
+    - 1 slide: Description of the proposal.
+    - 1 slide: Analysis, background, or context for this proposal.
+
+  Design Directions
+    - Across 2 slides: 6 to 10 of your top design ideas,
+      with brief insights into why they are potentially compelling to explore.
+    - 1 slide: Initial proposals for design research people, focus, and method.
+*/}
+
+</Alert>
+
+Reminders and requirements:
+
+- Submission via Canvas is also required, in support of grading.
+  - Remove instruction slides and template markings from your deck before submission.
+
+  - Export a PDF of your deck, via the menu: File -> Download -> PDF Document (.pdf).
+
+- <GroupAssignment />
+- <ContributionStatementReference />
+
+The Drive folder for course project files is here:
+
+<CourseDataLink linkKey={courseData.linkDriveProjectFiles} outerComponent="p"/>
+
+Submit via Canvas here:
+
+<AssignmentSubmitCanvasLink assignmentKey={calendarData.assignments.milestone_4_report} />
+
+## Grading
+
+<Alert severity="warning">
+<h4 style={{marginTop: 0}}>Assignment Text is Under Development</h4>
+
+{/*
+This milestone report will be graded on a scale of __20 points__:
+
+1. __Initial Proposals and Critique__: (3 x 1 point)
+
+   Share each proposal, with appropriate summary of and reflection on critique of that proposal.
+
+2. __Reflection on Initial Proposals__: (2 point)
+
+   Provide meaningful insight into rationale for pursuing your final proposal,
+   including your decisions and what informed those decisions.
+
+3. __Final Proposal - Problem and Motivation__: (4 points)
+
+   Provide enough detail to convince the reader that this is a difficult and interesting problem, worth spending a quarter considering.
+
+4. __Final Proposal - Analysis of Problem__: (4 points)
+
+   Give enough background and context to convey how your project might evolve to be compelling.
+
+5. __Novelty and Creativity__: (2 points)
+
+   If there are already well-known and widely-available solutions to your proposed idea,
+   explain how these existing solutions fall short or suggest how you may explore a different approach.
+
+6. __Design Ideation__: (2 points)
+
+   Present a set of your top design ideas and
+   a few specific insights into why these ideas are potentially compelling to explore.
+
+7. __Directions for Design Research__: (1 point)
+
+   Provide meaningful ideas for people, focus, and method to consider in design research.
+
+8. __Clarity and Presentation__: (2 points)
+*/}
+</Alert>
