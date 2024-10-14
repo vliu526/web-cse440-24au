@@ -1,11 +1,13 @@
 import { Alert } from "@mui/material";
 import { AssignmentDueDateTime } from "@/components/AssignmentDueDateTime";
+import { ProjectMilestoneSamples } from "@/components/ProjectMilestoneSamples";
 import { UnderDevelopment } from "@/components/UnderDevelopment";
 import { AssignmentSubmitCanvasLink } from "@/components/links/AssignmentSubmitCanvasLink";
 import { CourseDataLink } from "@/components/links/CourseDataLink";
 import { SiteLink } from "@/components/links/SiteLink";
 import { default as ContributionStatementReference } from "@/contentcomponents/ContributionStatementReference.mdx";
 import { default as GroupAssignment } from "@/contentcomponents/GroupAssignment.mdx";
+import { default as PriorSamplesWarning } from "@/contentcomponents/PriorSamplesWarning.mdx";
 import { SiteLinks } from "@/data/SiteLinks";
 import { calendarData } from "@/data/CalendarData";
 import { courseData } from "@/data/CourseData";
@@ -45,6 +47,44 @@ receiving critique on each of them,
 integrating that critique to prepare a final proposal,
 and doing initial ideation to inform your upcoming design research.
 In this milestone report, aim to communicate how you came to your design direction and why it is compelling to pursue.
+*/}
+
+
+{/* Old text from ASSIGNMENT 2D
+
+#### Identifying Themes
+
+Complete design research with a total of at least three participants. Discuss your process and what you learned:
+
+- What did you do?
+  - Who you observed or interviewed, their relevant background or context.
+- What did you learn?
+  - List **at least eight** specific findings based on what you observed or learned.
+  - For example, what specific tasks, problems, or opportunities did you uncover?
+
+We expect findings will be short but concrete.
+For example, findings might be organized as a bulleted list,
+where each bullet starts with a bolded summary of the finding
+and then shares a participant quote or researcher observation that informed that finding.
+
+Although you now have more participants, this milestone asks for relatively few additional findings.
+We expect you will curate your findings
+(e.g., to focus on those which are most interesting,
+to convey the range of things you learned,
+to emphasize key themes you have identified).
+Some of your specific findings therefore might also have been reported in Assignment 2c,
+but others will be new and the overall set will be curated with a focus on advancing your project.
+
+Across your participants, we expect some emergence of common themes, problems, and practices.
+
+- Identify at least two themes or high-level insights that are suggested by your findings across multiple participants.
+- Do your findings, themes, and problems suggest tasks that are important to design for?
+
+If you are having trouble identifying high-level themes, problems, and design opportunities,
+it may indicate a need to develop additional understanding through more design research.
+Because your findings at this point are critical to setting a foundation for your project,
+ensure your design research has provided you the insights and perspective you need to proceed.
+
 */}
 
 {/*
@@ -155,39 +195,8 @@ This milestone report will be graded on a scale of __20 points__:
 */}
 </Alert>
 
-{/* More text from ASSIGNMENT 2D
+## Prior Samples
 
-#### Identifying Themes
+<PriorSamplesWarning />
 
-Complete design research with a total of at least three participants. Discuss your process and what you learned:
-
-- What did you do?
-  - Who you observed or interviewed, their relevant background or context.
-- What did you learn?
-  - List **at least eight** specific findings based on what you observed or learned.
-  - For example, what specific tasks, problems, or opportunities did you uncover?
-
-We expect findings will be short but concrete.
-For example, findings might be organized as a bulleted list,
-where each bullet starts with a bolded summary of the finding
-and then shares a participant quote or researcher observation that informed that finding.
-
-Although you now have more participants, this milestone asks for relatively few additional findings.
-We expect you will curate your findings
-(e.g., to focus on those which are most interesting,
-to convey the range of things you learned,
-to emphasize key themes you have identified).
-Some of your specific findings therefore might also have been reported in Assignment 2c,
-but others will be new and the overall set will be curated with a focus on advancing your project.
-
-Across your participants, we expect some emergence of common themes, problems, and practices.
-
-- Identify at least two themes or high-level insights that are suggested by your findings across multiple participants.
-- Do your findings, themes, and problems suggest tasks that are important to design for?
-
-If you are having trouble identifying high-level themes, problems, and design opportunities,
-it may indicate a need to develop additional understanding through more design research.
-Because your findings at this point are critical to setting a foundation for your project,
-ensure your design research has provided you the insights and perspective you need to proceed.
-
-*/}
+<ProjectMilestoneSamples milestone='assignment2d' />
