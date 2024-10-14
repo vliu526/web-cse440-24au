@@ -1,7 +1,9 @@
 import { AssignmentDueDateTime } from "@/components/AssignmentDueDateTime";
 import { UnderDevelopment } from "@/components/UnderDevelopment";
 import { AssignmentSubmitCanvasLink } from "@/components/links/AssignmentSubmitCanvasLink";
+import { CourseDataLink } from "@/components/links/CourseDataLink";
 import { calendarData } from "@/data/CalendarData";
+import { courseData } from "@/data/CourseData";
 
 # Assignment 0: Introduction Slide
 
@@ -35,8 +37,9 @@ Within the Drive folder for course project files:
 
 The Drive folder for course project files is here:
 
-{/* TODO: use a component for this */}
-[https://drive.google.com/drive/folders/1Sm12CpuMNsKBqk6E_Ri875hfFs0A-IRS?usp=drive_link](https://drive.google.com/drive/folders/1Sm12CpuMNsKBqk6E_Ri875hfFs0A-IRS?usp=drive_link)
+The Drive folder for course project files is here:
+
+<CourseDataLink linkKey={courseData.linkDriveProjectFiles} outerComponent="p"/>
 
 ### Grading
 

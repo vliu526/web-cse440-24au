@@ -9,8 +9,10 @@ import { default as ContributionStatementReference } from "@/contentcomponents/C
 import { default as ExcludedTopics } from "@/contentcomponents/ExcludedTopics.mdx";
 import { default as GroupAssignment } from "@/contentcomponents/GroupAssignment.mdx";
 import { default as PriorSamplesWarning } from "@/contentcomponents/PriorSamplesWarning.mdx";
+import { CourseDataLink } from "@/components/links/CourseDataLink";
 import { SiteLink } from "@/components/links/SiteLink";
 import { calendarData } from "@/data/CalendarData";
+import { courseData } from "@/data/CourseData";
 import { SiteLinks } from "@/data/SiteLinks";
 
 # Assignment 1.2: Group Proposals
@@ -69,8 +71,7 @@ Reminders and requirements:
 
 The Drive folder for course project files is here:
 
-{/* TODO: use a component for this */}
-[https://drive.google.com/drive/folders/1Sm12CpuMNsKBqk6E_Ri875hfFs0A-IRS?usp=drive_link](https://drive.google.com/drive/folders/1Sm12CpuMNsKBqk6E_Ri875hfFs0A-IRS?usp=drive_link)
+<CourseDataLink linkKey={courseData.linkDriveProjectFiles} outerComponent="p"/>
 
 Submit via Canvas here:
 
