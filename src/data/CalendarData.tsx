@@ -241,7 +241,8 @@ export const calendarData: {
       type: "lecture",
       date: verifyCalendarDate("2024-10-17", "Thu"),
       timeAndLocation: TIME_AND_LOCATION_LECTURE,
-      title: "Lecture",
+      title: "Task Analysis",
+      slides: "https://canvas.uw.edu/files/125287804/",
     },
     {
       type: "lecture",
