@@ -302,8 +302,14 @@ export const calendarData: {
     },
     {
       type: "studio",
+      dates: [verifyCalendarDate("2024-10-24", "Thu")],
+      timeAndLocation: TIME_AND_LOCATION_LECTURE,
+      title: "Studio",
+      slides: "https://canvas.uw.edu/files/125633734/",
+    },
+    {
+      type: "studio",
       dates: [
-        verifyCalendarDate("2024-10-24", "Thu"),
         verifyCalendarDate("2024-11-26", "Tue"),
         verifyCalendarDate("2024-12-03", "Tue"),
         verifyCalendarDate("2024-12-05", "Thu"),
