@@ -537,7 +537,7 @@ export const calendarData: {
       type: "assignment",
       title: "Milestone 3: Report",
       link: SiteLinks.milestone_3_report_top.href,
-      date: verifyCalendarDate("2024-11-07", "Thu"),
+      date: verifyCalendarDate("2024-11-08", "Fri"),
       submission: "canvas",
       submitCanvasTime: "3:00pm",
       submitCanvasLink:
