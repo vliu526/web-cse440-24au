@@ -256,6 +256,7 @@ export const calendarData: {
       date: verifyCalendarDate("2024-11-05", "Tue"),
       timeAndLocation: TIME_AND_LOCATION_LECTURE,
       title: "Models and Human Performance",
+      slides: "https://canvas.uw.edu/files/126193990/",
     },
     {
       type: "lecture",
