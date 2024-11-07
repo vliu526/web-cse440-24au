@@ -263,6 +263,7 @@ export const calendarData: {
       date: verifyCalendarDate("2024-11-07", "Thu"),
       timeAndLocation: TIME_AND_LOCATION_LECTURE,
       title: "Inspection and Usability Testing",
+      slides: "https://canvas.uw.edu/files/126329737/",
     },
     {
       type: "lecture",
