@@ -607,7 +607,7 @@ export const calendarData: {
       link: SiteLinks.assignment_5_poster_top.href,
       date: verifyCalendarDate("2024-12-02", "Mon"),
       submission: "canvas",
-      submitCanvasTime: "8:00pm",
+      submitCanvasTime: "3:00pm",
     },
     assignment_5_web_post_initial: {
       type: "assignment",
