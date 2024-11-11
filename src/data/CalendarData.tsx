@@ -337,13 +337,13 @@ export const calendarData: {
   ],
 
   events: [
-    // {
-    //   type: "event",
-    //   title: "Exam Q&A",
-    //   date: verifyCalendarDate("2024-02-19", "Mon"),
-    //   timeAndLocation: TIME_AND_LOCATION_EXAM_QA,
-    //   slides: "https://canvas.uw.edu/files/116100598/",
-    // },
+    {
+      type: "event",
+      title: "Exam Q&A",
+      date: verifyCalendarDate("2024-11-18", "Mon"),
+      timeAndLocation: TIME_AND_LOCATION_EXAM_QA,
+      // slides: "https://canvas.uw.edu/files/116100598/",
+    },
     {
       type: "event",
       title: "Exam",
@@ -566,8 +566,8 @@ export const calendarData: {
       date: verifyCalendarDate("2024-11-14", "Thu"),
       submission: "canvas",
       submitCanvasTime: "3:00pm",
-      // submitCanvasLink:
-      //   "https://canvas.uw.edu/courses/1695984/assignments/8938950",
+      submitCanvasLink:
+        "https://canvas.uw.edu/courses/1746586/assignments/9793114",
     },
     assignment_4_3: {
       type: "assignment",
