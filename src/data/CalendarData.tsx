@@ -337,13 +337,13 @@ export const calendarData: {
   ],
 
   events: [
-    // {
-    //   type: "event",
-    //   title: "Exam Q&A",
-    //   date: verifyCalendarDate("2024-02-19", "Mon"),
-    //   timeAndLocation: TIME_AND_LOCATION_EXAM_QA,
-    //   slides: "https://canvas.uw.edu/files/116100598/",
-    // },
+    {
+      type: "event",
+      title: "Exam Q&A",
+      date: verifyCalendarDate("2024-11-18", "Mon"),
+      timeAndLocation: TIME_AND_LOCATION_EXAM_QA,
+      // slides: "https://canvas.uw.edu/files/116100598/",
+    },
     {
       type: "event",
       title: "Exam",
