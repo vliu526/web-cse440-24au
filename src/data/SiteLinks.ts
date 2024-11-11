@@ -136,15 +136,15 @@ export const SiteLinks = {
   },
   assignment_5_digital_mockup_top: {
     href: "/assignments/milestone-5/digital-mockup/#assignment-5-digital-mockup",
-    anchor: "Assignment 5",
+    anchor: "Digital Mockup",
   },
   assignment_5_poster_top: {
     href: "/assignments/milestone-5/poster/#assignment-5-poster",
-    anchor: "Assignment 5",
+    anchor: "Poster",
   },
   assignment_5_web_post_top: {
     href: "/assignments/milestone-5/web-post/#assignment-5-web-post",
-    anchor: "Assignment 5",
+    anchor: "Web Post",
   },
 
   calendarTop: {
