@@ -1,19 +1,163 @@
+import { Alert } from "@mui/material";
+
+import { AssignmentDueDateTime } from "@/components/AssignmentDueDateTime";
+import { ProjectMilestoneSamples } from "@/components/ProjectMilestoneSamples";
 import { TBD } from "@/components/TBD";
 import { UnderDevelopment } from "@/components/UnderDevelopment";
 import { AssignmentSubmitCanvasLink } from "@/components/links/AssignmentSubmitCanvasLink";
+import { CourseDataLink } from "@/components/links/CourseDataLink";
 import { SiteLink } from "@/components/links/SiteLink";
 import { default as ClarityAndPresentationReference } from "@/contentcomponents/ClarityAndPresentationReference.mdx";
+import { default as GroupAssignment } from "@/contentcomponents/GroupAssignment.mdx";
+import { default as ParticipantAnonymity } from '@/contentcomponents/ParticipantAnonymity.mdx';
+import { default as PriorSamplesWarning } from "@/contentcomponents/PriorSamplesWarning.mdx";
 import { calendarData } from "@/data/CalendarData";
+import { courseData } from "@/data/CourseData";
 import { SiteLinks } from "@/data/SiteLinks";
+import { Paths } from "@/paths";
+
+export const pathPosterTemplateA = '/assignments/poster-template-a-32x40.pptx';
+export const pathPosterTemplateB = '/assignments/poster-template-b-32x40.pptx';
+export const pathPosterTemplateC = '/assignments/poster-template-c-32x40.pptx';
 
 # Assignment 5: Poster
 
 <UnderDevelopment display={true} />
 
-{/*
-TODO: Incorporate due date, which this tag previously did.
-<CollapseProjectMilestone assignment={calendarData.assignments.assignment1a}>
-*/}
+Due: <AssignmentDueDateTime assignmentKey={calendarData.assignments.assignment_5_poster_initial} />
+
+Revision Due: <AssignmentDueDateTime assignmentKey={calendarData.assignments.assignment_5_poster_final} />
 
 This assignment is a component of <SiteLink linkKey={SiteLinks.milestone_5_top}/>.
 Be sure you have reviewed that larger context for this assignment.
+
+The goal of this assignment is to create a poster and a pitch that communicate your design to a broad audience.
+
+**Create a poster** that communicates your design and your design process.
+Present your work in a visual form that quickly conveys its most important aspects.
+Your poster should include:
+
+- Project Title
+- Logo
+- Your Names
+- Problem
+- Key Idea or Approach
+- Key Functionality
+- Key Design Insights
+
+Your poster should emphasize images and include limited amounts of text.
+For consistency and ease of printing and display, your poster should be 32" x 40" (i.e., portrait, vertical).
+
+The staff have assembled several templates you can use as a starting point:
+
+<CourseDataLink linkKey={courseData.linkFigmaPosterTemplates} outerComponent="p"/>
+<p><a href={Paths.basePath + pathPosterTemplateA}>Powerpoint Template A</a></p>
+<p><a href={Paths.basePath + pathPosterTemplateB}>Powerpoint Template B</a></p>
+<p><a href={Paths.basePath + pathPosterTemplateC}>Powerpoint Template C</a></p>
+
+You should heavily modify the template to be unique and represent your project.
+
+Make sure all images you include are clear and legible (e.g., with appropriate contrast).
+Re-make images as necessary to ensure this
+(e.g., by taking new photos in better lighting, by instead using a scanner,
+by re-creating a piece of a paper prototype using ink that will create a better image).
+
+## Poster Session
+
+During the final poster session, your team should be ready
+to give a 30-second pitch to a small group of judges.
+Prepare a pitch that summarizes the problem and your design.
+This pitch should convince an audience that your problem was worth investigating
+and that your design suggests a compelling direction.
+
+The final poster session is not graded, but instead serves as a celebration of your work.
+
+## Submission
+
+Due: <AssignmentDueDateTime assignmentKey={calendarData.assignments.assignment_5_poster_initial} />
+
+Revision Due: <AssignmentDueDateTime assignmentKey={calendarData.assignments.assignment_5_poster_final} />
+
+<Alert severity="warning">
+<h4 style={{marginTop: 0}}>Assignment Text is Under Development</h4>
+
+Submission via Canvas is required.
+
+Due to frequent challenges in printing, submit both:
+- A PDF of your poster.
+- The source file for your poster (e.g., a PPTX file, a text file containing a Figma link with edit access).
+
+Be sure:
+
+- <GroupAssignment />
+- <ClarityAndPresentationReference />
+- <ParticipantAnonymity />
+
+Submit via Canvas here:
+
+<AssignmentSubmitCanvasLink assignmentKey={calendarData.assignments.assignment_5_poster_initial} />
+
+Submit a revision via Canvas here:
+
+<AssignmentSubmitCanvasLink assignmentKey={calendarData.assignments.assignment_5_poster_final} />
+
+</Alert>
+
+## In Class
+
+We will bring 8.5" x 11" printed copies of your poster for in-class critique and refinement.
+
+## Completion Grading
+
+Initial submission of this assignment will be graded on completion of the following components:
+
+<Alert severity="warning">
+<h4 style={{marginTop: 0}}>Assignment Text is Under Development</h4>
+
+{/*
+1. __Design Title & Summary__
+
+   This may be taken directly from Milestone 3,
+   or it might have evolved based on what you learned in prototyping..
+
+2. __Overall Completeness and Appropriateness of Paper Prototype__
+
+   Include an overview image of the entire paper prototype
+   to convey critical components of your design and the context of your focus tasks.
+
+   If you use an informal drawing tool,
+   be sure this overview shows physical copies of your paper prototype available for usability testing.
+
+3. __Focus Task Stories__
+
+   For each focus task,
+   include a story that provides context and details for understanding and interacting with your paper prototype.
+
+4. __Focus Task Walkthroughs__
+
+   For each focus task, develop a step-by-step task walkthrough with your paper prototype.
+   Include each step in the task, with enough detail to show how to complete each step.
+
+5. __Clarity and Presentation__
+*/}
+
+</Alert>
+
+## Grading
+
+Final submission of this assignment will be graded on a scale of <TBD>__XX points__</TBD>:
+
+<Alert severity="warning">
+<h4 style={{marginTop: 0}}>Assignment Text is Under Development</h4>
+
+{/*
+Points breakdown like a report.
+*/}
+
+</Alert>
+
+## Prior Samples
+
+<PriorSamplesWarning />
+
+<ProjectMilestoneSamples milestone='assignment4poster' />
