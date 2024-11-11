@@ -573,7 +573,7 @@ export const calendarData: {
       type: "assignment",
       title: "Assignment 4.3: Usability Testing",
       link: SiteLinks.assignment_4_3_top.href,
-      date: verifyCalendarDate("2024-11-21", "Thu"),
+      date: verifyCalendarDate("2024-11-22", "Fri"),
       submission: "canvas",
       submitCanvasTime: "8:00pm",
       // submitCanvasLink:
