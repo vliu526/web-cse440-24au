@@ -284,6 +284,7 @@ export const calendarData: {
       date: verifyCalendarDate("2024-11-21", "Thu"),
       timeAndLocation: TIME_AND_LOCATION_LECTURE,
       title: "Designing for Diverse Needs",
+      slides: "https://canvas.uw.edu/files/127038308/",
     },
   ],
 
