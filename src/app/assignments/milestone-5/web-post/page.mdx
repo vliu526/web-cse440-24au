@@ -1,8 +1,16 @@
+import { Alert } from "@mui/material";
+
+import { AssignmentDueDateTime } from "@/components/AssignmentDueDateTime";
+import { ProjectMilestoneSamples } from "@/components/ProjectMilestoneSamples";
 import { TBD } from "@/components/TBD";
 import { UnderDevelopment } from "@/components/UnderDevelopment";
 import { AssignmentSubmitCanvasLink } from "@/components/links/AssignmentSubmitCanvasLink";
+import { CourseStoreLink } from "@/components/links/CourseStoreLink";
 import { SiteLink } from "@/components/links/SiteLink";
 import { default as ClarityAndPresentationReference } from "@/contentcomponents/ClarityAndPresentationReference.mdx";
+import { default as GroupAssignment } from "@/contentcomponents/GroupAssignment.mdx";
+import { default as ParticipantAnonymity } from '@/contentcomponents/ParticipantAnonymity.mdx';
+import { default as PriorSamplesWarning } from "@/contentcomponents/PriorSamplesWarning.mdx";
 import { calendarData } from "@/data/CalendarData";
 import { SiteLinks } from "@/data/SiteLinks";
 
@@ -10,13 +18,15 @@ import { SiteLinks } from "@/data/SiteLinks";
 
 <UnderDevelopment display={true} />
 
-{/*
-TODO: Incorporate due date, which this tag previously did.
-<CollapseProjectMilestone assignment={calendarData.assignments.assignment1a}>
-*/}
+Due: <AssignmentDueDateTime assignmentKey={calendarData.assignments.assignment_5_web_post_initial} />
+
+Revision Due: <AssignmentDueDateTime assignmentKey={calendarData.assignments.assignment_5_web_post_final} />
 
 This assignment is a component of <SiteLink linkKey={SiteLinks.milestone_5_top}/>.
 Be sure you have reviewed that larger context for this assignment.
+
+The goal of this assignment is to effectively communicate your design
+and your underlying design process in a post appropriate for a web portfolio.
 
 **Prepare a web post** documenting your design and your design process.
 Your post will be integrated into the course website via the
@@ -72,7 +82,7 @@ Be sure to inspect and understand the template text provided in your project dir
    This should be a single short paragraph.
    Be sure to include:
    - Any context needed to understand your focus tasks in the context of your overall design.
-   - A brief motivation or rationale for your design focus on these two tasks.
+   - A brief motivation or rationale for your focus tasks.
 
    Your goal is to motivate these tasks as context for the details of your design.
 
@@ -83,9 +93,9 @@ Be sure to inspect and understand the template text provided in your project dir
    These might each begin with a heading for the task.
    Be sure to include:
    - The tasks that are being accomplished.
-   - Images conveying your design in each tasks
+   - Images conveying your design in each task
      (e.g., as walkthroughs with images from your digital mockup).
-   - Enough associated text for a reader to understand the resulting design.
+   - Enough associated text for a reader to understand the design.
 
    Your goal is to ensure a person can understand your design and key elements of your task walkthroughs.
 
@@ -116,8 +126,7 @@ Be sure to inspect and understand the template text provided in your project dir
      key reasons you chose one design over alternatives,
      key reasons you combined ideas from multiple design alternatives).
    - Any images appropriate for conveying the insight (e.g., images from your design sketches).
-   - Brief motivation or rationale for emphasizing this insight
-     (e.g., how it shaped your design direction or why it was ultimately important to your final design).
+   - Describe how this insight shaped your design direction or why it was ultimately important to your final design.
 
    Your goal is to convey key insights from your design research that helped define and differentiate your design.
 
@@ -166,3 +175,143 @@ Be sure to inspect and understand the template text provided in your project dir
    - Do not number your insights (e.g., "Insight 1", "Insight 2", "Insight 3").
      Instead give them a descriptive heading
      or consider that each paragraph could begin with a single bolded sentence summarizing the insight.
+
+## Submission
+
+Due: <AssignmentDueDateTime assignmentKey={calendarData.assignments.assignment_5_web_post_initial} />
+
+Revision Due: <AssignmentDueDateTime assignmentKey={calendarData.assignments.assignment_5_web_post_final} />
+
+Evidence from Medium suggests that effective posts can be read in approximately 7 minutes:
+
+[https://medium.com/data-lab/the-optimal-post-is-7-minutes-74b9f41509b](https://medium.com/data-lab/the-optimal-post-is-7-minutes-74b9f41509b)
+
+Author your post such that it conveys the necessary content while remaining easy to skim and read within approximately 7 minutes.
+We estimate posts will be between 1500 and 2000 words in length.
+
+Be sure:
+
+- <GroupAssignment />
+- <ClarityAndPresentationReference />
+- <ParticipantAnonymity />
+
+Submit your post as a pull request against the course website GitHub repository:
+
+- <CourseStoreLink outerComponent="p" linkKey='linkGitHub' />
+
+- You will need to fork the course website, clone it to your local machine,
+  make and commit your edits, then eventually open a pull request to the course website,
+  which we will then merge and publish.
+
+- See the repository README.md for guidance on using `yarn dev` to run a local build of the website.
+  Served at `localhost:3000`, this will dynamically update as you modify your content.
+
+- Prior to opening your pull request, use `yarn export` to ensure that your code builds without errors.
+
+- All edits included in your pull request should be contained within your provided project directory:
+
+  - Each project has a directory within `src/app/projects`.
+  - Edit the provided `page.mdx` with the contents of your post.
+  - Place images in the provided directories in `public/images/projects`
+    (i.e., for pictures of your team and for pictures used in your post).
+    Remove any images that are not in use.
+  - Replace the provided `project_thumb.png` with a 150x150 PNG to be used in linking to your project page.
+
+- You may submit multiple pull requests as you work on your post, and we will merge them as quickly as possible.
+
+- If a change is needed in the overall projects page or in the location of your project directory
+  (e.g., because you have changed your project name), contact and coordinate with the course staff.
+  Do not attempt this yourself, as the website implementation is relatively fragile.
+
+- Start early to ensure you are able to properly submit necessary pull requests.
+  We will accept and merge trivial pull requests if they help you learn this process.
+  In an emergency where you are unable to submit your content via a pull request,
+  you may document the status of your post by emailing the staff a Zip archive of your project directory.
+  We will then work with you on posting your content.
+
+## In Class
+
+Be prepared to discuss your initial post for in-class critique and refinement.
+
+## Completion Grading
+
+Initial submission of this assignment will be graded on completion of
+the same components that will later be graded in a revised submission.
+
+## Grading
+
+Final submission of this assignment will be graded on a scale of <TBD>__XX points__</TBD>:
+
+<Alert severity="warning">
+<h4 style={{marginTop: 0}}>Assignment Text is Under Development</h4>
+
+1. __Design Name__: (XX points)
+
+   Choose a short, creative, and marketable name that captures the key idea or approach in your design.
+
+2. __Logo__: (XX points)
+
+   Include an attractive project logo.
+
+   This may be the same logo you prepare for your poster,
+   or you may use a variation that you feel is more effective in a web format.
+
+3. __Group Names__: (XX points)
+
+   Appropriately include the full names of each member of your group.
+
+4. __Problem__: (XX points)
+
+   Concisely and effectively convey the problem your design addresses.
+
+5. __Key Idea or Approach__: (XX points)
+
+   Concisely and effectively convey the key idea or approach of your design.
+
+   Provide a brief motivation or rationale for your focus tasks.
+
+   Include an image that provides high-level design context for key functionality.
+
+6. __Focus Task Walkthroughs__: (XX points)
+
+   Present key elements of your design in your two focus tasks.
+
+   Use images to convey your design in each task,
+   while providing enough text for a reader to understand the design.
+
+7. __Design Research Insights__: (XX points)
+
+   Provide a concise overview of your design research process.
+
+   Present 3 key insights from your design research process.
+
+   Describe how each insight shaped your design direction or why it was ultimately important to your final design.
+
+8. __Iterative Design Insights Insights__: (XX points)
+
+   Provide a concise overview of your iterative design process.
+
+   Present 3 key insights from your iterative design process.
+
+   Describe how you iterated upon the design in response to the insight.
+
+9. __Clarity and Presentation__: (XX points)
+
+10. __Submission via Pull Request__: (XX points)
+
+    Submit your initial web post and revisions to that post as pull requests.
+
+    Be responsive to any challenges of integrating and publishing your post.
+
+</Alert>
+
+## Prior Samples
+
+<PriorSamplesWarning />
+
+Examples of web posts and project reports are linked from projects in prior offerings,
+but be sure your submission is designed for the format, requirements, and emphasis of this assignment:
+
+- Winter 2024 Projects: [https://courses.cs.washington.edu/courses/cse440/24wi/projects](https://courses.cs.washington.edu/courses/cse440/24wi/projects)
+- Winter 2023 Projects: [https://courses.cs.washington.edu/courses/cse440/23wi/projects](https://courses.cs.washington.edu/courses/cse440/23wi/projects)
+- Spring 2022 Projects: [https://courses.cs.washington.edu/courses/cse440/22sp/projects](https://courses.cs.washington.edu/courses/cse440/22sp/projects)
