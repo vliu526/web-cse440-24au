@@ -37,7 +37,7 @@ export const ProjectImagesBlock: FunctionComponent<ProjectImagesBlockProps> = (
               justifyContent: "center",
             }}
           >
-            {props.images.map((projectImage) => (
+            {props.images.map((projectImage, projectImageIndex) => (
               <Box
                 sx={{
                   display: "flex",
@@ -45,7 +45,7 @@ export const ProjectImagesBlock: FunctionComponent<ProjectImagesBlockProps> = (
                   justifyContent: "center",
                   flexBasis: "100%",
                 }}
-                key={projectImage.src}
+                key={projectImageIndex}
               >
                 <Box
                   sx={{
