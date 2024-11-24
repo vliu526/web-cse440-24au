@@ -2,7 +2,7 @@
   *
   * This template aims to guide you in how to use the supported syntax.
   *
-  * You should refer to the assignment description for details on what content is expected.
+  * Refer to the assignment description for details on what content is expected.
   *
   * If you delete or modify template content that you later find you need,
   * the original template can also be found in `/src/app/projects/template/page.mdx`.
@@ -24,7 +24,7 @@
 
 {/* Project Imports
   *
-  * These import components for use in your post.
+  * These import components you can then use in your post.
   * You could inspect those components, but this template is intended to be sufficient.
   *
   * The full [MUI](https://mui.com/material-ui/getting-started/overview/) component library is also available,
@@ -40,17 +40,11 @@ import { ProjectTeamGallery } from "@/components/project/ProjectTeamGallery";
 {/* Image Imports
   *
   * Every image should be imported via its path in your `images` directory.
-  * - Note that directory is within `public/images/projects`.
+  * - That directory is within `public/images/projects`.
   * - These imports all reference the `template` project, you will reference your own project directory.
+  * - Give your images meaningful names (e.g., "overview.png").
   * - Only `.jpg` and `.png` file extensions are supported.
   * - If an import is not working, double-check that you have the correct file extension.
-  */}
-
-{/* Team Gallery Images
-  *
-  * - Give your images meaningful names (e.g., "james.png").
-  * - Images will be rendered 125px wide.
-  *   - Be sure all images are already cropped and scaled to be 125px wide and 150px tall.
   */}
 
 import imageTeamPerson1 from "public/images/projects/template/team/firstname1.png";
@@ -70,24 +64,26 @@ import imagePlaceholder1200x800 from "public/images/projects/template/post/1200x
 ## Team
 
 {/* The ProjectTeamGallery displays names and images of your project team.
-  * - As above, crop and scale your images to be the size of the placeholder.
+  * - Split each name across two lines.
+  * - Crop and scale images to be the size of the placeholder (125px x 150px).
   *   This consistent image size provides a cleaner gallery.
   */}
+
 <ProjectTeamGallery members={[
     {
-        name: ["Team", "Person 1"],
+        name: ["Name Line 1", "Name Line 2"],
         photo: imageTeamPerson1,
     },
     {
-        name: ["Team", "Person 2"],
+        name: ["Name Line 1", "Name Line 2"],
         photo: imageTeamPerson2,
     },
     {
-        name: ["Team", "Person 3"],
+        name: ["Name Line 1", "Name Line 2"],
         photo: imageTeamPerson3,
     },
     {
-        name: ["Team", "Person 4"],
+        name: ["Name Line 1", "Name Line 2"],
         photo: imageTeamPerson4,
     },
 ]} />
@@ -176,12 +172,12 @@ faucibus nisl tincidunt.
         {
             src: imagePlaceholder400x400,
             alt: "Every image requires alt text. This should describe the content of that image.",
-            caption: "Caption for just this image. It stays with this image.",
+            caption: "This caption is applied to the image. Each can have a different caption.",
         },
         {
             src: imagePlaceholder400x400,
             alt: "Every image requires alt text. This should describe the content of that image.",
-            caption: "Caption for just this image. It stays with this image.",
+            caption: "This caption is applied to the image. Each can have a different caption.",
         },
     ]}
     direction={"row"}
@@ -229,7 +225,8 @@ in nisl nisi. Risus at ultrices mi tempus imperdiet.
         alt: "Every image requires alt text. This should describe the content of that image.",
     }}
     caption={
-        "This is a caption."
+        "A good caption supports helps a reader understand what is important. " +
+        "It thus supports skimming and also provides an emphasis on key points of related text."
     }
     width={6}
     maxHeight={"400px"}
@@ -259,7 +256,8 @@ vitae ultricies. Id velit ut tortor pretium viverra suspendisse.
         alt: "Every image requires alt text. This should describe the content of that image.",
     }}
     caption={
-        "This is a caption."
+        "A good caption supports helps a reader understand what is important. " +
+        "It thus supports skimming and also provides an emphasis on key points of related text."
     }
     width={6}
     maxHeight={"400px"}
@@ -286,7 +284,8 @@ scelerisque eu ultrices vitae auctor.
         alt: "Every image requires alt text. This should describe the content of that image.",
     }}
     caption={
-        "This is a caption."
+        "A good caption supports helps a reader understand what is important. " +
+        "It thus supports skimming and also provides an emphasis on key points of related text."
     }
     width={6}
     maxHeight={"400px"}
@@ -317,7 +316,8 @@ adipiscing diam donec adipiscing.
     ]}
     direction={"row"}
     caption={
-        "This caption for the entire block spans the set of images."
+        "This caption is applied to the entire block of images. " +
+        "See that it spans across the area of the images."
     }
     width={6}
     maxHeight={"400px"}
@@ -344,12 +344,14 @@ sit amet consectetur adipiscing elit ut aliquam.
         {
             src: imagePlaceholder600x300,
             alt: "Every image requires alt text. This should describe the content of that image.",
-            caption: "A top image caption."
+            caption: "These are two images stacked in a column. " +
+                     "Notice that the text on the left is not broken up by the images."
         },
         {
             src: imagePlaceholder600x300,
             alt: "Every image requires alt text. This should describe the content of that image.",
-            caption: "A bottom image caption."
+            caption: "These are two images stacked in a column. " +
+                     "Notice that the text on the left is not broken up by the images."
         },
     ]}
     direction={"column"}
