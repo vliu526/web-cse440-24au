@@ -176,21 +176,14 @@ turpis egestas integer. Auctor augue mauris augue neque gravida.
 
 </ProjectImagesBlock>
 
-<ProjectImagesBlock
-    images={[
-        {
-            src: imagePlaceholder300x600,
-            alt: "Every image requires alt text. This should describe the content of that image.",
-        },
-        {
-            src: imagePlaceholder300x600,
-            alt: "Every image requires alt text. This should describe the content of that image.",
-        },
-    ]}
-    direction={"row"}
+<ProjectImageBlock
+    image={{
+        src: imagePlaceholder1200x800,
+        alt: "Every image requires alt text. This should describe the content of that image.",
+    }}
     caption={
-        "This caption is applied to the entire block of images. " +
-        "See that it spans across the area of the images."
+        "A good caption supports helps a reader understand what is important. " +
+        "It thus supports skimming and also provides an emphasis on key points of related text."
     }
     width={6}
     maxHeight={"400px"}
@@ -203,29 +196,9 @@ Maecenas ultricies mi eget mauris. Nec ullamcorper sit amet risus nullam eget
 felis eget nunc. Et molestie ac feugiat sed lectus vestibulum mattis. Fames ac
 turpis egestas integer. Auctor augue mauris augue neque gravida.
 
-</ProjectImagesBlock>
+</ProjectImageBlock>
 
 ### Title for a Task
-
-<ProjectImagesBlock
-    images={[
-        {
-            src: imagePlaceholder600x300,
-            alt: "Every image requires alt text. This should describe the content of that image.",
-            caption: "These are two images stacked in a column. " +
-                     "Notice that the text on the left is not broken up by the images."
-        },
-        {
-            src: imagePlaceholder600x300,
-            alt: "Every image requires alt text. This should describe the content of that image.",
-            caption: "These are two images stacked in a column. " +
-                     "Notice that the text on the left is not broken up by the images."
-        },
-    ]}
-    direction={"column"}
-    width={6}
-    maxHeight={"200px"}
->
 
 A pellentesque sit amet porttitor eget dolor morbi non arcu. Mus mauris vitae
 ultricies leo. Auctor neque vitae tempus quam. Id semper risus in hendrerit
@@ -240,6 +213,31 @@ volutpat diam. Euismod in pellentesque massa placerat duis ultricies lacus sed
 turpis. Ultricies mi eget mauris pharetra et ultrices. Ac tincidunt vitae
 semper quis lectus nulla at volutpat. Molestie a iaculis at erat pellentesque.
 
+<ProjectImagesBlock
+    images={[
+        {
+            src: imagePlaceholder300x600,
+            alt: "Every image requires alt text. This should describe the content of that image.",
+        },
+        {
+            src: imagePlaceholder300x600,
+            alt: "Every image requires alt text. This should describe the content of that image.",
+        },
+        {
+            src: imagePlaceholder300x600,
+            alt: "Every image requires alt text. This should describe the content of that image.",
+        },
+        {
+            src: imagePlaceholder300x600,
+            alt: "Every image requires alt text. This should describe the content of that image.",
+        }
+    ]}
+    caption={
+        "The text above is outside the image block, then we have these full width images."
+    }
+    width={12}
+    maxHeight={"400px"}
+>
 </ProjectImagesBlock>
 
 ## Design Research and Key Insights
@@ -354,14 +352,21 @@ vitae ultricies. Id velit ut tortor pretium viverra suspendisse.
 
 ### Title for an Insight
 
-<ProjectImageBlock
-    image={{
-        src: imagePlaceholder1200x800,
-        alt: "Every image requires alt text. This should describe the content of that image.",
-    }}
+<ProjectImagesBlock
+    images={[
+        {
+            src: imagePlaceholder300x600,
+            alt: "Every image requires alt text. This should describe the content of that image.",
+        },
+        {
+            src: imagePlaceholder300x600,
+            alt: "Every image requires alt text. This should describe the content of that image.",
+        },
+    ]}
+    direction={"row"}
     caption={
-        "A good caption supports helps a reader understand what is important. " +
-        "It thus supports skimming and also provides an emphasis on key points of related text."
+        "This caption is applied to the entire block of images. " +
+        "See that it spans across the area of the images."
     }
     width={6}
     maxHeight={"400px"}
@@ -378,21 +383,28 @@ aliquet enim tortor at auctor urna nunc id. Lobortis elementum nibh tellus
 molestie. Mauris in aliquam sem fringilla ut morbi tincidunt. In nisl nisi
 scelerisque eu ultrices vitae auctor.
 
-</ProjectImageBlock>
+</ProjectImagesBlock>
 
 ### Title for an Insight
 
-<ProjectImageBlock
-    image={{
-        src: imagePlaceholder1200x800,
-        alt: "Every image requires alt text. This should describe the content of that image.",
-    }}
-    caption={
-        "A good caption supports helps a reader understand what is important. " +
-        "It thus supports skimming and also provides an emphasis on key points of related text."
-    }
+<ProjectImagesBlock
+    images={[
+        {
+            src: imagePlaceholder600x300,
+            alt: "Every image requires alt text. This should describe the content of that image.",
+            caption: "These are two images stacked in a column. " +
+                     "Notice that the text on the left is not broken up by the images."
+        },
+        {
+            src: imagePlaceholder600x300,
+            alt: "Every image requires alt text. This should describe the content of that image.",
+            caption: "These are two images stacked in a column. " +
+                     "Notice that the text on the left is not broken up by the images."
+        },
+    ]}
+    direction={"column"}
     width={6}
-    maxHeight={"400px"}
+    maxHeight={"200px"}
 >
 
 Leo duis ut diam quam. Sit amet volutpat consequat mauris nunc congue nisi. Id
@@ -403,4 +415,4 @@ feugiat pretium. Lectus magna fringilla urna porttitor rhoncus dolor. Mollis
 nunc sed id semper risus in. Quis imperdiet massa tincidunt nunc. Sed
 adipiscing diam donec adipiscing.
 
-</ProjectImageBlock>
+</ProjectImagesBlock>
