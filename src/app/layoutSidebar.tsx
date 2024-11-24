@@ -2,17 +2,18 @@
 
 import * as React from "react";
 
-import { Sidebar } from "@/components/Sidebar";
-import { useSelectedLayoutSegments } from "next/navigation";
-
+import { ProjectLinks } from "@/app/projects/projectlinks";
 import {
   PAGE_LINKS_MILESTONE_1,
   PAGE_LINKS_MILESTONE_2,
   PAGE_LINKS_MILESTONE_3,
   PAGE_LINKS_MILESTONE_4,
   PAGE_LINKS_MILESTONE_5,
+  PAGE_LINKS_PROJECTS,
   SITE_LINKS,
-} from "./sitelinks";
+} from "@/app/sitelinks";
+import { Sidebar } from "@/components/Sidebar";
+import { useSelectedLayoutSegments } from "next/navigation";
 
 interface LayoutSidebarProps {}
 
@@ -34,6 +35,10 @@ export function LayoutSidebar({}: LayoutSidebarProps) {
           } else if (routeSegments[1] === "milestone-5") {
             return PAGE_LINKS_MILESTONE_5;
           }
+        }
+      } else if (routeSegments[0] === "projects") {
+        if (ProjectLinks.length > 0) {
+          return PAGE_LINKS_PROJECTS;
         }
       }
     }
