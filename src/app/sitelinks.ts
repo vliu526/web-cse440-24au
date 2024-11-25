@@ -1,7 +1,9 @@
+import { ProjectLinks } from "@/app/projects/projectlinks";
 import { SiteLinks } from "@/data/SiteLinks";
 
 export const SITE_LINKS = [
   SiteLinks.homeTop,
+  SiteLinks.projectsTop,
   SiteLinks.assignmentsTop,
   [
     SiteLinks.milestone_1_top,
@@ -11,7 +13,6 @@ export const SITE_LINKS = [
     SiteLinks.milestone_5_top,
   ],
   SiteLinks.calendarTop,
-  // SiteLinks.projectsTop,
 ];
 
 export const PAGE_LINKS_MILESTONE_1 = [
@@ -63,3 +64,5 @@ export const PAGE_LINKS_MILESTONE_5 = [
     SiteLinks.assignment_5_web_post_top,
   ],
 ];
+
+export const PAGE_LINKS_PROJECTS = [SiteLinks.projectsTop, ProjectLinks];

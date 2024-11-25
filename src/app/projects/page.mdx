@@ -4,25 +4,7 @@ import {
 
 import { ProjectCard } from "@/components/project/ProjectCard.tsx";
 
-
-{/* PROJECTS */}
-
-{/*
-import pathLogoAutoPilot from 'public/images/projects/autopilot/project_thumb.png';
-import pathLogoBakeSmart from 'public/images/projects/bakesmart/project_thumb.png';
-import pathLogoCookEase from 'public/images/projects/cookease/project_thumb.png';
-import pathLogoDapperDany from 'public/images/projects/dapperdany/project_thumb.png';
-import pathLogoFitQuest from 'public/images/projects/fitquest/project_thumb.png';
-import pathLogoLanguageLab from 'public/images/projects/languagelab/project_thumb.png';
-import pathLogoMessageMinder from 'public/images/projects/messageminder/project_thumb.png';
-import pathLogoMindMii from 'public/images/projects/mindmii/project_thumb.png';
-import pathLogoMindShift from 'public/images/projects/mindshift/project_thumb.png';
-import pathLogoMusicBox from 'public/images/projects/musicbox/project_thumb.png';
-import pathLogoOrcaPod from 'public/images/projects/orcapod/project_thumb.png';
-import pathLogoPupPals from 'public/images/projects/puppals/project_thumb.png';
-import pathLogoReelTalk from 'public/images/projects/reeltalk/project_thumb.png';
-import pathLogoRestPad from 'public/images/projects/restpad/project_thumb.png';
-*/}
+import { ProjectLinks } from "@/app/projects/projectlinks";
 
 # Projects
 
@@ -36,68 +18,14 @@ Students examined problems people encounter in gathering and gaining value from 
 then explored how a combination of design and machine intelligence
 can help go beyond simple data fetishes to help people in using personal data as part of reaching their goals.
 
-{/* PROJECTS */}
-
-{/*
 ## Project Pages
 
 <Grid container spacing={4}>
-
-<Grid item>
-<ProjectCard name="AutoPilot" logo={pathLogoAutoPilot} path="autopilot" />
+    {ProjectLinks.map((projectLink, projectLinkIndex) => {
+        return (
+            <Grid item key={projectLinkIndex}>
+                <ProjectCard name={projectLink.anchor} logo={projectLink.logo} path={projectLink.href} />
+            </Grid>
+        )
+    })}
 </Grid>
-
-<Grid item>
-<ProjectCard name="BakeSmart" logo={pathLogoBakeSmart} path="bakesmart" />
-</Grid>
-
-<Grid item>
-<ProjectCard name="CookEase" logo={pathLogoCookEase} path="cookease" />
-</Grid>
-
-<Grid item>
-<ProjectCard name="Dapper Dany" logo={pathLogoDapperDany} path="dapperdany" />
-</Grid>
-
-<Grid item>
-<ProjectCard name="FitQuest" logo={pathLogoFitQuest} path="fitquest" />
-</Grid>
-
-<Grid item>
-<ProjectCard name="Language Lab" logo={pathLogoLanguageLab} path="languagelab" />
-</Grid>
-
-<Grid item>
-<ProjectCard name="MessageMinder" logo={pathLogoMessageMinder} path="messageminder" />
-</Grid>
-
-<Grid item>
-<ProjectCard name="MindMii" logo={pathLogoMindMii} path="mindmii" />
-</Grid>
-
-<Grid item>
-<ProjectCard name="MindShift" logo={pathLogoMindShift} path="mindshift" />
-</Grid>
-
-<Grid item>
-<ProjectCard name="Music Box" logo={pathLogoMusicBox} path="musicbox" />
-</Grid>
-
-<Grid item>
-<ProjectCard name="OrcaPod" logo={pathLogoOrcaPod} path="orcapod" />
-</Grid>
-
-<Grid item>
-<ProjectCard name="PupPals" logo={pathLogoPupPals} path="puppals" />
-</Grid>
-
-<Grid item>
-<ProjectCard name="ReelTalk" logo={pathLogoReelTalk} path="reeltalk" />
-</Grid>
-
-<Grid item>
-<ProjectCard name="RestPad" logo={pathLogoRestPad} path="restpad" />
-</Grid>
-
-</Grid>
-*/}

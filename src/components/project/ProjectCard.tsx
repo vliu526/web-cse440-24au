@@ -8,7 +8,7 @@ import Image from "next-image-export-optimizer";
 
 interface ProjectCardProps {
   name: string;
-  logo: string;
+  logo: any;
   path: string;
 }
 
@@ -21,7 +21,7 @@ export const ProjectCard: FunctionComponent<ProjectCardProps> = (props) => {
         padding: 1,
       }}
     >
-      <AppLink href={"/projects/" + props.path}>
+      <AppLink href={props.path}>
         <Stack spacing={1}>
           <Box>{props.name}</Box>
           <Image

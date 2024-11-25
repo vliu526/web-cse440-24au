@@ -6,6 +6,11 @@ export const SiteLinks = {
     anchor: "Course Overview",
   },
 
+  projectsTop: {
+    href: "/projects/#projects",
+    anchor: "Projects",
+  },
+
   assignmentsTop: {
     href: "/assignments/#assignments",
     anchor: "Assignments",
@@ -150,10 +155,5 @@ export const SiteLinks = {
   calendarTop: {
     href: "/calendar/#calendar",
     anchor: "Calendar",
-  },
-
-  projectsTop: {
-    href: "/projects/#projects",
-    anchor: "Projects",
   },
 } as const;
