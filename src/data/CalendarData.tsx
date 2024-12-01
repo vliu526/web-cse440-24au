@@ -603,6 +603,8 @@ export const calendarData: {
       date: verifyCalendarDate("2024-12-02", "Mon"),
       submission: "canvas",
       submitCanvasTime: "3:00pm",
+      submitCanvasLink:
+        "https://canvas.uw.edu/courses/1746586/assignments/9821454",
     },
     assignment_5_poster_initial: {
       type: "assignment",
@@ -611,6 +613,8 @@ export const calendarData: {
       date: verifyCalendarDate("2024-12-02", "Mon"),
       submission: "canvas",
       submitCanvasTime: "3:00pm",
+      submitCanvasLink:
+        "https://canvas.uw.edu/courses/1746586/assignments/9821457",
     },
     assignment_5_web_post_initial: {
       type: "assignment",
@@ -619,6 +623,8 @@ export const calendarData: {
       date: verifyCalendarDate("2024-12-04", "Wed"),
       submission: "canvas",
       submitCanvasTime: "3:00pm",
+      submitCanvasLink:
+        "https://canvas.uw.edu/courses/1746586/assignments/9821616",
     },
     assignment_5_poster_final: {
       type: "assignment",
@@ -627,6 +633,8 @@ export const calendarData: {
       date: verifyCalendarDate("2024-12-04", "Wed"),
       submission: "canvas",
       submitCanvasTime: "3:00pm",
+      submitCanvasLink:
+        "https://canvas.uw.edu/courses/1746586/assignments/9821486",
     },
     assignment_5_web_post_final: {
       type: "assignment",
@@ -635,6 +643,8 @@ export const calendarData: {
       date: verifyCalendarDate("2024-12-06", "Fri"),
       submission: "canvas",
       submitCanvasTime: "8:00pm",
+      submitCanvasLink:
+        "https://canvas.uw.edu/courses/1746586/assignments/9821618",
     },
   },
 };
