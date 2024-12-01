@@ -616,16 +616,6 @@ export const calendarData: {
       submitCanvasLink:
         "https://canvas.uw.edu/courses/1746586/assignments/9821457",
     },
-    assignment_5_web_post_initial: {
-      type: "assignment",
-      title: "Assignment 5: Initial Web Post",
-      link: SiteLinks.assignment_5_web_post_top.href,
-      date: verifyCalendarDate("2024-12-04", "Wed"),
-      submission: "canvas",
-      submitCanvasTime: "3:00pm",
-      submitCanvasLink:
-        "https://canvas.uw.edu/courses/1746586/assignments/9821616",
-    },
     assignment_5_poster_final: {
       type: "assignment",
       title: "Assignment 5: Final Poster",
@@ -636,6 +626,14 @@ export const calendarData: {
       submitCanvasLink:
         "https://canvas.uw.edu/courses/1746586/assignments/9821486",
     },
+    assignment_5_web_post_initial: {
+      type: "assignment",
+      title: "Assignment 5: Initial Web Post",
+      link: SiteLinks.assignment_5_web_post_top.href,
+      date: verifyCalendarDate("2024-12-04", "Wed"),
+      submission: "canvas",
+      submitCanvasTime: "3:00pm",
+    },
     assignment_5_web_post_final: {
       type: "assignment",
       title: "Assignment 5: Final Web Post",
@@ -643,8 +641,6 @@ export const calendarData: {
       date: verifyCalendarDate("2024-12-06", "Fri"),
       submission: "canvas",
       submitCanvasTime: "8:00pm",
-      submitCanvasLink:
-        "https://canvas.uw.edu/courses/1746586/assignments/9821618",
     },
   },
 };
