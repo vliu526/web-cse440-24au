@@ -7,9 +7,9 @@ import imageLogoI from "public/images/projects/huskyride/project_thumb.png";
 import imageLogoL from "public/images/projects/planventure/project_thumb.png";
 import imageLogoE from "public/images/projects/potpal/project_thumb.png";
 import imageLogoD from "public/images/projects/preparebear/project_thumb.png";
-// import imageLogoF from 'public/images/projects/missing/project_thumb.png';
-import imageLogoG from "public/images/projects/seekandshare/project_thumb.png";
 import imageLogoC from "public/images/projects/tiltd/project_thumb.png";
+// import imageLogoF from 'public/images/projects/missing/project_thumb.png';
+import imageLogoG from "public/images/projects/wanderlust/project_thumb.png";
 
 // Names and links associated with projects need to be maintained:
 // - Here.
@@ -49,8 +49,8 @@ export const ProjectLinks = (
     //     logo: imageLogoF,
     // },
     {
-      href: "/projects/seekandshare/",
-      anchor: "Seek and Share",
+      href: "/projects/wanderlust/",
+      anchor: "Wanderlust",
       logo: imageLogoG,
     },
     {

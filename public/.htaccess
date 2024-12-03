@@ -58,5 +58,5 @@ RewriteRule ^projects/huskyride[/]?$ projects/huskyride.html
 RewriteRule ^projects/planventure[/]?$ projects/planventure.html
 RewriteRule ^projects/potpal[/]?$ projects/potpal.html
 RewriteRule ^projects/preparebear[/]?$ projects/preparebear.html
-RewriteRule ^projects/seekandshare[/]?$ projects/seekandshare.html
 RewriteRule ^projects/tiltd[/]?$ projects/tiltd.html
+RewriteRule ^projects/wanderlust[/]?$ projects/wanderlust.html
