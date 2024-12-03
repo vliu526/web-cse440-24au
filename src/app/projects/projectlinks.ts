@@ -9,7 +9,7 @@ import imageLogoE from "public/images/projects/potpal/project_thumb.png";
 import imageLogoD from "public/images/projects/preparebear/project_thumb.png";
 // import imageLogoF from 'public/images/projects/missing/project_thumb.png';
 import imageLogoG from "public/images/projects/seekandshare/project_thumb.png";
-import imageLogoC from "public/images/projects/tilted/project_thumb.png";
+import imageLogoC from "public/images/projects/tiltd/project_thumb.png";
 
 // Names and links associated with projects need to be maintained:
 // - Here.
@@ -29,8 +29,8 @@ export const ProjectLinks = (
       logo: imageLogoB,
     },
     {
-      href: "/projects/tilted/",
-      anchor: "Tilted",
+      href: "/projects/tiltd/",
+      anchor: "Tiltd",
       logo: imageLogoC,
     },
     {
