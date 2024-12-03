@@ -51,9 +51,9 @@ RewriteRule ^projects/template[/]?$ projects/template.html
 
 RewriteRule ^projects/betbreaker[/]?$ projects/betbreaker.html
 RewriteRule ^projects/boredwalk[/]?$ projects/boredwalk.html
-RewriteRule ^projects/discoverly[/]?$ projects/discoverly.html
 RewriteRule ^projects/dogsense[/]?$ projects/dogsense.html
 RewriteRule ^projects/focusshift[/]?$ projects/focusshift.html
+RewriteRule ^projects/gemhunter[/]?$ projects/gemhunter.html
 RewriteRule ^projects/huskyride[/]?$ projects/huskyride.html
 RewriteRule ^projects/planventure[/]?$ projects/planventure.html
 RewriteRule ^projects/potpal[/]?$ projects/potpal.html

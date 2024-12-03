@@ -1,8 +1,8 @@
 import imageLogoH from "public/images/projects/betbreaker/project_thumb.png";
 import imageLogoK from "public/images/projects/boredwalk/project_thumb.png";
-import imageLogoA from "public/images/projects/discoverly/project_thumb.png";
 import imageLogoB from "public/images/projects/dogsense/project_thumb.png";
 import imageLogoJ from "public/images/projects/focusshift/project_thumb.png";
+import imageLogoA from "public/images/projects/gemhunter/project_thumb.png";
 import imageLogoI from "public/images/projects/huskyride/project_thumb.png";
 import imageLogoL from "public/images/projects/planventure/project_thumb.png";
 import imageLogoE from "public/images/projects/potpal/project_thumb.png";
@@ -19,8 +19,8 @@ import imageLogoC from "public/images/projects/tilted/project_thumb.png";
 export const ProjectLinks = (
   [
     {
-      href: "/projects/discoverly/",
-      anchor: "Discoverly",
+      href: "/projects/gemhunter/",
+      anchor: "Gem Hunter",
       logo: imageLogoA,
     },
     {
