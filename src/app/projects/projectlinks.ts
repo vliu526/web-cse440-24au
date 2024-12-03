@@ -65,7 +65,7 @@ export const ProjectLinks = (
     },
     {
       href: "/projects/focusshift/",
-      anchor: "Focus Shift",
+      anchor: "FocusShift",
       logo: imageLogoJ,
     },
     {
