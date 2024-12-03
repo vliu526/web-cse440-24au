@@ -1,6 +1,6 @@
 import imageLogoH from "public/images/projects/betbreaker/project_thumb.png";
 import imageLogoK from "public/images/projects/boredwalk/project_thumb.png";
-import imageLogoB from "public/images/projects/dogsense/project_thumb.png";
+import imageLogoB from "public/images/projects/dawgsense/project_thumb.png";
 import imageLogoJ from "public/images/projects/focusshift/project_thumb.png";
 import imageLogoA from "public/images/projects/gemhunter/project_thumb.png";
 import imageLogoI from "public/images/projects/huskyride/project_thumb.png";
@@ -24,8 +24,8 @@ export const ProjectLinks = (
       logo: imageLogoA,
     },
     {
-      href: "/projects/dogsense/",
-      anchor: "DogSense",
+      href: "/projects/dawgsense/",
+      anchor: "DawgSense",
       logo: imageLogoB,
     },
     {
