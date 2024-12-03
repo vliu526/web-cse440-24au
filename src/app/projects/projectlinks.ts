@@ -1,15 +1,15 @@
 import imageLogoH from "public/images/projects/betbreaker/project_thumb.png";
 import imageLogoK from "public/images/projects/boredwalk/project_thumb.png";
-import imageLogoA from "public/images/projects/discoverly/project_thumb.png";
-import imageLogoB from "public/images/projects/dogsense/project_thumb.png";
+import imageLogoB from "public/images/projects/dawgsense/project_thumb.png";
 import imageLogoJ from "public/images/projects/focusshift/project_thumb.png";
+import imageLogoA from "public/images/projects/gemhunter/project_thumb.png";
 import imageLogoI from "public/images/projects/huskyride/project_thumb.png";
 import imageLogoL from "public/images/projects/planventure/project_thumb.png";
 import imageLogoE from "public/images/projects/potpal/project_thumb.png";
 import imageLogoD from "public/images/projects/preparebear/project_thumb.png";
+import imageLogoC from "public/images/projects/tiltd/project_thumb.png";
 // import imageLogoF from 'public/images/projects/missing/project_thumb.png';
-import imageLogoG from "public/images/projects/seekandshare/project_thumb.png";
-import imageLogoC from "public/images/projects/tilted/project_thumb.png";
+import imageLogoG from "public/images/projects/wanderlust/project_thumb.png";
 
 // Names and links associated with projects need to be maintained:
 // - Here.
@@ -19,18 +19,18 @@ import imageLogoC from "public/images/projects/tilted/project_thumb.png";
 export const ProjectLinks = (
   [
     {
-      href: "/projects/discoverly/",
-      anchor: "Discoverly",
+      href: "/projects/gemhunter/",
+      anchor: "Gem Hunter",
       logo: imageLogoA,
     },
     {
-      href: "/projects/dogsense/",
-      anchor: "DogSense",
+      href: "/projects/dawgsense/",
+      anchor: "DawgSense",
       logo: imageLogoB,
     },
     {
-      href: "/projects/tilted/",
-      anchor: "Tilted",
+      href: "/projects/tiltd/",
+      anchor: "Tiltd",
       logo: imageLogoC,
     },
     {
@@ -49,8 +49,8 @@ export const ProjectLinks = (
     //     logo: imageLogoF,
     // },
     {
-      href: "/projects/seekandshare/",
-      anchor: "Seek and Share",
+      href: "/projects/wanderlust/",
+      anchor: "Wanderlust",
       logo: imageLogoG,
     },
     {
@@ -60,12 +60,12 @@ export const ProjectLinks = (
     },
     {
       href: "/projects/huskyride/",
-      anchor: "HuskyRide",
+      anchor: "Husky Ride",
       logo: imageLogoI,
     },
     {
       href: "/projects/focusshift/",
-      anchor: "Focus Shift",
+      anchor: "FocusShift",
       logo: imageLogoJ,
     },
     {
