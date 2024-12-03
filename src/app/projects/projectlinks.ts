@@ -60,7 +60,7 @@ export const ProjectLinks = (
     },
     {
       href: "/projects/huskyride/",
-      anchor: "HuskyRide",
+      anchor: "Husky Ride",
       logo: imageLogoI,
     },
     {
