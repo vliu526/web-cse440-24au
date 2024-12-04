@@ -61,7 +61,9 @@ import task13 from "public/images/projects/boredwalk/post/task13.png"
 import task14 from "public/images/projects/boredwalk/post/task14.png"
 import task15 from "public/images/projects/boredwalk/post/task15.png"
 import task16 from "public/images/projects/boredwalk/post/task16.png"
-import task17 from "public/images/projects/boredwalk/post/task17.png"
+import task18 from "public/images/projects/boredwalk/post/task18.png"
+
+import task21 from "public/images/projects/boredwalk/post/task21.png"
 
 import first_drawing from "public/images/projects/boredwalk/post/first_drawing.png"
 import imagePlaceholder300x600 from "public/images/projects/boredwalk/post/300x600.png";
@@ -131,7 +133,7 @@ walking treats walking directions like a driving route, and as such is targeted
 only towards efficient walkers–therefore, the niche of recreational walking goes 
 unsupported. Because of this, many recreational walkers feel they must stick to 
 routes they know; whether that exploration be small ventures from existing routes 
-or fully unexplored trails, the human need for exploration is left unmet.
+or fully unexplored trails, the human need for exploration is left unmet
 
 <ProjectImageBlock
     image={{
@@ -159,12 +161,12 @@ or fully unexplored trails, the human need for exploration is left unmet.
     maxHeight={"400px"}
 >
 
-Our design, BoredWalk, supports the niche of recreational walking by providing 
-its users with unobtrusive walking directions. These directions guide recreational 
-walkers along novel walking routes that match the user’s selected preferences. 
-BoredWalk utilizes the spatial audio function that exists in modern headphones 
-to deliver these directions, shifting between left, right, or center, depending 
-on which direction the user needs to take.
+Our design, an app called BoredWalk, supports the niche of recreational walking 
+by providing its users with unobtrusive walking directions. These directions 
+guide recreational walkers along novel walking routes that match the user’s 
+selected preferences. BoredWalk then utilizes the spatial audio function that 
+exists in modern headphones to deliver these directions, shifting between left, 
+right, or center, depending on which direction the user needs to take
 
 </ProjectImageBlock>
 
@@ -175,7 +177,7 @@ navigating a walker with audio feedback - needs no visual design, and minimal de
 overall. As such, our design focus was on the ancillary features which support
 the user.
 
-### Finding a route
+### Select a Customized Route
 
 <ProjectImagesBlock
     images={[
@@ -205,12 +207,15 @@ the user.
     maxHeight={"600px"}
 >
 
-This task is fundamental to our design, being the primary action that everyone 
-will take when using our technology. Most other tasks did not make much sense 
-unless this task was also included. This design was initially conceived to be 
-an alternative to apps like Google Maps, and so we need to provide the same 
-functionality. Participants in interviews wanted to go on new routes but did not 
-want to risk getting lost or encountering unpleasant situations.
+When a walker first uses the BoredWalk app, they must input their preferences 
+for a set list of factors e.g. trees, hills, crosswalks, etc. The user rates 
+these factors on a sliding scale, and BoredWalk utilizes these ratings to craft 
+walking routes that best suit the user’s preferences. When the user would like 
+to start a walk, they can either select a destination to walk to or set their 
+route to be a walking loop. They then input a desired walk length–in time or 
+distance–within the constraints of their desired destination. 
+The user is now presented with a route that matches their pre-set preferences 
+and their desired walk length and destination. 
 
 </ProjectImagesBlock>
 <ProjectImagesBlock
@@ -220,49 +225,54 @@ want to risk getting lost or encountering unpleasant situations.
             alt: "Image showing a path selection.",
         },
         {
-            src: task17,
-            alt: "Image showing a popup informing a walker of their rerouting options.",
-        },
-        {
             src: task16,
             alt: "Image showing a walking route in progress and the \"Reroute\" button.",
+        },
+        {
+            src: task18,
+            alt: "Image showing the post-walk screen with ratings and favorite options.",
         }
     ]}
     direction={"row"}
     caption={
-        "Once walking, one can reroute explicitly using the application button" +
-        "or implicitly by leaving the proscribed path"
+        "A walker can reroute while on a walk. Favorite routes can be saved."
     }
     width={12}
     maxHeight={"600px"}
 >
 
-Unlike tradition mapping apps, BoredWalk presents routes which match a walker's
-preferences and their desired time and distance. These can be point-to-point routings
-or loops. While on the walk, the ambulist is free to deviate, and BoredWalk will
-reroute as necessary.
+The user can either start this walk or navigate forward (or backward) on the 
+page to other route suggestions. BoredWalk’s route possibilities are endless! 
+The user can also navigate to the home page to adjust their preferences at any 
+time to better customize their suggested routes; they can also save walks to 
+their favorites page if they’d like to revisit this route in the future.
 
 </ProjectImagesBlock>
 
-### Title for a Task
+### Follow a Route While Leaving Feedback
 
-A pellentesque sit amet porttitor eget dolor morbi non arcu. Mus mauris vitae
-ultricies leo. Auctor neque vitae tempus quam. Id semper risus in hendrerit
-gravida rutrum quisque. Nibh sed pulvinar proin gravida hendrerit. Sed euismod
-nisi porta lorem mollis aliquam ut porttitor leo. Elit eget gravida cum sociis
-natoque penatibus et. Id diam vel quam elementum pulvinar. Morbi non arcu risus
-quis varius quam quisque. Pulvinar pellentesque habitant morbi tristique
-senectus et. Habitant morbi tristique senectus et netus et malesuada fames ac.
-Ac tortor vitae purus faucibus. Metus vulputate eu scelerisque felis imperdiet.
-Nulla pharetra diam sit amet nisl. Tincidunt vitae semper quis lectus nulla at
-volutpat diam. Euismod in pellentesque massa placerat duis ultricies lacus sed
-turpis. Ultricies mi eget mauris pharetra et ultrices. Ac tincidunt vitae
-semper quis lectus nulla at volutpat. Molestie a iaculis at erat pellentesque.
+BoredWalk delivers directions to its user through spatial audio feedback; 
+the audio balance will shift between left, right, and center based on the 
+location of the user along the route and the next direction the user must take. 
+Following the pre-set route is easy, but the user may become dissatisfied with 
+their walk along the way. The BoredWalk app contains a reroute button that can 
+be selected an unlimited number of times while the user is actively navigating 
+a route. BoredWalk also offers more immersive feedback options that do not 
+require the user to open the app in order to reroute. If the user disobeys one 
+of BoredWalk’s audio shift directions, the app will automatically reroute. The 
+user can also press an existing button on their headphones, which communicates 
+to the BoredWalk app to reroute; the BoredWalk app overrides the normal 
+functionality of all buttons on modern headphones. BoredWalk recognizes areas 
+and route characteristics that cause the user to reroute and factors these 
+findings into future walking recommendations. After a route is complete, the 
+user can also rate their walk and its preference accuracy, giving BoredWalk 
+quantitative feedback that can better optimize its future suggestions. 
+
 
 <ProjectImagesBlock
     images={[
         {
-            src: imagePlaceholder300x600,
+            src: task21,
             alt: "Every image requires alt text. This should describe the content of that image.",
         },
         {
@@ -288,32 +298,35 @@ semper quis lectus nulla at volutpat. Molestie a iaculis at erat pellentesque.
 
 ## Design Research and Key Insights
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Sagittis vitae et leo duis ut. Ac
-odio tempor orci dapibus ultrices. Nunc sed augue lacus viverra vitae congue.
-Scelerisque in dictum non consectetur a erat nam at lectus. Tincidunt arcu non
-sodales neque. Diam sit amet nisl suscipit adipiscing bibendum est ultricies.
-Morbi tincidunt augue interdum velit euismod in pellentesque massa. Libero
-justo laoreet sit amet cursus sit. At imperdiet dui accumsan sit. Sed odio
-morbi quis commodo odio aenean. Nibh tortor id aliquet lectus proin nibh.
+We approached the design research phase with an open mind. We wanted to speak 
+with walkers from all walks of life, with the intention of figuring out why they 
+walked, what issues (and non-issues) they had with their walks and how we could 
+design to allay them. We had a specific interest in those who walked as a hobby 
+rather than commuters. We gathered our information via interviewing a plethora 
+of people, from random people on UW’s campus to friends and family. Interviews 
+were our method of choice because they are time-efficient and allow us to 
+interact directly with our participants, such as by asking follow-up questions 
+tailored to the person. We conducted them outside, so that when the participant 
+was willing, we would walk alongside them during the interview to provide an 
+accurate context for the activity we were interested in.
 
-### Title for an Insight
+### People dislike having to plan walks themselves
 
-Mattis rhoncus urna neque viverra justo nec ultrices. Amet facilisis magna
-etiam tempor orci eu lobortis elementum nibh. Quam vulputate dignissim
-suspendisse in est ante in nibh. Eget duis at tellus at urna condimentum mattis
-pellentesque. Varius sit amet mattis vulputate enim nulla. Ridiculus mus mauris
-vitae ultricies. Feugiat scelerisque varius morbi enim. Lobortis elementum nibh
-tellus molestie. Enim blandit volutpat maecenas volutpat blandit aliquam etiam.
-Nulla posuere sollicitudin aliquam ultrices sagittis. Urna nunc id cursus metus
-aliquam eleifend mi in. Condimentum vitae sapien pellentesque habitant morbi.
-Convallis tellus id interdum velit laoreet id donec ultrices. Platea dictumst
-quisque sagittis purus. Mattis vulputate enim nulla aliquet porttitor lacus
-luctus accumsan. Mi eget mauris pharetra et ultrices neque ornare. Id volutpat
-lacus laoreet non curabitur gravida arcu ac tortor. Consectetur libero id
-faucibus nisl tincidunt.
+Most of the participants in our interviews typically repeated the same routes 
+over and over. When asked, participants said they would like to switch things 
+up and explore new areas, but didn’t have the time, or didn’t want to risk 
+getting lost or ending up somewhere too busy, too hilly, or worse – too unsafe. 
+This insight led us to focus on designing a way for people to explore new places 
+without having to do much work planning, and without the risk of getting lost or 
+ending up somewhere unpleasant.
 
-### Title for an Insight
+    “I like to explore new paths [but] I am afraid of getting lost” - Andre
+
+    “I wanna explore new places, but mostly I have little time [so] I don’t totally 
+plan the route; I mostly plan the amount of time I will spend and the pace.” - Agnes
+
+
+### There are no universally “good” route qualities
 
 <ProjectImagesBlock
     images={[
@@ -333,39 +346,58 @@ faucibus nisl tincidunt.
     maxHeight={"400px"}
 >
 
-Cursus euismod quis viverra nibh cras pulvinar mattis nunc. Dui ut ornare
-lectus sit amet est placerat in egestas. Sed cras ornare arcu dui vivamus.
-Scelerisque eu ultrices vitae auctor eu augue. Hac habitasse platea dictumst
-vestibulum rhoncus. Risus at ultrices mi tempus imperdiet nulla malesuada
-pellentesque elit. Sagittis vitae et leo duis ut diam quam nulla porttitor.
-Quam lacus suspendisse faucibus interdum posuere lorem. Tortor dignissim
-convallis aenean et tortor at. Elit scelerisque mauris pellentesque pulvinar
-pellentesque habitant morbi tristique senectus. Risus feugiat in ante metus.
+    Despite some general themes emerging, there were no walk qualities that 
+    every participant mentioned liking. Some favored nature, some favored 
+    companionship, some favored exercise, so on and so forth. This meant we 
+    either had to choose a certain quality to focus on at the cost of alienating 
+    some group of walkers, or we had to make our design customizable so that 
+    everyone can get what they want. We went with the latter, which can be 
+    directly seen in our preferences screen.
+
+    “I don’t want to walk up any hills” - Archibald
+
+    “I like walking up and down hills” - Alejandra
+
 
 </ProjectImagesBlock>
 
-### Title for an Insight
+### People value immersion in their walks when possible
 
-Leo duis ut diam quam. Sit amet volutpat consequat mauris nunc congue nisi. Id
-eu nisl nunc mi ipsum. Rhoncus aenean vel elit scelerisque mauris pellentesque
-pulvinar pellentesque habitant. Duis ut diam quam nulla porttitor massa id.
-Facilisis volutpat est velit egestas. Nulla facilisi cras fermentum odio eu
-feugiat pretium. Lectus magna fringilla urna porttitor rhoncus dolor. Mollis
-nunc sed id semper risus in. Quis imperdiet massa tincidunt nunc. Sed
-adipiscing diam donec adipiscing.
+Many of our interview participants expressed a distaste for having to stop at 
+intersections and crosswalks because it interrupts the flow of the walk. One 
+interviewee, Abe, said if he could invent anything to help with his walks, he 
+would have skywalks over every intersection. Another common desire was getting 
+lost in nature and the world.
+
+“I like seeing birds and squirrels…It’s nice to become one with nature.” - Andre
+
+Participants also mentioned that disconnecting by not directly using their phone 
+was important on walks. One participant, Alejandra, said she deliberately leaves 
+her phone at home when going on a walk. However, a majority of walkers we 
+interviewed still used headphones during their walks, whether to listen to music, 
+podcasts or talk to people. All of this led us to focus on our audio-based design, 
+because we believe a visual design would disrupt the walk. It also meant we had to 
+come up with a way to provide information to walkers without a voice in their ear, 
+since that would also be disruptive, which is why we decided upon a spatial 
+audio shift for directions.
+
 
 ## Iterative Design and Key Insights
+### Overview of Design Process:
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Et tortor consequat id porta nibh
-venenatis. Nisl vel pretium lectus quam. Volutpat blandit aliquam etiam erat
-velit. Ornare arcu odio ut sem nulla pharetra diam sit amet. Habitant morbi
-tristique senectus et netus et malesuada fames ac. A arcu cursus vitae congue
-mauris rhoncus aenean. Ornare massa eget egestas purus. Luctus venenatis lectus
-magna fringilla. Leo integer malesuada nunc vel. Egestas purus viverra accumsan
-in nisl nisi. Risus at ultrices mi tempus imperdiet.
+When creating our paper prototype based off of our sketches, we made a few 
+decisions to simplify some of the interfaces to make them more user friendly. 
+The earliest feedback we received on this initial prototype and its associated 
+task walkthrough was through an inspection process of our design according to 
+Nielson’s heuristics. After addressing and revising these violations of Nielson’s 
+heuristics, we did several usability tests with our improved paper prototype. 
+After each usability test we made necessary changes to address the feedback we 
+received. Once we had gone through several rounds of usability tests and iterations 
+of our paper prototype we created a digital mockup of our design in Figma. 
+Translating our design to be in a digital format surfaced several minor issues
+as well that we addressed to ensure our design was finalized.
 
-### Title for an Insight
+### State Flexibility
 
 <ProjectImageBlock
     image={{
@@ -380,23 +412,17 @@ in nisl nisi. Risus at ultrices mi tempus imperdiet.
     maxHeight={"400px"}
 >
 
-Quis eleifend quam adipiscing vitae. Justo nec ultrices dui sapien eget mi.
-Viverra maecenas accumsan lacus vel facilisis volutpat. Dignissim suspendisse
-in est ante in nibh mauris. Vitae ultricies leo integer malesuada. Ultrices mi
-tempus imperdiet nulla. Erat velit scelerisque in dictum. Elit ut aliquam purus
-sit amet luctus. Congue quisque egestas diam in arcu cursus euismod. Proin nibh
-nisl condimentum id venenatis a condimentum. Nisl nunc mi ipsum faucibus vitae.
-Ac tortor dignissim convallis aenean et. Bibendum enim facilisis gravida neque
-convallis a cras semper. Sed risus ultricies tristique nulla aliquet enim
-tortor at auctor. Sed felis eget velit aliquet sagittis id consectetur purus
-ut. Ac odio tempor orci dapibus ultrices in iaculis nunc sed. Aliquet lectus
-proin nibh nisl condimentum id. Ornare aenean euismod elementum nisi quis
-eleifend quam adipiscing vitae. Parturient montes nascetur ridiculus mus mauris
-vitae ultricies. Id velit ut tortor pretium viverra suspendisse.
+    A key insight gained from our heuristic evaluation inspection was the lack 
+    of emergency exits in the “Choose Walk” screen with no way to look at previously 
+    generated routes and no way to leave the screen. We took this insight and applied 
+    it to this screen and throughout the rest of our design to vastly improve the 
+    transitions between states. This included making changes in our “Choose Walk” 
+    screen to have a “Prev”, “Next”, and “Exit” buttons as well as having more 
+    verbose “Save” and “Exit” buttons on the “Feedback” screen.    
 
 </ProjectImageBlock>
 
-### Title for an Insight
+### Visible Functionality
 
 <ProjectImagesBlock
     images={[
@@ -418,20 +444,19 @@ vitae ultricies. Id velit ut tortor pretium viverra suspendisse.
     maxHeight={"400px"}
 >
 
-Feugiat vivamus at augue eget arcu. Bibendum est ultricies integer quis auctor
-elit sed vulputate mi. At tempor commodo ullamcorper a lacus vestibulum sed.
-Vitae aliquet nec ullamcorper sit amet risus. Morbi non arcu risus quis varius
-quam quisque id diam. Nulla pellentesque dignissim enim sit amet venenatis.
-Morbi tristique senectus et netus et malesuada fames ac turpis. Molestie a
-iaculis at erat pellentesque adipiscing commodo elit at. Ut eu sem integer
-vitae justo eget magna. Etiam non quam lacus suspendisse faucibus. Nulla
-aliquet enim tortor at auctor urna nunc id. Lobortis elementum nibh tellus
-molestie. Mauris in aliquam sem fringilla ut morbi tincidunt. In nisl nisi
-scelerisque eu ultrices vitae auctor.
+Another key insight we obtained from our usability testing included hidden and 
+unclear purposes of features. Our old “Start Walk” screen had a hidden loop or 
+destination feature hidden behind a drop down menu that confused some participants. 
+Possible reroute actions we intended for our participants to use during a walk 
+were not used because there was no explanation they encountered for this. Our 
+old feedback screen had a preference accuracy star rating system that confused 
+some of our participants about its purpose in improving future walks. These 
+issues brought up by participants led us to make several changes to our prototype 
+that improved usability by making possible actions visible and their purposes more clear.
 
 </ProjectImagesBlock>
 
-### Title for an Insight
+### Tutorialization and Ease of Use
 
 <ProjectImagesBlock
     images={[
@@ -453,12 +478,12 @@ scelerisque eu ultrices vitae auctor.
     maxHeight={"200px"}
 >
 
-Leo duis ut diam quam. Sit amet volutpat consequat mauris nunc congue nisi. Id
-eu nisl nunc mi ipsum. Rhoncus aenean vel elit scelerisque mauris pellentesque
-pulvinar pellentesque habitant. Duis ut diam quam nulla porttitor massa id.
-Facilisis volutpat est velit egestas. Nulla facilisi cras fermentum odio eu
-feugiat pretium. Lectus magna fringilla urna porttitor rhoncus dolor. Mollis
-nunc sed id semper risus in. Quis imperdiet massa tincidunt nunc. Sed
-adipiscing diam donec adipiscing.
+When usability testing, we realized that our app was confusing to use at first 
+due to various tidbits of feedback provided by participants. Specifically, many 
+had issues with app navigation or didn’t know what to do on some screens. In 
+order to improve based on this insight, we first made our app navigation a lot 
+more consistent and simple by adding a back button to every screen. Then, we added 
+tutorial popups to a few different features so that walkers could figure out how 
+to use them when first opening those screens.
 
 </ProjectImagesBlock>
