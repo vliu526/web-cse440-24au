@@ -57,6 +57,19 @@ import imagePlaceholder400x400 from "public/images/projects/template/post/400x40
 import imagePlaceholder600x300 from "public/images/projects/template/post/600x300.png";
 import imagePlaceholder1200x800 from "public/images/projects/template/post/1200x800.png";
 import figmaoverall from "public/images/projects/betbreaker/post/figmaoverall.png";
+import originpaper from "public/images/projects/betbreaker/post/originalpaperprototype.png";
+import finalpaper from "public/images/projects/betbreaker/post/finalpaperprototype.png";
+import usabilitytesting from "public/images/projects/betbreaker/post/usabilitytesting.png";
+import heuristiceval from "public/images/projects/betbreaker/post/heuristiceval.png";
+import heuristiceval2 from "public/images/projects/betbreaker/post/heuristiceval2.png";
+import mutual1 from "public/images/projects/betbreaker/post/mutual1.png";
+import mutual2 from "public/images/projects/betbreaker/post/mutual2.png";
+import mutual3 from "public/images/projects/betbreaker/post/mutual3.png";
+import financial1 from "public/images/projects/betbreaker/post/financial1.png";
+import financial2 from "public/images/projects/betbreaker/post/financial2.png";
+import draftkings from "public/images/projects/betbreaker/post/DraftKingsNBALobby.jpg";
+import socialgambling from "public/images/projects/betbreaker/post/socialgambling.jpg";
+
 
 # BetBreaker
 
@@ -133,21 +146,13 @@ Being able to track financial responsibility was also another important task we 
 
 ### Track Financial Responsibility
 
-<ProjectImagesBlock
-    images={[
-        {
-            src: imagePlaceholder300x600,
-            alt: "Every image requires alt text. This should describe the content of that image.",
-        },
-        {
-            src: imagePlaceholder300x600,
-            alt: "Every image requires alt text. This should describe the content of that image.",
-        },
-    ]}
-    direction={"row"}
+<ProjectImageBlock
+    image={{
+        src: financial1,
+        alt: "bebreaker website stats",
+    }}
     caption={
-        "This caption is applied to the entire block of images. " +
-        "See that it spans across the area of the images."
+        "Betbreaker allows users to see their stats and limits at a glance within the extension, and more info within the website"
     }
     width={6}
     maxHeight={"400px"}
@@ -155,60 +160,72 @@ Being able to track financial responsibility was also another important task we 
 
 We decided to merge the previous budget tracking and statistics tracking tasks together, as they go hand in hand. With this merging of tasks, we intend to demystify to the user how their money is being spent, and educate them along the way. Within budget and statistics tracking, the user will be informed of what is classified as a “good” or “bad” bet statistically by the monetary risk associated with it, with due consideration to their limits and habits. The virtual credit card will be central to the budget tracking aspect, and will give users a more concrete representation of limits.
 
-</ProjectImagesBlock>
+</ProjectImageBlock>
 
 <ProjectImageBlock
     image={{
-        src: imagePlaceholder1200x800,
-        alt: "Every image requires alt text. This should describe the content of that image.",
+        src: financial2,
+        alt: "specific user stats and individual bet stats",
     }}
     caption={
-        "A good caption supports helps a reader understand what is important. " +
-        "It thus supports skimming and also provides an emphasis on key points of related text."
-    }
+        "Betbreaker also allows users to look at individual betting stats, as well as their own history."
+        }
     width={6}
     maxHeight={"400px"}
 >
 
-Euismod quis viverra nibh cras pulvinar mattis nunc sed. Risus quis varius quam
-quisque. Mi tempus imperdiet nulla malesuada pellentesque elit. Felis eget
-velit aliquet sagittis id consectetur purus ut. Eu augue ut lectus arcu.
-Maecenas ultricies mi eget mauris. Nec ullamcorper sit amet risus nullam eget
-felis eget nunc. Et molestie ac feugiat sed lectus vestibulum mattis. Fames ac
-turpis egestas integer. Auctor augue mauris augue neque gravida.
+We also allow users to view their own account history within Betbreaker if they choose. For example, if a user is attempting to create a budget, they can look at weekly or monthly breakdowns of their spending within betbreaker and even specific bets that may be a spending sink, and use this information to better inform their decisions.
 
 </ProjectImageBlock>
 
 ### Mutual Accountability with Friends
 
-We chose to focus on allowing users to hold accountability with their peers regarding their gambling habits. We intend to focus on this task to boost mindfulness in a way that may help users their curb gambling temptations before they transpire into a larger issue at hand. Rather than focusing on the behemoth of gambling addiction, it appears that holding one another socially accountable of gambling tendencies may prove to be more effective than constant educational reinforcement before placing bets. Coupled with betting limits, users may find it less appealing to gamble impulsively if they know their peers will check in on their spending habits and loss data (and vice-versa).
-
-<ProjectImagesBlock
-    images={[
-        {
-            src: imagePlaceholder300x600,
-            alt: "Every image requires alt text. This should describe the content of that image.",
-        },
-        {
-            src: imagePlaceholder300x600,
-            alt: "Every image requires alt text. This should describe the content of that image.",
-        },
-        {
-            src: imagePlaceholder300x600,
-            alt: "Every image requires alt text. This should describe the content of that image.",
-        },
-        {
-            src: imagePlaceholder300x600,
-            alt: "Every image requires alt text. This should describe the content of that image.",
-        }
-    ]}
+<ProjectImageBlock
+    image={{
+        src: mutual1,
+        alt: "Every image requires alt text. This should describe the content of that image.",
+    }}
     caption={
-        "The text above is outside the image block, then we have these full width images."
+        "Users can request approval on certain bets anonymously or directly. Also, users may vote on other users bets anonymously or directly."
     }
-    width={12}
+    width={6}
     maxHeight={"400px"}
 >
-</ProjectImagesBlock>
+
+We chose to focus on allowing users to hold accountability with their peers regarding their gambling habits. We intend to focus on this task to boost mindfulness in a way that may help users their curb gambling temptations before they transpire into a larger issue at hand.
+
+</ProjectImageBlock>
+
+<ProjectImageBlock
+    image={{
+        src: mutual2,
+        alt: "Every image requires alt text. This should describe the content of that image.",
+    }}
+    caption={
+        "Users can view more information on other users bets to better inform their decision"
+    }
+    width={6}
+    maxHeight={"400px"}
+>
+
+Rather than focusing on the behemoth of gambling addiction, it appears that holding one another socially accountable of gambling tendencies may prove to be more effective than constant educational reinforcement before placing bets. Coupled with betting limits, users may find it less appealing to gamble impulsively if they know their peers will check in on their spending habits and loss data (and vice-versa).
+
+</ProjectImageBlock>
+
+<ProjectImageBlock
+    image={{
+        src: mutual3,
+        alt: "Every image requires alt text. This should describe the content of that image.",
+    }}
+    caption={
+        "Users can check in on all their public friends' gambling habits, and check in with them through messaging."
+    }
+    width={6}
+    maxHeight={"400px"}
+>
+
+</ProjectImageBlock>
+
 
 ## Design Research and Key Insights
 
@@ -234,14 +251,14 @@ These individuals were chosen to participate in our interviews, considering that
 <ProjectImagesBlock
     images={[
         {
-            src: imagePlaceholder400x400,
+            src: draftkings,
             alt: "Every image requires alt text. This should describe the content of that image.",
-            caption: "This caption is applied to the image. Each can have a different caption.",
+            caption: "Gambling websites often make it intentionally difficult to find spending amounts or habits",
         },
         {
-            src: imagePlaceholder400x400,
-            alt: "Every image requires alt text. This should describe the content of that image.",
-            caption: "This caption is applied to the image. Each can have a different caption.",
+            src: socialgambling,
+            alt: "people gambling",
+            caption: "Gamblers are often influenced by social factors.",
         },
     ]}
     direction={"row"}
@@ -273,12 +290,11 @@ to find any specific defects within our product, revising these issues before an
 
 <ProjectImageBlock
     image={{
-        src: imagePlaceholder1200x800,
-        alt: "Every image requires alt text. This should describe the content of that image.",
+        src: usabilitytesting,
+        alt: "issue raised about clutter from usability testing",
     }}
     caption={
-        "A good caption supports helps a reader understand what is important. " +
-        "It thus supports skimming and also provides an emphasis on key points of related text."
+        "Issue about clutter raised during usability test, subsequent revision also shown"
     }
     width={6}
     maxHeight={"400px"}
@@ -296,21 +312,19 @@ We also learned that the users would want more ways to hold their friends accoun
 <ProjectImagesBlock
     images={[
         {
-            src: imagePlaceholder300x600,
-            alt: "Every image requires alt text. This should describe the content of that image.",
+            src: heuristiceval,
+            alt: "issue with leaderboard in heuristic evaluations",
+            caption: "Heuristic issue with leaderboard"
         },
         {
-            src: imagePlaceholder300x600,
-            alt: "Every image requires alt text. This should describe the content of that image.",
+            src: heuristiceval2,
+            alt: "issue with back buttons in heuristic evaluations",
+            caption: "Heuristic issue with back buttons"
         },
     ]}
-    direction={"row"}
-    caption={
-        "This caption is applied to the entire block of images. " +
-        "See that it spans across the area of the images."
-    }
+    direction={"column"}
     width={6}
-    maxHeight={"400px"}
+    maxHeight={"200px"}
 >
 
 We learned from our Heuristic Evaluators that we needed to expand on some of the ideas that we had in the paper prototype, meaning that some of the information was too condensed in the paper prototype, and needed to be expanded into a full website. 
@@ -325,16 +339,14 @@ We also learned that much of the language that we used was not necessarily frien
 <ProjectImagesBlock
     images={[
         {
-            src: imagePlaceholder600x300,
-            alt: "Every image requires alt text. This should describe the content of that image.",
-            caption: "These are two images stacked in a column. " +
-                     "Notice that the text on the left is not broken up by the images."
+            src: originpaper,
+            alt: "Paper prototype of folding web extension",
+            caption: "Original Paper Prototype"
         },
         {
-            src: imagePlaceholder600x300,
-            alt: "Every image requires alt text. This should describe the content of that image.",
-            caption: "These are two images stacked in a column. " +
-                     "Notice that the text on the left is not broken up by the images."
+            src: finalpaper,
+            alt: "Paper prototype with full website, web extension, and notifications",
+            caption: "Final Paper Prototype"
         },
     ]}
     direction={"column"}
