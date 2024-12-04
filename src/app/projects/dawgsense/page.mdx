@@ -48,9 +48,9 @@ import { ProjectTeamGallery } from "@/components/project/ProjectTeamGallery";
   */}
 
 import imageTeamPerson1 from "public/images/projects/dawgsense/team/adam.png";
-import imageTeamPerson2 from "public/images/projects/dawgsense/team/firstname2.png";
+import imageTeamPerson2 from "public/images/projects/dawgsense/team/Lirong.png";
 import imageTeamPerson3 from "public/images/projects/dawgsense/team/firstname3.png";
-import imageTeamPerson4 from "public/images/projects/dawgsense/team/firstname4.png";
+import imageTeamPerson4 from "public/images/projects/dawgsense/team/negar.png";
 import imageTeamPerson5 from "public/images/projects/dawgsense/team/kevin.png";
 
 
@@ -65,8 +65,17 @@ import insights2before from "public/images/projects/dawgsense/post/insight2_befo
 import insights2after from "public/images/projects/dawgsense/post/insight2_after.png";
 import insights1before from "public/images/projects/dawgsense/post/insight1_before.png";
 import insights1after from "public/images/projects/dawgsense/post/insight1_after.png";
+import t11 from "public/images/projects/dawgsense/post/T1-1.png";
+import t12 from "public/images/projects/dawgsense/post/T1-2.png";
+import t13 from "public/images/projects/dawgsense/post/T1-3.png";
+import t14 from "public/images/projects/dawgsense/post/T1-4.png";
+import t21 from "public/images/projects/dawgsense/post/T2-1.png";
+import t22 from "public/images/projects/dawgsense/post/T2-2.png";
+import t23 from "public/images/projects/dawgsense/post/T2-3.png";
+import t24 from "public/images/projects/dawgsense/post/T2-4.png";
+import selectMode from "public/images/projects/dawgsense/post/selectMode.png";
 
-# DogSense
+# DawgSense
 
 ## Team
 
@@ -82,7 +91,7 @@ import insights1after from "public/images/projects/dawgsense/post/insight1_after
         photo: imageTeamPerson1,
     },
     {
-        name: ["Audrey", "Que"],
+        name: ["Lirong", "Que"],
         photo: imageTeamPerson2,
     },
     {
@@ -150,7 +159,7 @@ behavioral challenges while fostering a stronger connection with their pets.
 ## Design Walkthrough
 
 The focus tasks—practicing skills to interpret emotional cues and supporting in-the-moment crisis
-response—align perfectly with DogSense MR's dual AR and VR capabilities. The VR practice mode enables
+response—align perfectly with DawgSense's dual AR and VR capabilities. The VR practice mode enables
 the reflective learning by allowing users to replay past crises and revisit previously encountered
 scenarios, learning to identify and interpret signs of anxiety, stress, or aggression in a safe
 environment. The AR mode on Orion glasses enables real-time detection of behavioral cues and
@@ -161,91 +170,185 @@ dog behavior. The synergy between this design and the focus tasks lies in how AR
 each other to offer hands-on learning and real-time support, making it easier for dog owners to
 confidently manage their pets’ behaviors in various real-world contexts.
 
-### Support in-the-moment response to the crisis
-
-<ProjectImagesBlock
-    images={[
-        {
-            src: imagePlaceholder300x600,
-            alt: "Every image requires alt text. This should describe the content of that image.",
-        },
-        {
-            src: imagePlaceholder300x600,
-            alt: "Every image requires alt text. This should describe the content of that image.",
-        },
-    ]}
-    direction={"row"}
+<ProjectImageBlock
+    image={{
+        src: selectMode,
+        alt: "Select Mode to start the system",
+    }}
     caption={
-        "This caption is applied to the entire block of images. " +
-        "See that it spans across the area of the images."
+        "Select Mode to Start"
     }
-    width={6}
-    maxHeight={"400px"}
+    width={12}
+    maxHeight={"1200px"}
 >
+</ProjectImageBlock>
 
-description for images1?
-
-</ProjectImagesBlock>
+### Support in-the-moment response to the crisis
 
 <ProjectImageBlock
     image={{
-        src: imagePlaceholder1200x800,
-        alt: "Every image requires alt text. This should describe the content of that image.",
+        src: t11,
+        alt: "Task 1 Monitoring",
     }}
     caption={
-        "A good caption supports helps a reader understand what is important. " +
-        "It thus supports skimming and also provides an emphasis on key points of related text."
+        "Monitoring and Real-Time Analysis Initialization"
     }
     width={6}
     maxHeight={"400px"}
 >
 
-description for images2?
+Upon activating the monitoring function (AR mode), a pop-up notification “Analyzing in Real-Time” and visual
+clue of dog’s tail movement status appear. This assures the user that system is actively scanning their
+dog’s behaviors and environmental triggers.
+
+
+</ProjectImageBlock>
+
+<ProjectImageBlock
+    image={{
+        src: t12,
+        alt: "Task 1 Detection",
+    }}
+    caption={
+        "Crisis Detection and Warning Message"
+    }
+    width={6}
+    maxHeight={"400px"}
+>
+
+When unusual behavior is detected, such as rapid tail wagging or stiff posture, the system can recognize
+these early warning signs and alerts the user with a warning message “Unusual Behavior Detected”. This
+message is accompanied by a prompt asking the user to confirm the system’s detection.
+
+
+</ProjectImageBlock>
+
+<ProjectImageBlock
+    image={{
+        src: t13,
+        alt: "Task 1 Suggestion",
+    }}
+    caption={
+        "Suggested interventions and Crisis De-Escalation"
+    }
+    width={6}
+    maxHeight={"400px"}
+>
+
+Once a crisis is confirmed, the system presents a series of tailored suggestions to help de-escalate
+the situation. These suggestions may include actions like guiding the dog to a calm space, offering a
+distraction, or using specific calming commands.
+
+
+</ProjectImageBlock>
+
+<ProjectImageBlock
+    image={{
+        src: t14,
+        alt: "Task 1 Post Intervention",
+    }}
+    caption={
+        "Post-Intervention Feedback and Confirmation"
+    }
+    width={6}
+    maxHeight={"400px"}
+>
+
+Once the suggested intervention is completed, the system prompts the user to evaluate their dog’s current
+state to adapt dynamically to the outcome, offering further suggestions if necessary.
 
 
 </ProjectImageBlock>
 
 ### Practice skills interpreting dog’s emotional triggers and responses to prevent crisis from occurring
 
-the task input?
-
-<ProjectImagesBlock
-    images={[
-        {
-            src: imagePlaceholder300x600,
-            alt: "Every image requires alt text. This should describe the content of that image.",
-        },
-        {
-            src: imagePlaceholder300x600,
-            alt: "Every image requires alt text. This should describe the content of that image.",
-        },
-        {
-            src: imagePlaceholder300x600,
-            alt: "Every image requires alt text. This should describe the content of that image.",
-        },
-        {
-            src: imagePlaceholder300x600,
-            alt: "Every image requires alt text. This should describe the content of that image.",
-        }
-    ]}
+<ProjectImageBlock
+    image={{
+        src: t21,
+        alt: "Task 2 Scenario Selection",
+    }}
     caption={
-        "The text above is outside the image block, then we have these full width images."
+        "Scenario Selection and Initial Setup"
     }
-    width={12}
+    width={6}
     maxHeight={"400px"}
 >
-</ProjectImagesBlock>
+
+Upon launching the system to practice mode (VR mode), users can choose a crisis scenario based on previously
+recorded incidents.
+
+
+</ProjectImageBlock>
+
+<ProjectImageBlock
+    image={{
+        src: t22,
+        alt: "Task 2 Video Watching",
+    }}
+    caption={
+        "Emotion and Trigger Recognition in Simulated Videos"
+    }
+    width={6}
+    maxHeight={"400px"}
+>
+
+Once a scenario is selected, users watch a simulated VR video of the incident, observing the dog’s behavior in
+real time. The system then prompts users to identify the dog’s emotional state, such as nervousness or fear, and
+the potential triggers causing these emotions.
+
+
+</ProjectImageBlock>
+
+<ProjectImageBlock
+    image={{
+        src: t23,
+        alt: "Task 2 Feedback",
+    }}
+    caption={
+        "Feedback and Learning Support"
+    }
+    width={6}
+    maxHeight={"400px"}
+>
+
+After users submit their response, the system provides immediate feedback, highlighting whether the correct emotion
+and trigger were identified. If any triggers were missed, the system offers a list of potential triggers with
+explanations to enhance user understanding and learning.
+
+
+</ProjectImageBlock>
+
+<ProjectImageBlock
+    image={{
+        src: t24,
+        alt: "Task 2 Report",
+    }}
+    caption={
+        "Performance Report and Improvement Suggestions"
+    }
+    width={6}
+    maxHeight={"400px"}
+>
+
+At the end of the session, users receive a personalized report detailing their performance. The report highlights key
+achievements, such as correctly identifying emotions and triggers, and offers suggestions for improvement, like focusing
+on more nuanced behavioral cues earlier.
+
+</ProjectImageBlock>
+
 
 ## Design Research and Key Insights
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Sagittis vitae et leo duis ut. Ac
-odio tempor orci dapibus ultrices. Nunc sed augue lacus viverra vitae congue.
-Scelerisque in dictum non consectetur a erat nam at lectus. Tincidunt arcu non
-sodales neque. Diam sit amet nisl suscipit adipiscing bibendum est ultricies.
-Morbi tincidunt augue interdum velit euismod in pellentesque massa. Libero
-justo laoreet sit amet cursus sit. At imperdiet dui accumsan sit. Sed odio
-morbi quis commodo odio aenean. Nibh tortor id aliquet lectus proin nibh.
+The goal of our design research was to understand the challenges dog owners face
+in interpreting and managing their pets' emotional and reactive behaviors. We
+aimed to identify gaps in current solutions and explore how real-time emotional
+monitoring could enhance behavior management. Our primary method was conducted
+interviews with three participants: a dog owner, a veterinarian, and a dog trainer,
+each providing unique perspectives on dog behavior, training, and management.
+These participants were selected for their diverse experiences, ensuring a holistic
+view of the challenges faced. Interviews were chosen to allow flexibility in exploring
+topics like emotional cues, behavioral management, and training needs. This approach
+ provided actionable insights that informed our design decisions.
 
 ### Title for an Insight
 
@@ -386,7 +489,7 @@ goals, thereby enhancing the practical utility and user-friendliness of our appl
     ]}
     direction={"row"}
     caption={
-        "This caption is applied to the entire block of images. " +
+        "Before the change, there is no button to go back or exit. " +
         "See that it spans across the area of the images."
     }
     width={6}
