@@ -47,19 +47,22 @@ import { ProjectTeamGallery } from "@/components/project/ProjectTeamGallery";
   * - If an import is not working, double-check that you have the correct file extension.
   */}
 
-import imageTeamPerson1 from "public/images/projects/template/team/firstname1.png";
-import imageTeamPerson2 from "public/images/projects/template/team/firstname2.png";
-import imageTeamPerson3 from "public/images/projects/template/team/firstname3.png";
-import imageTeamPerson4 from "public/images/projects/template/team/firstname4.png";
+import imageTeamCole from "public/images/projects/boredwalk/team/cole.png";
+import imageTeamCecelia from "public/images/projects/boredwalk/team/cecelia.png";
+import imageTeamEliot from "public/images/projects/boredwalk/team/eliot.png";
+import imageTeamJosh from "public/images/projects/boredwalk/team/josh.png";
+import imageTeamMartin from "public/images/projects/boredwalk/team/martin.png";
 
-import imagePlaceholder300x600 from "public/images/projects/template/post/300x600.png";
-import imagePlaceholder400x400 from "public/images/projects/template/post/400x400.png";
-import imagePlaceholder600x300 from "public/images/projects/template/post/600x300.png";
-import imagePlaceholder1200x800 from "public/images/projects/template/post/1200x800.png";
+import google from "public/images/projects/boredwalk/post/google.png"
+import first_drawing from "public/images/projects/boredwalk/post/first_drawing.png"
+import imagePlaceholder300x600 from "public/images/projects/boredwalk/post/300x600.png";
+import imagePlaceholder400x400 from "public/images/projects/boredwalk/post/400x400.png";
+import imagePlaceholder600x300 from "public/images/projects/boredwalk/post/600x300.png";
+import imagePlaceholder1200x800 from "public/images/projects/boredwalk/post/1200x800.png";
 
-# Project Template
+# BoredWalk
 
-<ProjectSubtitle>Optional Subtitle</ProjectSubtitle>
+<ProjectSubtitle>Spatial Audio Walking App</ProjectSubtitle>
 
 ## Team
 
@@ -71,20 +74,24 @@ import imagePlaceholder1200x800 from "public/images/projects/template/post/1200x
 
 <ProjectTeamGallery members={[
     {
-        name: ["Name Line 1", "Name Line 2"],
-        photo: imageTeamPerson1,
+        name: ["Cole", "VanLeer"],
+        photo: imageTeamCole,
     },
     {
-        name: ["Name Line 1", "Name Line 2"],
-        photo: imageTeamPerson2,
+        name: ["Cecelia", "Zavack"],
+        photo: imageTeamCecelia,
     },
     {
-        name: ["Name Line 1", "Name Line 2"],
-        photo: imageTeamPerson3,
+        name: ["Eliot", "Kopf"],
+        photo: imageTeamEliot,
     },
     {
-        name: ["Name Line 1", "Name Line 2"],
-        photo: imageTeamPerson4,
+        name: ["Josh", "Chernetsky"],
+        photo: imageTeamJosh,
+    },
+        {
+        name: ["Martin", "Greytak"],
+        photo: imageTeamMartin,
     },
 ]} />
 
@@ -108,33 +115,40 @@ import imagePlaceholder1200x800 from "public/images/projects/template/post/1200x
 
 <ProjectImageBlock
     image={{
-        src: imagePlaceholder1200x800,
-        alt: "Every image requires alt text. This should describe the content of that image."
+        src: google,
+        alt: "A Google Navigation result, which walks along a road instead of a nearby nature path"
     }}
     caption={
-        "A good caption supports helps a reader understand what is important. " +
-        "It thus supports skimming and also provides an emphasis on key points of related text."
+        "This result is typical of walking navigation when using Google or " +
+        "Apple Maps. The route travels down roads instead of along the nearby nature path"
     }
-    width={6}
+    width={8}
     maxHeight={"400px"}
 >
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Nunc sed id semper risus in
-hendrerit. Maecenas volutpat blandit aliquam etiam erat velit scelerisque in
-dictum. Integer feugiat scelerisque varius morbi enim nunc faucibus. Risus at
-ultrices mi tempus imperdiet nulla malesuada pellentesque. Habitant morbi
-tristique senectus et netus et malesuada fames ac. Vel eros donec ac odio
-tempor orci. Nisl nisi scelerisque eu ultrices vitae. In egestas erat imperdiet
-sed. Faucibus purus in massa tempor. Ipsum faucibus vitae aliquet nec.
+As a group of students who all enjoy walking daily, we felt that there
+current mapping solutions left much to be desired for walkers who were not simply
+trying to get from point A to point B as quickly as possible.
 
-Ullamcorper sit amet. Posuere sollicitudin aliquam ultrices sagittis orci a
-scelerisque purus. Tellus cras adipiscing enim eu turpis egestas pretium aenean
-pharetra. Enim sed faucibus turpis in eu mi bibendum neque egestas. Faucibus
-scelerisque eleifend donec pretium vulputate sapien nec sagittis aliquam.
-Natoque penatibus et magnis dis. Ullamcorper velit sed ullamcorper morbi
-tincidunt. Arcu dui vivamus arcu felis bibendum ut tristique. Consectetur
-adipiscing elit pellentesque habitant morbi.
+We envisioned a solution which could support loop walks without a destination, or
+directed walks which were not restricted to the shortest, fastest, or easiest paths.
+
+</ProjectImageBlock>
+<ProjectImageBlock
+    image={{
+        src: first_drawing,
+        alt: "A pencil sketch of headphones with a phone below and music notes."
+    }}
+    caption={
+        "Our initial sketch of the design, called at the time Auditory Approach"
+    }
+    width={4}
+    maxHeight={"400px"}
+>
+
+We decided to design an app which eschewed traditional mapping views and instead
+guided the user by panning audio in their headphones to indicate which direction
+they should turn while walking.
 
 </ProjectImageBlock>
 
