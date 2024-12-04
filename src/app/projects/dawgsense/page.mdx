@@ -313,17 +313,24 @@ in nisl nisi. Risus at ultrices mi tempus imperdiet.
 
 ### Integrating Two Functionality Workflow into One Homepage
 
-<ProjectImageBlock
-    image={{
-        src: imagePlaceholder1200x800,
-        alt: "Every image requires alt text. This should describe the content of that image.",
-    }}
-    caption={
-        "A good caption supports helps a reader understand what is important. " +
-        "It thus supports skimming and also provides an emphasis on key points of related text."
-    }
+<ProjectImagesBlock
+    images={[
+        {
+            src: insights3before,
+            alt: "Every image requires alt text. This should describe the content of that image.",
+            caption: "Post-practice feedback screen where the vague 'Good Job' message is " +
+                     "displayed without any additional description or summary after the practice."
+        },
+        {
+            src: insights3after,
+            alt: "Every image requires alt text. This should describe the content of that image.",
+            caption: "These are two images stacked in a column. " +
+                     "Notice that the text on the left is not broken up by the images."
+        },
+    ]}
+    direction={"column"}
     width={6}
-    maxHeight={"400px"}
+    maxHeight={"200px"}
 >
 
 In our initial paper prototype, users were required to navigate between two distinct
@@ -345,7 +352,7 @@ improving user engagement and satisfaction. By consolidating these features, the
 redesigned interface directly supports users in efficiently achieving their intended
 goals, thereby enhancing the practical utility and user-friendliness of our application.
 
-</ProjectImageBlock>
+</ProjectImagesBlock>
 
 ### Improving Navigation and Enhancing User Control
 
