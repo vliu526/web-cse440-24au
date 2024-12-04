@@ -59,6 +59,8 @@ import imagePlaceholder400x400 from "public/images/projects/dawgsense/post/400x4
 import imagePlaceholder600x300 from "public/images/projects/dawgsense/post/600x300.png";
 import imagePlaceholder1200x800 from "public/images/projects/dawgsense/post/1200x800.png";
 import overview from "public/images/projects/dawgsense/post/overview.png";
+import insights3before from "public/images/projects/dawgsense/post/insight3_before.png";
+import insights3after from "public/images/projects/dawgsense/post/insight3_after.png";
 
 # DogSense
 
@@ -155,7 +157,7 @@ dog behavior. The synergy between this design and the focus tasks lies in how AR
 each other to offer hands-on learning and real-time support, making it easier for dog owners to
 confidently manage their pets’ behaviors in various real-world contexts.
 
-### Title for a Task
+### Support in-the-moment response to the crisis
 
 <ProjectImagesBlock
     images={[
@@ -199,7 +201,7 @@ description for images2?
 
 </ProjectImageBlock>
 
-### Title for a Task
+### Practice skills interpreting dog’s emotional triggers and responses to prevent crisis from occurring
 
 the task input?
 
@@ -324,19 +326,7 @@ in nisl nisi. Risus at ultrices mi tempus imperdiet.
     maxHeight={"400px"}
 >
 
-Quis eleifend quam adipiscing vitae. Justo nec ultrices dui sapien eget mi.
-Viverra maecenas accumsan lacus vel facilisis volutpat. Dignissim suspendisse
-in est ante in nibh mauris. Vitae ultricies leo integer malesuada. Ultrices mi
-tempus imperdiet nulla. Erat velit scelerisque in dictum. Elit ut aliquam purus
-sit amet luctus. Congue quisque egestas diam in arcu cursus euismod. Proin nibh
-nisl condimentum id venenatis a condimentum. Nisl nunc mi ipsum faucibus vitae.
-Ac tortor dignissim convallis aenean et. Bibendum enim facilisis gravida neque
-convallis a cras semper. Sed risus ultricies tristique nulla aliquet enim
-tortor at auctor. Sed felis eget velit aliquet sagittis id consectetur purus
-ut. Ac odio tempor orci dapibus ultrices in iaculis nunc sed. Aliquet lectus
-proin nibh nisl condimentum id. Ornare aenean euismod elementum nisi quis
-eleifend quam adipiscing vitae. Parturient montes nascetur ridiculus mus mauris
-vitae ultricies. Id velit ut tortor pretium viverra suspendisse.
+
 
 </ProjectImageBlock>
 
@@ -375,18 +365,19 @@ scelerisque eu ultrices vitae auctor.
 
 </ProjectImagesBlock>
 
-### Title for an Insight
+### AddingDetailed Feedback and Performance Summary
+
 
 <ProjectImagesBlock
     images={[
         {
-            src: imagePlaceholder600x300,
+            src: insights3before,
             alt: "Every image requires alt text. This should describe the content of that image.",
-            caption: "These are two images stacked in a column. " +
-                     "Notice that the text on the left is not broken up by the images."
+            caption: "Post-practice feedback screen where the vague 'Good Job' message is " +
+                     "displayed without any additional description or summary after the practice."
         },
         {
-            src: imagePlaceholder600x300,
+            src: insights3after,
             alt: "Every image requires alt text. This should describe the content of that image.",
             caption: "These are two images stacked in a column. " +
                      "Notice that the text on the left is not broken up by the images."
@@ -397,12 +388,17 @@ scelerisque eu ultrices vitae auctor.
     maxHeight={"200px"}
 >
 
-Leo duis ut diam quam. Sit amet volutpat consequat mauris nunc congue nisi. Id
-eu nisl nunc mi ipsum. Rhoncus aenean vel elit scelerisque mauris pellentesque
-pulvinar pellentesque habitant. Duis ut diam quam nulla porttitor massa id.
-Facilisis volutpat est velit egestas. Nulla facilisi cras fermentum odio eu
-feugiat pretium. Lectus magna fringilla urna porttitor rhoncus dolor. Mollis
-nunc sed id semper risus in. Quis imperdiet massa tincidunt nunc. Sed
-adipiscing diam donec adipiscing.
+The usability tests revealed that the feedback provided to users after completing practice sessions
+was vague and lacked actionable insights. Users were presented with generic messages like "Good Job!"
+without any detailed breakdown of their performance or suggestions for improvement. This lack of meaningful
+feedback violated the Visibility of System Status and Feedback heuristic, as it failed to communicate to
+users how well they performed and how they could improve. The absence of actionable information hindered
+the learning process, leaving users unable to gauge their progress or identify areas requiring attention.
+
+To address this shortfall, the feedback mechanism was overhauled to include both positive reinforcement
+and constructive suggestions. Now, post-training feedback not only praises correct actions, such as
+identifying early signs of anxiety with statements like "You identified early signs of anxiety correctly.
+Great work!", but it also points out specific areas for improvement, such as "Focus on noticing tail
+movements earlier," accompanied by actionable advice.
 
 </ProjectImagesBlock>
