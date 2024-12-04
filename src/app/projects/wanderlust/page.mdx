@@ -47,15 +47,32 @@ import { ProjectTeamGallery } from "@/components/project/ProjectTeamGallery";
   * - If an import is not working, double-check that you have the correct file extension.
   */}
 
-import imageTeamPerson1 from "public/images/projects/template/team/firstname1.png";
-import imageTeamPerson2 from "public/images/projects/template/team/firstname2.png";
-import imageTeamPerson3 from "public/images/projects/template/team/firstname3.png";
-import imageTeamPerson4 from "public/images/projects/template/team/firstname4.png";
+import imageTeamPerson1 from "public/images/projects/wanderlust/team/firstname1.png";
+import imageTeamPerson2 from "public/images/projects/wanderlust/team/firstname2.png";
+import imageTeamPerson3 from "public/images/projects/wanderlust/team/firstname3.png";
+import imageTeamPerson4 from "public/images/projects/wanderlust/team/firstname4.png";
+import imageTeamPerson5 from "public/images/projects/wanderlust/team/firstname5.png";
+
+
+
+import imageTeamPersontab from "public/images/projects/template/team/firstname1.png";
+
 
 import imagePlaceholder300x600 from "public/images/projects/template/post/300x600.png";
 import imagePlaceholder400x400 from "public/images/projects/template/post/400x400.png";
 import imagePlaceholder600x300 from "public/images/projects/template/post/600x300.png";
 import imagePlaceholder1200x800 from "public/images/projects/template/post/1200x800.png";
+
+import problemOverview2 from "public/images/projects/wanderlust/post/overview2.png";
+
+import insight1 from "public/images/projects/wanderlust/post/insight 1.png";
+import insight2a from "public/images/projects/wanderlust/post/insight 2a.png";
+import insight2b from "public/images/projects/wanderlust/post/insight 2b.png";
+import insight3 from "public/images/projects/wanderlust/post/insight 3.png";
+
+
+
+
 
 import Make_New_Friends_Walkthrough_P1 from "public/images/projects/wanderlust/post/Make_New_Friends_Walkthrough_P1.png";
 import Make_New_Friends_Walkthrough_P2 from "public/images/projects/wanderlust/post/Make_New_Friends_Walkthrough_P2.png";
@@ -73,9 +90,9 @@ import Design_Research_P2 from "public/images/projects/wanderlust/post/Design_Re
 import Design_Research_P3 from "public/images/projects/wanderlust/post/Design_Research_P3.png";
 import Design_Research_P4 from "public/images/projects/wanderlust/post/Design_Research_P4.png";
 
-# Project Template
+# WanderLust
 
-<ProjectSubtitle>Optional Subtitle</ProjectSubtitle>
+<ProjectSubtitle>Exploring Culture Through Connections</ProjectSubtitle>
 
 ## Team
 
@@ -87,20 +104,24 @@ import Design_Research_P4 from "public/images/projects/wanderlust/post/Design_Re
 
 <ProjectTeamGallery members={[
     {
-        name: ["Name Line 1", "Name Line 2"],
-        photo: imageTeamPerson1,
-    },
-    {
-        name: ["Name Line 1", "Name Line 2"],
+        name: ["Sean", "Ozinsky"],
         photo: imageTeamPerson2,
     },
     {
-        name: ["Name Line 1", "Name Line 2"],
+        name: ["Isabelle", "Tinsley"],
+        photo: imageTeamPerson4,
+    },
+    {
+        name: ["Tasadan", "Filip"],
         photo: imageTeamPerson3,
     },
     {
-        name: ["Name Line 1", "Name Line 2"],
-        photo: imageTeamPerson4,
+        name: ["Danielle", "Maddox"],
+        photo: imageTeamPerson5,
+    },
+    {
+        name: ["Roshan", "Skariah"],
+        photo: imageTeamPerson1,
     },
 ]} />
 
@@ -124,33 +145,25 @@ import Design_Research_P4 from "public/images/projects/wanderlust/post/Design_Re
 
 <ProjectImageBlock
     image={{
-        src: imagePlaceholder1200x800,
+        src: problemOverview2,
         alt: "Every image requires alt text. This should describe the content of that image."
     }}
     caption={
-        "A good caption supports helps a reader understand what is important. " +
-        "It thus supports skimming and also provides an emphasis on key points of related text."
+        "Wanderlust is a one stop app that makes exploring cultures and connecting with " +
+        "locals and fellow travelers."
     }
     width={6}
     maxHeight={"400px"}
 >
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Nunc sed id semper risus in
-hendrerit. Maecenas volutpat blandit aliquam etiam erat velit scelerisque in
-dictum. Integer feugiat scelerisque varius morbi enim nunc faucibus. Risus at
-ultrices mi tempus imperdiet nulla malesuada pellentesque. Habitant morbi
-tristique senectus et netus et malesuada fames ac. Vel eros donec ac odio
-tempor orci. Nisl nisi scelerisque eu ultrices vitae. In egestas erat imperdiet
-sed. Faucibus purus in massa tempor. Ipsum faucibus vitae aliquet nec.
-
-Ullamcorper sit amet. Posuere sollicitudin aliquam ultrices sagittis orci a
-scelerisque purus. Tellus cras adipiscing enim eu turpis egestas pretium aenean
-pharetra. Enim sed faucibus turpis in eu mi bibendum neque egestas. Faucibus
-scelerisque eleifend donec pretium vulputate sapien nec sagittis aliquam.
-Natoque penatibus et magnis dis. Ullamcorper velit sed ullamcorper morbi
-tincidunt. Arcu dui vivamus arcu felis bibendum ut tristique. Consectetur
-adipiscing elit pellentesque habitant morbi.
+Travelers often struggle to immerse themselves in local cultures, 
+facing challenges in finding recommendations that cater to their preferences and those of their group. 
+Current platforms focus on convenience but lack tools for meaningful cultural exploration.
+Wanderlust aims to foster authentic cultural connections by enabling users to share and discover 
+local recommendations while building meaningful relationships with locals and other fellow travelers.
+Many travelers desire more than generic itineraries; they seek unique experiences that 
+balance spontaneity with group needs. This app bridges the gap, offering tailored recommendations 
+and opportunities for social connection.
 
 </ProjectImageBlock>
 
@@ -318,109 +331,101 @@ While participants prefer to plan major activities in advance, they value the ab
 
 ## Iterative Design and Key Insights
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Et tortor consequat id porta nibh
-venenatis. Nisl vel pretium lectus quam. Volutpat blandit aliquam etiam erat
-velit. Ornare arcu odio ut sem nulla pharetra diam sit amet. Habitant morbi
-tristique senectus et netus et malesuada fames ac. A arcu cursus vitae congue
-mauris rhoncus aenean. Ornare massa eget egestas purus. Luctus venenatis lectus
-magna fringilla. Leo integer malesuada nunc vel. Egestas purus viverra accumsan
-in nisl nisi. Risus at ultrices mi tempus imperdiet.
+The iterative design process for Wanderlust involved multiple phases of refinement, 
+beginning with paper prototyping, progressing through heuristic evaluations and 
+usability testing, and creating the digital mockup. Paper prototypes 
+were used to sketch out workflows and interface layouts, focusing on the core tasks of 
+"Finding Locals' Recommendations" and "Making New Friends While Traveling." 
+These low-fidelity prototypes allowed the team to explore ideas quickly and 
+make adjustments based on initial evaluations.
 
-### Title for an Insight
+Heuristic evaluations identified usability issues such as missing back buttons, unclear 
+navigation flows, and redundant elements. These issues helped make revisions to ensure 
+the design aligned with user expectations and provided intuitive interaction paths. 
+We conducted usability testing, highlighting challenges in navigation, task visibility, 
+and users’ mental models of the app's features. We tested with diverse participants  which helped
+emphasized the need for structural revisions, such as reorganizing menus and simplifying 
+user flows. The transition to digital mockups offered a more realistic testing environment, 
+which helped iterate on the interface and functionality based on feedback.
+
+### Intuitive Navigation Matters
 
 <ProjectImageBlock
     image={{
-        src: imagePlaceholder1200x800,
+        src: insight1,
         alt: "Every image requires alt text. This should describe the content of that image.",
     }}
     caption={
-        "A good caption supports helps a reader understand what is important. " +
-        "It thus supports skimming and also provides an emphasis on key points of related text."
+        "Emphasized structured navigation elements, including back buttons and cancel options"
     }
     width={6}
     maxHeight={"400px"}
 >
 
-Quis eleifend quam adipiscing vitae. Justo nec ultrices dui sapien eget mi.
-Viverra maecenas accumsan lacus vel facilisis volutpat. Dignissim suspendisse
-in est ante in nibh mauris. Vitae ultricies leo integer malesuada. Ultrices mi
-tempus imperdiet nulla. Erat velit scelerisque in dictum. Elit ut aliquam purus
-sit amet luctus. Congue quisque egestas diam in arcu cursus euismod. Proin nibh
-nisl condimentum id venenatis a condimentum. Nisl nunc mi ipsum faucibus vitae.
-Ac tortor dignissim convallis aenean et. Bibendum enim facilisis gravida neque
-convallis a cras semper. Sed risus ultricies tristique nulla aliquet enim
-tortor at auctor. Sed felis eget velit aliquet sagittis id consectetur purus
-ut. Ac odio tempor orci dapibus ultrices in iaculis nunc sed. Aliquet lectus
-proin nibh nisl condimentum id. Ornare aenean euismod elementum nisi quis
-eleifend quam adipiscing vitae. Parturient montes nascetur ridiculus mus mauris
-vitae ultricies. Id velit ut tortor pretium viverra suspendisse.
+Throughout our testing, users frequently encountered difficulties navigating between pages due to the 
+absence of back buttons and a lack of clear pathways to exit or return to previous states. 
+These challenges were flagged during usability testing and heuristic evaluations, 
+emphasizing violations of the "User Control and Freedom" heuristic. To address this issue, 
+the team implemented structured navigation elements, including back buttons and cancel options,
+ensuring users could move seamlessly between sections without confusion. This improvement 
+created a more intuitive experience, empowering users to explore the app effortlessly while 
+enhancing their overall satisfaction with the interface.
+
 
 </ProjectImageBlock>
 
-### Title for an Insight
+### Locals’ Engagement Is Key
 
 <ProjectImagesBlock
     images={[
         {
-            src: imagePlaceholder300x600,
+            src: insight2a,
             alt: "Every image requires alt text. This should describe the content of that image.",
         },
         {
-            src: imagePlaceholder300x600,
+            src: insight2b,
             alt: "Every image requires alt text. This should describe the content of that image.",
         },
     ]}
     direction={"row"}
     caption={
-        "This caption is applied to the entire block of images. " +
-        "See that it spans across the area of the images."
+        "Reciprocal model requiring users to share their own recommendations before accessing the full database"
     }
     width={6}
     maxHeight={"400px"}
 >
 
-Feugiat vivamus at augue eget arcu. Bibendum est ultricies integer quis auctor
-elit sed vulputate mi. At tempor commodo ullamcorper a lacus vestibulum sed.
-Vitae aliquet nec ullamcorper sit amet risus. Morbi non arcu risus quis varius
-quam quisque id diam. Nulla pellentesque dignissim enim sit amet venenatis.
-Morbi tristique senectus et netus et malesuada fames ac turpis. Molestie a
-iaculis at erat pellentesque adipiscing commodo elit at. Ut eu sem integer
-vitae justo eget magna. Etiam non quam lacus suspendisse faucibus. Nulla
-aliquet enim tortor at auctor urna nunc id. Lobortis elementum nibh tellus
-molestie. Mauris in aliquam sem fringilla ut morbi tincidunt. In nisl nisi
-scelerisque eu ultrices vitae auctor.
+After our initial testing, it was clear that locals were hesitant to contribute their recommendations, 
+often feeling that the effort lacked immediate personal benefit. To address this barrier,
+the team introduced a reciprocal model requiring users to share their own recommendations 
+before accessing the full database. Limited previews of other users’ contributions were 
+also added to showcase the app’s value and encourage participation. These changes helped 
+establish a sense of mutual exchange, fostering a stronger community of engaged users 
+willing to share their unique cultural insights.
+
 
 </ProjectImagesBlock>
 
-### Title for an Insight
+### Task Clarity Improves Usability
 
-<ProjectImagesBlock
-    images={[
-        {
-            src: imagePlaceholder600x300,
-            alt: "Every image requires alt text. This should describe the content of that image.",
-            caption: "These are two images stacked in a column. " +
-                     "Notice that the text on the left is not broken up by the images."
-        },
-        {
-            src: imagePlaceholder600x300,
-            alt: "Every image requires alt text. This should describe the content of that image.",
-            caption: "These are two images stacked in a column. " +
-                     "Notice that the text on the left is not broken up by the images."
-        },
-    ]}
-    direction={"column"}
+<ProjectImageBlock
+    image={{
+        src: insight3,
+        alt: "Every image requires alt text. This should describe the content of that image.",
+    }}
+    caption={
+        "Redesigned menus and contextual prompts to guide users"
+    }
     width={6}
-    maxHeight={"200px"}
+    maxHeight={"400px"}
 >
 
-Leo duis ut diam quam. Sit amet volutpat consequat mauris nunc congue nisi. Id
-eu nisl nunc mi ipsum. Rhoncus aenean vel elit scelerisque mauris pellentesque
-pulvinar pellentesque habitant. Duis ut diam quam nulla porttitor massa id.
-Facilisis volutpat est velit egestas. Nulla facilisi cras fermentum odio eu
-feugiat pretium. Lectus magna fringilla urna porttitor rhoncus dolor. Mollis
-nunc sed id semper risus in. Quis imperdiet massa tincidunt nunc. Sed
-adipiscing diam donec adipiscing.
+Participants struggled to locate features such as joining activities or posting recommendations, 
+which limited their ability to fully engage with the app’s capabilities. Usability testing 
+highlighted the need for clearer feature discoverability and a more intuitive mental model 
+for navigating throughout the app. To address this, the team redesigned menus and included contextual 
+prompts to guide users. For example, join buttons were made to be more prominent on activity feeds, and key functions 
+were highlighted to reduce user confusion. These adjustments makes sure that users could 
+easily access and utilize the apps most important features.
 
-</ProjectImagesBlock>
+</ProjectImageBlock>
