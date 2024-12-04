@@ -49,14 +49,21 @@ import { ProjectTeamGallery } from "@/components/project/ProjectTeamGallery";
 
 import annmarie from "public/images/projects/tiltd/team/annmarie.jpg";
 import imageTeamPerson2 from "public/images/projects/template/team/firstname2.png";
-import imageTeamPerson3 from "public/images/projects/template/team/firstname3.png";
-import imageTeamPerson4 from "public/images/projects/template/team/firstname4.png";
-import imageTeamPerson5 from "public/images/projects/template/team/firstname4.png";
+import minyoung from "public/images/projects/tiltd/team/minyoung.jpg";
+import jeewon from "public/images/projects/tiltd/team/jeewon.jpg";
 
-import imagePlaceholder300x600 from "public/images/projects/template/post/300x600.png";
-import imagePlaceholder400x400 from "public/images/projects/template/post/400x400.png";
-import imagePlaceholder600x300 from "public/images/projects/template/post/600x300.png";
-import imagePlaceholder1200x800 from "public/images/projects/template/post/1200x800.png";
+import app from "public/images/projects/tiltd/post/app.png";
+import game_mode from "public/images/projects/tiltd/post/game_mode.png";
+import invite from "public/images/projects/tiltd/post/invite.png";
+import overview from "public/images/projects/tiltd/post/overview.png";
+import dashboard from "public/images/projects/tiltd/post/dashboard_prototype.png";
+import feedback_received from "public/images/projects/tiltd/post/feedback_received.png";
+import hotkey from "public/images/projects/tiltd/post/hotkey_prototype.png";
+import messages from "public/images/projects/tiltd/post/messages.png";
+import notification from "public/images/projects/tiltd/post/notification_sketch.png";
+import feedback_sent from "public/images/projects/tiltd/post/send_feedback.png";
+import wheel from "public/images/projects/tiltd/post/wheel.png";
+import haptics from "public/images/projects/tiltd/post/haptics.png";
 
 # tiltd
 
@@ -73,7 +80,7 @@ import imagePlaceholder1200x800 from "public/images/projects/template/post/1200x
 <ProjectTeamGallery members={[
     {
         name: ["Minyoung", "Cho"],
-        photo: imageTeamPerson3,
+        photo: minyoung,
     },
     {
         name: ["Misty", "Chung"],
@@ -81,11 +88,11 @@ import imagePlaceholder1200x800 from "public/images/projects/template/post/1200x
     },
     {
         name: ["William", "Eng"],
-        photo: imageTeamPerson3,
+        photo: imageTeamPerson2,
     },
     {
         name: ["Jeewon", "Jung"],
-        photo: imageTeamPerson4,
+        photo: jeewon,
     },
     {
         name: ["AnnMarie", "Vo"],
@@ -113,12 +120,11 @@ import imagePlaceholder1200x800 from "public/images/projects/template/post/1200x
 
 <ProjectImageBlock
     image={{
-        src: imagePlaceholder1200x800,
+        src: overview,
         alt: "Every image requires alt text. This should describe the content of that image."
     }}
     caption={
-        "A good caption supports helps a reader understand what is important. " +
-        "It thus supports skimming and also provides an emphasis on key points of related text."
+        "Initial design sketch of app interface and integrated game components "
     }
     width={6}
     maxHeight={"400px"}
@@ -139,18 +145,17 @@ We chose our focus tasks because they directly address the social dynamics that 
 <ProjectImagesBlock
     images={[
         {
-            src: imagePlaceholder300x600,
+            src: game_mode,
             alt: "Every image requires alt text. This should describe the content of that image.",
         },
         {
-            src: imagePlaceholder300x600,
-            alt: "Every image requires alt text. This should describe the content of that image.",
-        },
+            src: invite,
+            alt: "alt text",
+        }
     ]}
-    direction={"row"}
+    direction={"column"}
     caption={
-        "This caption is applied to the entire block of images. " +
-        "See that it spans across the area of the images."
+        "Recommendation to send an invite to friends if they seem to be having a negative game experience"
     }
     width={6}
     maxHeight={"400px"}
@@ -162,12 +167,11 @@ The goal of the task "Set up a healthy gaming environment to play with friends" 
 
 <ProjectImageBlock
     image={{
-        src: imagePlaceholder1200x800,
+        src: feedback_sent,
         alt: "Every image requires alt text. This should describe the content of that image.",
     }}
     caption={
-        "A good caption supports helps a reader understand what is important. " +
-        "It thus supports skimming and also provides an emphasis on key points of related text."
+        "Send personalized messages to friends anonymously after the game"
     }
     width={6}
     maxHeight={"400px"}
@@ -184,24 +188,16 @@ The goal of this task is to provide a way for players to offer support to teamma
 <ProjectImagesBlock
     images={[
         {
-            src: imagePlaceholder300x600,
+            src: haptics,
             alt: "Every image requires alt text. This should describe the content of that image.",
         },
         {
-            src: imagePlaceholder300x600,
+            src: wheel,
             alt: "Every image requires alt text. This should describe the content of that image.",
         },
-        {
-            src: imagePlaceholder300x600,
-            alt: "Every image requires alt text. This should describe the content of that image.",
-        },
-        {
-            src: imagePlaceholder300x600,
-            alt: "Every image requires alt text. This should describe the content of that image.",
-        }
     ]}
     caption={
-        "The text above is outside the image block, then we have these full width images."
+        "How the task transitioned from sketch to digital mockup: system-detected feedback to feedback sent by friends and/or other players on the team"
     }
     width={12}
     maxHeight={"400px"}
@@ -221,18 +217,13 @@ A recurring theme in our design research highlighted the significant impact of s
 <ProjectImagesBlock
     images={[
         {
-            src: imagePlaceholder400x400,
+            src: notification,
             alt: "Every image requires alt text. This should describe the content of that image.",
-            caption: "This caption is applied to the image. Each can have a different caption.",
-        },
-        {
-            src: imagePlaceholder400x400,
-            alt: "Every image requires alt text. This should describe the content of that image.",
-            caption: "This caption is applied to the image. Each can have a different caption.",
+            caption: "Real-time feedback was an idea included in the design from the start of the design process",
         },
     ]}
     direction={"row"}
-    width={8}
+    width={5}
     maxHeight={"400px"}
 >
 
@@ -252,14 +243,13 @@ Our iterative design process began with sketches to conceptualize initial ideas,
 
 <ProjectImageBlock
     image={{
-        src: imagePlaceholder1200x800,
+        src: hotkey,
         alt: "Every image requires alt text. This should describe the content of that image.",
     }}
     caption={
-        "A good caption supports helps a reader understand what is important. " +
-        "It thus supports skimming and also provides an emphasis on key points of related text."
+        "Added the idea of using a hotkey to quickly send feedback during a game, which is both easy to use for gamers and fulfills the purpose of sending real-time feedback and stopping the spread of negative energy mid-game"
     }
-    width={6}
+    width={4}
     maxHeight={"400px"}
 >
 
@@ -272,18 +262,17 @@ One key insight we iterated on was that gamers tend to prefer mechanics they are
 <ProjectImagesBlock
     images={[
         {
-            src: imagePlaceholder300x600,
+            src: dashboard,
             alt: "Every image requires alt text. This should describe the content of that image.",
         },
         {
-            src: imagePlaceholder300x600,
+            src: feedback_received,
             alt: "Every image requires alt text. This should describe the content of that image.",
         },
     ]}
-    direction={"row"}
+    direction={"column"}
     caption={
-        "This caption is applied to the entire block of images. " +
-        "See that it spans across the area of the images."
+        "How the post-game feedback interface was simplified to create a more minimalist design"
     }
     width={6}
     maxHeight={"400px"}
@@ -298,20 +287,13 @@ Minimalist design and content is important in ensuring that the system does not 
 <ProjectImagesBlock
     images={[
         {
-            src: imagePlaceholder600x300,
+            src: messages,
             alt: "Every image requires alt text. This should describe the content of that image.",
-            caption: "These are two images stacked in a column. " +
-                     "Notice that the text on the left is not broken up by the images."
-        },
-        {
-            src: imagePlaceholder600x300,
-            alt: "Every image requires alt text. This should describe the content of that image.",
-            caption: "These are two images stacked in a column. " +
-                     "Notice that the text on the left is not broken up by the images."
+            caption: "Iterations of real-time feedback messages with the intent to be quickly read by players and deliver the feedback concisely "
         },
     ]}
     direction={"column"}
-    width={6}
+    width={5}
     maxHeight={"200px"}
 >
 
