@@ -85,6 +85,7 @@ import feedbacktree from "public/images/projects/preparebear/post/tree2_2.png"
 
 import prototype from "public/images/projects/preparebear/post/prototype.png"
 import revisiontree from "public/images/projects/preparebear/post/revisiontree.png"
+import facialdisplay from "public/images/projects/preparebear/post/facialdisplay.png"
 
 import imagePlaceholder300x600 from "public/images/projects/template/post/300x600.png";
 import imagePlaceholder400x400 from "public/images/projects/template/post/400x400.png";
@@ -660,24 +661,15 @@ if not satisfied with feedback received.
 
 ### Making System Status and Processing Visible
 
-<ProjectImagesBlock
-    images={[
+<ProjectImageBlock
+    image={
         {
-            src: imagePlaceholder300x600,
-            alt: "Every image requires alt text. This should describe the content of that image.",
-        },
-        {
-            src: imagePlaceholder300x600,
-            alt: "Every image requires alt text. This should describe the content of that image.",
-        },
-    ]}
-    direction={"row"}
-    caption={
-        "This caption is applied to the entire block of images. " +
-        "See that it spans across the area of the images."
-    }
+            src: facialdisplay,
+            alt: "System for displaying faces description.",
+            caption: "System for displaying faces, including brightness indicating user input and thinking when processsing",
+        }}
     width={6}
-    maxHeight={"400px"}
+    maxHeight={"200px"}
 >
 
 <b>What the system is doing and how it is interpreting user's input should be made visible to the
@@ -695,7 +687,7 @@ would benefit from more checkpoints after data collection segments where the col
 is reported back to the user and the user is able to edit errors. We added many checkpoints along our
 dialogue trees in consideration of this, giving users that feedback soon after collection.
 
-</ProjectImagesBlock>
+</ProjectImageBlock>
 
 ### Suppporting Natural Conversation Diversions
 
