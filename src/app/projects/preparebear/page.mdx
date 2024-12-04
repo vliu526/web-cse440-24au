@@ -636,10 +636,9 @@ dissatisifed or are desiring a change.</b> It was mainly from Usability Testing 
 identified that our dialogue trees as streamlined processes did not allow for much user control
 on when to exit, redo, or navigate in a conversation, and seemed to be guiderailed on a certain 
 path, breaking the "User Control" heuristic. We then added a stop tree to shutdown the bear at
-any point in the conversation, and an error tree that handles a user going of course and allows
-them to redirect to another tree point as needed. We also experienced a breakdown during a 
-usability test where a user stated they didn't like the feedback given and felt like the system
-was forcing them to follow it. It became clear to us that not only should users at any point be
+any point in the conversation, and a redoing statement function. We also experienced a breakdown
+during a usability test where a user stated they didn't like the feedback given and felt like the 
+system was forcing them to follow it. It became clear to us that not only should users at any point be
 in full control of their position in the process, but also the system's underlying priorities. To
 do this, we redesigned the feedback system to allow users to edit their goals and feedback preferences
 if not satisfied with feedback received.
@@ -676,7 +675,12 @@ many initial points where feedback was given to the user as we focused on develo
 process, but we realized on the technical side and for clarity this was essential. Using our defined
 facial system that previously existed just to add a responsive human element, we added facial states 
 that representing thinking and receiving input so that the user would be aware in real time that the
-system is pausing to process or that their audio is being picked up and listened to.
+system is pausing to process or that their audio is being picked up and listened to. Where this
+insight heavily factored into our iteration is our consideration of a change for exclusion, where
+we considered how to handle harder-to-parse accents or speech styles, and realized the whole system
+would benefit from more checkpoints after data collection segments where the collected information
+is reported back to the user and the user is able to edit errors. We added many checkpoints along our
+dialogue trees in consideration of this, giving users that feedback soon after collection.
 
 </ProjectImagesBlock>
 
@@ -702,12 +706,17 @@ system is pausing to process or that their audio is being picked up and listened
     maxHeight={"200px"}
 >
 
-Leo duis ut diam quam. Sit amet volutpat consequat mauris nunc congue nisi. Id
-eu nisl nunc mi ipsum. Rhoncus aenean vel elit scelerisque mauris pellentesque
-pulvinar pellentesque habitant. Duis ut diam quam nulla porttitor massa id.
-Facilisis volutpat est velit egestas. Nulla facilisi cras fermentum odio eu
-feugiat pretium. Lectus magna fringilla urna porttitor rhoncus dolor. Mollis
-nunc sed id semper risus in. Quis imperdiet massa tincidunt nunc. Sed
-adipiscing diam donec adipiscing.
+<b>Divergences from the main conversation tree are normal in a user interaction, and should be
+supported, especially in cases where the user experience will benefit from the diversion.</b> This
+insight came mostly from usability testing, where across tests many system breaks occured when
+the user asked questions or made statements that were not anticipated by the dialogue tree. 
+Participant 2 in particular asked many questions for advice and clarification. Participant 3 gave
+the feedback that the current process felt like a systematic interrogation in the way the system
+asked series of questions without interruption. This identified to us that the rigid trees created
+needed to allow for natural sideroads in conversation, and the user could even benefit from
+divergences in the form of questions. So, we added a question-taking tree to our system, a sympathetic
+response system that made the system respond more naturally to user speech in between tree nodes, and
+an error tree handling all other diversions with a reminder of system state and ability to redirect
+if needed. 
 
 </ProjectImagesBlock>
