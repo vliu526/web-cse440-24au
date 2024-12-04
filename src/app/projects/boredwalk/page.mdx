@@ -54,6 +54,15 @@ import imageTeamJosh from "public/images/projects/boredwalk/team/josh.png";
 import imageTeamMartin from "public/images/projects/boredwalk/team/martin.png";
 
 import google from "public/images/projects/boredwalk/post/google.png"
+
+import task11 from "public/images/projects/boredwalk/post/task11.png"
+import task12 from "public/images/projects/boredwalk/post/task12.png"
+import task13 from "public/images/projects/boredwalk/post/task13.png"
+import task14 from "public/images/projects/boredwalk/post/task14.png"
+import task15 from "public/images/projects/boredwalk/post/task15.png"
+import task16 from "public/images/projects/boredwalk/post/task16.png"
+import task17 from "public/images/projects/boredwalk/post/task17.png"
+
 import first_drawing from "public/images/projects/boredwalk/post/first_drawing.png"
 import imagePlaceholder300x600 from "public/images/projects/boredwalk/post/300x600.png";
 import imagePlaceholder400x400 from "public/images/projects/boredwalk/post/400x400.png";
@@ -113,6 +122,17 @@ import imagePlaceholder1200x800 from "public/images/projects/boredwalk/post/1200
   * Later in the template you will also find examples of the plural `ProjectImagesBlock` tag.
 */}
 
+When walking recreationally, it is difficult to find a route that is safe, 
+easily navigable, and fulfills a set of preferences–especially when exploring. 
+In contrast to someone who wants an efficient route from point A to point B, 
+those walking for leisure may place higher value on avoiding distracting noises 
+or on walking near pleasant scenery. Existing mapping technology that supports 
+walking treats walking directions like a driving route, and as such is targeted 
+only towards efficient walkers–therefore, the niche of recreational walking goes 
+unsupported. Because of this, many recreational walkers feel they must stick to 
+routes they know; whether that exploration be small ventures from existing routes 
+or fully unexplored trails, the human need for exploration is left unmet.
+
 <ProjectImageBlock
     image={{
         src: google,
@@ -122,53 +142,57 @@ import imagePlaceholder1200x800 from "public/images/projects/boredwalk/post/1200
         "This result is typical of walking navigation when using Google or " +
         "Apple Maps. The route travels down roads instead of along the nearby nature path"
     }
-    width={8}
-    maxHeight={"400px"}
+    width={12}
+    maxHeight={"600px"}
 >
-
-As a group of students who all enjoy walking daily, we felt that there
-current mapping solutions left much to be desired for walkers who were not simply
-trying to get from point A to point B as quickly as possible.
-
-We envisioned a solution which could support loop walks without a destination, or
-directed walks which were not restricted to the shortest, fastest, or easiest paths.
-
 </ProjectImageBlock>
+
 <ProjectImageBlock
     image={{
         src: first_drawing,
         alt: "A pencil sketch of headphones with a phone below and music notes."
     }}
     caption={
-        "Our initial sketch of the design, called at the time Auditory Approach"
+        "Our initial sketch of the design, called at the time \"Auditory Approach\""
     }
     width={4}
     maxHeight={"400px"}
 >
 
-We decided to design an app which eschewed traditional mapping views and instead
-guided the user by panning audio in their headphones to indicate which direction
-they should turn while walking.
+Our design, BoredWalk, supports the niche of recreational walking by providing 
+its users with unobtrusive walking directions. These directions guide recreational 
+walkers along novel walking routes that match the user’s selected preferences. 
+BoredWalk utilizes the spatial audio function that exists in modern headphones 
+to deliver these directions, shifting between left, right, or center, depending 
+on which direction the user needs to take.
 
 </ProjectImageBlock>
 
 ## Design Walkthrough
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eget porttitor augue.
-Vestibulum sed ex quis quam egestas interdum. Donec nec semper orci, id iaculis odio.
-Fusce rutrum lacus et volutpat luctus. Praesent accumsan volutpat lacus, ac vehicula ante gravida ut.
-Donec quis imperdiet justo. Pellentesque semper eleifend ex a rutrum.
+An interesting aspect of our app design is the fact that the core functionality -
+navigating a walker with audio feedback - needs no visual design, and minimal design
+overall. As such, our design focus was on the ancillary features which support
+the user.
 
-### Title for a Task
+### Finding a route
 
 <ProjectImagesBlock
     images={[
         {
-            src: imagePlaceholder300x600,
+            src: task11,
             alt: "Every image requires alt text. This should describe the content of that image.",
         },
         {
-            src: imagePlaceholder300x600,
+            src: task12,
+            alt: "Every image requires alt text. This should describe the content of that image.",
+        },
+        {
+            src: task13,
+            alt: "Every image requires alt text. This should describe the content of that image.",
+        },
+        {
+            src: task14,
             alt: "Every image requires alt text. This should describe the content of that image.",
         },
     ]}
@@ -177,40 +201,47 @@ Donec quis imperdiet justo. Pellentesque semper eleifend ex a rutrum.
         "This caption is applied to the entire block of images. " +
         "See that it spans across the area of the images."
     }
-    width={6}
-    maxHeight={"400px"}
+    width={12}
+    maxHeight={"600px"}
 >
 
-Euismod quis viverra nibh cras pulvinar mattis nunc sed. Risus quis varius quam
-quisque. Mi tempus imperdiet nulla malesuada pellentesque elit. Felis eget
-velit aliquet sagittis id consectetur purus ut. Eu augue ut lectus arcu.
-Maecenas ultricies mi eget mauris. Nec ullamcorper sit amet risus nullam eget
-felis eget nunc. Et molestie ac feugiat sed lectus vestibulum mattis. Fames ac
-turpis egestas integer. Auctor augue mauris augue neque gravida.
+This task is fundamental to our design, being the primary action that everyone 
+will take when using our technology. Most other tasks did not make much sense 
+unless this task was also included. This design was initially conceived to be 
+an alternative to apps like Google Maps, and so we need to provide the same 
+functionality. Participants in interviews wanted to go on new routes but did not 
+want to risk getting lost or encountering unpleasant situations.
 
 </ProjectImagesBlock>
-
-<ProjectImageBlock
-    image={{
-        src: imagePlaceholder1200x800,
-        alt: "Every image requires alt text. This should describe the content of that image.",
-    }}
+<ProjectImagesBlock
+    images={[
+        {
+            src: task15,
+            alt: "Every image requires alt text. This should describe the content of that image.",
+        },
+        {
+            src: task16,
+            alt: "Every image requires alt text. This should describe the content of that image.",
+        },
+        {
+            src: task17,
+            alt: "Every image requires alt text. This should describe the content of that image.",
+        },
+    ]}
+    direction={"row"}
     caption={
-        "A good caption supports helps a reader understand what is important. " +
-        "It thus supports skimming and also provides an emphasis on key points of related text."
+        "This caption is applied to the entire block of images. " +
+        "See that it spans across the area of the images."
     }
-    width={6}
-    maxHeight={"400px"}
+    width={12}
+    maxHeight={"600px"}
 >
 
-Euismod quis viverra nibh cras pulvinar mattis nunc sed. Risus quis varius quam
-quisque. Mi tempus imperdiet nulla malesuada pellentesque elit. Felis eget
-velit aliquet sagittis id consectetur purus ut. Eu augue ut lectus arcu.
-Maecenas ultricies mi eget mauris. Nec ullamcorper sit amet risus nullam eget
-felis eget nunc. Et molestie ac feugiat sed lectus vestibulum mattis. Fames ac
-turpis egestas integer. Auctor augue mauris augue neque gravida.
+Unlike tradition mapping apps, BoredWalk presents routes which match a walker's
+preferences and their desired time and distance. These can be point-to-point routings
+or loops.
 
-</ProjectImageBlock>
+</ProjectImagesBlock>
 
 ### Title for a Task
 
