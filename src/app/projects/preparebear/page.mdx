@@ -48,9 +48,12 @@ import { ProjectTeamGallery } from "@/components/project/ProjectTeamGallery";
   */}
 
 import imageTeamPerson1 from "public/images/projects/preparebear/team/celestine1.png";
-import imageTeamPerson2 from "public/images/projects/template/team/firstname2.png";
-import imageTeamPerson3 from "public/images/projects/template/team/firstname3.png";
-import imageTeamPerson4 from "public/images/projects/template/team/firstname4.png";
+import imageTeamPerson2 from "public/images/projects/preparebear/team/jerry2.png";
+import imageTeamPerson3 from "public/images/projects/preparebear/team/raymond3.png";
+import imageTeamPerson4 from "public/images/projects/preparebear/team/david4.png";
+import imageTeamPerson5 from "public/images/projects/preparebear/team/geoffrey5.png";
+
+import problemvoverviewimage from "public/images/projects/preparebear/post/sad.png";
 
 import imagePlaceholder300x600 from "public/images/projects/template/post/300x600.png";
 import imagePlaceholder400x400 from "public/images/projects/template/post/400x400.png";
@@ -59,7 +62,7 @@ import imagePlaceholder1200x800 from "public/images/projects/template/post/1200x
 
 # Prepare Bear
 
-<ProjectSubtitle>Don't BEAR it alone</ProjectSubtitle>
+<ProjectSubtitle>Don't BEAR it alone!</ProjectSubtitle>
 
 ## Team
 
@@ -75,16 +78,20 @@ import imagePlaceholder1200x800 from "public/images/projects/template/post/1200x
         photo: imageTeamPerson1,
     },
     {
-        name: ["Name Line 1", "Name Line 2"],
+        name: ["Jerry", "Li"],
         photo: imageTeamPerson2,
     },
     {
-        name: ["Name Line 1", "Name Line 2"],
+        name: ["Raymond", "Phu"],
         photo: imageTeamPerson3,
     },
     {
-        name: ["Name Line 1", "Name Line 2"],
+        name: ["David", "Sy"],
         photo: imageTeamPerson4,
+    },
+    {
+        name: ["Geoffrey", "Aldritch"],
+        photo: imageTeamPerson5,
     },
 ]} />
 
@@ -108,44 +115,29 @@ import imagePlaceholder1200x800 from "public/images/projects/template/post/1200x
 
 <ProjectImageBlock
     image={{
-        src: imagePlaceholder1200x800,
-        alt: "Every image requires alt text. This should describe the content of that image."
+        src: problemvoverviewimage,
+        alt: "A picture of a panda stuffed animal looking happy.",
     }}
     caption={
-        "A good caption supports helps a reader understand what is important. " +
-        "It thus supports skimming and also provides an emphasis on key points of related text."
+        "Mental health issues can be big barriers to emotional communication."
     }
     width={6}
     maxHeight={"400px"}
 >
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Nunc sed id semper risus in
-hendrerit. Maecenas volutpat blandit aliquam etiam erat velit scelerisque in
-dictum. Integer feugiat scelerisque varius morbi enim nunc faucibus. Risus at
-ultrices mi tempus imperdiet nulla malesuada pellentesque. Habitant morbi
-tristique senectus et netus et malesuada fames ac. Vel eros donec ac odio
-tempor orci. Nisl nisi scelerisque eu ultrices vitae. In egestas erat imperdiet
-sed. Faucibus purus in massa tempor. Ipsum faucibus vitae aliquet nec.
+Communicating emotions to others is something that all people have to deal with in life in order to maintain their relationships and get support for their issues, but for people struggling with mental illness, this can be simultaneously especially important and especially difficult. Due to the strength and confusing nature of what they feel, it can seem like the world is unsupportive or doesn’t understand, preventing emotions from being expressed. 
 
-Ullamcorper sit amet. Posuere sollicitudin aliquam ultrices sagittis orci a
-scelerisque purus. Tellus cras adipiscing enim eu turpis egestas pretium aenean
-pharetra. Enim sed faucibus turpis in eu mi bibendum neque egestas. Faucibus
-scelerisque eleifend donec pretium vulputate sapien nec sagittis aliquam.
-Natoque penatibus et magnis dis. Ullamcorper velit sed ullamcorper morbi
-tincidunt. Arcu dui vivamus arcu felis bibendum ut tristique. Consectetur
-adipiscing elit pellentesque habitant morbi.
+In many cases, people fear receiving a bad response from others, and don’t share. It’s something that is hard to build up the courage to do, and people can feel unprepared, unskilled, or anxious in a situation where they want or need to express how they feel. It’s a problem that has very few dedicated resources to help a person overcome their anxieties and feel prepared.
+
 
 </ProjectImageBlock>
 
 ## Design Walkthrough
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eget porttitor augue.
-Vestibulum sed ex quis quam egestas interdum. Donec nec semper orci, id iaculis odio.
-Fusce rutrum lacus et volutpat luctus. Praesent accumsan volutpat lacus, ac vehicula ante gravida ut.
-Donec quis imperdiet justo. Pellentesque semper eleifend ex a rutrum.
+A robotic animal device that communicates with its user through speech, similar to Alexa, helping them work through emotions and practice conversations. It practices conversations with a user and gives them practical experience speaking their emotions in a personable and comforting experience. The robot will have interchangeable faces to convey dynamic emotion. It can help a user identify a person to talk to (such as a therapist or friend) and identify conversation goals. The robot can also help them workshop a conversation by incorporating data built over the course of conversations, and also providing feedback based on the user’s goals.
 
-### Title for a Task
+
+### Evaluate Your Emotional Needs
 
 <ProjectImagesBlock
     images={[
@@ -178,12 +170,12 @@ turpis egestas integer. Auctor augue mauris augue neque gravida.
 
 <ProjectImageBlock
     image={{
-        src: imagePlaceholder1200x800,
-        alt: "Every image requires alt text. This should describe the content of that image.",
+        src: problemvoverviewimage,
+        alt: "A picture of a panda stuffed animal looking happy.",
     }}
     caption={
-        "A good caption supports helps a reader understand what is important. " +
-        "It thus supports skimming and also provides an emphasis on key points of related text."
+        "Mental health issues and turmoil can be big barriers to emotional communication." +
+        "A lot of people feel overwhelmed and unskilled when it comes to serious discussions, with few tools existing to build skills"
     }
     width={6}
     maxHeight={"400px"}
