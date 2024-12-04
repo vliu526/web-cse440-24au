@@ -68,6 +68,22 @@ import task22 from "public/images/projects/boredwalk/post/task22.png"
 import task23 from "public/images/projects/boredwalk/post/task23.png"
 import task24 from "public/images/projects/boredwalk/post/task24.png"
 
+import insight_paper_prototype from "public/images/projects/boredwalk/post/insight_paper_prototype.png"
+import state_flex_1 from "public/images/projects/boredwalk/post/state_flex_1.png"
+import state_flex_2 from "public/images/projects/boredwalk/post/state_flex_2.jpg"
+import state_flex_3 from "public/images/projects/boredwalk/post/state_flex_3.png"
+import state_flex_4 from "public/images/projects/boredwalk/post/state_flex_4.png"
+import vis_func_1 from "public/images/projects/boredwalk/post/vis_func_1.jpg"
+import vis_func_2 from "public/images/projects/boredwalk/post/vis_func_2.jpg"
+import vis_func_3 from "public/images/projects/boredwalk/post/vis_func_3.png"
+import vis_func_4 from "public/images/projects/boredwalk/post/vis_func_4.png"
+import tut1 from "public/images/projects/boredwalk/post/tut_1.png"
+import tut2 from "public/images/projects/boredwalk/post/tut_2.jpg"
+import tut3 from "public/images/projects/boredwalk/post/tut_3.png"
+import tut4 from "public/images/projects/boredwalk/post/tut_4.jpg"
+import tut5 from "public/images/projects/boredwalk/post/tut_5.jpg"
+import tut6 from "public/images/projects/boredwalk/post/tut_6.png"
+
 import first_drawing from "public/images/projects/boredwalk/post/first_drawing.png"
 import imagePlaceholder300x600 from "public/images/projects/boredwalk/post/300x600.png";
 import imagePlaceholder400x400 from "public/images/projects/boredwalk/post/400x400.png";
@@ -292,7 +308,7 @@ quantitative feedback that can better optimize its future suggestions.
         },
     ]}
     caption={
-        "The text above is outside the image block, then we have these full width images."
+        "Rerouting and rating flow."
     }
     width={12}
     maxHeight={"400px"}
@@ -401,17 +417,31 @@ as well that we addressed to ensure our design was finalized.
 
 ### State Flexibility
 
-<ProjectImageBlock
-    image={{
-        src: imagePlaceholder1200x800,
-        alt: "Every image requires alt text. This should describe the content of that image.",
-    }}
+<ProjectImagesBlock
+    images={[
+        {
+            src: state_flex_1,
+            alt: "Alt",
+        },
+        {
+            src: state_flex_2,
+            alt: "Alt",
+        },
+        {
+            src: state_flex_3,
+            alt: "Alt",
+        },
+        {
+            src: state_flex_4,
+            alt: "Alt",
+        },
+    ]}
+    direction={"row"}
     caption={
-        "A good caption supports helps a reader understand what is important. " +
-        "It thus supports skimming and also provides an emphasis on key points of related text."
+        "State Flexibility caption."
     }
-    width={6}
-    maxHeight={"400px"}
+    width={12}
+    maxHeight={"600px"}
 >
 
     A key insight gained from our heuristic evaluation inspection was the lack 
@@ -422,28 +452,35 @@ as well that we addressed to ensure our design was finalized.
     screen to have a “Prev”, “Next”, and “Exit” buttons as well as having more 
     verbose “Save” and “Exit” buttons on the “Feedback” screen.    
 
-</ProjectImageBlock>
+</ProjectImagesBlock>
 
 ### Visible Functionality
 
 <ProjectImagesBlock
     images={[
         {
-            src: imagePlaceholder300x600,
-            alt: "Every image requires alt text. This should describe the content of that image.",
+            src: vis_func_1,
+            alt: "Alt",
         },
         {
-            src: imagePlaceholder300x600,
-            alt: "Every image requires alt text. This should describe the content of that image.",
+            src: vis_func_2,
+            alt: "Alt",
+        },
+        {
+            src: vis_func_3,
+            alt: "Alt",
+        },
+        {
+            src: vis_func_4,
+            alt: "Alt",
         },
     ]}
     direction={"row"}
     caption={
-        "This caption is applied to the entire block of images. " +
-        "See that it spans across the area of the images."
+        "Hidden functionality made more clear during revisions."
     }
-    width={6}
-    maxHeight={"400px"}
+    width={12}
+    maxHeight={"600px"}
 >
 
 Another key insight we obtained from our usability testing included hidden and 
@@ -463,21 +500,36 @@ that improved usability by making possible actions visible and their purposes mo
 <ProjectImagesBlock
     images={[
         {
-            src: imagePlaceholder600x300,
-            alt: "Every image requires alt text. This should describe the content of that image.",
-            caption: "These are two images stacked in a column. " +
-                     "Notice that the text on the left is not broken up by the images."
+            src: tut1,
+            alt: "Alt",
         },
         {
-            src: imagePlaceholder600x300,
-            alt: "Every image requires alt text. This should describe the content of that image.",
-            caption: "These are two images stacked in a column. " +
-                     "Notice that the text on the left is not broken up by the images."
+            src: tut2,
+            alt: "Alt",
+        },
+        {
+            src: tut3,
+            alt: "Alt",
+        },
+        {
+            src: tut4,
+            alt: "Alt",
+        },
+        {
+            src: tut5,
+            alt: "Alt",
+        },
+            {
+            src: tut6,
+            alt: "Alt",
         },
     ]}
-    direction={"column"}
-    width={6}
-    maxHeight={"200px"}
+    direction={"row"}
+    caption={
+        "A walker can reroute while on a walk. Favorite routes can be saved."
+    }
+    width={12}
+    maxHeight={"600px"}
 >
 
 When usability testing, we realized that our app was confusing to use at first 
