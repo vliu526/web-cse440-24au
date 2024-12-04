@@ -605,16 +605,18 @@ which stated that people need to reassured that people in their life are willing
 
 ## Iterative Design and Key Insights
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Et tortor consequat id porta nibh
-venenatis. Nisl vel pretium lectus quam. Volutpat blandit aliquam etiam erat
-velit. Ornare arcu odio ut sem nulla pharetra diam sit amet. Habitant morbi
-tristique senectus et netus et malesuada fames ac. A arcu cursus vitae congue
-mauris rhoncus aenean. Ornare massa eget egestas purus. Luctus venenatis lectus
-magna fringilla. Leo integer malesuada nunc vel. Egestas purus viverra accumsan
-in nisl nisi. Risus at ultrices mi tempus imperdiet.
+As with other groups, we started by creating a paper prototype of our system, which included our paper prototype bear
+and also our two main task dialogue trees we developed. Then we had inspection done by other groups, made edits based
+on the heuristic evaluation results we identified as most important, then we did usability testing with three
+participants by letting them speak to the physical bear and a tester speaking as the bear following the dialogue trees,
+then making small revisions to the prototype in between based on breakdowns encountered. Due to the nature of our
+project, what we were testing mainly was our dialogue trees and how people interacted with the process, which in 
+usability testing really allowed us to identify problems with natural conversation flow, while heuristic evaluation
+helped identify features and best practice inclusions we overlooked because of our unique focus.
 
-### Title for an Insight
+TODO: include paper prototype images
+
+### Allowing the User to Control Their Process
 
 <ProjectImageBlock
     image={{
@@ -629,23 +631,22 @@ in nisl nisi. Risus at ultrices mi tempus imperdiet.
     maxHeight={"400px"}
 >
 
-Quis eleifend quam adipiscing vitae. Justo nec ultrices dui sapien eget mi.
-Viverra maecenas accumsan lacus vel facilisis volutpat. Dignissim suspendisse
-in est ante in nibh mauris. Vitae ultricies leo integer malesuada. Ultrices mi
-tempus imperdiet nulla. Erat velit scelerisque in dictum. Elit ut aliquam purus
-sit amet luctus. Congue quisque egestas diam in arcu cursus euismod. Proin nibh
-nisl condimentum id venenatis a condimentum. Nisl nunc mi ipsum faucibus vitae.
-Ac tortor dignissim convallis aenean et. Bibendum enim facilisis gravida neque
-convallis a cras semper. Sed risus ultricies tristique nulla aliquet enim
-tortor at auctor. Sed felis eget velit aliquet sagittis id consectetur purus
-ut. Ac odio tempor orci dapibus ultrices in iaculis nunc sed. Aliquet lectus
-proin nibh nisl condimentum id. Ornare aenean euismod elementum nisi quis
-eleifend quam adipiscing vitae. Parturient montes nascetur ridiculus mus mauris
-vitae ultricies. Id velit ut tortor pretium viverra suspendisse.
+<b>Users should have methods for exiting or changing the current system status when they are
+dissatisifed or are desiring a change.</b> It was mainly from Usability Testing that many inspectors
+identified that our dialogue trees as streamlined processes did not allow for much user control
+on when to exit, redo, or navigate in a conversation, and seemed to be guiderailed on a certain 
+path, breaking the "User Control" heuristic. We then added a stop tree to shutdown the bear at
+any point in the conversation, and an error tree that handles a user going of course and allows
+them to redirect to another tree point as needed. We also experienced a breakdown during a 
+usability test where a user stated they didn't like the feedback given and felt like the system
+was forcing them to follow it. It became clear to us that not only should users at any point be
+in full control of their position in the process, but also the system's underlying priorities. To
+do this, we redesigned the feedback system to allow users to edit their goals and feedback preferences
+if not satisfied with feedback received.
 
 </ProjectImageBlock>
 
-### Title for an Insight
+### Making System Status and Processing Visible
 
 <ProjectImagesBlock
     images={[
@@ -667,20 +668,19 @@ vitae ultricies. Id velit ut tortor pretium viverra suspendisse.
     maxHeight={"400px"}
 >
 
-Feugiat vivamus at augue eget arcu. Bibendum est ultricies integer quis auctor
-elit sed vulputate mi. At tempor commodo ullamcorper a lacus vestibulum sed.
-Vitae aliquet nec ullamcorper sit amet risus. Morbi non arcu risus quis varius
-quam quisque id diam. Nulla pellentesque dignissim enim sit amet venenatis.
-Morbi tristique senectus et netus et malesuada fames ac turpis. Molestie a
-iaculis at erat pellentesque adipiscing commodo elit at. Ut eu sem integer
-vitae justo eget magna. Etiam non quam lacus suspendisse faucibus. Nulla
-aliquet enim tortor at auctor urna nunc id. Lobortis elementum nibh tellus
-molestie. Mauris in aliquam sem fringilla ut morbi tincidunt. In nisl nisi
-scelerisque eu ultrices vitae auctor.
+<b>What the system is doing and how it is interpreting user's input should be made visible to the
+user in real time or promptly after data collection.</b> Also from Usability Testing, we received
+many reports identifying a lack of visible state and prompt feedback in violation of the "System
+Visibility" heuristic. Due to our system being predominantly a speech interface, we didn't have
+many initial points where feedback was given to the user as we focused on developing a dialogue
+process, but we realized on the technical side and for clarity this was essential. Using our defined
+facial system that previously existed just to add a responsive human element, we added facial states 
+that representing thinking and receiving input so that the user would be aware in real time that the
+system is pausing to process or that their audio is being picked up and listened to.
 
 </ProjectImagesBlock>
 
-### Title for an Insight
+### Suppporting Natural Conversation Diversions
 
 <ProjectImagesBlock
     images={[
