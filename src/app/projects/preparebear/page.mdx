@@ -47,19 +47,59 @@ import { ProjectTeamGallery } from "@/components/project/ProjectTeamGallery";
   * - If an import is not working, double-check that you have the correct file extension.
   */}
 
-import imageTeamPerson1 from "public/images/projects/template/team/firstname1.png";
-import imageTeamPerson2 from "public/images/projects/template/team/firstname2.png";
-import imageTeamPerson3 from "public/images/projects/template/team/firstname3.png";
-import imageTeamPerson4 from "public/images/projects/template/team/firstname4.png";
+import imageTeamPerson1 from "public/images/projects/preparebear/team/celestine1.png";
+import imageTeamPerson2 from "public/images/projects/preparebear/team/jerry2.png";
+import imageTeamPerson3 from "public/images/projects/preparebear/team/raymond3.png";
+import imageTeamPerson4 from "public/images/projects/preparebear/team/david4.png";
+import imageTeamPerson5 from "public/images/projects/preparebear/team/geoffrey5.png";
+
+import problemvoverviewimage from "public/images/projects/preparebear/post/sad.png";
+import happy from "public/images/projects/preparebear/post/happy.png";
+import question from "public/images/projects/preparebear/post/question.png";
+import sadsmile from "public/images/projects/preparebear/post/reassuring-smile.png";
+
+import evaltaskpart1 from "public/images/projects/preparebear/post/1_1.png"
+import evaltaskpart1point5 from "public/images/projects/preparebear/post/1_1-1.png"
+import evaltaskpart2 from "public/images/projects/preparebear/post/1_2.png"
+import evaltaskpart3 from "public/images/projects/preparebear/post/1_3.png"
+import evaltaskpart4 from "public/images/projects/preparebear/post/1_4.png"
+import evaltaskpart5 from "public/images/projects/preparebear/post/1_5.png"
+import evaltaskpart6 from "public/images/projects/preparebear/post/1_6.png"
+import evaltaskpart7 from "public/images/projects/preparebear/post/1_7.png"
+import evaltaskpart8 from "public/images/projects/preparebear/post/1_8.png"
+import evaltaskpart9 from "public/images/projects/preparebear/post/1_9.png"
+
+import preparetaskpart0 from "public/images/projects/preparebear/post/2_0.png"
+import preparetaskpart1 from "public/images/projects/preparebear/post/2_1.png"
+import preparetaskpart2 from "public/images/projects/preparebear/post/2_2.png"
+import preparetaskpart3 from "public/images/projects/preparebear/post/2_3.png"
+import preparetaskpart4 from "public/images/projects/preparebear/post/2_4.png"
+import preparetaskpart5 from "public/images/projects/preparebear/post/2_5.png"
+import preparetaskpart6 from "public/images/projects/preparebear/post/2_6.png"
+import preparetaskpart7 from "public/images/projects/preparebear/post/2_7.png"
+import preparetaskpart8 from "public/images/projects/preparebear/post/2_8.png"
+import preparetaskpart9 from "public/images/projects/preparebear/post/2_9.png"
+import preparetaskpart10 from "public/images/projects/preparebear/post/2_10.png"
+import preparetaskpart11 from "public/images/projects/preparebear/post/2_11.png"
+
+import evaltree from "public/images/projects/preparebear/post/tree1.png"
+import preparetree from "public/images/projects/preparebear/post/tree2_1.png"
+import feedbacktree from "public/images/projects/preparebear/post/tree2_2.png"
+import questiontree from "public/images/projects/preparebear/post/questiontree.png"
+import sympathytree from "public/images/projects/preparebear/post/sympathytree.png"
+
+import prototype from "public/images/projects/preparebear/post/prototype.png"
+import revisiontree from "public/images/projects/preparebear/post/revisiontree.png"
+import facialdisplay from "public/images/projects/preparebear/post/facialdisplay.png"
 
 import imagePlaceholder300x600 from "public/images/projects/template/post/300x600.png";
 import imagePlaceholder400x400 from "public/images/projects/template/post/400x400.png";
 import imagePlaceholder600x300 from "public/images/projects/template/post/600x300.png";
 import imagePlaceholder1200x800 from "public/images/projects/template/post/1200x800.png";
 
-# Project Template
+# Prepare Bear
 
-<ProjectSubtitle>Optional Subtitle</ProjectSubtitle>
+<ProjectSubtitle>Don't BEAR it alone!</ProjectSubtitle>
 
 ## Team
 
@@ -71,20 +111,24 @@ import imagePlaceholder1200x800 from "public/images/projects/template/post/1200x
 
 <ProjectTeamGallery members={[
     {
-        name: ["Name Line 1", "Name Line 2"],
+        name: ["Celestine", "Buendia"],
         photo: imageTeamPerson1,
     },
     {
-        name: ["Name Line 1", "Name Line 2"],
+        name: ["Jerry", "Li"],
         photo: imageTeamPerson2,
     },
     {
-        name: ["Name Line 1", "Name Line 2"],
+        name: ["Raymond", "Phu"],
         photo: imageTeamPerson3,
     },
     {
-        name: ["Name Line 1", "Name Line 2"],
+        name: ["David", "Sy"],
         photo: imageTeamPerson4,
+    },
+    {
+        name: ["Geoffrey", "Aldritch"],
+        photo: imageTeamPerson5,
     },
 ]} />
 
@@ -108,311 +152,589 @@ import imagePlaceholder1200x800 from "public/images/projects/template/post/1200x
 
 <ProjectImageBlock
     image={{
-        src: imagePlaceholder1200x800,
-        alt: "Every image requires alt text. This should describe the content of that image."
+        src: problemvoverviewimage,
+        alt: "A picture of a panda stuffed animal looking sad.",
     }}
     caption={
-        "A good caption supports helps a reader understand what is important. " +
-        "It thus supports skimming and also provides an emphasis on key points of related text."
+        "Mental health issues can be big barriers to emotional communication."
     }
     width={6}
     maxHeight={"400px"}
 >
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Nunc sed id semper risus in
-hendrerit. Maecenas volutpat blandit aliquam etiam erat velit scelerisque in
-dictum. Integer feugiat scelerisque varius morbi enim nunc faucibus. Risus at
-ultrices mi tempus imperdiet nulla malesuada pellentesque. Habitant morbi
-tristique senectus et netus et malesuada fames ac. Vel eros donec ac odio
-tempor orci. Nisl nisi scelerisque eu ultrices vitae. In egestas erat imperdiet
-sed. Faucibus purus in massa tempor. Ipsum faucibus vitae aliquet nec.
+Communicating emotions to others is something that all people have to deal with in life in order to maintain their relationships and    get support for their issues, but for people struggling with mental illness, this can be simultaneously especially important and especially difficult. Due to the strength and confusing nature of what they feel, it can seem like the world is unsupportive or doesn’t understand, preventing emotions from being expressed. 
 
-Ullamcorper sit amet. Posuere sollicitudin aliquam ultrices sagittis orci a
-scelerisque purus. Tellus cras adipiscing enim eu turpis egestas pretium aenean
-pharetra. Enim sed faucibus turpis in eu mi bibendum neque egestas. Faucibus
-scelerisque eleifend donec pretium vulputate sapien nec sagittis aliquam.
-Natoque penatibus et magnis dis. Ullamcorper velit sed ullamcorper morbi
-tincidunt. Arcu dui vivamus arcu felis bibendum ut tristique. Consectetur
-adipiscing elit pellentesque habitant morbi.
+In many cases, people fear receiving a bad response from others, and don’t share. It’s something that is hard to build up the courage to do, and people can feel unprepared, unskilled, or anxious in a situation where they want or need to express how they feel. It’s a problem that has very few dedicated resources to help a person overcome their anxieties and feel prepared.
+
 
 </ProjectImageBlock>
+
+Prepare Bear is a robotic animal device that communicates with its user through speech, similar to Alexa, helping them work through emotions and practice conversations. It practices conversations with a user and gives them practical experience speaking their emotions in a personable and comforting experience. The robot will have interchangeable faces to convey dynamic emotion. It can help a user identify a person to talk to (such as a therapist or friend) and identify conversation goals. The robot can also help them workshop a conversation by incorporating data built over the course of conversations, and also providing feedback based on the user’s goals.
 
 ## Design Walkthrough
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eget porttitor augue.
-Vestibulum sed ex quis quam egestas interdum. Donec nec semper orci, id iaculis odio.
-Fusce rutrum lacus et volutpat luctus. Praesent accumsan volutpat lacus, ac vehicula ante gravida ut.
-Donec quis imperdiet justo. Pellentesque semper eleifend ex a rutrum.
+Talking to the animal will allow a person practical experience speaking about their experiences and gain confidence for a conversation by establishing goals and planning sentences that effectively communicate those goals to another person. It allows users to take control of their emotional needs and the process of preparation in a safe space where a comforting and compassionate companion can support them. The animal will collect information from these conversations and use that and its built-in conversational knowledge to advise effective communication.
 
-### Title for a Task
+### Evaluate Your Emotional Needs
 
-<ProjectImagesBlock
-    images={[
-        {
-            src: imagePlaceholder300x600,
-            alt: "Every image requires alt text. This should describe the content of that image.",
-        },
-        {
-            src: imagePlaceholder300x600,
-            alt: "Every image requires alt text. This should describe the content of that image.",
-        },
-    ]}
-    direction={"row"}
-    caption={
-        "This caption is applied to the entire block of images. " +
-        "See that it spans across the area of the images."
-    }
-    width={6}
-    maxHeight={"400px"}
->
-
-Euismod quis viverra nibh cras pulvinar mattis nunc sed. Risus quis varius quam
-quisque. Mi tempus imperdiet nulla malesuada pellentesque elit. Felis eget
-velit aliquet sagittis id consectetur purus ut. Eu augue ut lectus arcu.
-Maecenas ultricies mi eget mauris. Nec ullamcorper sit amet risus nullam eget
-felis eget nunc. Et molestie ac feugiat sed lectus vestibulum mattis. Fames ac
-turpis egestas integer. Auctor augue mauris augue neque gravida.
-
-</ProjectImagesBlock>
 
 <ProjectImageBlock
     image={{
-        src: imagePlaceholder1200x800,
-        alt: "Every image requires alt text. This should describe the content of that image.",
+        src: evaltaskpart1,
+        alt: "User starts Prepare Bear by saying Hi, Prepare Bear",
     }}
+    direction={"column"}
     caption={
-        "A good caption supports helps a reader understand what is important. " +
-        "It thus supports skimming and also provides an emphasis on key points of related text."
-    }
-    width={6}
-    maxHeight={"400px"}
->
-
-Euismod quis viverra nibh cras pulvinar mattis nunc sed. Risus quis varius quam
-quisque. Mi tempus imperdiet nulla malesuada pellentesque elit. Felis eget
-velit aliquet sagittis id consectetur purus ut. Eu augue ut lectus arcu.
-Maecenas ultricies mi eget mauris. Nec ullamcorper sit amet risus nullam eget
-felis eget nunc. Et molestie ac feugiat sed lectus vestibulum mattis. Fames ac
-turpis egestas integer. Auctor augue mauris augue neque gravida.
-
-</ProjectImageBlock>
-
-### Title for a Task
-
-A pellentesque sit amet porttitor eget dolor morbi non arcu. Mus mauris vitae
-ultricies leo. Auctor neque vitae tempus quam. Id semper risus in hendrerit
-gravida rutrum quisque. Nibh sed pulvinar proin gravida hendrerit. Sed euismod
-nisi porta lorem mollis aliquam ut porttitor leo. Elit eget gravida cum sociis
-natoque penatibus et. Id diam vel quam elementum pulvinar. Morbi non arcu risus
-quis varius quam quisque. Pulvinar pellentesque habitant morbi tristique
-senectus et. Habitant morbi tristique senectus et netus et malesuada fames ac.
-Ac tortor vitae purus faucibus. Metus vulputate eu scelerisque felis imperdiet.
-Nulla pharetra diam sit amet nisl. Tincidunt vitae semper quis lectus nulla at
-volutpat diam. Euismod in pellentesque massa placerat duis ultricies lacus sed
-turpis. Ultricies mi eget mauris pharetra et ultrices. Ac tincidunt vitae
-semper quis lectus nulla at volutpat. Molestie a iaculis at erat pellentesque.
-
-<ProjectImagesBlock
-    images={[
-        {
-            src: imagePlaceholder300x600,
-            alt: "Every image requires alt text. This should describe the content of that image.",
-        },
-        {
-            src: imagePlaceholder300x600,
-            alt: "Every image requires alt text. This should describe the content of that image.",
-        },
-        {
-            src: imagePlaceholder300x600,
-            alt: "Every image requires alt text. This should describe the content of that image.",
-        },
-        {
-            src: imagePlaceholder300x600,
-            alt: "Every image requires alt text. This should describe the content of that image.",
-        }
-    ]}
-    caption={
-        "The text above is outside the image block, then we have these full width images."
+        "User approaches PB for help"
     }
     width={12}
     maxHeight={"400px"}
 >
-</ProjectImagesBlock>
+</ProjectImageBlock>
 
-## Design Research and Key Insights
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Sagittis vitae et leo duis ut. Ac
-odio tempor orci dapibus ultrices. Nunc sed augue lacus viverra vitae congue.
-Scelerisque in dictum non consectetur a erat nam at lectus. Tincidunt arcu non
-sodales neque. Diam sit amet nisl suscipit adipiscing bibendum est ultricies.
-Morbi tincidunt augue interdum velit euismod in pellentesque massa. Libero
-justo laoreet sit amet cursus sit. At imperdiet dui accumsan sit. Sed odio
-morbi quis commodo odio aenean. Nibh tortor id aliquet lectus proin nibh.
-
-### Title for an Insight
-
-Mattis rhoncus urna neque viverra justo nec ultrices. Amet facilisis magna
-etiam tempor orci eu lobortis elementum nibh. Quam vulputate dignissim
-suspendisse in est ante in nibh. Eget duis at tellus at urna condimentum mattis
-pellentesque. Varius sit amet mattis vulputate enim nulla. Ridiculus mus mauris
-vitae ultricies. Feugiat scelerisque varius morbi enim. Lobortis elementum nibh
-tellus molestie. Enim blandit volutpat maecenas volutpat blandit aliquam etiam.
-Nulla posuere sollicitudin aliquam ultrices sagittis. Urna nunc id cursus metus
-aliquam eleifend mi in. Condimentum vitae sapien pellentesque habitant morbi.
-Convallis tellus id interdum velit laoreet id donec ultrices. Platea dictumst
-quisque sagittis purus. Mattis vulputate enim nulla aliquet porttitor lacus
-luctus accumsan. Mi eget mauris pharetra et ultrices neque ornare. Id volutpat
-lacus laoreet non curabitur gravida arcu ac tortor. Consectetur libero id
-faucibus nisl tincidunt.
-
-### Title for an Insight
-
-<ProjectImagesBlock
-    images={[
-        {
-            src: imagePlaceholder400x400,
-            alt: "Every image requires alt text. This should describe the content of that image.",
-            caption: "This caption is applied to the image. Each can have a different caption.",
-        },
-        {
-            src: imagePlaceholder400x400,
-            alt: "Every image requires alt text. This should describe the content of that image.",
-            caption: "This caption is applied to the image. Each can have a different caption.",
-        },
-    ]}
-    direction={"row"}
-    width={8}
-    maxHeight={"400px"}
->
-
-Cursus euismod quis viverra nibh cras pulvinar mattis nunc. Dui ut ornare
-lectus sit amet est placerat in egestas. Sed cras ornare arcu dui vivamus.
-Scelerisque eu ultrices vitae auctor eu augue. Hac habitasse platea dictumst
-vestibulum rhoncus. Risus at ultrices mi tempus imperdiet nulla malesuada
-pellentesque elit. Sagittis vitae et leo duis ut diam quam nulla porttitor.
-Quam lacus suspendisse faucibus interdum posuere lorem. Tortor dignissim
-convallis aenean et tortor at. Elit scelerisque mauris pellentesque pulvinar
-pellentesque habitant morbi tristique senectus. Risus feugiat in ante metus.
-
-</ProjectImagesBlock>
-
-### Title for an Insight
-
-Leo duis ut diam quam. Sit amet volutpat consequat mauris nunc congue nisi. Id
-eu nisl nunc mi ipsum. Rhoncus aenean vel elit scelerisque mauris pellentesque
-pulvinar pellentesque habitant. Duis ut diam quam nulla porttitor massa id.
-Facilisis volutpat est velit egestas. Nulla facilisi cras fermentum odio eu
-feugiat pretium. Lectus magna fringilla urna porttitor rhoncus dolor. Mollis
-nunc sed id semper risus in. Quis imperdiet massa tincidunt nunc. Sed
-adipiscing diam donec adipiscing.
-
-## Iterative Design and Key Insights
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Et tortor consequat id porta nibh
-venenatis. Nisl vel pretium lectus quam. Volutpat blandit aliquam etiam erat
-velit. Ornare arcu odio ut sem nulla pharetra diam sit amet. Habitant morbi
-tristique senectus et netus et malesuada fames ac. A arcu cursus vitae congue
-mauris rhoncus aenean. Ornare massa eget egestas purus. Luctus venenatis lectus
-magna fringilla. Leo integer malesuada nunc vel. Egestas purus viverra accumsan
-in nisl nisi. Risus at ultrices mi tempus imperdiet.
-
-### Title for an Insight
 
 <ProjectImageBlock
     image={{
-        src: imagePlaceholder1200x800,
-        alt: "Every image requires alt text. This should describe the content of that image.",
+        src: evaltaskpart1point5,
+        alt: "User hears Prepare Bear and changes volume by pressing on its paws.",
     }}
+    direction={"column"}
     caption={
-        "A good caption supports helps a reader understand what is important. " +
-        "It thus supports skimming and also provides an emphasis on key points of related text."
+        "Change volume if necessary"
     }
-    width={6}
+    width={12}
     maxHeight={"400px"}
 >
-
-Quis eleifend quam adipiscing vitae. Justo nec ultrices dui sapien eget mi.
-Viverra maecenas accumsan lacus vel facilisis volutpat. Dignissim suspendisse
-in est ante in nibh mauris. Vitae ultricies leo integer malesuada. Ultrices mi
-tempus imperdiet nulla. Erat velit scelerisque in dictum. Elit ut aliquam purus
-sit amet luctus. Congue quisque egestas diam in arcu cursus euismod. Proin nibh
-nisl condimentum id venenatis a condimentum. Nisl nunc mi ipsum faucibus vitae.
-Ac tortor dignissim convallis aenean et. Bibendum enim facilisis gravida neque
-convallis a cras semper. Sed risus ultricies tristique nulla aliquet enim
-tortor at auctor. Sed felis eget velit aliquet sagittis id consectetur purus
-ut. Ac odio tempor orci dapibus ultrices in iaculis nunc sed. Aliquet lectus
-proin nibh nisl condimentum id. Ornare aenean euismod elementum nisi quis
-eleifend quam adipiscing vitae. Parturient montes nascetur ridiculus mus mauris
-vitae ultricies. Id velit ut tortor pretium viverra suspendisse.
-
 </ProjectImageBlock>
 
-### Title for an Insight
-
-<ProjectImagesBlock
-    images={[
-        {
-            src: imagePlaceholder300x600,
-            alt: "Every image requires alt text. This should describe the content of that image.",
-        },
-        {
-            src: imagePlaceholder300x600,
-            alt: "Every image requires alt text. This should describe the content of that image.",
-        },
-    ]}
-    direction={"row"}
+<ProjectImageBlock
+    image={{
+        src: evaltaskpart2,
+        alt: "User tells Prepare Bear that they are sad",
+    }}
+    direction={"column"}
     caption={
-        "This caption is applied to the entire block of images. " +
-        "See that it spans across the area of the images."
+        "Give an overview of the situation"
     }
-    width={6}
+    width={12}
     maxHeight={"400px"}
 >
+</ProjectImageBlock>
 
-Feugiat vivamus at augue eget arcu. Bibendum est ultricies integer quis auctor
-elit sed vulputate mi. At tempor commodo ullamcorper a lacus vestibulum sed.
-Vitae aliquet nec ullamcorper sit amet risus. Morbi non arcu risus quis varius
-quam quisque id diam. Nulla pellentesque dignissim enim sit amet venenatis.
-Morbi tristique senectus et netus et malesuada fames ac turpis. Molestie a
-iaculis at erat pellentesque adipiscing commodo elit at. Ut eu sem integer
-vitae justo eget magna. Etiam non quam lacus suspendisse faucibus. Nulla
-aliquet enim tortor at auctor urna nunc id. Lobortis elementum nibh tellus
-molestie. Mauris in aliquam sem fringilla ut morbi tincidunt. In nisl nisi
-scelerisque eu ultrices vitae auctor.
-
-</ProjectImagesBlock>
-
-### Title for an Insight
-
-<ProjectImagesBlock
-    images={[
-        {
-            src: imagePlaceholder600x300,
-            alt: "Every image requires alt text. This should describe the content of that image.",
-            caption: "These are two images stacked in a column. " +
-                     "Notice that the text on the left is not broken up by the images."
-        },
-        {
-            src: imagePlaceholder600x300,
-            alt: "Every image requires alt text. This should describe the content of that image.",
-            caption: "These are two images stacked in a column. " +
-                     "Notice that the text on the left is not broken up by the images."
-        },
-    ]}
+<ProjectImageBlock
+    image={{
+        src: evaltaskpart3,
+        alt: "User tells Prepare Bear about how exams are causing them distress",
+    }}
     direction={"column"}
-    width={6}
-    maxHeight={"200px"}
+    caption={
+        "Continue describing the situtation"
+    }
+    width={12}
+    maxHeight={"400px"}
 >
+</ProjectImageBlock>
+<ProjectImageBlock
+    image={{
+        src: evaltaskpart4,
+        alt: "Prepare Bear asks if there was anyone else",
+    }}
+    direction={"column"}
+    caption={
+        "Prepare Bear will gather info when necessary"
+    }
+    width={12}
+    maxHeight={"400px"}
+>
+</ProjectImageBlock>
+<ProjectImageBlock
+    image={{
+        src: evaltaskpart5,
+        alt: "User asks for suggestions",
+    }}
+    direction={"column"}
+    caption={
+        "Prepare Bear will remind the user the goals of Prepare Bear, but offer advice when needed"
+    }
+    width={12}
+    maxHeight={"400px"}
+>
+</ProjectImageBlock>
+<ProjectImageBlock
+    image={{
+        src: evaltaskpart6,
+        alt: "Prepare Bear gives suggests the professor and a friend",
+    }}
+    direction={"column"}
+    caption={
+        "Prepare Bear generates smart responses from context"
+    }
+    width={12}
+    maxHeight={"400px"}
+>
+</ProjectImageBlock>
+<ProjectImageBlock
+    image={{
+        src: evaltaskpart7,
+        alt: "User confirms that advice was good",
+    }}
+    direction={"column"}
+    caption={
+        "Feedback determines if Prepare Bear gave the right answer"
+    }
+    width={12}
+    maxHeight={"400px"}
+>
+</ProjectImageBlock>
+<ProjectImageBlock
+    image={{
+        src: evaltaskpart8,
+        alt: "Prepare Bear confirms the users goals",
+    }}
+    direction={"column"}
+    caption={
+        "Prepare Bear lets users confirm their goals and readjust goals before moving on"
+    }
+    width={12}
+    maxHeight={"400px"}
+>
+</ProjectImageBlock>
+<ProjectImageBlock
+    image={{
+        src: evaltaskpart9,
+        alt: "User leaves, satisfied.",
+    }}
+    direction={"column"}
+    caption={
+        "Prepare Bear reaffirm goals, and user is satisfied with evalutation"
+    }
+    width={12}
+    maxHeight={"400px"}
+>
+</ProjectImageBlock>
+<ProjectImageBlock
+    image={{
+        src: evaltree,
+        alt: "Dialogue tree depicting the logic of evalutating feelings",
+    }}
+    direction={"column"}
+    caption={
+        "The logic of evalutating feelings"
+    }
+    width={12}
+    maxHeight={"400px"}
+>
+</ProjectImageBlock>
 
-Leo duis ut diam quam. Sit amet volutpat consequat mauris nunc congue nisi. Id
-eu nisl nunc mi ipsum. Rhoncus aenean vel elit scelerisque mauris pellentesque
-pulvinar pellentesque habitant. Duis ut diam quam nulla porttitor massa id.
-Facilisis volutpat est velit egestas. Nulla facilisi cras fermentum odio eu
-feugiat pretium. Lectus magna fringilla urna porttitor rhoncus dolor. Mollis
-nunc sed id semper risus in. Quis imperdiet massa tincidunt nunc. Sed
-adipiscing diam donec adipiscing.
 
-</ProjectImagesBlock>
+
+### Prepare What You're Going to Say
+<ProjectImageBlock
+    image={{
+        src: preparetaskpart0,
+        alt: "User starts Prepare Bear by saying Hi, Prepare Bear",
+    }}
+    direction={"column"}
+    caption={
+        "User approaches PB for help"
+    }
+    width={12}
+    maxHeight={"400px"}
+>
+</ProjectImageBlock>
+
+<ProjectImageBlock
+    image={{
+        src: preparetaskpart1,
+        alt: "User provides context of their situtation",
+    }}
+    direction={"column"}
+    caption={
+        "User provides context"
+    }
+    width={12}
+    maxHeight={"400px"}
+>
+</ProjectImageBlock>
+
+<ProjectImageBlock
+    image={{
+        src: preparetaskpart2,
+        alt: "User doesn't know how to proceed, but Prepare Bear reminds them of their goals",
+    }}
+    direction={"column"}
+    caption={
+        "Prepare Bear will remind you of your goals when you're lost in a conversation"
+    }
+    width={12}
+    maxHeight={"400px"}
+>
+</ProjectImageBlock>
+
+<ProjectImageBlock
+    image={{
+        src: preparetaskpart3,
+        alt: "Prepare Bear gives feedback on user's tone",
+    }}
+    direction={"column"}
+    caption={
+        "Prepare Bear will provide feedback based on conversational goals"
+    }
+    width={12}
+    maxHeight={"400px"}
+>
+</ProjectImageBlock>
+
+<ProjectImageBlock
+    image={{
+        src: preparetaskpart4,
+        alt: "Prepare Bear achknowledges feedback update and gives more insightful feedback",
+    }}
+    direction={"column"}
+    caption={
+        "Prepare Bear can provide feedback upon user revision"
+    }
+    width={12}
+    maxHeight={"400px"}
+>
+</ProjectImageBlock>
+
+<ProjectImageBlock
+    image={{
+        src: preparetaskpart5,
+        alt: "Prepare Bear gives feedback, but user is unsatisfied with feedback",
+    }}
+    direction={"column"}
+    caption={
+        "Users can deny feedback from Prepare Bear"
+    }
+    width={12}
+    maxHeight={"400px"}
+>
+</ProjectImageBlock>
+
+<ProjectImageBlock
+    image={{
+        src: preparetaskpart6,
+        alt: "Prepare Bear asks if they want to add/revise goals",
+    }}
+    direction={"column"}
+    caption={
+        "Users can adjust or add to their goals to better suit conversational needs"
+    }
+    width={12}
+    maxHeight={"400px"}
+>
+</ProjectImageBlock>
+
+<ProjectImageBlock
+    image={{
+        src: preparetaskpart7,
+        alt: "Workshopping continues",
+    }}
+    direction={"column"}
+    caption={
+        "Feedback continues between user and Prepare Bear"
+    }
+    width={12}
+    maxHeight={"400px"}
+>
+</ProjectImageBlock>
+
+<ProjectImageBlock
+    image={{
+        src: preparetaskpart8,
+        alt: "Workshopping continues, but user asks a quesiton",
+    }}
+    direction={"column"}
+    caption={
+        "User can have some self reflection while workshopping"
+    }
+    width={12}
+    maxHeight={"400px"}
+>
+</ProjectImageBlock>
+
+<ProjectImageBlock
+    image={{
+        src: preparetaskpart9,
+        alt: "Prepare Bear responds to the question",
+    }}
+    direction={"column"}
+    caption={
+        "Prepare Bear can provide reassurance"
+    }
+    width={12}
+    maxHeight={"400px"}
+>
+</ProjectImageBlock>
+
+<ProjectImageBlock
+    image={{
+        src: preparetaskpart10,
+        alt: "User ends conversation with Prepare Bear",
+    }}
+    direction={"column"}
+    caption={
+        "User can receive conversation notes from Prepare Bear"
+    }
+    width={12}
+    maxHeight={"400px"}
+>
+</ProjectImageBlock>
+
+<ProjectImageBlock
+    image={{
+        src: preparetaskpart11,
+        alt: "User finds conversational notes from Prepare Bear on their phone",
+    }}
+    direction={"column"}
+    caption={
+        "User is satisfied with the outcome"
+    }
+    width={12}
+    maxHeight={"400px"}
+>
+</ProjectImageBlock>
+
+<ProjectImageBlock
+    image={{
+        src: preparetree,
+        alt: "Logic of preparing a conversation",
+    }}
+    direction={"column"}
+    caption={
+        "Logic of preparing a conversation"
+    }
+    width={12}
+    maxHeight={"400px"}
+>
+</ProjectImageBlock>
+
+<ProjectImageBlock
+    image={{
+        src: feedbacktree,
+        alt: "Logic of feedback between Prepare Bear and User",
+    }}
+    direction={"column"}
+    caption={
+        "Logic of feedback between Prepare Bear and User"
+    }
+    width={12}
+    maxHeight={"400px"}
+>
+</ProjectImageBlock>
+## Design Research and Key Insights
+
+We lacked information about the reasons why someone might have trouble expressing their feelings in a conversation
+and what people want out of the before and after of a conversation. We knew that knowing the main barriers to 
+communication and people's wants would be essential in building our product to overcome those barriers and fit user wants. 
+
+To solve this issue, conducted 3 research activities: two interviews with people who've had experience with therapy and
+an online survey released to the online public receiving 36 responses, but with a large portion of responses coming 
+from people with self-identified therapy experience. We targeted this demographic because we believed their experience 
+with emotional communication would offer greater relevance and insight.
+
+Before coming up with a design, we conducted research to determine to answer two questions:
+
+#### What barriers prevent people from expressing their feelings?
+
+We structured our design research as an interview and survey with questions aimed at collecting people’s experiences with difficulty communicating to see what barriers may exist and understand what we must consider to help reduce those barriers when making our design. The goal was to see what personal, psychological, and cultural factors play a role in people’s willingness to express themselves emotionally, so by using this structure we were able to learn more about these details. 
+
+#### What makes a conversation communicating emotions feel effective?
+
+We structured our design research in both interview and survey form to gauge what needs must be considered when preparing for and actively participating in a discussion of personal emotions, by asking questions on successful conversations and tools and methods for improving communication. The use of an interview was to see what people, on a personal level, tend to prioritize when it comes to communicating successfully about emotions and how to use those main ideas to frame our design. 
+
+The following are three design insights gained from our research.
+
+### Lack of Preparation Tools
+
+
+Both Interview 1 and 2 identified that the most common way for them to prepare for conversations was for them to run
+through the problem and the conversation in their head. Interviewee 2 stated: "Most difficult topics I think about 
+for a long time over the course of multiple days. Only when I feel like I'm able to properly communicate my thoughts
+to the best of my ability do I tell them to the other person. I have lots of second thoughts most times but I always
+prepare myself for the worst that might happen and ask myself if I'm willing to accept it if it comes true."
+Interviewee 2 stated: "I guess I would say, I go over the scenario in my head and, I don't know if that's a good or a
+bad thing sometimes." Interviewee 1 specifically on multiple occasions expressed a real desire for some sort of tools
+that would help a person identify what they're feeling in preparation for communication, finding the right words. 
+Many survey responses when asked for what they would want if they could have anything to prepare for a conversation,
+couldn't identify a specific thing, as stated above, often writing "something" to help them feel better. One response
+wrote, "A guide that tells me about all the emotions and difficult feelings I'm feeling."
+
+
+All of these statements indicated to us that there was a need for and want for some concrete tool to help prepare for
+an emotional conversation, but participants weren't aware of it existing, so ran through the process manually in their
+heads, though the amount of certainty or reassurance offered by that preparation method was up in the air.
+
+This identified want motivated our entire project in being a tool that helps prepare for a conversation, and some
+specific identified wants by some participants made it into the design as they were the initial inspiration for the
+processes. Both the Interview 1 statement and the last survey statement informed our dialogue tree which first helps
+a person talk through and identify their feelings about a difficult topic as a precursor to preparing for a
+conversation. While we could not offer the omnipentent help that the participants wanted, this helped us identify
+the need for a path to assist in processing feelings as part of preparation. Both interviews talking about running
+through conversations in their head motivated our preparation phase acting as a practice session and a feedback session
+where the conversation partners' response is considered, streamlining this mentioned process of mental runthroughs
+into something more structured and with impartial help.
+
+
+### Concern about how others react deters individuals from opening up
+
+Survey responses included a variety of reasons for why one can be afraid of communicating emotionally such as burdening
+the listener or not wanting to come off as vulnerable. Whether it be in the interest of practicing self-care and 
+protecting themselves from showing vulnerability or in the interest of the listener by not wanting to “bother/hassle”
+them (listener) with troubles, many people do not feel comfortable opening up with their emotions due to how they may
+be received.  Quote from one response: “fear of judgement and not wanting to worry them.” Interview 1 also identified
+it as one of three major barriers to communication in their life: Participant in full stated “Yeah. I think it’s those two, 
+and then just the guilt of worrying or stressing people around me.” 
+
+
+This shaped our design direction by showing us that a main barrier to commmunication is uncertainty about the reaction
+of the other person, and motivating us to include features that could ease this worry by specially considering who the
+user wants to speak to and their thoughts about how the other would react and their relationship, and giving feedback
+based on this context during the preparation process. This in combination with generally easing worries through a 
+concrete process of practice and giving feedback focusing on how to effectively communicate towards a wanted outcome 
+attempts to ease this fear and make the user feel more confident in how they'll converse with someone else and more 
+hopeful toward a positive outcome.
+
+### People express a strong need for comfort/a way to ease anxiety before a difficult emotional conversation. 
+
+
+For the survey question asking what they would have to prepare if they could have anything, many answers stated: “Something
+that makes me less anxious”, “Something to get rid of that heavy, sick feeling of nervousness”, “A hug from a close
+friend or my partner”, “My dog”, “Something that makes me stop crying”, “A way to regulate overwhelming feelings”, etc.
+Anxiety was the second most common identified barrier to emotional communication. Interviewee 1 identified worry about 
+burdening others as a large barrier to communication, but stated that their therapist and parents reassuring them 
+allowed them to overcome that fear and realize they wouldn’t be judged, making communication easier in the future.
+
+
+This shaped our design direction by emphasizing how important comfort and reassurance are for preparation for a hard
+conversation, heavily influencing the concept of our design as something that would appear comforting and sympathetic
+and also offer reassurance often. This manifests at many points in our dialogue tree processes, especially our entire
+"Sympathetic Responses" system, and one of our end-of-path messages directly being inspired by this Interview 1 insight
+which stated that people need to reassured that people in their life are willing to listen.
+
+
+## Iterative Design and Key Insights
+
+As with other groups, we started by creating a paper prototype of our system, which included our paper prototype bear
+and also our two main task dialogue trees we developed. Then we had inspection done by other groups, made edits based
+on the heuristic evaluation results we identified as most important, then we did usability testing with three
+participants by letting them speak to the physical bear and a tester speaking as the bear following the dialogue trees,
+then making small revisions to the prototype in between based on breakdowns encountered. Due to the nature of our
+project, what we were testing mainly was our dialogue trees and how people interacted with the process, which in 
+usability testing really allowed us to identify problems with natural conversation flow, while heuristic evaluation
+helped identify features and best practice inclusions we overlooked because of our unique focus.
+
+<ProjectImageBlock
+    image={{
+        src: prototype,
+        alt: "A boxy paper panda bear. Next to it is a diagram of interchangeable " +
+        "faces it can take on",
+    }}
+    direction={"column"}
+    caption={
+        "The physical paper prototype we used to test our design during iteration"
+    }
+    width={12}
+    maxHeight={"400px"}
+>
+</ProjectImageBlock>
+
+### Allowing the User to Control Their Process
+
+
+
+<b>Users should have methods for exiting or changing the current system status when they are
+dissatisifed or are desiring a change.</b> It was mainly from Usability Testing that many inspectors
+identified that our dialogue trees as streamlined processes did not allow for much user control
+on when to exit, redo, or navigate in a conversation, and seemed to be guiderailed on a certain 
+path, breaking the "User Control" heuristic. We then added a stop tree to shutdown the bear at
+any point in the conversation, and a redoing statement function. We also experienced a breakdown
+during a usability test where a user stated they didn't like the feedback given and felt like the 
+system was forcing them to follow it. It became clear to us that not only should users at any point be
+in full control of their position in the process, but also the system's underlying priorities. To
+do this, we redesigned the feedback system to allow users to edit their goals and feedback preferences
+if not satisfied with feedback received.
+
+<ProjectImageBlock
+    image={
+        {
+            src: revisiontree,
+            alt: "Diaglogue tree allowing user to say they want to redo a statement.",
+            caption: "New revision tree applicable to anywhere in process",
+        }}
+    width={12}
+    maxHeight={"400px"}
+>
+</ProjectImageBlock>
+
+### Making System Status and Processing Visible
+
+<ProjectImageBlock
+    image={
+        {
+            src: facialdisplay,
+            alt: "System for displaying faces description.",
+            caption: "System for displaying faces, including brightness indicating user input and thinking when processsing",
+        }}
+    width={12}
+    maxHeight={"400px"}
+>
+</ProjectImageBlock>
+
+<b>What the system is doing and how it is interpreting user's input should be made visible to the
+user in real time or promptly after data collection.</b> Also from Usability Testing, we received
+many reports identifying a lack of visible state and prompt feedback in violation of the "System
+Visibility" heuristic. Due to our system being predominantly a speech interface, we didn't have
+many initial points where feedback was given to the user as we focused on developing a dialogue
+process, but we realized on the technical side and for clarity this was essential. Using our defined
+facial system that previously existed just to add a responsive human element, we added facial states 
+that representing thinking and receiving input so that the user would be aware in real time that the
+system is pausing to process or that their audio is being picked up and listened to. Where this
+insight heavily factored into our iteration is our consideration of a change for exclusion, where
+we considered how to handle harder-to-parse accents or speech styles, and realized the whole system
+would benefit from more checkpoints after data collection segments where the collected information
+is reported back to the user and the user is able to edit errors. We added many checkpoints along our
+dialogue trees in consideration of this, giving users that feedback soon after collection.
+
+### Suppporting Natural Conversation Diversions
+
+<ProjectImageBlock
+    image={
+        {
+            src: sympathytree,
+            alt: "System for responding to user context.",
+            caption: "New sympathy logic applicable to user context",
+        }}
+    width={12}
+    maxHeight={"400px"}
+>
+</ProjectImageBlock>
+
+<b>Divergences from the main conversation tree are normal in a user interaction, and should be
+supported, especially in cases where the user experience will benefit from the diversion.</b> This
+insight came mostly from usability testing, where across tests many system breaks occured when
+the user asked questions or made statements that were not anticipated by the dialogue tree. 
+Participant 2 in particular asked many questions for advice and clarification. Participant 3 gave
+the feedback that the current process felt like a systematic interrogation in the way the system
+asked series of questions without interruption. This identified to us that the rigid trees created
+needed to allow for natural sideroads in conversation, and the user could even benefit from
+divergences in the form of questions.
+
+<ProjectImageBlock
+    image={
+        {
+            src: questiontree,
+            alt: "System for answering questions.",
+            caption: "Logic for when user asks a question to Prepare Bear",
+        }}
+    width={12}
+    maxHeight={"400px"}
+>
+</ProjectImageBlock>
+ So, we added a question-taking tree to our system, a sympathetic
+response system that made the system respond more naturally to user speech in between tree nodes, and
+an error tree handling all other diversions with a reminder of system state and ability to redirect
+if needed. We believe all of these changes improve user experience with improved natural dialogue, 
+offering more user assistance, and handling error cases in defined ways.
