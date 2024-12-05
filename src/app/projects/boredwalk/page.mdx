@@ -68,6 +68,8 @@ import task22 from "public/images/projects/boredwalk/post/task22.png"
 import task23 from "public/images/projects/boredwalk/post/task23.png"
 import task24 from "public/images/projects/boredwalk/post/task24.png"
 
+import insights from "public/images/projects/boredwalk/post/insights.png"
+
 import insight_paper_prototype from "public/images/projects/boredwalk/post/insight_paper_prototype.png"
 import state_flex_1 from "public/images/projects/boredwalk/post/state_flex_1.png"
 import state_flex_2 from "public/images/projects/boredwalk/post/state_flex_2.png"
@@ -299,19 +301,19 @@ quantitative feedback that can better optimize its future suggestions.
     images={[
         {
             src: task21,
-            alt: "Every image requires alt text. This should describe the content of that image.",
+            alt: "Image of the route screen showing tutorial popup that introduces the rerouting modes.",
         },
         {
             src: task22,
-            alt: "Every image requires alt text. This should describe the content of that image.",
+            alt: "Image of the route screen with a route and the \"reroute\" button visible.",
         },
         {
             src: task23,
-            alt: "Every image requires alt text. This should describe the content of that image.",
+            alt: "Image of the route screen with a new route and the \"reroute\" button visible.",
         },
         {
             src: task24,
-            alt: "Every image requires alt text. This should describe the content of that image.",
+            alt: "Image of the post-walk rating screen.",
         },
     ]}
     caption={
@@ -354,22 +356,16 @@ plan the route; I mostly plan the amount of time I will spend and the pace.” -
 
 ### There are no universally “good” route qualities
 
-<ProjectImagesBlock
-    images={[
-        {
-            src: imagePlaceholder400x400,
-            alt: "Every image requires alt text. This should describe the content of that image.",
-            caption: "This caption is applied to the image. Each can have a different caption.",
-        },
-        {
-            src: imagePlaceholder400x400,
-            alt: "Every image requires alt text. This should describe the content of that image.",
-            caption: "This caption is applied to the image. Each can have a different caption.",
-        },
-    ]}
-    direction={"row"}
+<ProjectImageBlock
+    image={{
+        src: insights,
+        alt: "Image portraying two walkers, one who is cool and one who loves hills",
+    }}
+    caption={
+        "Two walkers with varying opinions"
+    }
     width={8}
-    maxHeight={"400px"}
+    maxHeight={"600px"}
 >
 
     Despite some general themes emerging, there were no walk qualities that 
@@ -381,7 +377,7 @@ plan the route; I mostly plan the amount of time I will spend and the pace.” -
     directly seen in our preferences screen.
 
 
-</ProjectImagesBlock>
+</ProjectImageBlock>
     “I don’t want to walk up any hills” - Archibald
 
     “I like walking up and down hills” - Alejandra
@@ -428,19 +424,19 @@ as well that we addressed to ensure our design was finalized.
     images={[
         {
             src: state_flex_1,
-            alt: "Alt",
+            alt: "Image of original route select screen with \"yes\" \"no\" prompts.",
         },
         {
             src: state_flex_2,
-            alt: "Alt",
+            alt: "Image of new route select screen with \"next\" \"prev\" prompts.",
         },
         {
             src: state_flex_3,
-            alt: "Alt",
+            alt: "Image of original rating screen.",
         },
         {
             src: state_flex_4,
-            alt: "Alt",
+            alt: "Image of improved rating screen with \"save\" added.",
         },
     ]}
     direction={"row"}
@@ -467,19 +463,19 @@ as well that we addressed to ensure our design was finalized.
     images={[
         {
             src: vis_func_1,
-            alt: "Alt",
+            alt: "Image of \"start walk\" screen with poor functionality.",
         },
         {
             src: vis_func_2,
-            alt: "Alt",
+            alt: "Image of \"start walk\" screen with improved functionality.",
         },
         {
             src: vis_func_3,
-            alt: "Alt",
+            alt: "Image of \"feedback\" screen with poor functionality.",
         },
         {
             src: vis_func_4,
-            alt: "Alt",
+            alt: "Image of \"feedback\" screen with improved functionality.",
         },
     ]}
     direction={"row"}
