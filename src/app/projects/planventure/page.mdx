@@ -76,7 +76,7 @@ import imagePlaceholderChat from "public/images/projects/planventure/post/Talk w
 import imagePlaceholderLose from "public/images/projects/planventure/post/Lose.jpg";
 
 
-import imagePlaceholderManasa from "public/images/projects/planventure/post/manasa.PNG";
+import imagePlaceholderManasa from "public/images/projects/planventure/post/manasali.png";
 import imageTeamPerson2 from "public/images/projects/planventure/post/Mengqi Shi.jpg";
 import imageTeamPerson3 from "public/images/projects/planventure/post/Aleksey Yanovich.jpeg";
 import imageTeamPerson4 from "public/images/projects/planventure/post/Ryan Le.jpg";
@@ -116,7 +116,9 @@ import imageTeamPerson5 from "public/images/projects/planventure/post/Thien-An N
         name: ["Thien-An", "Nguyen"],
         photo: imageTeamPerson5,
     },
-]} />
+]}  
+    maxHeight={"400px"}
+/>
 
 ## Problem and Design Overview
 
@@ -140,14 +142,9 @@ import imageTeamPerson5 from "public/images/projects/planventure/post/Thien-An N
 <ProjectImagesBlock
     images={[
         {
-            src: imagePlaceholderSignUp,
-            alt: "UI of the Login Page.",
-            caption: "Login page for Planventure",
-        },
-        {
             src: imagePlaceholderHomePage,
             alt: "UI of the Home Page which shows the countries user is visiting",
-            caption: "Home page where users can see all their trips",
+            caption: "Home page where users can see all their trips.",
         },
     ]}
     direction={"row"}
@@ -157,12 +154,12 @@ import imageTeamPerson5 from "public/images/projects/planventure/post/Thien-An N
 
 Travelers often face challenges in turning saved travel inspiration from platforms like Instagram or TikTok 
 into actual plans. Coordinating schedules, budgeting, and making group decisions for meals, accommodations, 
-and activities can be overwhelming, especially when considering different preferences and constraints. These
-pain points often  lead to conflict, inefficiency, and stress which can make traveling less fun and more 
+and activities can be overwhelming, especially considering different preferences and constraints. These
+pain points often lead to conflict, inefficiency, and stress which can make traveling less fun and more 
 chaotic for everyone. 
 
 Our design transforms the travel planning process into an engaging, adventure game-like experience. It allows
-users to seamlessly incorporate saved destinations, collaboratively plan  detailed itineraries, and make 
+users to incorporate saved destinations, collaboratively plan  detailed itineraries, and make 
 decisions effortlessly. Key features include interactive budget and preference tools, group voting mechanisms,
 and timely notifications of itinerary updates. By gamifying the experience and enabling equal participation,
 the design ensures that planning is organized, stress-free, and enjoyable. This in return makes sure users
@@ -221,7 +218,7 @@ making the experience more engaging, fair, and inclusive.
         }
     ]}
     caption={
-        "Overview of voting process involving mini-game"
+        "Overview of voting process involving mini-game."
     }
     width={12}
     maxHeight={"400px"}
@@ -238,9 +235,9 @@ is sent to the group, keeping everyone up to date. This feature makes sure that 
 are informed about others' preferences and any alterations in the schedule. Additionally, 
 if one user’s change interests someone else in the group, the app allows them to update their 
 own itineraries and join the new plan. This helps with flexibility because users can 
-personalize their experience while maintaining group cohesion. They're able to see their group's plan
-as well as their own. This is helpful as they'll know which activties they're doing with their group
-and which ones they're doing on their own/smaller groups. The ability to make and  share itinerary 
+personalize their experience while maintaining group cohesion. They are able to see their group's plan
+as well as their own. This is helpful as they will know which activties they are doing with their group
+and which ones they are doing on their own/smaller groups. The ability to make and share itinerary 
 updates in real-time makes  travel planning more organized, less stressful, and more adaptable 
 to everyone’s needs.
 
@@ -264,7 +261,7 @@ to everyone’s needs.
         },
     ]}
     caption={
-        "Overview of making changes to personal itinerary and the change reflecting for everyone"
+        "Overview of making changes to personal itinerary and the change reflecting for everyone."
     }
     width={12}
     maxHeight={"400px"}
@@ -276,7 +273,7 @@ to everyone’s needs.
 Our design research aimed to identify key features users would appreciate 
 in a travel planning app and understand their biggest pain points. To gain 
 insights, we did interviews with individuals who actively use social media 
-for travel inspiration because they're the ones directly affected by the challenges 
+for travel inspiration because they are the ones directly affected by the challenges 
 of planning group trips. We chose interviews because they allowed us to ask 
 follow-up questions, delve deeper into users' preferences, and observe their 
 reactions to potential features. This hands-on approach helped us determine 
@@ -288,7 +285,7 @@ user needs.
 Our design research helped us learn that collaborative decision-making tools 
 significantly reduce the stress of group travel. Participants shared that the 
 process of choosing activities or hotels usually feels overwhelming, especially 
-when there are conflicting preferences. One participant explained mentioned they'd 
+when there are conflicting preferences. One participant explained mentioned they would 
 find themselves compromising on things they care about "just to make everyone happy," 
 and avoid arguments This feedback emphasized  the need for features that allow
 each traveler to have their say while reducing social pressure. This conclusion 
@@ -307,7 +304,7 @@ planning feel less stressful and more inclusive.
         },
     ]}
     caption={
-        "Real time notification anytime a group member's itinerary changes"
+        "Real time notification anytime a group member's itinerary changes."
     }
     direction={"row"}
     width={8}
@@ -320,7 +317,7 @@ change plans and notify others in real-time is really important especially
 when one person's preference diverged from the group. During our research, 
 one of our participants mentioned how if someone wants to do something different 
 from the rest of the group "it’s always awkward to bring it up." We figured 
-if the app lets everyone know, it’s less stressfull. This feedback led us 
+if the app lets everyone know, it is less stressfull. This feedback led us 
 to incorporate real-time itinerary updates, where users could update their 
 plans, and others would be automatically notified. The ability for users to 
 adjust their own plans while staying informed about others' decisions ensures 
@@ -335,7 +332,7 @@ way to engage users in decision-making and make the planning process more
 enjoyable. Participants expressed a preference for interactive elements that 
 could make tedious tasks (group decision-making) feel less like a chore. 
 Participants said it would be fun to compete with each other, especially for 
-boring tasks like itinerary planning.. This insight led us to integrate a mini-game 
+boring tasks like itinerary planning. This insight led us to integrate a mini-game 
 feature where users could challenge group decisions with pooled tokens, making 
 the process more playful. By turning decision-making into a game, we wanted to 
 make sure users remained motivated and invested in the process. This also 
@@ -358,7 +355,7 @@ the whole process.
         },
     ]}
     caption={
-        "Overview of our inital paper prototype"
+        "Overview of our initial paper prototype."
     }
     direction={"row"}
     width={8}
@@ -388,7 +385,7 @@ But by addressing these insights, we were able to make the design more user-cent
         alt: "UI of help page that answers questions users have about tokens",
     }}
     caption={
-        "Help Feature that answers users questions about tokens and the mini games"
+        "Help feature that answers users questions about tokens and the mini games."
     }
     width={6}
     maxHeight={"400px"}
@@ -422,7 +419,7 @@ in reducing cognitive load and improving user confidence.
     ]}
     direction={"row"}
     caption={
-        "Chat feature to allow further discussion after decision has been made"
+        "Chat feature to allow further discussion after decision has been made."
     }
     width={6}
     maxHeight={"400px"}
@@ -431,12 +428,12 @@ in reducing cognitive load and improving user confidence.
 During usability testing, we discovered that it would be beneficial 
 to discuss the results of the voting game, especially when the outcomes 
 involved expensive or impractical decisions. A question that arose when 
-testing was, "What if the winning option is something no one can afford?." 
+testing was, "What if the winning option is something most people cannnot afford?." 
 Initially, our paper prototype ended the experience once voting concluded, 
 showing either a "You Lose" or "You Win" screen without further interaction. 
 Based on this feedback, we decided to add a discussion feature in our 
 design which would let participants chat about the results after the game. 
-The updated design has  a "I want to have a discussion" button on the final 
+The updated design has a "I want to have a discussion" button on the final 
 screen which links to a group chat where users can express concerns, suggest 
 alternatives, or plan next steps. This insight was really important because 
 it helped us come up with a feature that improves the inclusivity of the design 
@@ -451,13 +448,13 @@ by addressing real-world considerations beyond the voting process.
         {
             src: imagePlaceholderLose,
             alt: "Paper prototype letting user know they lost the game by displaying 'You Lose' on the screen",
-            caption: "Old design labels users as 'Losers' and 'Winners'"
+            caption: "Old design labels users as 'Losers' and 'Winners'."
                      
         },
         {
             src: imagePlaceholderResult,
             alt: "UI of app after decision has been made displaying results and showing what other users had to say about the activity proposed",
-            caption: "Final prototype doesn't label anyone as 'Losers' in order to foster a competitive but still friendly atmosphere" 
+            caption: "Final prototype does not label anyone as 'Losers' in order to foster a competitive but still friendly atmosphere." 
         },
     ]}
     direction={"column"}
@@ -469,8 +466,8 @@ Another key insight we derived was when our evaluators pointed out
 the original competitive game mechanics. Our original design declared 
 a “winner” and a “loser,” which is problematic as it could potentialy 
 negatively impact group dynamics and individual motivation. We realized 
-this could make the voting process feel more adversarial than collaborative, 
-which in the long run could discourage future participation. Overall, 
+this could make the voting process feel more competitive than collaborative, 
+which in the long run could discourage participation. Overall, 
 this feedback emphasized how competitive elements, like assigning loss 
 labels, can foster resentment or disengagement which is the exact opposite 
 of what our goal is for our design. To address this, we replaced the competitive 
