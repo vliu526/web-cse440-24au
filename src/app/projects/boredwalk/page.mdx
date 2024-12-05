@@ -424,6 +424,14 @@ as well that we addressed to ensure our design was finalized.
 
 ### State Flexibility
 
+A key insight gained from our heuristic evaluation inspection was the lack 
+of emergency exits in the “Choose Walk” screen with no way to look at previously 
+generated routes and no way to leave the screen. We took this insight and applied 
+it to this screen and throughout the rest of our design to vastly improve the 
+transitions between states. This included making changes in our “Choose Walk” 
+screen to have a “Prev”, “Next”, and “Exit” buttons as well as having more 
+verbose “Save” and “Exit” buttons on the “Feedback” screen.   
+
 <ProjectImagesBlock
     images={[
         {
@@ -431,64 +439,39 @@ as well that we addressed to ensure our design was finalized.
             alt: "Alt",
         },
         {
-            src: state_flex_2,
-            alt: "Alt",
-        },
-        {
             src: state_flex_3,
+            alt: "Alt",
+        }
+    ]}
+    direction={"row"}
+    caption={
+        "States in initial prototype with rigid state transitions."
+    }
+    width={12}
+    maxHeight={"400px"}
+> 
+</ProjectImagesBlock>
+<ProjectImagesBlock
+    images={[
+        {
+            src: state_flex_2,
             alt: "Alt",
         },
         {
             src: state_flex_4,
             alt: "Alt",
-        },
+        }
     ]}
     direction={"row"}
     caption={
         "States transitions made more flexible through addition of new buttons."
     }
     width={12}
-    maxHeight={"600px"}
->
-
-    A key insight gained from our heuristic evaluation inspection was the lack 
-    of emergency exits in the “Choose Walk” screen with no way to look at previously 
-    generated routes and no way to leave the screen. We took this insight and applied 
-    it to this screen and throughout the rest of our design to vastly improve the 
-    transitions between states. This included making changes in our “Choose Walk” 
-    screen to have a “Prev”, “Next”, and “Exit” buttons as well as having more 
-    verbose “Save” and “Exit” buttons on the “Feedback” screen.    
-
+    maxHeight={"400px"}
+> 
 </ProjectImagesBlock>
 
 ### Visible Functionality
-
-<ProjectImagesBlock
-    images={[
-        {
-            src: vis_func_1,
-            alt: "Alt",
-        },
-        {
-            src: vis_func_2,
-            alt: "Alt",
-        },
-        {
-            src: vis_func_3,
-            alt: "Alt",
-        },
-        {
-            src: vis_func_4,
-            alt: "Alt",
-        },
-    ]}
-    direction={"row"}
-    caption={
-        "Hidden functionality made more clear during revisions."
-    }
-    width={12}
-    maxHeight={"600px"}
->
 
 Another key insight we obtained from our usability testing included hidden and 
 unclear purposes of features. Our old “Start Walk” screen had a hidden loop or 
@@ -500,9 +483,54 @@ some of our participants about its purpose in improving future walks. These
 issues brought up by participants led us to make several changes to our prototype 
 that improved usability by making possible actions visible and their purposes more clear.
 
+<ProjectImagesBlock
+    images={[
+        {
+            src: vis_func_1,
+            alt: "Alt",
+        },
+        {
+            src: vis_func_3,
+            alt: "Alt",
+        }
+    ]}
+    direction={"row"}
+    caption={
+        "States in our initial prototype that had hidden or unclear features."
+    }
+    width={12}
+    maxHeight={"400px"}
+>
+</ProjectImagesBlock>
+<ProjectImagesBlock
+    images={[
+        {
+            src: vis_func_2,
+            alt: "Alt",
+        },
+        {
+            src: vis_func_4,
+            alt: "Alt",
+        }
+    ]}
+    direction={"row"}
+    caption={
+        "Hidden functionality made more clear during revisions."
+    }
+    width={12}
+    maxHeight={"400px"}
+>
 </ProjectImagesBlock>
 
 ### Tutorialization and Ease of Use
+
+When usability testing, we realized that our app was confusing to use at first 
+due to various tidbits of feedback provided by participants. Specifically, many 
+had issues with app navigation or did not know what to do on some screens. In 
+order to improve based on this insight, we first made our app navigation a lot 
+more consistent and simple by adding a back button to every screen. Then, we added 
+tutorial popups to a few different features so that walkers could figure out how 
+to use them when first opening those screens.
 
 <ProjectImagesBlock
     images={[
@@ -521,24 +549,17 @@ that improved usability by making possible actions visible and their purposes mo
     ]}
     direction={"row"}
     caption={
-        "Scenes in the original prototype that testers called out as unclear."
+        "States in the initial prototype that testers called out as unclear."
     }
     width={12}
     maxHeight={"400px"}
 >
 </ProjectImagesBlock>
+
 <ProjectImagesBlock
     images={[
         {
-            src: tut1,
-            alt: "Alt",
-        },
-        {
             src: tut2,
-            alt: "Alt",
-        },
-        {
-            src: tut3,
             alt: "Alt",
         },
         {
@@ -546,10 +567,6 @@ that improved usability by making possible actions visible and their purposes mo
             alt: "Alt",
         },
         {
-            src: tut5,
-            alt: "Alt",
-        },
-            {
             src: tut6,
             alt: "Alt",
         },
@@ -561,12 +578,5 @@ that improved usability by making possible actions visible and their purposes mo
     width={12}
     maxHeight={"600px"}
 >
-When usability testing, we realized that our app was confusing to use at first 
-due to various tidbits of feedback provided by participants. Specifically, many 
-had issues with app navigation or did not know what to do on some screens. In 
-order to improve based on this insight, we first made our app navigation a lot 
-more consistent and simple by adding a back button to every screen. Then, we added 
-tutorial popups to a few different features so that walkers could figure out how 
-to use them when first opening those screens.
 </ProjectImagesBlock>
 
