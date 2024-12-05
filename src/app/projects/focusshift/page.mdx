@@ -57,6 +57,20 @@ import imagePlaceholder400x400 from "public/images/projects/template/post/400x40
 import imagePlaceholder600x300 from "public/images/projects/template/post/600x300.png";
 import imagePlaceholder1200x800 from "public/images/projects/template/post/1200x800.png";
 
+import phonehands from "public/images/projects/focusshift/post/phonehands.png";
+import coffeephone from "public/images/projects/focusshift/post/coffeephone.png";
+import homepage from "public/images/projects/focusshift/post/homepage.png";
+import startingactivity from "public/images/projects/focusshift/post/startingactivity.png";
+import ongoingactivity from "public/images/projects/focusshift/post/ongoingactivity.png";
+import newcollab from "public/images/projects/focusshift/post/newcollab.png";
+import collabspace from "public/images/projects/focusshift/post/collabspace.png";
+import collabdetails from "public/images/projects/focusshift/post/collabdetails.png";
+import nowcollaborating from "public/images/projects/focusshift/post/nowcollaborating.png";
+import paperprototype from "public/images/projects/focusshift/post/paperprototype.png";
+import oldtimesketch from "public/images/projects/focusshift/post/oldtimesketch.png";
+import collabspacebeforeafter from "public/images/projects/focusshift/post/collabspacebeforeafter.png";
+import altactivities from "public/images/projects/focusshift/post/altactivities.png";
+
 # Project Template
 
 <ProjectSubtitle>Optional Subtitle</ProjectSubtitle>
@@ -71,19 +85,19 @@ import imagePlaceholder1200x800 from "public/images/projects/template/post/1200x
 
 <ProjectTeamGallery members={[
     {
-        name: ["Name Line 1", "Name Line 2"],
+        name: ["Boaz Wu"],
         photo: imageTeamPerson1,
     },
     {
-        name: ["Name Line 1", "Name Line 2"],
+        name: ["Deya Gonzalez"],
         photo: imageTeamPerson2,
     },
     {
-        name: ["Name Line 1", "Name Line 2"],
+        name: ["Yishi Reena"],
         photo: imageTeamPerson3,
     },
     {
-        name: ["Name Line 1", "Name Line 2"],
+        name: ["David Sung"],
         photo: imageTeamPerson4,
     },
 ]} />
@@ -108,7 +122,7 @@ import imagePlaceholder1200x800 from "public/images/projects/template/post/1200x
 
 <ProjectImageBlock
     image={{
-        src: imagePlaceholder1200x800,
+        src: phonehands,
         alt: "Every image requires alt text. This should describe the content of that image."
     }}
     caption={
@@ -119,300 +133,203 @@ import imagePlaceholder1200x800 from "public/images/projects/template/post/1200x
     maxHeight={"400px"}
 >
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Nunc sed id semper risus in
-hendrerit. Maecenas volutpat blandit aliquam etiam erat velit scelerisque in
-dictum. Integer feugiat scelerisque varius morbi enim nunc faucibus. Risus at
-ultrices mi tempus imperdiet nulla malesuada pellentesque. Habitant morbi
-tristique senectus et netus et malesuada fames ac. Vel eros donec ac odio
-tempor orci. Nisl nisi scelerisque eu ultrices vitae. In egestas erat imperdiet
-sed. Faucibus purus in massa tempor. Ipsum faucibus vitae aliquet nec.
+The Problem that Motivates Our Design
 
-Ullamcorper sit amet. Posuere sollicitudin aliquam ultrices sagittis orci a
-scelerisque purus. Tellus cras adipiscing enim eu turpis egestas pretium aenean
-pharetra. Enim sed faucibus turpis in eu mi bibendum neque egestas. Faucibus
-scelerisque eleifend donec pretium vulputate sapien nec sagittis aliquam.
-Natoque penatibus et magnis dis. Ullamcorper velit sed ullamcorper morbi
-tincidunt. Arcu dui vivamus arcu felis bibendum ut tristique. Consectetur
-adipiscing elit pellentesque habitant morbi.
+Many students struggle with the habit of doomscrolling, spending excessive time mindlessly browsing social media at the cost of more beneficial activities. This behavior often occurs during moments of academic stress or boredom and is reinforced by the instant gratification of social media content. However, students frequently report feeling more stressed and regretful after these sessions, as they realize the time lost could have been spent on more meaningful pursuits. The lack of compelling, accessible alternatives to doomscrolling exacerbates the problem, leaving students stuck in a cycle that diminishes their productivity and overall well-being.
+
+The Key Idea or Approach of Our Design
+
+Our design tackles this pervasive issue by offering students engaging alternatives to doomscrolling that align with their long-term goals and interests. Unlike existing solutions that merely limit screen time, our system encourages active participation in fulfilling activities, such as hobbies or social interactions, by making these options accessible and rewarding. Through personalized incentives and reminders, the design shifts attention away from passive scrolling and toward meaningful engagement, fostering habits that promote well-being and productivity beyond the academic environment. By transforming the fleeting satisfaction of doomscrolling into lasting feelings of accomplishment and connection, our design empowers users to reclaim their time and prioritize what truly matters.
+
 
 </ProjectImageBlock>
 
 ## Design Walkthrough
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eget porttitor augue.
-Vestibulum sed ex quis quam egestas interdum. Donec nec semper orci, id iaculis odio.
-Fusce rutrum lacus et volutpat luctus. Praesent accumsan volutpat lacus, ac vehicula ante gravida ut.
-Donec quis imperdiet justo. Pellentesque semper eleifend ex a rutrum.
+Our design focuses on providing users with meaningful alternatives to doomscrolling by offering two key tasks: engaging in solo activities or collaborating with friends. These tasks are designed to give users flexibility in deciding when to engage with the app based on their awareness of excessive doomscrolling. Rather than controlling when the user might be tempted to doomscroll, the system empowers them to choose when to act and take steps toward breaking the cycle.
+During the onboarding process, users specify their preferences for activities they enjoy or would like to try, such as hobbies, creative tasks, or social activities. These preferences are used to generate suggestions for activities that can replace doomscrolling. After users set their preferences, the app will automatically remind them of their goal and suggest activities aligned with their interests, encouraging them to keep working towards their set goals.
+The rationale for these tasks is to provide users with control over their alternatives while encouraging social interaction. Task 1 focuses on offering personalized activity suggestions for users who choose to engage in solo activities. Task 2 introduces the opportunity for collaborative activities with friends, helping users build a support network and stay motivated.
 
-### Title for a Task
+
+### Solo Activity: Replacing Doomscrolling with Engaging Alternatives
+
+The first task aims to help users replace doomscrolling with activities they find fulfilling. After users specify their preferences during onboarding, the app automatically sends suggestions for activities they might enjoy, such as sports, reading, journaling, or doing a quick workout. These suggestions encourage users to keep working toward their goal and remind them of the positive alternatives to doomscrolling.
 
 <ProjectImagesBlock
     images={[
         {
-            src: imagePlaceholder300x600,
-            alt: "Every image requires alt text. This should describe the content of that image.",
+            src: homepage,
+            alt: "Home Page View",
+            caption: "The home page shows personal goal progress and activity suggestions.",
         },
         {
-            src: imagePlaceholder300x600,
-            alt: "Every image requires alt text. This should describe the content of that image.",
+            src: startingactivity,
+            alt: "Starting activity popup",
+            caption: "When click “start” for the activity, a pop-up shows up to confirm the activity option.",
         },
+        {
+            src: ongoingactivity,
+            alt: "Home page with ongoing activity.",
+            caption: "Once they started, the ongoing activity would show up on the top, where they can see the time they have spent on the activity.",
+        }
     ]}
-    direction={"row"}
-    caption={
-        "This caption is applied to the entire block of images. " +
-        "See that it spans across the area of the images."
-    }
-    width={6}
+    width={12}
     maxHeight={"400px"}
 >
-
-Euismod quis viverra nibh cras pulvinar mattis nunc sed. Risus quis varius quam
-quisque. Mi tempus imperdiet nulla malesuada pellentesque elit. Felis eget
-velit aliquet sagittis id consectetur purus ut. Eu augue ut lectus arcu.
-Maecenas ultricies mi eget mauris. Nec ullamcorper sit amet risus nullam eget
-felis eget nunc. Et molestie ac feugiat sed lectus vestibulum mattis. Fames ac
-turpis egestas integer. Auctor augue mauris augue neque gravida.
-
 </ProjectImagesBlock>
 
-<ProjectImageBlock
-    image={{
-        src: imagePlaceholder1200x800,
-        alt: "Every image requires alt text. This should describe the content of that image.",
-    }}
-    caption={
-        "A good caption supports helps a reader understand what is important. " +
-        "It thus supports skimming and also provides an emphasis on key points of related text."
-    }
-    width={6}
-    maxHeight={"400px"}
->
+### Collaborative Activity: Reducing Doomscrolling with Friends
 
-Euismod quis viverra nibh cras pulvinar mattis nunc sed. Risus quis varius quam
-quisque. Mi tempus imperdiet nulla malesuada pellentesque elit. Felis eget
-velit aliquet sagittis id consectetur purus ut. Eu augue ut lectus arcu.
-Maecenas ultricies mi eget mauris. Nec ullamcorper sit amet risus nullam eget
-felis eget nunc. Et molestie ac feugiat sed lectus vestibulum mattis. Fames ac
-turpis egestas integer. Auctor augue mauris augue neque gravida.
-
-</ProjectImageBlock>
-
-### Title for a Task
-
-A pellentesque sit amet porttitor eget dolor morbi non arcu. Mus mauris vitae
-ultricies leo. Auctor neque vitae tempus quam. Id semper risus in hendrerit
-gravida rutrum quisque. Nibh sed pulvinar proin gravida hendrerit. Sed euismod
-nisi porta lorem mollis aliquam ut porttitor leo. Elit eget gravida cum sociis
-natoque penatibus et. Id diam vel quam elementum pulvinar. Morbi non arcu risus
-quis varius quam quisque. Pulvinar pellentesque habitant morbi tristique
-senectus et. Habitant morbi tristique senectus et netus et malesuada fames ac.
-Ac tortor vitae purus faucibus. Metus vulputate eu scelerisque felis imperdiet.
-Nulla pharetra diam sit amet nisl. Tincidunt vitae semper quis lectus nulla at
-volutpat diam. Euismod in pellentesque massa placerat duis ultricies lacus sed
-turpis. Ultricies mi eget mauris pharetra et ultrices. Ac tincidunt vitae
-semper quis lectus nulla at volutpat. Molestie a iaculis at erat pellentesque.
+The second task focuses on collaboration, where users can work together to reduce their doomscrolling habits. After users set their preferences and goals, they can collaborate with friends by participating in activities together that help replace doomscrolling, such as walking, socializing, or creative projects. This shared experience enhances accountability and provides mutual support, encouraging each participant to remain committed to their goal.
 
 <ProjectImagesBlock
     images={[
         {
-            src: imagePlaceholder300x600,
-            alt: "Every image requires alt text. This should describe the content of that image.",
+            src: collabspace,
+            alt: "The main menu for the collaboration space has a section for active collabs, past collabs, and a button that starts the collab matching process.",
         },
         {
-            src: imagePlaceholder300x600,
-            alt: "Every image requires alt text. This should describe the content of that image.",
+            src: collabdetails,
+            alt: "Clicking on each collab’s profile photo would bring the users to the collaboration details page, where they can see the collaboration goal progress, and collaborative activities suggestions based on shared preferences.",
         },
         {
-            src: imagePlaceholder300x600,
-            alt: "Every image requires alt text. This should describe the content of that image.",
+            src: newcollab,
+            alt: "Clicking on the “start new collab” button would bring the users to the matching page, where they enter the same 4-digit code with their collab, choose the goal, and submit together.",
         },
         {
-            src: imagePlaceholder300x600,
-            alt: "Every image requires alt text. This should describe the content of that image.",
+            src: nowcollaborating,
+            alt: "Now collaborating page.",
         }
     ]}
     caption={
-        "The text above is outside the image block, then we have these full width images."
+        "Current collaborations can be accessed from the main collaboration page, and each current profile can be pressed. New Collabs can also be started from this page."
     }
     width={12}
     maxHeight={"400px"}
 >
 </ProjectImagesBlock>
 
+
+
 ## Design Research and Key Insights
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Sagittis vitae et leo duis ut. Ac
-odio tempor orci dapibus ultrices. Nunc sed augue lacus viverra vitae congue.
-Scelerisque in dictum non consectetur a erat nam at lectus. Tincidunt arcu non
-sodales neque. Diam sit amet nisl suscipit adipiscing bibendum est ultricies.
-Morbi tincidunt augue interdum velit euismod in pellentesque massa. Libero
-justo laoreet sit amet cursus sit. At imperdiet dui accumsan sit. Sed odio
-morbi quis commodo odio aenean. Nibh tortor id aliquet lectus proin nibh.
+For our design research, our primary goals were to learn more about the root cause of doomscrolling as well as if people think it is a problem, and what they are doing about it if they do think it is a problem. To conduct our design research, we chose to interview 3 participants, 2 of whom are current UW students and one who is an engineer at Amazon. We chose these participants since we wanted to focus on younger people who are currently establishing life-long habits. We chose interviews so that we could establish a personal connection and dive deeper with our participants, since this would improve the quality of answers given the nature of the subject.
 
-### Title for an Insight
+### A Barrier to replacing Doom Scrolling: Convenience 
 
-Mattis rhoncus urna neque viverra justo nec ultrices. Amet facilisis magna
-etiam tempor orci eu lobortis elementum nibh. Quam vulputate dignissim
-suspendisse in est ante in nibh. Eget duis at tellus at urna condimentum mattis
-pellentesque. Varius sit amet mattis vulputate enim nulla. Ridiculus mus mauris
-vitae ultricies. Feugiat scelerisque varius morbi enim. Lobortis elementum nibh
-tellus molestie. Enim blandit volutpat maecenas volutpat blandit aliquam etiam.
-Nulla posuere sollicitudin aliquam ultrices sagittis. Urna nunc id cursus metus
-aliquam eleifend mi in. Condimentum vitae sapien pellentesque habitant morbi.
-Convallis tellus id interdum velit laoreet id donec ultrices. Platea dictumst
-quisque sagittis purus. Mattis vulputate enim nulla aliquet porttitor lacus
-luctus accumsan. Mi eget mauris pharetra et ultrices neque ornare. Id volutpat
-lacus laoreet non curabitur gravida arcu ac tortor. Consectetur libero id
-faucibus nisl tincidunt.
 
-### Title for an Insight
+When we asked about barriers that people encounter when they try to replace doom scrolling with other activities, we had similar answers about how easy doom scrolling is. 
 
-<ProjectImagesBlock
-    images={[
-        {
-            src: imagePlaceholder400x400,
-            alt: "Every image requires alt text. This should describe the content of that image.",
-            caption: "This caption is applied to the image. Each can have a different caption.",
-        },
-        {
-            src: imagePlaceholder400x400,
-            alt: "Every image requires alt text. This should describe the content of that image.",
-            caption: "This caption is applied to the image. Each can have a different caption.",
-        },
-    ]}
-    direction={"row"}
-    width={8}
-    maxHeight={"400px"}
->
+One said "I’ve tried reading a book or going for a walk instead, but honestly, it’s just easier to pick up my phone and start scrolling. It takes no effort," and another said "I know I should do something else, but it’s hard to start. Scrolling feels rewarding right away, and things like exercising just feel like too much work." 
 
-Cursus euismod quis viverra nibh cras pulvinar mattis nunc. Dui ut ornare
-lectus sit amet est placerat in egestas. Sed cras ornare arcu dui vivamus.
-Scelerisque eu ultrices vitae auctor eu augue. Hac habitasse platea dictumst
-vestibulum rhoncus. Risus at ultrices mi tempus imperdiet nulla malesuada
-pellentesque elit. Sagittis vitae et leo duis ut diam quam nulla porttitor.
-Quam lacus suspendisse faucibus interdum posuere lorem. Tortor dignissim
-convallis aenean et tortor at. Elit scelerisque mauris pellentesque pulvinar
-pellentesque habitant morbi tristique senectus. Risus feugiat in ante metus.
+It was clear that a big reason people kept doomscrolling even though they knew it was bad for them was that it was just so convenient. 
 
-</ProjectImagesBlock>
+This led us to two different approaches, making doomscrolling less convenient, or making other activities more appealing. After exploring both approaches, we ultimately chose a design that would make it easier to find other activities to do. This insight helped us think about ways we could reduce doomscrolling and narrowed down how we could approach this complicated problem.
 
-### Title for an Insight
 
-Leo duis ut diam quam. Sit amet volutpat consequat mauris nunc congue nisi. Id
-eu nisl nunc mi ipsum. Rhoncus aenean vel elit scelerisque mauris pellentesque
-pulvinar pellentesque habitant. Duis ut diam quam nulla porttitor massa id.
-Facilisis volutpat est velit egestas. Nulla facilisi cras fermentum odio eu
-feugiat pretium. Lectus magna fringilla urna porttitor rhoncus dolor. Mollis
-nunc sed id semper risus in. Quis imperdiet massa tincidunt nunc. Sed
-adipiscing diam donec adipiscing.
+### Doomscrolling is Often Triggered by Boredom and Academic Stress
+
+
+From our interviews, participants mentioned that they start doomscrolling when they are stressed out to escape, or when they are just bored. Our interviewees said
+
+"I tend to scroll the most when I’m stressed out, especially if I have an exam or an assignment due. It feels like a quick escape." 
+as well as
+"When I don’t have anything to do, I just start scrolling without even thinking about it."
+
+This was important for us since if we wanted the user to doomscroll less, we knew we wanted a design that could help alleviate boredom and academic stress. Since doing activities that you enjoy is a healthier way to both relieve stress and boredom, this helped us know that encouraging the user to do alternative activities would reduce doomscrolling. Eventually, this became a key part of our design, largely due to this insight.
+
+
+
+
+### Participants Wanted to be Rewarded for Not Doomscrolling
+
+When asked about what would help them replace doom scrolling with alternative activities, participants also mentioned rewards. 
+
+One said, “If I could see how much time I’ve saved from not scrolling or track my progress in a different activity, I think that would make me feel more accomplished."
+
+ Another said, 
+"Getting a reward or seeing some kind of progress would make it easier to stick to something new. I need to feel like I’m gaining something, not just missing out."
+
+When we thought about rewards for the user, we wanted to keep it simple. The feeling of accomplishing a goal is very rewarding, especially when done with a friend. A core part of our design is setting goals to do activities other than doomscrolling, and our design research helped lead to that.
+
 
 ## Iterative Design and Key Insights
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Et tortor consequat id porta nibh
-venenatis. Nisl vel pretium lectus quam. Volutpat blandit aliquam etiam erat
-velit. Ornare arcu odio ut sem nulla pharetra diam sit amet. Habitant morbi
-tristique senectus et netus et malesuada fames ac. A arcu cursus vitae congue
-mauris rhoncus aenean. Ornare massa eget egestas purus. Luctus venenatis lectus
-magna fringilla. Leo integer malesuada nunc vel. Egestas purus viverra accumsan
-in nisl nisi. Risus at ultrices mi tempus imperdiet.
+For our iterative design process, we first created basic sketches of tasks that were targeted at our design problem of reducing doomscrolling. After our sketches, we moved on to creating storyboards to more fully illustrate how the user would go through our tasks and interact with our design. From our storyboards, we created a paper prototype. Using our paper prototype, we conducted usability testing and we also had our paper prototyped evaluated using heuristics. 
 
-### Title for an Insight
+Throughout every step, we had constant feedback to adjust and steer our project in ways to better address our design problem. We also gained insights from the act of creating rough drafts, since it would allow us to see the ideas we had in mind more fully fleshed out. Our iterative design process allowed us to gain insights to gradually improve our design. 
 
 <ProjectImageBlock
     image={{
-        src: imagePlaceholder1200x800,
-        alt: "Every image requires alt text. This should describe the content of that image.",
+        src: paperprototype,
+        alt: "Early paper prototype",
     }}
     caption={
-        "A good caption supports helps a reader understand what is important. " +
-        "It thus supports skimming and also provides an emphasis on key points of related text."
+        "Early version of the FocusShift Paper Prototype"
+    }
+    width={12}
+    maxHeight={"400px"}
+>
+</ProjectImageBlock>
+
+### Sketching Tasks and Receiving Feedback to Choose Alternative Activities Task
+
+
+Before we had chosen which design we wanted to further pursue, we had created multiple possible tasks to help reduce the amount of time people spend doomscrolling. We also grouped these tasks into possible designs that we could pursue, and created sketches for each design. After sketching multiple designs, we received feedback for each of our proposed designs and realized that the issue of reducing doomscrolling is very complicated, since it is effectively an addiction, and we decided to change our approach from directly reducing doomscrolling and lean into our other idea suggesting activities for people to do instead of doomscrolling. 
+
+<ProjectImageBlock
+    image={{
+        src: altactivities,
+        alt: "Alt activities page.",
+    }}
+    caption={
+        "Early sketch of alternative activities page"
+    }
+    width={12}
+    maxHeight={"400px"}
+>
+</ProjectImageBlock>
+
+### Using Storyboards to choose rewarding tasks from  designs
+
+
+
+<ProjectImageBlock
+    image={{
+        src: oldtimesketch,
+        alt: "Sketch of past analytics",
+    }}
+    caption={
+        "Early sketch of analytics page"
     }
     width={6}
     maxHeight={"400px"}
 >
+When we began storyboarding, we previously had two different designs we liked, one that was based around setting a screen time goal with a friend to reduce screen time, and another design that was based around receiving alternative activities, and also comparing screen time to time that could’ve been spent elsewhere. We were initially going to choose the latter design, but throughout our storyboarding process, we realized that comparing your screen time to what could’ve been was not a very rewarding task for the user. 
 
-Quis eleifend quam adipiscing vitae. Justo nec ultrices dui sapien eget mi.
-Viverra maecenas accumsan lacus vel facilisis volutpat. Dignissim suspendisse
-in est ante in nibh mauris. Vitae ultricies leo integer malesuada. Ultrices mi
-tempus imperdiet nulla. Erat velit scelerisque in dictum. Elit ut aliquam purus
-sit amet luctus. Congue quisque egestas diam in arcu cursus euismod. Proin nibh
-nisl condimentum id venenatis a condimentum. Nisl nunc mi ipsum faucibus vitae.
-Ac tortor dignissim convallis aenean et. Bibendum enim facilisis gravida neque
-convallis a cras semper. Sed risus ultricies tristique nulla aliquet enim
-tortor at auctor. Sed felis eget velit aliquet sagittis id consectetur purus
-ut. Ac odio tempor orci dapibus ultrices in iaculis nunc sed. Aliquet lectus
-proin nibh nisl condimentum id. Ornare aenean euismod elementum nisi quis
-eleifend quam adipiscing vitae. Parturient montes nascetur ridiculus mus mauris
-vitae ultricies. Id velit ut tortor pretium viverra suspendisse.
+We decided to take inspiration from our collaborative design, and we made a task where  friends do activities together to reduce screen time. This also addressed an issue with the first design, allowing friends to have a means to reduce screen time instead of only a goal. 
 
 </ProjectImageBlock>
 
-### Title for an Insight
+### Usability Testing to Make Collaborating with a Friend More Intuitive
 
 <ProjectImagesBlock
     images={[
         {
-            src: imagePlaceholder300x600,
+            src: collabspacebeforeafter,
             alt: "Every image requires alt text. This should describe the content of that image.",
-        },
-        {
-            src: imagePlaceholder300x600,
-            alt: "Every image requires alt text. This should describe the content of that image.",
-        },
+            caption: "These are two images stacked in a column. " +
+                     "Notice that the text on the left is not broken up by the images."
+        }
     ]}
-    direction={"row"}
-    caption={
-        "This caption is applied to the entire block of images. " +
-        "See that it spans across the area of the images."
-    }
-    width={6}
+    direction={"column"}
+    width={7}
     maxHeight={"400px"}
 >
 
-Feugiat vivamus at augue eget arcu. Bibendum est ultricies integer quis auctor
-elit sed vulputate mi. At tempor commodo ullamcorper a lacus vestibulum sed.
-Vitae aliquet nec ullamcorper sit amet risus. Morbi non arcu risus quis varius
-quam quisque id diam. Nulla pellentesque dignissim enim sit amet venenatis.
-Morbi tristique senectus et netus et malesuada fames ac turpis. Molestie a
-iaculis at erat pellentesque adipiscing commodo elit at. Ut eu sem integer
-vitae justo eget magna. Etiam non quam lacus suspendisse faucibus. Nulla
-aliquet enim tortor at auctor urna nunc id. Lobortis elementum nibh tellus
-molestie. Mauris in aliquam sem fringilla ut morbi tincidunt. In nisl nisi
-scelerisque eu ultrices vitae auctor.
+After we had created our paper prototype, we had usability testing for people to try out our tasks. We had two testers, and both of them were able to complete our first task of substituting doomscrolling with another activity easily. However, our second test was less intuitive. Our testers weren’t sure where to proceed after starting a collaboration with a friend. 
 
-</ProjectImagesBlock>
+Since it was clear that our testers were not sure how to collaborate with a friend, we switched the activity suggestions for collaborations from being in the same space as the personal activity suggestions, to being on the collaboration view page. This way, immediately after starting a collaboration, it would be clear to a user how they would collaborate with their friend, and they would not have to navigate to any other pages. 
 
-### Title for an Insight
-
-<ProjectImagesBlock
-    images={[
-        {
-            src: imagePlaceholder600x300,
-            alt: "Every image requires alt text. This should describe the content of that image.",
-            caption: "These are two images stacked in a column. " +
-                     "Notice that the text on the left is not broken up by the images."
-        },
-        {
-            src: imagePlaceholder600x300,
-            alt: "Every image requires alt text. This should describe the content of that image.",
-            caption: "These are two images stacked in a column. " +
-                     "Notice that the text on the left is not broken up by the images."
-        },
-    ]}
-    direction={"column"}
-    width={6}
-    maxHeight={"200px"}
->
-
-Leo duis ut diam quam. Sit amet volutpat consequat mauris nunc congue nisi. Id
-eu nisl nunc mi ipsum. Rhoncus aenean vel elit scelerisque mauris pellentesque
-pulvinar pellentesque habitant. Duis ut diam quam nulla porttitor massa id.
-Facilisis volutpat est velit egestas. Nulla facilisi cras fermentum odio eu
-feugiat pretium. Lectus magna fringilla urna porttitor rhoncus dolor. Mollis
-nunc sed id semper risus in. Quis imperdiet massa tincidunt nunc. Sed
-adipiscing diam donec adipiscing.
 
 </ProjectImagesBlock>
