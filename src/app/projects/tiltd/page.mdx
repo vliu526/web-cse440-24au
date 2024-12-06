@@ -48,9 +48,10 @@ import { ProjectTeamGallery } from "@/components/project/ProjectTeamGallery";
   */}
 
 import annmarie from "public/images/projects/tiltd/team/annmarie.jpg";
-import imageTeamPerson2 from "public/images/projects/template/team/firstname2.png";
+import william from "public/images/projects/tiltd/team/william.jpg";
 import minyoung from "public/images/projects/tiltd/team/minyoung.jpg";
 import jeewon from "public/images/projects/tiltd/team/jeewon.jpg";
+import misty from "public/images/projects/tiltd/team/misty.jpg";
 
 import app from "public/images/projects/tiltd/post/app.png";
 import game_mode from "public/images/projects/tiltd/post/game_mode.png";
@@ -58,12 +59,16 @@ import invite from "public/images/projects/tiltd/post/invite.png";
 import overview from "public/images/projects/tiltd/post/overview.png";
 import dashboard from "public/images/projects/tiltd/post/dashboard_prototype.png";
 import feedback_received from "public/images/projects/tiltd/post/feedback_received.png";
-import hotkey from "public/images/projects/tiltd/post/hotkey_prototype.png";
+import hotkey from "public/images/projects/tiltd/post/hotkey.png";
 import messages from "public/images/projects/tiltd/post/messages.png";
 import notification from "public/images/projects/tiltd/post/notification_sketch.png";
 import feedback_sent from "public/images/projects/tiltd/post/send_feedback.png";
 import wheel from "public/images/projects/tiltd/post/wheel.png";
+import wheel_message from "public/images/projects/tiltd/post/wheel_icon.png";
 import haptics from "public/images/projects/tiltd/post/haptics.png";
+import prototype from "public/images/projects/tiltd/post/prototype.png";
+import storyboard from "public/images/projects/tiltd/post/storyboard.png";
+import design_process from "public/images/projects/tiltd/post/design_process.png";
 
 # tiltd
 
@@ -79,23 +84,23 @@ import haptics from "public/images/projects/tiltd/post/haptics.png";
 
 <ProjectTeamGallery members={[
     {
-        name: ["Minyoung", "Cho"],
+        name: ["Minyoung Cho", "she/her"],
         photo: minyoung,
     },
     {
-        name: ["Misty", "Chung"],
-        photo: imageTeamPerson2,
+        name: ["Misty Chung", "she/her"],
+        photo: misty,
     },
     {
-        name: ["William", "Eng"],
-        photo: imageTeamPerson2,
+        name: ["William Eng", "he/him"],
+        photo: william,
     },
     {
-        name: ["Jeewon", "Jung"],
+        name: ["Jeewon Jung", "she/her"],
         photo: jeewon,
     },
     {
-        name: ["AnnMarie", "Vo"],
+        name: ["AnnMarie Vo", "she/her"],
         photo: annmarie,
     },
 ]} />
@@ -120,17 +125,18 @@ import haptics from "public/images/projects/tiltd/post/haptics.png";
 
 <ProjectImageBlock
     image={{
-        src: overview,
-        alt: "Every image requires alt text. This should describe the content of that image."
+        src: app,
+        alt: "Desktop screen with three purple sections. The top left section is titled 'Feedback Received', and below are two light purple rectangular sections with numbered feedback. The title of the type of feedback the player received, as 'Feedback #1: Loud Noise' and 'Feedback #2: Excessive Profanity'. Below are buttons labeled Exit, and New Game. The bottom left section is titled 'Your Stats' and below is a line graph of 'Date' on the horizontal axis and 'Number of Minutes' on the vertical axis. A legend on the right top corner of the graph has green indicating 'Rage Time' and blue indicating 'Game Play Time'. In the graph, the blue line is slightly below the green line and both lines are roughly horizontal. The right section is the friend status tracker of the application titled 'Friends Online (5)'. The first initials of the users are in place of profile photos, and beside it are the names and the game mode and online status. For example, Misty is Active and Playing for fun.  The name 'tiltd' is at the top left corner in dark purple next to an icon of a tilted keyboard with an angry face. "
     }}
     caption={
-        "Initial design sketch of app interface and integrated game components "
+        "The desktop app interface of Tiltd."
     }
     width={6}
-    maxHeight={"400px"}
+    maxHeight={"300px"}
 >
 
 The rise of online gaming has fostered toxic communities, where emotional outbursts lead to raging and hostility in chats, harming the gaming experience. The challenge is to mitigate these behaviors in real-time and create a healthier environment.
+\
 \
 Tiltd is an in-game tool that promotes positivity by allowing players to send anonymous feedback. It displays friends' gaming status and supports real-time notifications or post-game messages to encourage reflection and promote positivity.
 
@@ -142,42 +148,41 @@ We chose our focus tasks because they directly address the social dynamics that 
 
 ### Set up healthy gaming environment to play with friends
 
+The goal of the task "Set up a healthy gaming environment to play with friends" is to create a system that allows players to establish the tone and dynamics of their gaming experience before and during gameplay. Players can decide on the gaming mood—whether they want the session to be fun and casual or more serious and competitive—and choose whether feedback should be shared anonymously or openly. The design allows players to update their status, making it visible to their friends, ensuring that everyone is aware of their mood and availability. To foster collaboration, the system suggests inviting a friend to play together, encouraging social interaction.
+
 <ProjectImagesBlock
     images={[
         {
             src: game_mode,
-            alt: "Every image requires alt text. This should describe the content of that image.",
+            alt: "Screenshot of game interface with a light purple pop-up labeled, 'Gaming Style'. Contains two checkboxes titled 'Serious' and 'Fun', and have a cancel and set button below.",
+            caption: "Set gaming mood before starting any games to play with friends in same gaming mood."
         },
         {
             src: invite,
-            alt: "alt text",
+            alt: "Screenshot of a gaming interface with a pop up notification in black on the right side. The content is 'Kenneth seems to be hitting a rough patch. How about inviting to play together for a change of pace?', with a Send Invite button and and an X button.",
+            caption: "Send an invite to friends to play together if it seems like they are having a negative game experience."
         }
     ]}
-    direction={"column"}
-    caption={
-        "Recommendation to send an invite to friends if they seem to be having a negative game experience"
-    }
-    width={6}
-    maxHeight={"400px"}
+    direction={"row"}
+    width={12}
+    maxHeight={"300px"}
 >
-
-The goal of the task "Set up a healthy gaming environment to play with friends" is to create a system that allows players to establish the tone and dynamics of their gaming experience before and during gameplay. Players can decide on the gaming mood—whether they want the session to be fun and casual or more serious and competitive—and choose whether feedback should be shared anonymously or openly. The design allows players to update their status, making it visible to their friends, ensuring that everyone is aware of their mood and availability. To foster collaboration, the system suggests inviting a friend to play together, encouraging social interaction.
 
 </ProjectImagesBlock>
 
 <ProjectImageBlock
     image={{
         src: feedback_sent,
-        alt: "Every image requires alt text. This should describe the content of that image.",
+        alt: "A screenshot of a light purple popup at the end of a game round titled, 'Give Feedback'. Below the title is a dropdown labeled 'Choose Player', with a long paragraph text input box below. Below the text input are two buttons labeled 'No Feedback' and 'Send Feedback'.",
     }}
     caption={
-        "Send personalized messages to friends anonymously after the game"
+        "Send personalized feedback to friends anonymously after the game."
     }
-    width={6}
-    maxHeight={"400px"}
+    width={5}
+    maxHeight={"300px"}
 >
 
-After the game, players can send personalized feedback to each other, contributing to a positive and supportive atmosphere. Finally, players can view the feedback they’ve received, promoting transparency and growth. This design aims to facilitate healthy communication and team bonding, helping players enjoy their gaming experience while keeping it fun, engaging, and emotionally supportive.
+After the game, players can send custom anonymous feedback to each other, which allows players to elaborate on the real-time feedback that they sent during the game or provide additional reflective feedback. Once everyone has finished sending feedback, players can view the feedback they have received, promoting transparency and growth. This design aims to facilitate healthy communication without placing the pressure of directly providing feedback on the players, helping them enjoy their gaming experience and keep it emotionally supportive.
 
 </ProjectImageBlock>
 
@@ -188,16 +193,16 @@ The goal of this task is to provide a way for players to offer support to teamma
 <ProjectImagesBlock
     images={[
         {
-            src: haptics,
-            alt: "Every image requires alt text. This should describe the content of that image.",
+            src: wheel,
+            alt: "Screenshot of a game interface screen with a purple round wheel, sectioned off with names of players: Minyoung, Misty, William, AnnMarie, and Jeewon.  There is a circular labeled indicator in the middle titled 'Select Player'. A cancel button is in the center. ",
         },
         {
-            src: wheel,
-            alt: "Every image requires alt text. This should describe the content of that image.",
+            src: wheel_message,
+            alt: "Screenshot of a game interface screen with a purple round wheel, sectioned off with emojis of a heart, a red question mark, a smiley face, a calm face, and a bell. There is a circular labeled indicator in the middle titled 'Select Message'. A cancel button is in the center.",
         },
     ]}
     caption={
-        "How the task transitioned from sketch to digital mockup: system-detected feedback to feedback sent by friends and/or other players on the team"
+        "Players use the in-game feedback wheel to quickly send real-time messages to friends."
     }
     width={12}
     maxHeight={"400px"}
@@ -218,13 +223,13 @@ A recurring theme in our design research highlighted the significant impact of s
     images={[
         {
             src: notification,
-            alt: "Every image requires alt text. This should describe the content of that image.",
-            caption: "Real-time feedback was an idea included in the design from the start of the design process",
+            alt: "Sketch of a game interface with a notification popup in the middle that reads 'AnnMarie - Make sure to calm down!' Another popup above this interface has a dashed arrow pointing to this popup. The popup is an in-game vote and has a green checkmark with a 2 underneath, a red x mark with a 1 underneath, and a timer with 17 seconds to the right.",
+            caption: "Initial sketch of real-time feedback.",
         },
     ]}
     direction={"row"}
-    width={5}
-    maxHeight={"400px"}
+    width={4}
+    maxHeight={"300px"}
 >
 
 Real-time feedback alerts can be effective, but only when delivered with appropriate timing and context. Our research revealed that while live feedback was considered helpful, it might not be the most reliable method for managing rage during gameplay. The effectiveness of live feedback alone in sustaining lower rage levels was uncertain. This insight guided the future of our design, leading us to develop a system that combines live notifications with opportunities for players to provide additional feedback after gameplay. This approach not only aims to create a more lasting impact on players prone to rage but also encourages in-game reflection, fostering a deeper understanding of their actions and their consequences.
@@ -239,21 +244,40 @@ Friends can create a supportive environment that helps manage emotions during ga
 
 Our iterative design process began with sketches to conceptualize initial ideas, followed by storyboards to define focus tasks, create user personas, and refine our target audience. We then developed a paper prototype, which underwent a heuristic evaluation using Norman's principles to identify usability issues. Additionally, we conducted usability testing, allowing real users to interact with the prototype and provide feedback, further informing the design process.
 
+<ProjectImagesBlock
+    images={[
+        {
+            src: design_process,
+            alt: "High-level overview of the Tiltd interface, consisting of multiple outlines of screens, such as the app, end result statistics, game interface, and feedback haptics. Screens show arrows pointing to zoomed in content."
+        }
+    ]}
+    direction={"row"}
+    caption={
+        "The iterative design process from sketches to storyboards to paper prototype."
+    }
+    width={12}
+    maxHeight={"200px"}
+>
+</ProjectImagesBlock>
+
 ### Easy in-game user experience
 
 <ProjectImageBlock
     image={{
         src: hotkey,
-        alt: "Every image requires alt text. This should describe the content of that image.",
+        alt: "A paper representation of a computer screen and keyboard where someone has a finger on the 'T' key and the computer screen has a selection wheel. The wheel is sectioned off with the names 'Minyoung', 'Misty', 'William', 'Jeewon', and 'AnnMarie', and 'Select Player' in the middle."
     }}
     caption={
-        "Added the idea of using a hotkey to quickly send feedback during a game, which is both easy to use for gamers and fulfills the purpose of sending real-time feedback and stopping the spread of negative energy mid-game"
+        "Prototype representation of how to use the hotkey."
     }
     width={4}
-    maxHeight={"400px"}
+    maxHeight={"275px"}
 >
 
-One key insight we iterated on was that gamers tend to prefer mechanics they are already familiar with, such as hotkeys and reaction wheels. Initially, we designed a system where pressing "TT" on the keyboard would bring up the reaction wheel. However, we discovered that this method was not intuitive for new gamers who may not be familiar with hotkeys. To improve the user experience, we added a feature that complements the hotkey function, allowing users to hover over an icon on the interface to summon the reaction wheel and see instructions for the "TT" hotkey. This process highlighted the importance of supplemental documentation and features, as design elements that are convenient for experienced users may not be immediately obvious to newcomers.
+One key insight we iterated on was that gamers tend to prefer mechanics they are already familiar with, such as hotkeys and reaction wheels. Initially, we designed a system where pressing "TT" on the keyboard would bring up the reaction wheel. However, we discovered that this method was not intuitive for new gamers who may not be familiar with hotkeys.
+\
+\
+To improve the user experience, we added a feature that complements the hotkey function, allowing users to hover over an icon on the interface to summon the reaction wheel and see instructions for the "TT" hotkey. This process highlighted the importance of supplemental documentation and features, as design elements that are convenient for experienced users may not be immediately obvious to newcomers.
 
 </ProjectImageBlock>
 
@@ -263,22 +287,25 @@ One key insight we iterated on was that gamers tend to prefer mechanics they are
     images={[
         {
             src: dashboard,
-            alt: "Every image requires alt text. This should describe the content of that image.",
+            alt: "A paper with three sections. The left section is titled 'Rage Stats' and has a graph with a declining line graph that represents the number of rage notifs. Below the graph there are two red notes with a 5 for 'Loud/Noise/ and 2 for 'Profanity'. The right section is titled 'Feedback' with three boxes below that include feedback messages. There is a green exit button and a green 'New Game' button on the bottom left corner.",
         },
         {
             src: feedback_received,
-            alt: "Every image requires alt text. This should describe the content of that image.",
+            alt: "A screenshot of a light purple popup at the end of a game round titled, 'Feedback Received'. Below are light purple rectangular sections with numbered Feedback, and the title of the type of feedback the player received, as 'Feedback #1: Loud Noise' and 'Feedback #2: Excessive Profanity'. Below are buttons labeled Exit, and New Game.",
         },
     ]}
     direction={"column"}
     caption={
-        "How the post-game feedback interface was simplified to create a more minimalist design"
+        "The post-game feedback interface was simplified for a more minimalist design."
     }
     width={6}
-    maxHeight={"400px"}
+    maxHeight={"300px"}
 >
 
-Minimalist design and content is important in ensuring that the system does not detract from the overall game experience. For a better minimal design, we initially found that a lot of the information included in the statistics/result page at the end of each game were irrelevant. In our testing, we learned that it is better to provide less information, so users can focus on bettering specific components of rage. We took out a lot of the details from the original paper prototype (i.e. statistics from the past 10 games) that our test participants felt steered away from letting the user reflect. Our current design still has an end-game reflection page, but now only includes detailed feedback from the teammate’s submissions.
+Minimalist design and content play a crucial role in ensuring that the system does not distract or overwhelm players, allowing them to stay immersed in the core game experience. Through our design process, we realized that a significant amount of the information previously displayed on the statistics and result page at the end of each game was irrelevant to the player’s immediate experience. The page initially included extensive details, such as statistics from the past ten games, which seemed to dilute the focus on more meaningful feedback. We discovered that providing too much information could actually hinder players from reflecting on and improving their performance. By reducing the amount of extraneous data, we allowed users to better focus on key areas for improvement.
+\
+\
+Instead of overwhelming players with a long list of statistics, the current design focuses on offering clear and concise feedback based on their teammate’s submissions. The end-game reflection page now serves as a valuable tool for improvement, fostering a more productive and focused gameplay experience.
 
 </ProjectImagesBlock>
 
@@ -288,7 +315,7 @@ Minimalist design and content is important in ensuring that the system does not 
     images={[
         {
             src: messages,
-            alt: "Every image requires alt text. This should describe the content of that image.",
+            alt: "Two screenshots side-by-side. The left screenshot is two blue sticky notes that have long messages of encouragement during a game. The right screenshot is two yellow stick notes that have shorter messages of feedback on game behavior.",
             caption: "Iterations of real-time feedback messages with the intent to be quickly read by players and deliver the feedback concisely "
         },
     ]}
