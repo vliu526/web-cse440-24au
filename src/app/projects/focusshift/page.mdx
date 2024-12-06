@@ -47,7 +47,11 @@ import { ProjectTeamGallery } from "@/components/project/ProjectTeamGallery";
   * - If an import is not working, double-check that you have the correct file extension.
   */}
 
-import imageTeamPerson1 from "public/images/projects/template/team/firstname1.png";
+import boaz from "public/images/projects/focusshift/team/boaz.png";
+import deya from "public/images/projects/focusshift/team/deya.png";
+import david from "public/images/projects/focusshift/team/david.png";
+import yishi from "public/images/projects/focusshift/team/yishi.png";
+
 import imageTeamPerson2 from "public/images/projects/template/team/firstname2.png";
 import imageTeamPerson3 from "public/images/projects/template/team/firstname3.png";
 import imageTeamPerson4 from "public/images/projects/template/team/firstname4.png";
@@ -70,10 +74,13 @@ import paperprototype from "public/images/projects/focusshift/post/paperprototyp
 import oldtimesketch from "public/images/projects/focusshift/post/oldtimesketch.png";
 import collabspacebeforeafter from "public/images/projects/focusshift/post/collabspacebeforeafter.png";
 import altactivities from "public/images/projects/focusshift/post/altactivities.png";
+import collabphotos from "public/images/projects/focusshift/post/collabphotos.png";
+import friends from "public/images/projects/focusshift/post/friends.png";
 
-# Project Template
 
-<ProjectSubtitle>Optional Subtitle</ProjectSubtitle>
+# FocusShift
+
+<ProjectSubtitle>Shift from Doomscrolling to Meaningful Activities</ProjectSubtitle>
 
 ## Team
 
@@ -86,19 +93,19 @@ import altactivities from "public/images/projects/focusshift/post/altactivities.
 <ProjectTeamGallery members={[
     {
         name: ["Boaz Wu"],
-        photo: imageTeamPerson1,
+        photo: boaz,
     },
     {
         name: ["Deya Gonzalez"],
-        photo: imageTeamPerson2,
+        photo: deya,
     },
     {
         name: ["Yishi Reena"],
-        photo: imageTeamPerson3,
+        photo: yishi,
     },
     {
         name: ["David Sung"],
-        photo: imageTeamPerson4,
+        photo: david,
     },
 ]} />
 
@@ -126,22 +133,35 @@ import altactivities from "public/images/projects/focusshift/post/altactivities.
         alt: "Every image requires alt text. This should describe the content of that image."
     }}
     caption={
-        "A good caption supports helps a reader understand what is important. " +
-        "It thus supports skimming and also provides an emphasis on key points of related text."
+        "Many people feel trapped, unable to escape excessive phone usage. "
     }
     width={6}
     maxHeight={"400px"}
 >
 
-The Problem that Motivates Our Design
+**The Problem that Motivates Our Design**
 
 Many students struggle with the habit of doomscrolling, spending excessive time mindlessly browsing social media at the cost of more beneficial activities. This behavior often occurs during moments of academic stress or boredom and is reinforced by the instant gratification of social media content. However, students frequently report feeling more stressed and regretful after these sessions, as they realize the time lost could have been spent on more meaningful pursuits. The lack of compelling, accessible alternatives to doomscrolling exacerbates the problem, leaving students stuck in a cycle that diminishes their productivity and overall well-being.
 
-The Key Idea or Approach of Our Design
+
+
+</ProjectImageBlock>
+
+<ProjectImageBlock
+    image={{
+        src: friends,
+        alt: "Every image requires alt text. This should describe the content of that image."
+    }}
+    caption={
+        "FocusShift encourages people to do meaningful activities instead. "
+    }
+    width={6}
+    maxHeight={"400px"}
+>
+
+**Our Design Approach**
 
 Our design tackles this pervasive issue by offering students engaging alternatives to doomscrolling that align with their long-term goals and interests. Unlike existing solutions that merely limit screen time, our system encourages active participation in fulfilling activities, such as hobbies or social interactions, by making these options accessible and rewarding. Through personalized incentives and reminders, the design shifts attention away from passive scrolling and toward meaningful engagement, fostering habits that promote well-being and productivity beyond the academic environment. By transforming the fleeting satisfaction of doomscrolling into lasting feelings of accomplishment and connection, our design empowers users to reclaim their time and prioritize what truly matters.
-
-
 </ProjectImageBlock>
 
 ## Design Walkthrough
@@ -185,27 +205,15 @@ The second task focuses on collaboration, where users can work together to reduc
 <ProjectImagesBlock
     images={[
         {
-            src: collabspace,
+            src: collabphotos,
             alt: "The main menu for the collaboration space has a section for active collabs, past collabs, and a button that starts the collab matching process.",
-        },
-        {
-            src: collabdetails,
-            alt: "Clicking on each collab’s profile photo would bring the users to the collaboration details page, where they can see the collaboration goal progress, and collaborative activities suggestions based on shared preferences.",
-        },
-        {
-            src: newcollab,
-            alt: "Clicking on the “start new collab” button would bring the users to the matching page, where they enter the same 4-digit code with their collab, choose the goal, and submit together.",
-        },
-        {
-            src: nowcollaborating,
-            alt: "Now collaborating page.",
         }
     ]}
     caption={
         "Current collaborations can be accessed from the main collaboration page, and each current profile can be pressed. New Collabs can also be started from this page."
     }
     width={12}
-    maxHeight={"400px"}
+    maxHeight={"600px"}
 >
 </ProjectImagesBlock>
 
@@ -217,24 +225,27 @@ For our design research, our primary goals were to learn more about the root cau
 
 ### A Barrier to replacing Doom Scrolling: Convenience 
 
+When we asked participants about barriers to replacing doomscrolling with other activities, the most common answer was its ease and convenience. One participant shared:
 
-When we asked about barriers that people encounter when they try to replace doom scrolling with other activities, we had similar answers about how easy doom scrolling is. 
+*"I’ve tried reading a book or going for a walk instead, but honestly, it’s just easier to pick up my phone and start scrolling. It takes no effort."* 
 
-One said "I’ve tried reading a book or going for a walk instead, but honestly, it’s just easier to pick up my phone and start scrolling. It takes no effort," and another said "I know I should do something else, but it’s hard to start. Scrolling feels rewarding right away, and things like exercising just feel like too much work." 
+Another added:
 
-It was clear that a big reason people kept doomscrolling even though they knew it was bad for them was that it was just so convenient. 
+ *"I know I should do something else, but it’s hard to start. Scrolling feels rewarding right away, and things like exercising just feel like too much work."*
 
-This led us to two different approaches, making doomscrolling less convenient, or making other activities more appealing. After exploring both approaches, we ultimately chose a design that would make it easier to find other activities to do. This insight helped us think about ways we could reduce doomscrolling and narrowed down how we could approach this complicated problem.
+It was clear that a major reason people kept doomscrolling even though they knew it was harmful was convenience. This led us to two different approaches, making doomscrolling less convenient, or making other activities more appealing. After exploring both approaches, we ultimately chose a design that would make it easier to find other activities to do. This insight helped us think about ways we could reduce doomscrolling and narrowed down how we could approach this complicated problem.
 
 
 ### Doomscrolling is Often Triggered by Boredom and Academic Stress
 
 
-From our interviews, participants mentioned that they start doomscrolling when they are stressed out to escape, or when they are just bored. Our interviewees said
+From our interviews, participants mentioned that they start doomscrolling when they are stressed out to escape, or when they are just bored. One person said:
 
-"I tend to scroll the most when I’m stressed out, especially if I have an exam or an assignment due. It feels like a quick escape." 
-as well as
-"When I don’t have anything to do, I just start scrolling without even thinking about it."
+*"I tend to scroll the most when I’m stressed out, especially if I have an exam or an assignment due. It feels like a quick escape."* 
+
+Another interviewee said:
+
+*"When I don’t have anything to do, I just start scrolling without even thinking about it."*
 
 This was important for us since if we wanted the user to doomscroll less, we knew we wanted a design that could help alleviate boredom and academic stress. Since doing activities that you enjoy is a healthier way to both relieve stress and boredom, this helped us know that encouraging the user to do alternative activities would reduce doomscrolling. Eventually, this became a key part of our design, largely due to this insight.
 
@@ -243,21 +254,18 @@ This was important for us since if we wanted the user to doomscroll less, we kne
 
 ### Participants Wanted to be Rewarded for Not Doomscrolling
 
-When asked about what would help them replace doom scrolling with alternative activities, participants also mentioned rewards. 
+When asked about what would help them replace doom scrolling with alternative activities, participants also mentioned rewards. One person said: 
 
-One said, “If I could see how much time I’ve saved from not scrolling or track my progress in a different activity, I think that would make me feel more accomplished."
+*“If I could see how much time I’ve saved from not scrolling or track my progress in a different activity, I think that would make me feel more accomplished."*
 
- Another said, 
-"Getting a reward or seeing some kind of progress would make it easier to stick to something new. I need to feel like I’m gaining something, not just missing out."
+ Another person said this:
+
+*"Getting a reward or seeing some kind of progress would make it easier to stick to something new. I need to feel like I’m gaining something, not just missing out."*
 
 When we thought about rewards for the user, we wanted to keep it simple. The feeling of accomplishing a goal is very rewarding, especially when done with a friend. A core part of our design is setting goals to do activities other than doomscrolling, and our design research helped lead to that.
 
 
 ## Iterative Design and Key Insights
-
-For our iterative design process, we first created basic sketches of tasks that were targeted at our design problem of reducing doomscrolling. After our sketches, we moved on to creating storyboards to more fully illustrate how the user would go through our tasks and interact with our design. From our storyboards, we created a paper prototype. Using our paper prototype, we conducted usability testing and we also had our paper prototyped evaluated using heuristics. 
-
-Throughout every step, we had constant feedback to adjust and steer our project in ways to better address our design problem. We also gained insights from the act of creating rough drafts, since it would allow us to see the ideas we had in mind more fully fleshed out. Our iterative design process allowed us to gain insights to gradually improve our design. 
 
 <ProjectImageBlock
     image={{
@@ -267,15 +275,17 @@ Throughout every step, we had constant feedback to adjust and steer our project 
     caption={
         "Early version of the FocusShift Paper Prototype"
     }
-    width={12}
-    maxHeight={"400px"}
+    width={8}
+    maxHeight={"250px"}
 >
+For our iterative design process, we first created basic sketches of tasks that were targeted at our design problem of reducing doomscrolling. After our sketches, we moved on to creating storyboards to more fully illustrate how the user would go through our tasks and interact with our design. From our storyboards, we created a paper prototype. Using our paper prototype, we conducted usability testing and we also had our paper prototyped evaluated using heuristics. 
 </ProjectImageBlock>
+Throughout every step we received helpful feedback which allowed for iterative improvements on our approach. We also gained insights from the act of creating rough drafts, since it would allow us to see the ideas we had in mind more fully fleshed out. Our iterative design process allowed us to gain insights to gradually improve our design. 
+
 
 ### Sketching Tasks and Receiving Feedback to Choose Alternative Activities Task
 
 
-Before we had chosen which design we wanted to further pursue, we had created multiple possible tasks to help reduce the amount of time people spend doomscrolling. We also grouped these tasks into possible designs that we could pursue, and created sketches for each design. After sketching multiple designs, we received feedback for each of our proposed designs and realized that the issue of reducing doomscrolling is very complicated, since it is effectively an addiction, and we decided to change our approach from directly reducing doomscrolling and lean into our other idea suggesting activities for people to do instead of doomscrolling. 
 
 <ProjectImageBlock
     image={{
@@ -285,12 +295,15 @@ Before we had chosen which design we wanted to further pursue, we had created mu
     caption={
         "Early sketch of alternative activities page"
     }
-    width={12}
-    maxHeight={"400px"}
+    width={9}
+    maxHeight={"200px"}
 >
-</ProjectImageBlock>
+Before we had chosen which design we wanted to further pursue, we had created multiple possible tasks to help reduce the amount of time people spend doomscrolling. We also grouped these tasks into possible designs that we could pursue, and created sketches for each design. 
 
-### Using Storyboards to choose rewarding tasks from  designs
+</ProjectImageBlock>
+After sketching multiple designs, we received feedback for each of our proposed designs and realized that the issue of reducing doomscrolling is very complicated, since it is effectively an addiction, and we decided to change our approach from directly reducing doomscrolling and lean into our other idea suggesting activities for people to do instead of doomscrolling. 
+
+### Using Storyboards to Choose Rewarding Tasks from  Designs
 
 
 
@@ -305,7 +318,7 @@ Before we had chosen which design we wanted to further pursue, we had created mu
     width={6}
     maxHeight={"400px"}
 >
-When we began storyboarding, we previously had two different designs we liked, one that was based around setting a screen time goal with a friend to reduce screen time, and another design that was based around receiving alternative activities, and also comparing screen time to time that could’ve been spent elsewhere. We were initially going to choose the latter design, but throughout our storyboarding process, we realized that comparing your screen time to what could’ve been was not a very rewarding task for the user. 
+When we began storyboarding, we previously had two different designs we liked, one that was based around setting a screen time goal with a friend to reduce screen time, and another design that was based around receiving alternative activities, and also comparing screen time to time that could have been spent elsewhere. We were initially going to choose the latter design, but throughout our storyboarding process, we realized that comparing your screen time to what could have been was not a very rewarding task for the user. 
 
 We decided to take inspiration from our collaborative design, and we made a task where  friends do activities together to reduce screen time. This also addressed an issue with the first design, allowing friends to have a means to reduce screen time instead of only a goal. 
 
@@ -327,9 +340,9 @@ We decided to take inspiration from our collaborative design, and we made a task
     maxHeight={"400px"}
 >
 
-After we had created our paper prototype, we had usability testing for people to try out our tasks. We had two testers, and both of them were able to complete our first task of substituting doomscrolling with another activity easily. However, our second test was less intuitive. Our testers weren’t sure where to proceed after starting a collaboration with a friend. 
+After we had created our paper prototype, we conducted usability testing for people to try out our tasks. We had two testers, and both of them were able to complete our first task, "Substituting Doomscrolling with Another Activity", easily. However, our second test was less intuitive. Our testers were not sure where to proceed after starting a collaboration with a friend. 
 
-Since it was clear that our testers were not sure how to collaborate with a friend, we switched the activity suggestions for collaborations from being in the same space as the personal activity suggestions, to being on the collaboration view page. This way, immediately after starting a collaboration, it would be clear to a user how they would collaborate with their friend, and they would not have to navigate to any other pages. 
+Since it was clear that our testers were not sure how to collaborate with a friend, we changed the location of activity suggestions for collaborations from the home page to the collaboration view page. This way, immediately after starting a collaboration, it would be clear to a user how they would collaborate with their friend, and they would not have to navigate to any other pages. 
 
 
 </ProjectImagesBlock>
