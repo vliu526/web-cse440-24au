@@ -55,7 +55,7 @@ import imageTeamPerson5 from "public/images/projects/wanderlust/team/firstname5.
 
 
 
-import imageTeamPersontab from "public/images/projects/template/team/firstname1.png";
+
 
 
 import imagePlaceholder300x600 from "public/images/projects/template/post/300x600.png";
@@ -69,16 +69,16 @@ import insight1 from "public/images/projects/wanderlust/post/insight 1.png";
 import insight2a from "public/images/projects/wanderlust/post/insight 2a.png";
 import insight2b from "public/images/projects/wanderlust/post/insight 2b.png";
 import insight3 from "public/images/projects/wanderlust/post/insight 3.png";
+import creatJoinPost from "public/images/projects/wanderlust/post/creatJoinPost.png";
 
+import Homepage from "public/images/projects/wanderlust/post/Homepage.png";
+import Connections from "public/images/projects/wanderlust/post/Connections.png"
 
-
-
-
-import Make_New_Friends_Walkthrough_P1 from "public/images/projects/wanderlust/post/Make_New_Friends_Walkthrough_P1.png";
 import Make_New_Friends_Walkthrough_P2 from "public/images/projects/wanderlust/post/Make_New_Friends_Walkthrough_P2.png";
 import Make_New_Friends_Walkthrough_P3 from "public/images/projects/wanderlust/post/Make_New_Friends_Walkthrough_P3.png";
 import Make_New_Friends_Walkthrough_P4 from "public/images/projects/wanderlust/post/Make_New_Friends_Walkthrough_P4.png";
 import Make_New_Friends_Walkthrough_P5 from "public/images/projects/wanderlust/post/Make_New_Friends_Walkthrough_P5.png";
+import Make_New_Friends_Walkthrough_P6 from "public/images/projects/wanderlust/post/Make_New_Friends_Walkthrough_P6.png";
 
 import Finding_Local_Recommendations_P1 from "public/images/projects/wanderlust/post/Finding_Local_Recommendations_P1.png";
 import Finding_Local_Recommendations_P2 from "public/images/projects/wanderlust/post/Finding_Local_Recommendations_P2.png";
@@ -89,6 +89,12 @@ import Design_Research_P1 from "public/images/projects/wanderlust/post/Design_Re
 import Design_Research_P2 from "public/images/projects/wanderlust/post/Design_Research_P2.png";
 import Design_Research_P3 from "public/images/projects/wanderlust/post/Design_Research_P3.png";
 import Design_Research_P4 from "public/images/projects/wanderlust/post/Design_Research_P4.png";
+
+import moreInfoBefore from "public/images/projects/wanderlust/post/moreInfoBefore.jpg";
+import feedBefore from "public/images/projects/wanderlust/post/feedBefore.jpg";
+import createPostBefore from "public/images/projects/wanderlust/post/createPostBefore.jpg";
+import mapBefore from "public/images/projects/wanderlust/post/mapBefore.png";
+import connectionsBefore from "public/images/projects/wanderlust/post/connectionsBefore.jpg";
 
 # WanderLust
 
@@ -125,8 +131,6 @@ import Design_Research_P4 from "public/images/projects/wanderlust/post/Design_Re
     },
 ]} />
 
-## Problem and Design Overview
-
 {/* A ProjectImageBlock displays text with an associated image.
   * - The image is configured through properties on the opening `ProjectImageBlock` tag.
   * - Text is placed within the opening and closing `ProjectImageBlock` tags.
@@ -142,50 +146,54 @@ import Design_Research_P4 from "public/images/projects/wanderlust/post/Design_Re
   *
   * Later in the template you will also find examples of the plural `ProjectImagesBlock` tag.
 */}
-
-<ProjectImageBlock
-    image={{
-        src: problemOverview2,
-        alt: "Every image requires alt text. This should describe the content of that image."
-    }}
-    caption={
-        "Wanderlust is a one stop app that makes exploring cultures and connecting with " +
-        "locals and fellow travelers."
-    }
-    width={6}
-    maxHeight={"400px"}
->
+## Problem and Design Overview
 
 Travelers often struggle to immerse themselves in local cultures, 
 facing challenges in finding recommendations that cater to their preferences and those of their group. 
 Current platforms focus on convenience but lack tools for meaningful cultural exploration.
+
 Wanderlust aims to foster authentic cultural connections by enabling users to share and discover 
 local recommendations while building meaningful relationships with locals and other fellow travelers.
 Many travelers desire more than generic itineraries; they seek unique experiences that 
-balance spontaneity with group needs. This app bridges the gap, offering tailored recommendations 
+balance spontaneity with group needs. This app bridges the gap, offering unique recommendations 
 and opportunities for social connection.
-
-</ProjectImageBlock>
-
-## Design Walkthrough
-
-The project is about improving cultural exchange by helping travelers and locals connect through shared experiences. To do this, we focused on two main tasks: "Making new friends while traveling" and "Finding locals’ recommendations". These tasks are important because they help people build connections and learn more about each other's cultures. By focusing on these tasks, we aim to make travel more personal and enjoyable for both tourists and locals. Additionally, these tasks encourage collaboration and trust by allowing users to share their own recommendations and join others' activities, creating a sense of community.
-
-### Making New Friends While Traveling
-
-The task of "Make new friends while traveling" is supported by features in our application that lets people easily find and join activities with others. Travelers can browse trips near them, confirm their interest in joining an activity, and send automated messages to connect with the trip organizer. After joining, they can create social posts about their experiences, which are added to their profile for others to see. This helps build connections by showcasing shared activities and encouraging meaningful interactions with other travelers and locals.
 
 <ProjectImagesBlock
     images={[
         {
-            src: Make_New_Friends_Walkthrough_P1,
-            alt: "Browse join trips near you",
-            caption: "Browse join trips near you"
+            src: Homepage,
+            alt: "See what your friends are up to",
+            caption: "See what your friends are up to"
         },
         {
-            src: Make_New_Friends_Walkthrough_P2,
-            alt: "Confirm that you would like to join a trip",
-            caption: "Join the trip"
+            src: Connections,
+            alt: "Look for social activities near you",
+            caption: "Look for social activities near you"
+        }
+    ]}
+    
+    width={12}
+    maxHeight={"500px"}
+>
+</ProjectImagesBlock>
+
+## Design Walkthrough
+
+Our project is about improving cultural exchange by helping travelers and locals connect through shared experiences. To accomplish this, we focused on two main tasks: 
+"Making New Friends While Traveling" and "Finding Locals’ Recommendations". We chose these as our tasks because they help people build meaninful connections while learning more about each other's cultures. 
+By focusing on these tasks, we aim to make travel more personal and enjoyable for both tourists and locals. Additionally, these tasks encourage collaboration and trust by allowing users to 
+share their own recommendations and join others' activities, creating a sense of community. "Finding Locals' Recommendations" encourages a further degree of collaboration through a 
+reciprocal model of sharing a few of your own local gems to access an entire community of others.
+
+### Making new Friends While Traveling
+
+To support our task of "Make New Friends While Traveling", we focused on designing a feature that let people easily find and join activities with others.
+<ProjectImagesBlock
+    images={[
+        {
+            src: Connections,
+            alt: "Browse join trips near you",
+            caption: "Browse join trips near you"
         },
         {
             src: Make_New_Friends_Walkthrough_P3,
@@ -193,15 +201,16 @@ The task of "Make new friends while traveling" is supported by features in our a
             caption: "Send automated join message"
         }
     ]}
-    caption={
-        "The above images show the walkthrough to browse and join a new activity"
-    }
-    width={12}
-    maxHeight={"300px"}
+    
+    width={"12"}
+    maxHeight={"500px"}
 >
 </ProjectImagesBlock>
 
-<ProjectImagesBlock
+ Travelers can browse trips near them, confirm their interest in joining an activity, and send automated messages to connect with the trip organizer. While participating in the activity, 
+ travelers have the opportunity to talk and bond over their shared interest. 
+ 
+ <ProjectImagesBlock
     images={[
         {
             src: Make_New_Friends_Walkthrough_P4,
@@ -210,222 +219,352 @@ The task of "Make new friends while traveling" is supported by features in our a
         },
         {
             src: Make_New_Friends_Walkthrough_P5,
-            alt: "Social post gets added to your profile for others to view",
-            caption: "Social post gets added to your profile for others to view"
+            alt: "Social post gets added to your profile",
+            caption: "Social post gets added to your profile"
         }
     ]}
-    caption={
-        "The above images show the walkthrough to make a post after the activity is completed"
-    }
-    width={12}
-    maxHeight={"340px"}
+    width={"12"}
+    maxHeight={"500px"}
 >
 </ProjectImagesBlock>
 
+Afterwards, travelers can create social posts about their experience(s), which are added to their profile for others to see. When posting their own join trips in the
+future, other travelers and locals can use these past experiences to guage if they are interested in coming along.
+
+<ProjectImageBlock
+    image={{
+        src: Make_New_Friends_Walkthrough_P6,
+        alt: "Chat after shared activity",
+    }}
+    caption={
+        "Chat after shared activity"
+    }
+    width={6}
+    maxHeight={"500px"}
+>
+
+ If you had a great time during your activity, you can chat with people after your trip and continue to foster a bond by going on more join trips together or arranging
+ your own plans through the chat function. Who knows, maybe you'll run into them again in some other country or they'll come visit your hometown.
+ 
+ Interacting with other people from around the world through shared activities encourages you to participate in cultural exchanges, broadening your perspective and exposing you to 
+ a global network of friends. It enriches your travel experience by creating memories that are not simply tied to the places you visit, but also the people you meet. Over time, this 
+ network of friends can serve as a source of inspiration, support, and future travel plans, making your journeys around the world feel more fufilling and interconnected. 
+
+ 
+</ProjectImageBlock>
+
+
 ### Finding Locals’ Recommendations
 
-The task of "Finding Locals’ Recommendations" is supported by features in our application that allow travelers to browse a list of local spots, view their locations on a map, and unlock additional recommendations by sharing their own. People can click on specific pins to see a quick overview, including ratings and reviews from locals, and access detailed information for directions and more insights. This helps travelers discover authentic local experiences, making their trips more engaging and culturally enriching.
+
+To support our task of "Finding Locals’ Recommendations", we designed a list and map view of interesting activities, events, and locations submitted by locals of the place you are visiting.
+We categorized these as local gems because they are reccomendations endorsed by locals that you won't find through a simple internet search.
 
 <ProjectImagesBlock
     images={[
         {
             src: Finding_Local_Recommendations_P1,
-            alt: "Browse local gems",
-            caption: "Browse local gems",
+            alt: "List view of local gems",
+            caption: "List view of local gems",
         },
         {
             src: Finding_Local_Recommendations_P2,
-            alt: "View map of local gems near you",
-            caption: "View map of local gems near you",
+            alt: "Map view of local gems",
+            caption: "Map view of local gems",
         },
     ]}
-    direction={"row"}
-    width={8}
-    maxHeight={"360px"}
+    
+    width={12}
+    maxHeight={"500px"}
 >
-The functionalities shown in the images support the "Finding Locals’ Recommendations" task by providing two main features: a list view and a map view. In the list view, users can browse local gems, including places like parks, restaurants, and breweries, with brief descriptions and pricing details. The map view allows users to explore the locations of these spots visually. Additionally, users are encouraged to contribute to the community by sharing their own local recommendations to unlock access to more suggestions. This design fosters discovery of authentic local experiences while promoting user participation and cultural exchange.
 </ProjectImagesBlock>
+
+However, these reccomendations come at a cost. To facilitate the mutual exchange between locals and travelers, you are required to post two local gems from your hometown before gaining
+full access to the app. Once travelers have done this, they can freely access the list and map view of every local gem on the app. In the list view, travelers can browse local gems, including places like parks, restaurants, and breweries, with brief descriptions, pricing, and accessibility details. The map 
+view gives travelers a visual representation of local gems that are near to their location. 
 
 <ProjectImagesBlock
     images={[
         {
             src: Finding_Local_Recommendations_P3,
-            alt: "Click on a pin to view an overview",
-            caption: "Click on a pin to view an overview",
+            alt: "Quick overview of local gem",
+            caption: "Quick overview of local gem",
         },
         {
             src: Finding_Local_Recommendations_P4,
-            alt: "Click more info for detailed information",
-            caption: "Click more info for detailed information",
+            alt: "More detailed info on local gem",
+            caption: "More detailed info on local gem",
         },
     ]}
-    direction={"row"}
-    width={8}
-    maxHeight={"360px"}
+    
+    width={12}
+    maxHeight={"500px"}
 >
-The images illustrate how travelers can interact with pins on the map to access detailed information about local recommendations. By clicking on a pin, travelers see an overview card displaying key details like the venue name, photo, ratings, accessibility information, pricing, and reviews from locals. From the overview card, travelers can either navigate to the location using the "Directions" button or explore further by clicking "More Info." The detailed view provides an expanded profile of the spot, including its address, features (e.g., live music, trivia nights), and additional personal experiences. This functionality enhances the discovery process, allowing travelers to make informed decisions about exploring local gems.
 </ProjectImagesBlock>
+
+Travelers can click on specific pins to view a quick overview, including ratings and reviews from locals. They can then access detailed information, such as directions
+ and additional insights, like experiences shared by other travelers about the local gem.
+
+These features emphasize the importance of building a collaborative and engaging community where travelers and locals both actively contribute and benefit. By sharing their own 
+local reccomendations, travelers gain access to a broader network of suggestions, fostering a sense of mutual exchange and connection. This approach enriches our app with authentic 
+unique experiences while also encouraging travelers to engage more deeply with their own communities. Being able to browse a list of high quality reccomendations at the push of a button
+empowers travelers to discover hidden treasures and culturally enriching activities. This design supports authentic exploration and promotes meaningful interactions between locals and travelers, 
+enhancing the overall travel experience through genuine cultural exchange.
 
 ## Design Research and Key Insights
 
-In our design research, we aimed to understand how travelers discover unique cultural experiences and the barriers they face in finding such activities. We conducted semi-structured interviews and group discussions with participants, including university students, experienced solo travelers, and a group of friends who backpacked together.  We chose these methods for their flexibility, allowing us to adapt questions to participants' experiences and gather rich qualitative insights.  The diverse participants pool helped us explore varying perspectives on cultural immersion and travel planning. Our approach enabled us to identify common themes, such as the importance of social recommendations, the balance between planning and spontaneity, and the role of local insights, all of which informed the focus of our design solution.
+In our design research, we aimed to understand how travelers discover unique cultural experiences and the barriers they face in finding such activities. We conducted 
+semi-structured interviews and group discussions with participants, including university students, experienced solo travelers, and a group of friends who backpacked together. 
+We chose these methods for their flexibility, allowing us to adapt questions to participants' experiences and gather rich qualitative insights. Having a diverse participant pool
+ helped us explore varying perspectives on cultural immersion and travel planning. Our approach enabled us to identify common themes, such as the importance of social recommendations, 
+ the balance between planning and spontaneity, and the role of local insights, all of which informed the focus of our design solution.
 
 ### Get Information On Activities From Locals
 
 <ProjectImageBlock
     image={{
         src: Design_Research_P1,
-        alt: "Map of the local activities that can be done nearby",
+        alt: "Map of hidden gems nearby",
     }}
     caption={
-        "Map of the local activities that can be done nearby"
+        "Map of hidden gems nearby"
     }
-    width={6}
-    maxHeight={"400px"}
+    width={5}
+    maxHeight={"500px"}
 >
-Ricky, a UW student, shared that the primary way she found out about fun and interesting cultural experiences was simply by talking to locals. A favorite memory she had was watching a euro cup game where she had been at a bar when the Netherlands won and she felt “ like a small part of ecosystem”. Our application follows Ricky's insight into traveling by displaying a map of local activities that can be done nearby.
-<br/>This insight was important for our final design because it helped us restrict the pool of activities that the application recommends to the travelers. Instead of focusing on all potential activities and touristic spots that can be found in a given location, we focus only on activities recommended by local people which are going to enhance the cultural experience of each traveler.
+Ricky, a UW student, shared that the primary way she found out about fun and interesting cultural experiences was simply by talking to locals. A favorite memory she 
+had was watching a Euro Cup game where she had been at a bar when the Netherlands won and she felt “ like a small part of the ecosystem”. Our application follows Ricky's 
+insight into traveling by displaying a map of local activities that can be done nearby.
+
+<br/>This provided insight into the importance of a dialog with locals and was important for our final design because it helped us 
+categorize the types of activities that the application recommends to travelers. In our initial prototyping, our map included "touristy" reccomendations as well as local gems. However, our
+design research revealed that instead of focusing on all potential activities and tourist spots that can be found in a given location, we should emphasize a focus on activities recommended 
+by local people. These reccomendations have the highest chance of providing meaningful cultural experiences to travelers, and if travelers are interested in finding "touristy" reccomendations,
+the internet has thousands of generic travel guides. 
 </ProjectImageBlock>
-
-
 
 ### Sharing Cultural Experiences With Friends Is Essential
 
-<ProjectImagesBlock
-    images={[
-        {
-            src: Design_Research_P2,
-            alt: "Make social post after the activity is done",
-            caption: "Make social post after the activity is done",
-        },
-        {
-            src: Design_Research_P3,
-            alt: "Posted activties of each traveler",
-            caption: "Posted activties of each traveler",
-        },
-    ]}
-    direction={"row"}
-    width={8}
-    maxHeight={"400px"}
+<ProjectImageBlock
+    image={{
+        src: Design_Research_P2,
+        alt: "Make social post after the activity is done",
+    }}
+    caption={
+        "Make social post after the activity is done"
+    }
+    width={5}
+    maxHeight={"500px"}
 >
-Participants often prioritize immersing themselves in local culture but also enjoy describing their cultural encounters to their closest friends. One participant highlighted that sharing these experiences deepens social connections and allows for reflection on what they’ve learned. Our application allows travelers to make a social post after each activity. Moreover, each post gets added to the traveler's profile in order to make it visible to other people.
-</ProjectImagesBlock>
-This insight allowed us to expand the social capabilities of our application. Not even that the travelers is able to save the activities that they were able to perform within the app, but they are also able to share them to their friends. In this way, our design fosters a community of interconnected travelers that share and encourage each other while expanding their cultural knowledge and meeting new people.
+Participants said that they often prioritize immersing themselves in the local culture but also find significant value in sharing their cultural experiences with close friends. 
+One participant highlighted that sharing these experiences deepens social bonds and offers a chance for personal reflection, leading to a greater appreciation of the knowledge 
+and insights they’ve gained.
+
+This feedback inspired us to enhance the social capabilities of our application. Travelers can create social posts after each activity, which are automatically added to their
+profiles for others to view. These posts also appear on their friends’ feeds, sparking conversations about past cultural activities and creating opportunities for deeper connections. 
+This feature not only allows travelers to document their journeys but also encourages the exchange of cultural experiences within their network.
+
+By integrating these social features, our application fosters a thriving community of interconnected travelers who inspire and encourage one another to explore the world and 
+engage in cultural exchanges. These shared experiences create meaningful connections, broaden perspectives, and promote a sense of global unity, helping travelers build lasting 
+relationships and a deeper appreciation for diverse cultures.
+</ProjectImageBlock>
 
 ### Spontaneity and Flexibility Are Key Elements in Travel Planning
 
 <ProjectImageBlock
     image={{
-        src: Design_Research_P4,
+        src: Connections,
         alt: "Browse for nearby activities and join them",
     }}
     caption={
         "Browse for nearby activities and join them"
     }
-    width={6}
-    maxHeight={"400px"}
+    width={5}
+    maxHeight={"500px"}
 >
-While participants prefer to plan major activities in advance, they value the ability to adapt to new opportunities as they arise. By dropping pins on Google Maps, like one participant did, they can easily explore nearby activities on the spot. They are also open to changing plans if they discover something more interesting than their original itinerary, prioritizing unique, unplanned experiences. In order to accomplish this task, each traveler is able to browse for nearby activities and join them.
-<br/>This insight was able to allow us creating the most important feature of our application, i.e., recommending nearby local activities that are taking place in a group. By trying to integrate the spontaneity and flexibility features, we were able to build the backbone of our application. Moreover, we manage to focus also on the social aspect of the traveling, which enhances the peoples experiences and allow them to find meaningful relationships besides just sightseeing a local objective.
+While participants generally prefer to plan major activities in advance, they highly value the ability to adapt and take advantage of new opportunities as they arise. 
+One participant described using tools like Google Maps to trop pins, allowing them to easily explore nearby activities on the spot. This helped them navigate efficiently while
+also providing the freedom to pivot if something was more intriguing or they were unable to complete their original plan.Participants emphasized prioritizing unique, unplanned experiences, 
+which were often the most memorable moments of their trips.  
+
+Because of this emphasis on spontaneity and flexibility in our desing research, we designed the backbone of our application around this. These features allow travelers to discover and 
+join nearby activities easily, enabling them to take advantage of impromptu opportunities. Travelers can also host their own activities, fostering connections with others who share similar interests. 
+Additionally, our design includes tools for finding hidden local gems, allowing travelers to dive deeper into authentic, off-the-beaten-path experiences.
+
+By integrating these features, our application not only supports the structured aspects of travel planning but also embraces the unexpected, making it easy for users
+to create meaningful and memorable experiences on the go. This combination of planned and spontaneous exploration enhances the overall travel experience, fostering a sense of 
+adventure and discovery while maintaining the flexibility to adapt on the go based on your needs.
 </ProjectImageBlock>
 
 ## Iterative Design and Key Insights
 
 The iterative design process for Wanderlust involved multiple phases of refinement, 
 beginning with paper prototyping, progressing through heuristic evaluations and 
-usability testing, and creating the digital mockup. Paper prototypes 
+usability testing, and creating our final design. Paper prototypes 
 were used to sketch out workflows and interface layouts, focusing on the core tasks of 
 "Finding Locals' Recommendations" and "Making New Friends While Traveling." 
-These low-fidelity prototypes allowed the team to explore ideas quickly and 
+These low-fidelity prototypes allowed us to explore ideas quickly and 
 make adjustments based on initial evaluations.
 
 Heuristic evaluations identified usability issues such as missing back buttons, unclear 
-navigation flows, and redundant elements. These issues helped make revisions to ensure 
+navigation flows, and redundant elements. These issues helped us make revisions to ensure 
 the design aligned with user expectations and provided intuitive interaction paths. 
 We conducted usability testing, highlighting challenges in navigation, task visibility, 
-and users’ mental models of the app's features. We tested with diverse participants  which helped
+and users’ mental models of the app's features. We tested with diverse participants which helped
 emphasized the need for structural revisions, such as reorganizing menus and simplifying 
 user flows. The transition to digital mockups offered a more realistic testing environment, 
 which helped iterate on the interface and functionality based on feedback.
 
 ### Intuitive Navigation Matters
-
-<ProjectImageBlock
-    image={{
-        src: insight1,
-        alt: "Every image requires alt text. This should describe the content of that image.",
-    }}
+<ProjectImagesBlock
+    images={[
+        {
+            src: mapBefore,
+            alt: "Paper prototype map",
+        },
+        {
+            src: moreInfoBefore,
+            alt: "Paper prototype more info",
+        },
+    ]}
     caption={
-        "Emphasized structured navigation elements, including back buttons and cancel options"
+        "Paper prototype screens without back buttons for emergency exits"
     }
-    width={6}
-    maxHeight={"400px"}
+    width={12}
+    maxHeight={"350px"}
 >
-
+</ProjectImagesBlock>
 Throughout our testing, users frequently encountered difficulties navigating between pages due to the 
 absence of back buttons and a lack of clear pathways to exit or return to previous states. 
 These challenges were flagged during usability testing and heuristic evaluations, 
-emphasizing violations of the "User Control and Freedom" heuristic. To address this issue, 
-the team implemented structured navigation elements, including back buttons and cancel options,
+emphasizing violations of the "User Control and Freedom" heuristic. 
+
+<ProjectImagesBlock
+    images={[{
+            src: Finding_Local_Recommendations_P3,
+            alt: "More info",
+            caption: "Exit button",
+        },
+        {
+            src: Make_New_Friends_Walkthrough_P2,
+            alt: "Join request conformation screen",
+            caption: "Conformation and cancel buttons",
+        },
+        {
+            src: creatJoinPost,
+            alt: "Create new join request",
+            caption: "Back button",
+        },
+        
+    ]}
+    width={12}
+    maxHeight={"350px"}
+>
+</ProjectImagesBlock>
+
+To address this issue, we implemented structured navigation elements, including back buttons and cancel options,
 ensuring users could move seamlessly between sections without confusion. This improvement 
 created a more intuitive experience, empowering users to explore the app effortlessly while 
 enhancing their overall satisfaction with the interface.
 
 
-</ProjectImageBlock>
 
 ### Locals’ Engagement Is Key
 
 <ProjectImagesBlock
     images={[
         {
-            src: insight2a,
-            alt: "Every image requires alt text. This should describe the content of that image.",
+            src: mapBefore,
+            alt: "Paper prototype map",
         },
         {
-            src: insight2b,
-            alt: "Every image requires alt text. This should describe the content of that image.",
+            src: feedBefore,
+            alt: "Paper prototype feed",
         },
     ]}
-    direction={"row"}
     caption={
-        "Reciprocal model requiring users to share their own recommendations before accessing the full database"
+        "No incentive for locals to share their reccomendations"
     }
-    width={6}
-    maxHeight={"400px"}
+    width={12}
+    maxHeight={"350px"}
 >
 
+</ProjectImagesBlock>
 After our initial testing, it was clear that locals were hesitant to contribute their recommendations, 
-often feeling that the effort lacked immediate personal benefit. To address this barrier,
-the team introduced a reciprocal model requiring users to share their own recommendations 
+often feeling that the effort lacked immediate personal benefit. 
+
+<ProjectImagesBlock
+    images={[
+        {
+            src: Design_Research_P1,
+            alt: "Final design map of local gems",
+        },
+        {
+            src: Finding_Local_Recommendations_P1,
+            alt: "Final design list of local gems",
+        },
+    ]}
+   
+    caption={
+        "Features locked until travelers submit two of their own local gems"
+    }
+    width={12}
+    maxHeight={"500px"}
+>
+
+</ProjectImagesBlock>
+
+To address this barrier,
+we introduced a reciprocal model requiring users to share their own recommendations 
 before accessing the full database. Limited previews of other users’ contributions were 
 also added to showcase the app’s value and encourage participation. These changes helped 
 establish a sense of mutual exchange, fostering a stronger community of engaged users 
 willing to share their unique cultural insights.
 
 
-</ProjectImagesBlock>
-
 ### Task Clarity Improves Usability
 
-<ProjectImageBlock
-    image={{
-        src: insight3,
-        alt: "Every image requires alt text. This should describe the content of that image.",
-    }}
+<ProjectImagesBlock
+    images={[
+        {
+            src: feedBefore,
+            alt: "Paper Prototype feed",
+        },
+        {
+            src: connectionsBefore,
+            alt: "Paper prototype connections",
+        },
+    ]}
+   
     caption={
-        "Redesigned menus and contextual prompts to guide users"
+        "Feed and connections with mixed functionality"
     }
-    width={6}
-    maxHeight={"400px"}
+    width={12}
+    maxHeight={"500px"}
 >
+</ProjectImagesBlock>
 
-Participants struggled to locate features such as joining activities or posting recommendations, 
-which limited their ability to fully engage with the app’s capabilities. Usability testing 
-highlighted the need for clearer feature discoverability and a more intuitive mental model 
-for navigating throughout the app. To address this, the team redesigned menus and included contextual 
-prompts to guide users. For example, join buttons were made to be more prominent on activity feeds, and key functions 
-were highlighted to reduce user confusion. These adjustments makes sure that users could 
-easily access and utilize the apps most important features.
+Participants struggled to locate features such as joining activities or posting recommendations, which limited their ability to fully engage 
+with the app’s capabilities. Usability testing highlighted the need for clearer feature discoverability and a more intuitive mental model for
+ navigating throughout the app. 
+<ProjectImagesBlock
+    images={[{
+            src: Connections,
+            alt: "Final design connections",
+        },
+        {
+            src: Finding_Local_Recommendations_P1,
+            alt: "List view of local gems",
+        },
+    ]}
+    caption={
+        "Functionality separated into each individual tab"
+    }
+    width={12}
+    maxHeight={"500px"}
+>
+</ProjectImagesBlock>
 
-</ProjectImageBlock>
+To address this, we redesigned menus and included contextual prompts to guide users. For example, join 
+buttons were made to be more prominent on activity feeds, and key functions were highlighted to reduce user confusion. These adjustments ensure
+that users can easily access and utilize the app's most important features.
