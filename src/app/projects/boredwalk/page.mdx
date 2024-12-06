@@ -68,20 +68,22 @@ import task22 from "public/images/projects/boredwalk/post/task22.png"
 import task23 from "public/images/projects/boredwalk/post/task23.png"
 import task24 from "public/images/projects/boredwalk/post/task24.png"
 
+import insights from "public/images/projects/boredwalk/post/insights.png"
+
 import insight_paper_prototype from "public/images/projects/boredwalk/post/insight_paper_prototype.png"
 import state_flex_1 from "public/images/projects/boredwalk/post/state_flex_1.png"
-import state_flex_2 from "public/images/projects/boredwalk/post/state_flex_2.jpg"
+import state_flex_2 from "public/images/projects/boredwalk/post/state_flex_2.png"
 import state_flex_3 from "public/images/projects/boredwalk/post/state_flex_3.png"
 import state_flex_4 from "public/images/projects/boredwalk/post/state_flex_4.png"
-import vis_func_1 from "public/images/projects/boredwalk/post/vis_func_1.jpg"
-import vis_func_2 from "public/images/projects/boredwalk/post/vis_func_2.jpg"
+import vis_func_1 from "public/images/projects/boredwalk/post/vis_func_1.png"
+import vis_func_2 from "public/images/projects/boredwalk/post/vis_func_2.png"
 import vis_func_3 from "public/images/projects/boredwalk/post/vis_func_3.png"
 import vis_func_4 from "public/images/projects/boredwalk/post/vis_func_4.png"
 import tut1 from "public/images/projects/boredwalk/post/tut_1.png"
-import tut2 from "public/images/projects/boredwalk/post/tut_2.jpg"
+import tut2 from "public/images/projects/boredwalk/post/tut_2.png"
 import tut3 from "public/images/projects/boredwalk/post/tut_3.png"
-import tut4 from "public/images/projects/boredwalk/post/tut_4.jpg"
-import tut5 from "public/images/projects/boredwalk/post/tut_5.jpg"
+import tut4 from "public/images/projects/boredwalk/post/tut_4.png"
+import tut5 from "public/images/projects/boredwalk/post/tut_5.png"
 import tut6 from "public/images/projects/boredwalk/post/tut_6.png"
 
 import first_drawing from "public/images/projects/boredwalk/post/first_drawing.png"
@@ -152,7 +154,14 @@ walking treats walking directions like a driving route, and as such is targeted
 only towards efficient walkers–therefore, the niche of recreational walking goes 
 unsupported. Because of this, many recreational walkers feel they must stick to 
 routes they know; whether that exploration be small ventures from existing routes 
-or fully unexplored trails, the human need for exploration is left unmet
+or fully unexplored trails, the human need for exploration is left unmet.
+
+Our design, an app called BoredWalk, supports the niche of recreational walking 
+by providing its users with unobtrusive walking directions. These directions 
+guide recreational walkers along novel walking routes that match the user’s 
+selected preferences. BoredWalk then utilizes the spatial audio function that 
+exists in modern headphones to deliver these directions, shifting between left, 
+right, or center, depending on which direction the user needs to take.
 
 <ProjectImageBlock
     image={{
@@ -168,6 +177,8 @@ or fully unexplored trails, the human need for exploration is left unmet
 >
 </ProjectImageBlock>
 
+## Design Walkthrough
+
 <ProjectImageBlock
     image={{
         src: first_drawing,
@@ -176,25 +187,23 @@ or fully unexplored trails, the human need for exploration is left unmet
     caption={
         "Our initial sketch of the design, called at the time \"Auditory Approach\""
     }
-    width={4}
+    width={6}
     maxHeight={"400px"}
 >
 
-Our design, an app called BoredWalk, supports the niche of recreational walking 
-by providing its users with unobtrusive walking directions. These directions 
-guide recreational walkers along novel walking routes that match the user’s 
-selected preferences. BoredWalk then utilizes the spatial audio function that 
-exists in modern headphones to deliver these directions, shifting between left, 
-right, or center, depending on which direction the user needs to take
+The BoredWalk app allows walkers to customize their walks by entering a set of 
+terrain and walking intensity preferences, expanding walking technology beyond 
+just efficiency. Following a route and providing feedback supports users in improving 
+their walking experience by allowing BoredWalk to quantify the user’s rating of 
+their walk. BoredWalk then uses this data to improve upon the route suggestions 
+it makes to the user. The user can complete this task using only the app, or they 
+can provide soft feedback by changing direction while walking to communicate to 
+BoredWalk they are not enjoying their route and would like to reroute. Overall, 
+completing these two tasks using BoredWalk should markedly improve the recreational 
+walker’s walking experience by allowing BoredWalk to tailor its route suggestions 
+to the user’s preferences and past walking experiences.
 
 </ProjectImageBlock>
-
-## Design Walkthrough
-
-An interesting aspect of our app design is the fact that the core functionality -
-navigating a walker with audio feedback - needs no visual design, and minimal design
-overall. As such, our design focus was on the ancillary features which support
-the user.
 
 ### Select a Customized Route
 
@@ -233,7 +242,7 @@ walking routes that best suit the user’s preferences. When the user would like
 to start a walk, they can either select a destination to walk to or set their 
 route to be a walking loop. They then input a desired walk length–in time or 
 distance–within the constraints of their desired destination. 
-The user is now presented with a route that matches their pre-set preferences 
+The user is now presented with a route that matches their preset preferences 
 and their desired walk length and destination. 
 
 </ProjectImagesBlock>
@@ -264,7 +273,7 @@ The user can either start this walk or navigate forward (or backward) on the
 page to other route suggestions. BoredWalk’s route possibilities are endless! 
 The user can also navigate to the home page to adjust their preferences at any 
 time to better customize their suggested routes; they can also save walks to 
-their favorites page if they’d like to revisit this route in the future.
+their favorites page if they would like to revisit this route in the future.
 
 </ProjectImagesBlock>
 
@@ -292,19 +301,19 @@ quantitative feedback that can better optimize its future suggestions.
     images={[
         {
             src: task21,
-            alt: "Every image requires alt text. This should describe the content of that image.",
+            alt: "Image of the route screen showing tutorial popup that introduces the rerouting modes.",
         },
         {
             src: task22,
-            alt: "Every image requires alt text. This should describe the content of that image.",
+            alt: "Image of the route screen with a route and the \"reroute\" button visible.",
         },
         {
             src: task23,
-            alt: "Every image requires alt text. This should describe the content of that image.",
+            alt: "Image of the route screen with a new route and the \"reroute\" button visible.",
         },
         {
             src: task24,
-            alt: "Every image requires alt text. This should describe the content of that image.",
+            alt: "Image of the post-walk rating screen.",
         },
     ]}
     caption={
@@ -333,7 +342,7 @@ accurate context for the activity we were interested in.
 
 Most of the participants in our interviews typically repeated the same routes 
 over and over. When asked, participants said they would like to switch things 
-up and explore new areas, but didn’t have the time, or didn’t want to risk 
+up and explore new areas, but did not have the time, or did not want to risk 
 getting lost or ending up somewhere too busy, too hilly, or worse – too unsafe. 
 This insight led us to focus on designing a way for people to explore new places 
 without having to do much work planning, and without the risk of getting lost or 
@@ -347,22 +356,16 @@ plan the route; I mostly plan the amount of time I will spend and the pace.” -
 
 ### There are no universally “good” route qualities
 
-<ProjectImagesBlock
-    images={[
-        {
-            src: imagePlaceholder400x400,
-            alt: "Every image requires alt text. This should describe the content of that image.",
-            caption: "This caption is applied to the image. Each can have a different caption.",
-        },
-        {
-            src: imagePlaceholder400x400,
-            alt: "Every image requires alt text. This should describe the content of that image.",
-            caption: "This caption is applied to the image. Each can have a different caption.",
-        },
-    ]}
-    direction={"row"}
+<ProjectImageBlock
+    image={{
+        src: insights,
+        alt: "Image portraying two walkers, one who is cool and one who loves hills",
+    }}
+    caption={
+        "Two walkers with varying opinions"
+    }
     width={8}
-    maxHeight={"400px"}
+    maxHeight={"600px"}
 >
 
     Despite some general themes emerging, there were no walk qualities that 
@@ -374,7 +377,7 @@ plan the route; I mostly plan the amount of time I will spend and the pace.” -
     directly seen in our preferences screen.
 
 
-</ProjectImagesBlock>
+</ProjectImageBlock>
     “I don’t want to walk up any hills” - Archibald
 
     “I like walking up and down hills” - Alejandra
@@ -407,7 +410,7 @@ When creating our paper prototype based off of our sketches, we made a few
 decisions to simplify some of the interfaces to make them more user friendly. 
 The earliest feedback we received on this initial prototype and its associated 
 task walkthrough was through an inspection process of our design according to 
-Nielson’s heuristics. After addressing and revising these violations of Nielson’s 
+Nielsen’s heuristics. After addressing and revising these violations of Nielsen’s 
 heuristics, we did several usability tests with our improved paper prototype. 
 After each usability test we made necessary changes to address the feedback we 
 received. Once we had gone through several rounds of usability tests and iterations 
@@ -417,71 +420,54 @@ as well that we addressed to ensure our design was finalized.
 
 ### State Flexibility
 
+A key insight gained from our heuristic evaluation inspection was the lack 
+of emergency exits in the “Choose Walk” screen with no way to look at previously 
+generated routes and no way to leave the screen. We took this insight and applied 
+it to this screen and throughout the rest of our design to vastly improve the 
+transitions between states. This included making changes in our “Choose Walk” 
+screen to have a “Prev”, “Next”, and “Exit” buttons as well as having more 
+verbose “Save” and “Exit” buttons on the “Feedback” screen.   
+
 <ProjectImagesBlock
     images={[
         {
             src: state_flex_1,
-            alt: "Alt",
-        },
-        {
-            src: state_flex_2,
-            alt: "Alt",
+            alt: "Image of original route select screen with \"yes\" \"no\" prompts.",
         },
         {
             src: state_flex_3,
-            alt: "Alt",
-        },
-        {
-            src: state_flex_4,
-            alt: "Alt",
-        },
+            alt: "Image of new route select screen with \"next\" \"prev\" prompts.",
+        }
     ]}
     direction={"row"}
     caption={
-        "State Flexibility caption."
+        "States in initial prototype with rigid state transitions."
     }
     width={12}
-    maxHeight={"600px"}
->
-
-    A key insight gained from our heuristic evaluation inspection was the lack 
-    of emergency exits in the “Choose Walk” screen with no way to look at previously 
-    generated routes and no way to leave the screen. We took this insight and applied 
-    it to this screen and throughout the rest of our design to vastly improve the 
-    transitions between states. This included making changes in our “Choose Walk” 
-    screen to have a “Prev”, “Next”, and “Exit” buttons as well as having more 
-    verbose “Save” and “Exit” buttons on the “Feedback” screen.    
-
+    maxHeight={"400px"}
+> 
 </ProjectImagesBlock>
-
-### Visible Functionality
-
 <ProjectImagesBlock
     images={[
         {
-            src: vis_func_1,
-            alt: "Alt",
+            src: state_flex_2,
+            alt: "Image of original rating screen.",
         },
         {
-            src: vis_func_2,
-            alt: "Alt",
-        },
-        {
-            src: vis_func_3,
-            alt: "Alt",
-        },
-        {
-            src: vis_func_4,
-            alt: "Alt",
+            src: state_flex_4,
+            alt: "Image of improved rating screen with \"save\" added.",
         },
     ]}
     direction={"row"}
     caption={
-        "Hidden functionality made more clear during revisions."
+        "States transitions made more flexible through addition of new buttons."
     }
     width={12}
-    maxHeight={"600px"}
->
+    maxHeight={"400px"}
+> 
+</ProjectImagesBlock>
+
+### Visible Functionality
 
 Another key insight we obtained from our usability testing included hidden and 
 unclear purposes of features. Our old “Start Walk” screen had a hidden loop or 
@@ -493,51 +479,100 @@ some of our participants about its purpose in improving future walks. These
 issues brought up by participants led us to make several changes to our prototype 
 that improved usability by making possible actions visible and their purposes more clear.
 
-</ProjectImagesBlock>
-
-### Tutorialization and Ease of Use
-
 <ProjectImagesBlock
     images={[
         {
-            src: tut1,
-            alt: "Alt",
+            src: vis_func_1,
+            alt: "Image of \"start walk\" screen with poor functionality.",
         },
         {
-            src: tut2,
-            alt: "Alt",
+            src: vis_func_3,
+            alt: "Image of \"feedback\" screen with poor functionality.",
+        }
+    ]}
+    direction={"row"}
+    caption={
+        "States in our initial prototype that had hidden or unclear features."
+    }
+    width={12}
+    maxHeight={"400px"}
+>
+</ProjectImagesBlock>
+<ProjectImagesBlock
+    images={[
+        {
+            src: vis_func_2,
+            alt: "Image of \"feedback\" screen with poor functionality.",
         },
         {
-            src: tut3,
-            alt: "Alt",
-        },
-        {
-            src: tut4,
-            alt: "Alt",
-        },
-        {
-            src: tut5,
-            alt: "Alt",
-        },
-            {
-            src: tut6,
-            alt: "Alt",
+            src: vis_func_4,
+            alt: "Image of \"feedback\" screen with improved functionality.",
         },
     ]}
     direction={"row"}
     caption={
-        "A walker can reroute while on a walk. Favorite routes can be saved."
+        "Hidden functionality made more clear during revisions."
     }
     width={12}
-    maxHeight={"600px"}
+    maxHeight={"400px"}
 >
+</ProjectImagesBlock>
+
+### Tutorialization and Ease of Use
 
 When usability testing, we realized that our app was confusing to use at first 
 due to various tidbits of feedback provided by participants. Specifically, many 
-had issues with app navigation or didn’t know what to do on some screens. In 
+had issues with app navigation or did not know what to do on some screens. In 
 order to improve based on this insight, we first made our app navigation a lot 
 more consistent and simple by adding a back button to every screen. Then, we added 
 tutorial popups to a few different features so that walkers could figure out how 
 to use them when first opening those screens.
 
+<ProjectImagesBlock
+    images={[
+        {
+            src: tut1,
+            alt: "Image of \"walking\" screen without a tutorial.",
+        },
+        {
+            src: tut3,
+            alt: "Image of \"audio selection\" screen without a tutorial.",
+        },
+        {
+            src: tut5,
+            alt: "Image of \"generate walk\" screen.",
+        },
+    ]}
+    direction={"row"}
+    caption={
+        "States in the initial prototype that testers called out as unclear."
+    }
+    width={12}
+    maxHeight={"400px"}
+>
 </ProjectImagesBlock>
+
+<ProjectImagesBlock
+    images={[
+        {
+            src: tut2,
+            alt: "Image of \"walking\" screen with a tutorial.",
+        },
+        {
+            src: tut4,
+            alt: "Image of \"audio selection\" screen with a tutorial.",
+        },
+        {
+            src: tut6,
+            alt: "Image of \"generate walk\" screen with button disbled.",
+        },
+    ]}
+    direction={"row"}
+    caption={
+        "Extra explanations now included for clarity and visibility, \"generate walk\" is disabled until a destination is selected ."
+    }
+    width={12}
+    maxHeight={"600px"}
+>
+</ProjectImagesBlock>
+
