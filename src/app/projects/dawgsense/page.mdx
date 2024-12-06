@@ -75,6 +75,7 @@ import t23 from "public/images/projects/dawgsense/post/T2-3.png";
 import t24 from "public/images/projects/dawgsense/post/T2-4.png";
 import selectMode from "public/images/projects/dawgsense/post/selectMode.png";
 import designInsight from "public/images/projects/dawgsense/post/design_insight_diagram.png";
+import logo from "public/images/projects/dawgsense/project_thumb.png";
 
 # DawgSense
 <ProjectSubtitle>Your Dog's Emotions, Understood and Managed</ProjectSubtitle>
@@ -130,14 +131,11 @@ import designInsight from "public/images/projects/dawgsense/post/design_insight_
 
 <ProjectImageBlock
     image={{
-        src: overview,
+        src: logo,
         alt: "design overview."
     }}
-    caption={
-        "The overview of our design, DawgSense "
-    }
-    width={6}
-    maxHeight={"400px"}
+    width={4}
+    maxHeight={"200px"}
 >
 
 Many dog owners struggle to effectively respond to and manage their dogs' emotional and reactive
@@ -146,16 +144,13 @@ behaving abnormally in unfamiliar environments. This issue stems from a lack of 
 interpret and address their dogs’ behaviors in real-time, compounded by limited opportunities to
 learn from these situations to prevent recurrence. This creates challenges in both immediate intervention
 and long-term behavior management, leaving owners feeling unprepared and dogs more anxious.
-
+</ProjectImageBlock>
 Our approach emphasizes equipping dog owners with the means to respond to immediate behavioral
 challenges and reflect on those scenarios for deeper understanding. By focusing on both the reactive
 and proactive aspects of behavior management, the design ensures that owners are not only able to
 address a situation as it arises but also gain insights into potential triggers and alternatives
 for future prevention. This dual focus helps build owners’ confidence in navigating complex
 behavioral challenges while fostering a stronger connection with their pets.
-
-
-</ProjectImageBlock>
 
 ## Design Walkthrough
 
@@ -460,7 +455,7 @@ goals, thereby enhancing the practical utility and user-friendliness of our appl
 
 </ProjectImagesBlock>
 
-### Improving Navigation and Enhancing User Control
+### Empowering User Experience with Intuitive Navigation and Responsive Controls
 
 <ProjectImagesBlock
     images={[
@@ -482,15 +477,24 @@ goals, thereby enhancing the practical utility and user-friendliness of our appl
     maxHeight={"400px"}
 >
 
-During heuristic evaluations, it was evident that the prototype lacked an undo or exit button
-after the users made a selection like "Shaking" or "Dog Bark." This omission restricted users
-from backing out or changing their decisions after initiating a process, leading to increased
-frustration and a lack of sense of control. The absence of these buttons violated the User Control
-and Freedom heuristic, as users were unable to navigate freely or correct mistakes within the interface.
+Our heuristic evaluations and usability tests highlighted significant gaps in our
+prototype’s user interface, particularly the lack of essential navigation and
+directive elements. For example, once users accessed the interface, they encountered
+no directive prompts and found it difficult to modify or cancel their selections
+in practicing options like "Shaking" or "Dog Bark." This oversight limited users'
+ability to adjust or withdraw actions, leading to frustration and a diminished
+sense of control over the application, contrary to the User Control and Freedom
+heuristic.
 
-To address this, we added a clear 'Back/Exit' button in the revised design. This enhancement
-not only aligns with the User Control and Freedom heuristic but also significantly improves the
-overall user interface by making navigation more intuitive and user-friendly.
+To address these issues, we enhanced the design to include backward navigation
+and undo functionalities, thereby empowering users with the flexibility to
+easily navigate back or terminate actions when they change their minds.
+Additionally, we introduced a 'continue' button on the homepage and a new
+section detailing various operational modes. These enhancements make the progression
+steps and available functionalities clear, significantly improving the user experience
+by ensuring consistency and simplifying navigation. Together, these improvements have
+transformed our design into a more user-friendly and responsive tool, enhancing both its
+functional integrity and user satisfaction.
 
 </ProjectImagesBlock>
 
